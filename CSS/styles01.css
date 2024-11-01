@@ -1,1 +1,119 @@
-body{background-color: aqua;}
+/***********************************\
+ *    Øverste del av siden       *
+ *    kommentar og nav-bar         *
+\***********************************/
+*{box-sizing: border-box;}
+body{margin:0;}
+.comment{ 
+    display: block;
+    background-color: #ddd;
+    padding: 5px 0;
+    font-size: 1.5rem;;
+    font-weight: bold;
+    color: orange;
+}
+#nav-bar{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap:2em;
+    background-color: #777;
+    margin-top: 0;
+    padding-top: 2rem;
+    padding-bottom: .5rem;
+        
+}
+
+#nav-bar>li{ 
+border:2px solid #ddd;
+text-align: center;
+}
+#nav-bar>li>a,
+#nav-bar>li>a:visited{
+    text-decoration: none;
+    font-size: 16px;    
+    color: aliceblue;display: block;
+    width:5em;
+}
+#nav-bar>li:active{
+    border-color: #777;
+    
+
+}
+#nav-bar>li>a:active{
+    color:#1ce6e6;
+    
+}
+
+#nav-bar>li>a:hover{
+    cursor: pointer;
+    background-color:blueviolet;
+ }
+
+ #current-page{
+    background-color:blueviolet;
+ }
+/************************************************\
+ *   Page-wrapper holder innholdet på siden     *
+ *   sentrert og med max width                  *
+\************************************************/
+
+
+  @media (min-width: 950px) {
+    #page-wrap{ 
+       max-width: 1000px;
+       margin: auto;
+       position: relative;
+       left: 0;
+       right: 0;
+       border: 3px solid #777;
+    }
+  }
+
+
+  @media (min-width: 600px) {
+  /*******************************************\
+   *     Seksjonene - innholdet på siden     *
+  \*******************************************/
+  
+  .section-wrap{
+   /*
+        section wrap er med 
+        på å plassere sidestolpen
+                                     */
+    width:66%;
+    margin-left: 3%;
+    float:left;
+}
+section{
+    border: 2px solid coral;
+}
+
+  /*******************************************\
+   *     Aside - vil være sidestolpe når     *
+   *     det er plass på skjermen            *
+  \*******************************************/
+ aside{
+    border: 2px solid coral;
+    width:25%;
+    margin:0 3% ;
+    float:right;
+    padding: 0 .5em;
+    
+}
+#page-wrap::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+} /*Media query ferdig*/
+
+/******************\
+ *     Footer     *
+\******************/
+footer{
+    position: relative;
+    margin-top: 10rem;
+    background-color: #ddd;
+    padding: 5em ;
+}
