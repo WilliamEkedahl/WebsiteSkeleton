@@ -1,0 +1,57 @@
+/***********************************\
+ *    Øverste del av siden       *
+ *    kommentar og nav-bar         *
+\***********************************/
+*{box-sizing: border-box;}
+body{margin:0;}
+.comment{ 
+    display: block;
+    background-color: #ddd;
+    padding: 5px 0;
+    font-size: 1.5rem;;
+    font-weight: bold;
+    color: orange;
+}
+#nav-bar{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap:2em;
+    background-color: #777;
+    margin-top: 0;
+    padding-top: 2rem;
+    padding-bottom: .5rem;
+        
+}
+
+#nav-bar>li{ 
+border:2px solid #ddd;
+text-align: center;
+}
+#nav-bar>li>a,
+#nav-bar>li>a:visited{
+    text-decoration: none;
+    font-size: 16px;    
+    color: aliceblue;display: block;
+    width:5em;
+}
+#nav-bar>li:active{
+    border-color: #777;
+    
+
+}
+#nav-bar>li>a:active{
+    color:#1ce6e6;
+    
+}
+
+#nav-bar>li>a:hover{
+    cursor: pointer;
+    background-color:blueviolet;
+ }
+
+ #current-page{
+    background-color:blueviolet;
+ }
+
+ 
