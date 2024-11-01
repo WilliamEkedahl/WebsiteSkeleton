@@ -1,0 +1,3 @@
+[submodule "WebsiteSkeleton"]
+	path = WebsiteSkeleton
+	url = https://github.com/WilliamEkedahl/WebsiteSkeleton.git
