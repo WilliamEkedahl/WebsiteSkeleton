@@ -1,0 +1,257 @@
+body{
+    margin:0;
+}
+/**********************************\
+    #Nav-bar
+\**********************************/
+
+/**** Feltet rundt linkene/knappene ****/
+.nav-bar{
+    background-color: #f3f3f3;
+    display: flex;
+    padding: .5rem;
+    gap: 1rem; 
+    z-index: 3;
+}
+/*****************************************************
+ *** Linkene/knappene i nav-baren har klassen link ***
+ *** Knapper som klikkes på viser flere linker     ***
+ *** Alle linkene har også klassen link            ***/
+.link{
+    background: none;
+    border:none;
+    text-decoration: none;
+    color: #777;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+ /******************************************************************************
+ *** Klassen active legges til og fjernes av javascript ved klikk            ***
+ *** Klassen legges til og fjernes fra elementet som har klassen dropdown    ***
+ *** Knappene som viser flere linker når de trykkes på har klassen dropdown  ***/
+.dropdown.active > .link,
+.link:hover{
+    color:black;
+}
+
+.dropdown{
+    position: relative;
+
+}
+
+.dropdown-menu{
+    position: absolute;
+    left: 0;
+    top: calc(100% + .25rem);
+    background-color: white;
+    padding:.75rem;
+    border-radius: .25rem;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-1em);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    z-index: 3;
+
+}
+
+.dropdown-menu.active{
+    opacity: 1;
+}
+.dropdown.active > .link + .dropdown-menu{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+.information-grid{
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap:2rem;
+}
+.dropdown-links{
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.login-form > input {
+    margin-bottom: .5rem ;
+}
+/**********************************\
+     # Drop-menu
+\**********************************/
+* {
+    box-sizing: border-box;
+  }
+.menu-logo-continer{   
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-container{
+    border:2px solid coral;
+    width: 12rem;
+    align-self: center;
+    text-align: center;
+}
+
+
+ul{ position: relative;
+    display: flex;
+    padding-left: 0;
+    padding: 2em 3em 2em 0;
+    list-style: none;
+    user-select: none;
+    font-size: inherit;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+}
+min-grid#tester{
+  display: grid;
+  max-width: 60rem;
+  grid-template-rows: repeat(4,100px) ;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  border: 2px solid red;
+  
+}
+.items{
+  box-sizing: border-box;
+  border: 5px solid orange;
+  background-color:rgb(240, 142, 15);
+  border-radius: 10px;
+  text-align: center;
+  line-height: 5rem;
+}
+#item2{
+  grid-area: 1/2/3/3;
+  
+}
+#item2:active{
+  grid-column: span 2;
+  grid-row: span 4;
+  
+}
+#item1:hover{
+  grid-row: span 4;
+
+}
+
+ul>li{
+    border:2px solid rgb(60, 116, 113);
+    border-radius: .1em;
+    text-align: center;
+    width:8rem;
+    background-color: aquamarine;
+}
+ul.drop{
+    flex-direction: column;
+    padding:0;
+    position: absolute;
+    display: block;
+    transform:translate(-0.1em, 0.1em);
+    z-index: 3;
+    display: none;
+    
+    
+}
+ul.drop>li{
+    margin-top:0.1em;
+}
+ul>li:hover{
+    cursor: pointer;
+    background-color: rgb(126, 243, 237);
+    
+}
+
+li:hover ul.drop{
+display: block;    
+
+}
+
+ul a{
+    padding:1em ;
+    text-decoration: none;
+    color:rgb(8, 56, 52);
+    display: block;
+}
+ul.drop>li>a:active{
+     border-color: rgb(83, 172, 167);
+     background-color: rgb(20, 133, 56);
+        
+        }
+/**********************************\
+     #Bread-crumbs
+\**********************************/
+.breadcrumbs {
+    border: 1px solid #cbd2d9;
+    border-radius: 0.3rem;
+    display: inline-flex;
+    overflow: hidden;
+    z-index: 2;
+  }
+  
+  .breadcrumbs__item {
+    background: #fff;
+    color: #333;
+    outline: none;
+    padding: 0.75em 0.75em 0.75em 1.25em;
+    position: relative;
+    text-decoration: none;
+    transition: background 0.2s linear;
+  }
+  
+  .breadcrumbs__item:hover:after,
+  .breadcrumbs__item:hover {
+    background: #edf1f5;
+  }
+  
+  .breadcrumbs__item:focus:after,
+  .breadcrumbs__item:focus,
+  .breadcrumbs__item.is-active:focus {
+    background: #323f4a;
+    color: #fff;
+  }
+  
+  .breadcrumbs__item:after,
+  .breadcrumbs__item:before {
+    background: white;
+    bottom: 0;
+    clip-path: polygon(0 0, 50% 50%, 0 100%);
+    content: "";
+    left: 100%;
+    position: absolute;  
+    top: 0;
+    transition: background 0.2s linear;
+    width: 2em;
+    z-index: 1;
+  }
+  
+  .breadcrumbs__item:before {
+    background: #cbd2d9;
+    margin-left: 1px;
+  }
+  
+  .breadcrumbs__item:last-child {
+    border-right: none;
+  }
+  
+  .breadcrumbs__item.is-active {
+    background: #edf1f5;
+  }
+  
+  /* Some styles to make the page look a little nicer */
+  body {
+  
+  
+  
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  html, body {
+    height: 100%;
+  }

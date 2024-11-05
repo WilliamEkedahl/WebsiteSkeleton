@@ -1,0 +1,114 @@
+
+/************************************************\
+ *   Page-wrapper holder innholdet på siden     *
+ *   sentrert og med max width                  *
+\************************************************/
+
+
+  @media (min-width: 950px) {
+    #page-wrap{ 
+       max-width: 1440px;
+       margin: auto;
+       position: relative;
+       left: 0;
+       right: 0;
+       border: 3px solid #777;
+    }
+  }
+
+body, #page-wrap{
+  
+  height:80%;
+}
+
+/*
+The background property is a shorthand property for:
+
+background-color
+background-image
+background-position
+background-size
+background-repeat
+background-origin
+background-clip
+background-attachment
+
+https://www.w3schools.com/cssref/css3_pr_background.php
+
+background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
+https://developer.mozilla.org/en-US/docs/Web/CSS/background
+*/
+
+html{
+  background:url("../Bilder/pastel-rainbow-coloured-watercolour-texture-background/regnbuefarge tre markerte høyder.jpg") no-repeat center; 
+  height:3072px;
+}
+@media (min-width: 1440px) {
+  html{background-size: 100%;}
+}
+
+
+
+/*
+Til begrunnelser:
+
+In our day to day life, when we are building a UI component or a HTML template, we must have come across this scenario to choose between HTML <img /> tag vs CSS background-image property.
+
+I also faced this situation and did some research on that. Here are some important points to consider before choosing one.
+
+Accessibility — In case of background-image Screen readers will not announce its presence and therefore convey nothing to its users but they can read the html image alt attribute.
+Performance — I have tried both the ways using different size of images. Performance is pretty much same using both.
+Printing HTML Page — Browsers aren’t always set to print background images by default. If you want an image to print (cmd/ctrl + p) by default use <img /> otherwise you can choose background-image
+SEO — Search engines cannot see the images, they can only search for alt attribute on images. So image tag with alt attribute helps us for SEO.
+Image Manipulation — If you have image sprite or image layers and want to display on mouse hover or if you want some text on top of the image easily or if you want show only some part of the image or if you want to apply some cool background-attachment properties.. background-image is the option.
+Basic Image protection — If you want to protect your image from people who don’t know the inspect element option, you can opt background-image
+Call To Action — If you want your image to be clickable HTML image tag should be the option.
+
+*/
+  @media (min-width: 900px) {
+  /*******************************************\
+   *     Seksjonene - innholdet på siden     *
+  \*******************************************/
+  
+  .section-wrap{
+   /*
+        section wrap er med 
+        på å plassere sidestolpen
+                                     */
+    width:66%;
+    margin-left: 3%;
+    float:left;
+}
+section{
+    border: 2px solid coral;
+    min-width: 500px;
+}
+
+  /*******************************************\
+   *     Aside - vil være sidestolpe når     *
+   *     det er plass på skjermen            *
+  \*******************************************/
+ aside{
+    border: 2px solid coral;
+    width:25%;
+    margin:0 3% ;
+    float:right;
+    padding: 0 .5em;
+    
+}
+#page-wrap::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+} /*Media query ferdig*/
+
+/******************\
+ *     Footer     *
+\******************/
+footer{
+    position: relative;
+    margin-top: 10rem;
+    background-color: #ddd;
+    padding: 5em ;
+}
