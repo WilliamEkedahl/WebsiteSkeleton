@@ -54,7 +54,7 @@ section#section1-grid{
     grid-area: 4/3/6/5;
   }
   .image-link{
-    width:100%;
+    display: none;
     
   }
   
