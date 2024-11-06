@@ -1,17 +1,30 @@
-html{
-    
-    background:url("../Bilder/lynet.svg") no-repeat;
-    background-position: 50% -20%;
-    background-size: 100%;
-    
-    
-     
+body{background: none;}
+
+  #background-img-data{
+    background:url("../Bilder/AI.jpeg") no-repeat center;
+    height:500px;
+  }
+  #background-img-lyn{
+
+    background:url("../Bilder/lynet.svg") no-repeat center;
+    height:2500px;
     
   }
-  body{
-    background-position: 50% 0%;
-    height: 2500px;
+
+  
+  #bakgrunn-wrap{
+    width:100%;
+    
   }
+  #main-footer{margin: 0;}
+  #page-wrap{
+    padding:0;
+    position: absolute;
+    top:600px;
+    
+    
+  }
+  
   
 /******************************\
      Grid første seksjon
@@ -19,7 +32,7 @@ html{
 
 section#section1-grid{
     display: grid;
-    grid-template-rows: repeat(16,minmax(50px,1fr)) ;
+    grid-template-rows: repeat(16,minmax(100px,1fr)) ;
     /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
     grid-template-columns: 1fr repeat(4,minmax(50px,2fr)) 1fr;
     border: 2px solid red;

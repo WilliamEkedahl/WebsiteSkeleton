@@ -45,6 +45,7 @@ html{
 }
 body{
   background:url("../Bilder/AI.jpeg") no-repeat center; 
+  background-position: 50% 0%;
   height:1080px;
 }
 
