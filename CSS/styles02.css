@@ -40,10 +40,12 @@ section#section1-grid{
     
   }
   
-  #section1-grid>a{
+  #section1-grid>a, #section1-grid>p  {
     box-sizing: border-box;
+    /*
     border: 5px solid orange;
     background-color:rgb(240, 142, 15);
+    */
     border-radius: 10px;
     text-align: center;
     
@@ -57,9 +59,15 @@ section#section1-grid{
     
   }
   #section1-grid>p{
-    grid-row:1/2 ;
+   /* grid-row:1/2 ;
     grid-column:1/2 ;
-    /*background-color: black;*/
+    background-color: black;*/
+    
+    color:rgb(228, 215, 215);
+    font-size: 1.5rem;
+    font-weight: bold;
+    transform: rotate(30deg);
+    background-color: rgba(78, 50, 29, 0.7);
     
   }
   
@@ -74,14 +82,14 @@ section#section1-grid{
   }
   #link3{
     grid-area: 9/2/12/4;
+    transform: rotate(-5deg);
   }
   #link4{
     grid-area: 13/4/-2/6;
-  }
-  .image-link{
-    display: none;
+    transform: translate(-100px, -100px) rotate(10deg);
     
   }
+  
 
   /******************************\
    *     Grid andre seksjon      *
@@ -135,9 +143,8 @@ section#section1-grid{
   #link8{
     grid-area: 4/3/6/5;
   }
-  .image-link{
+  #section2-grid>a>.image-link{
+    
     display: none;
     
   }
-
-  
