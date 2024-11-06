@@ -88,23 +88,6 @@ section{
     min-width: 500px;
 }
 
-  /*******************************************\
-   *     Aside - vil være sidestolpe når     *
-   *     det er plass på skjermen            *
-  \*******************************************/
- aside{
-    border: 2px solid coral;
-    width:25%;
-    margin:0 3% ;
-    float:right;
-    padding: 0 .5em;
-    
-}
-#page-wrap::after{
-    content: "";
-    display: table;
-    clear: both;
-}
 } /*Media query ferdig*/
 
 /******************\
