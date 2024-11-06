@@ -13,12 +13,13 @@
        left: 0;
        right: 0;
        border: 3px solid #777;
+       
     }
   }
 
-body, #page-wrap{
+#page-wrap{
   
-  height:80%;
+padding-top: 500px;
 }
 
 /*
@@ -38,14 +39,18 @@ https://www.w3schools.com/cssref/css3_pr_background.php
 background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
 https://developer.mozilla.org/en-US/docs/Web/CSS/background
 */
-
 html{
-  background:url("../Bilder/AI.jpeg") no-repeat center; 
+  background-color: rgb(6, 49, 63);
   /*height:3072px;*/
 }
+body{
+  background:url("../Bilder/AI.jpeg") no-repeat center; 
+  height:1080px;
+}
+
 @media (min-width: 1440px) {
   
-  html{background-size: 100%;}
+  body{background-size: 100%;}
   
 }
 
