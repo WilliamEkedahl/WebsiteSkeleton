@@ -17,8 +17,8 @@ body{margin:0;}
     flex-wrap: wrap;
     list-style: none;
     gap:2em;
-    background-color: rgba(119, 119, 119, .5);
-    margin-top: 0;
+    background-color: rgba(119, 119, 119, 0);
+    margin-top: ;
     padding-top: 2rem;
     padding-bottom: .5rem;
         
@@ -47,11 +47,11 @@ text-align: center;
 
 #nav-bar>li>a:hover{
     cursor: pointer;
-    background-color:blueviolet;
+    color: #9a5e5d;
  }
 
- #current-page{
-    background-color:blueviolet;
+ #current-page>a{
+     color: #9a5e5d;
  }
 
  

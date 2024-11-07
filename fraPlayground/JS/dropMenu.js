@@ -1,3 +1,5 @@
+//Denne koden er tatt fra javacript turtorial for og gi oss funktionaliteten som vi trengte till dropdownen vår. 
+
 document.addEventListener('click', e=> {
     const isDropdownButton = e.target.matches("[data-dropDown-button]");
     if (!isDropdownButton && e.target.closest('[data-dropDown]') != null) {
