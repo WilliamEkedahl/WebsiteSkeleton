@@ -44,12 +44,13 @@ nav{
 .dropdown-menu{
     position: absolute;
     left: 0;
-    top: calc(100% + .25rem);
     background-color: white;
     padding:.75rem;
     border-radius: .25rem;
     box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
+    
     opacity: 0;
+    
     pointer-events: none;
     transform: translateY(-1em);
     transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
@@ -66,9 +67,11 @@ nav{
     pointer-events: auto;
 }
 .information-grid{
+ /*
     display: grid;
     grid-template-columns: repeat(2, max-content);
     gap:2rem;
+    */
 }
 .dropdown-links{
     display: flex;

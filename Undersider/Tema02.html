@@ -10,68 +10,35 @@
 <link rel="stylesheet" href="..\CSS\mainNavBar.css">
 </head>
 <body>
+    <script src="..\JS\dropMenu.js" defer></script>
 <nav>
-    <!-- Limt inn -->
-    
-        <div class="dropdown" data-dropDown>
-            <button class="link" data-dropDown-button>Information</button>
-            <div class="dropdown-menu information-grid">
-                <div>
-                    <div class="dropdown-heading">Free tutorials</div>
-                    <div class="dropdown-links">
-                        <a href="#" class="link">All</a>
-                        <a href="#" class="link">Latest</a>
-                        <a href="#" class="link">Popular</a>
-                    </div>
-                </div>
-                <div>
-                    <div class="dropdown-heading">Courses</div>
-                    <div class="dropdown-links">
-                        <a href="#" class="link">JavaScript</a>
-                        <a href="#" class="link">CSS</a>
-                        <a href="#" class="link">React</a>
-                    </div>
-                </div>
-                <div>
-                    <div class="dropdown-heading">Blog</div>
-                    <div class="dropdown-links">
-                        <a href="#" class="link">All</a>
-                        <a href="#" class="link">Latest</a>
-                        <a href="#" class="link">Popular</a>
-                    </div>
-                </div>
-                <div>
-                    <div class="dropdown-heading">Other</div>
-                    <div class="dropdown-links">
-                        <a href="#" class="link">Twitter</a>
-                        <a href="#" class="link">Newsletter</a>
-                        <a href="#" class="link">Discord</a>
-                    </div>
-                </div>
-                
-                
-
-            </div>
-        </div> 
-        <a href="#" class="link">Pricing</a>
-        <div class="dropdown" data-dropDown>
-            <button class="link" data-dropDown-button>Login</button>
-            <div class="dropdown-menu">
-                <!-- -->
-                <a href="#" class="link">Twitter</a>
-                <a href="#" class="link">Newsletter</a>
-                <a href="#" class="link">Discord</a>
-            </div>
-
-        </div>
-
-
+   
+   
+       
+<!--Limt inn-->
+<a class ="logo" href="logo.svg" alt="this is our logo"> </a>
+    <div class="dropdown" data-dropDown> 
+        <button class="dropdown-items" data-dropDown-button> Bøker </button>
+        <div >
+        <ul id = "runar" class="dropdown information-grid dropdown-menu"   >
+            <li class="dropdown-items"><a href="Boker undersider/Harrypotter">HarryPotter</a></li>
+            <li class="dropdown-items"><a href="Boker undersider/diaryOfAWimpyKid.html">Diary Of A WimpyKid</a></li>
+            <li class="dropdown-items"><a href="Boker undersider/markedsforingsledelse.html"> Markedsföringsledelse</a></li>
+            <li class="dropdown-items"><a href="Boker undersider/mobyDick.html"> MobyDick</a></li>
+            <li class="dropdown-items"><a href="Boker undersider/NorskSvenskordbok.html"> NorskSvenskOrdbok</a></li>
+        </ul>
+    </div>
+    </div>
     
 </nav>
+
+
 <div id="bakgrunn-wrap">
 <div id="background-img-data"></div>
 <div id="background-img-lyn"></div>
 </div>
+
+
     <div id="page-wrap">
         <p>Page-wrap får border og max-width ved en fastsatt pixel-bredde. Border er for vår del under utviklingen</p>
         
