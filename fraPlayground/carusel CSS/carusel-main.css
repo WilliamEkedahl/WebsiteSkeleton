@@ -235,7 +235,7 @@ img{width:100%;}
     }
     #button-wrap>#next:hover{
         
-        box-shadow:  20px 0 20px 20px var(--passe-svart);
+        box-shadow:  -20px 0 20px 20px var(--passe-svart);
     }
     
 }
