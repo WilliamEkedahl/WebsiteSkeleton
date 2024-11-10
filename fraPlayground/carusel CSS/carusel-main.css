@@ -2,181 +2,274 @@
  *     Etterligner en nettside     *
  *                                  *
 \************************************/
-body{margin:0;}
-nav>ul{ 
-    display: flex;
-    list-style: none;
-    padding:1rem;
-    gap:1.5rem;
-    background-color: blanchedalmond;
-    text-align: center;
-    
+body {
+    margin: 0;
 }
 
-nav>ul>li>a{
+nav>ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 1rem;
+    gap: 1.5rem;
+    background-color: blanchedalmond;
+    text-align: center;
+
+}
+
+nav>ul>li>a {
     display: block;
     width: 8rem;
     text-decoration: none;
-    padding: 1rem 0 .5rem 0 ;
+    padding: 1rem 0 .5rem 0;
     background-color: aqua;
-    border:2px solid blue;
+    border: 2px solid blue;
     border-radius: .3rem;
-    
-} 
 
-footer{
+}
+
+footer {
     background-color: blanchedalmond;
     height: 15rem;
     padding: 3rem;
     text-align: center;
 
 }
+
 @media (max-width: 1250px) {
+
     /**********************************\
      *      Carusel for mobil         *
     \**********************************/
-    :root{
-        --bilde-bredde:500px;
-        --bilde-wrap-høyde:400px;
-    }
-    #section-nr1{
+    :root {
         
+        --bilde-wrap-høyde: 400px;
+        --passe-svart:rgba(0, 0, 0, .8);
+    }
+img{width:100%;}
+    #section-nr1 {
+
         border: 1rem solid coral;
         max-width: var(--bilde-bredde);
         min-height: var(--bilde-wrap-høyde);
         position: relative;
-        left:0;
+        left: 0;
         right: 0;
         margin: 0 auto;
-        
-        
-    
-    
     }
-    .bilde-wrap{
+
+    .bilde-wrap {
         box-sizing: border-box;
         text-align: center;
-        border:15px solid green;
-        margin:0;
-        min-width:var(--bilde-bredde);
+        border: 15px solid green;
+        margin: 0;
         display: none;
         opacity: 0;
         transition: opacity 0.5s ease-in-out;
     }
-    .bilde-wrap.synlig{
+
+    .bilde-wrap.synlig {
         display: block;
         opacity: 1;
     }
+
     #dots {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         background-color: #7c7777;
+
+    }
+
+    #dots>.dot {
+        cursor: pointer;
+        height: 1rem;
+        width:1rem;
+        background-color: #242421;
+        transition: background-color 0.2s ease;
+    }
+
+    #dots>.dot.active,
+    #dots>.dot:hover {
+        background-color: #ffffe6;
+    }
+/*******************************\
+ *         Kontrollknapper     *
+\*******************************/
+    
+    #button-wrap>.control-buttons{
+        background-color: var(--passe-svart);
+        width:15%;
+        border-radius: 50%;
+        padding: 1.5rem .5rem  0 .5rem ;
+        
+        height: 5rem;
+    
         
     }
-    #dots>.dot {
-          cursor: pointer;
-          height: 10px;
-          width: 10px;
-          background-color: #242421;
-          transition: background-color 0.2s ease;
-        }    
-        #dots>.dot.active,
-        #dots>.dot:hover {
-          background-color: #ffffe6;
-        }
+
+#button-wrap>#prev{
+        
+    
+}
+#button-wrap>#next{
+    
+    
+}
+}
+/********** Mediaquery for mobil ferdig ****************/
 
 
-} /********** Mediaquery for mobil ferdig ****************/
 @media (min-width: 1250px) {
-/**********************************\
+ /**********************************\
  *      Carusel for PC-skjerm     *
 \**********************************/
 
-   
-  
-:root{
-    /* Bildebredde 500 + 2*14 border + 2*40 margin
+
+    :root {
+        /* Bildebredde 500 + 2*14 border + 2*40 margin
                     500 + 28 + 80 =608
        */
-    --bilde-wrap-bredde:608px;
-    --bilde-wrap-bredde-3: calc(608 * 3px);
+        --bilde-wrap-bredde: 608px;
+        --bilde-wrap-bredde-3: calc(608 * 3px);
 
-    --bilde-wrap-negativ-bredde:-608px;
+        --bilde-wrap-negativ-bredde: -608px;
 
-    --bilde-wrap-høyde:calc(413px + 40px);
-    --bilde-bredde:500px;
+        --bilde-wrap-høyde: calc(413px + 40px);
+        
+        --bilde-bredde: 500px;
+        --passe-svart:rgba(0, 0, 0, .8);
+    }
+
+    /*img{display: none;}*/
+    #section-nr1 {
+        border: 1rem solid coral;
+        max-width: var(--bilde-wrap-bredde-3);
+        height: var(--bilde-wrap-høyde);
+        position: relative;
+        left: 0;
+        right: 0;
+        margin: 300px auto;
+        overflow-x: hidden;
+    }
+
+    #carusel-wrap {
+
+        display: flex;
+        position: relative;
+        height: 100%;
+
+    }
+
+    #carusel-wrap.ajust-left {
+        /* 
+         Skyver bildeserien en bildebredde til venstre
+         For å plassere første bildet i serien til venstre
+         for "viewboksen", section-nr1, slik at bilder slides inn
+         når brukeren klikker på "forrige"-knappen
+                                                                */
+        left: var(--bilde-wrap-negativ-bredde);
+    }
+
+    .bilde-wrap {
+        text-align: center;
+        border: 15px solid green;
+
+        position: relative;
+        min-width: var(--bilde-bredde);
+        display: none;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .bilde-wrap.pc-synlig {
+        display: block;
+        opacity: 1;
+    }
+
+    /*****************\
+    *     Slide     *
+    \*****************/
+
+    #carusel-wrap.slide-left {
+
+        transition: all 200ms ;
+        transform: translateX(var(--bilde-wrap-negativ-bredde));
+
+
+    }
+
+    #carusel-wrap.slide-right {
+
+        transition: all 200ms ;
+        transform: translateX(var(--bilde-wrap-bredde));
+
+    }
+    /********************************\
+         Kontrollknapper
+    \*********************************/
+    #button-wrap{
+        box-sizing: border-box;
+        position: absolute;
+        top:0;
+        
+        width:100%;
+        height: 100%;
+        
+    }
+    #button-wrap>.control-buttons{
+         /* Halv bildehøyde minus en root font høyde blir 
+        omtrent riktig padding for kontrollknappene */
+        --halv-bilde-wrap-høyde: calc((413px + 40px)/2 - 1rem);
+
+        padding-top: var(--halv-bilde-wrap-høyde);
+        width:5%;
+    }
+    #button-wrap>.control-buttons:hover{
+        background-color: var(--passe-svart);
+        cursor: pointer;
+    }
+    #button-wrap>#prev:hover{
+        
+        box-shadow:  20px 0 20px 20px var(--passe-svart);
+    }
+    #button-wrap>#next:hover{
+        
+        box-shadow:  20px 0 20px 20px var(--passe-svart);
+    }
     
 }
-body{ 
-    
-    counter-reset: min-teller;
-    /*overflow-x: hidden;*/
-}
-/*img{display: none;}*/
-#section-nr1{
-    border: 1rem solid coral;
-    max-width: var(--bilde-wrap-bredde-3);
-    height:var(--bilde-wrap-høyde) ;
-    position: relative;
-    left:0;
-    right: 0;
-    margin: 300px auto;
-    
 
+/********* Media query fedig ********/
 
+figurecaption {
+    display: block;
 }
-#carusel-wrap{
+
+/********************\
+ *     Buttons      *
+  *   Felles konfig *
+\********************/
+
+#button-wrap{
+ 
     
     display: flex;
-    position: relative;
-    /* 
-         Skyver bildeserien en bildebredde til venstre
-         For å plassere siste bildet i serien på til venstre
-                                                                */
+    justify-content: space-between;
     
     
-    height:100%;
+    
+
 }
-.bilde-wrap{
+
+#button-wrap>.control-buttons{
+    user-select: none;
+     
+    
     text-align: center;
-    border:15px solid green;
+    color:#ffffe6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: bolder;
     
-    position: relative;
-    min-width:var(--bilde-bredde);
-    display: none;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-.bilde-wrap.pc-synlig{
-    display: block;
-    opacity: 1;
-}
-
-/*****************\
- *     Slide     *
-\*****************/
-
-#carusel-wrap.slide-left{
-    
-    transition: all 300ms ease-out;
-    transform: translateX(var(--bilde-wrap-negativ-bredde));
-
-}
-
-
-
-}/********* Media query fedig ********/
-figurecaption{display: block;}
-
-/*******************\
- *     Buttons     *
-\*******************/
-.btn-wrap{
-    border:3px solid green;
-    width:16rem;
-}
-.btn-wrap> button{
-    width:50%;
-
 }

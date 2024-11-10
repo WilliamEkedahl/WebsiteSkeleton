@@ -1,8 +1,8 @@
 /**************************************************\
  *      Knappene og wrap for hele bildeserien     *
 \**************************************************/
-let prevBtn = document.getElementById("prev-button");
-let nextBtn = document.getElementById("next-button");
+let prevBtn = document.getElementById("prev");
+let nextBtn = document.getElementById("next");
 let caruselWrap = document.getElementById("carusel-wrap");
 
 /*******************************\
@@ -103,34 +103,51 @@ function mobileNext() {
 
 
 async function pcNext() {
-    /* Sjekker om bildeserien har kommet til enden */
+  
     let førsteSynlig = finnPcSynlig(), maxIndex = (bildeWrap.length -1);
-    if (førsteSynlig > (maxIndex-3)) return;
-    /* Forhindrer knappetrykk under animasjonen */
-    nextBtn.disabled = true;
+      
+    /* Forhindrer knappetrykk under animasjonen og vedd veis ende */
+
+    if (førsteSynlig > (maxIndex-4) || 
+    caruselWrap.classList.contains("slide-left") || 
+    caruselWrap.classList.contains("slide-right") ) return;
+
 
     caruselWrap.classList.add("slide-left");
 
 
-    /* Her er en pause for at trasnition animasjonen skal bli ferdig */
+    /* Her er en pause for at transition animasjonen skal bli ferdig */
+    /* https://stackoverflow.com/questions/951021/what-is-the-javascript-version-of-sleep */
     const sleep = ms => new Promise(r => setTimeout(r, ms));
-    await sleep(300);
+    await sleep(200);
 
 
     /*Endre hvilke bilder som vises */
 
     let skjul = førsteSynlig,
-        vis = førsteSynlig + 4 ;
+        vis = førsteSynlig + 5 ;
 
-
+if (caruselWrap.classList.contains("ajust-left")) {
     caruselWrap.children[skjul].classList.remove("pc-synlig");
-    /* Hindrer visning av */
+
+    /* Hindrer error med for høy index */
     if (vis <= maxIndex ) {
         caruselWrap.children[vis].classList.add("pc-synlig");
     }
+
+}else if(førsteSynlig === 0){
+    caruselWrap.classList.add("ajust-left");    
+}
+    
+    
+    
+    
     
     caruselWrap.classList.remove("slide-left");
-    nextBtn.disabled = false;
+    
+ 
+    
+    
 }
 
 function finnPcSynlig(){
@@ -138,31 +155,76 @@ function finnPcSynlig(){
     for (let i = 0; i < bildeWrap.length; i++) {
 
         if (bildeWrap[i].classList.contains("pc-synlig")) {
+            /* ved første treff returneres funnet index og søket avsluttes */
          return i;   
         }
-         
-         
-         
-        
     }
 
 }
 
 
-function pcPrev(){
-    console.log('pcPrev is empty');
-    console.info( caruselWrap.children[0]);
+async function pcPrev(){
+      
+      let førsteSynlig = finnPcSynlig(), maxIndex = (bildeWrap.length -1);
+      
+      /* Forhindrer knappetrykk under animasjonen og vedd veis ende */
+
+      if ( (førsteSynlig === 0 && !caruselWrap.classList.contains("ajust-left") )||
+        caruselWrap.classList.contains("slide-left") || 
+      caruselWrap.classList.contains("slide-right") ) return;
+      
+      
+  
+      caruselWrap.classList.add("slide-right");
+  
+  
+      /* Her er en pause for at transition animasjonen skal bli ferdig */
+      /* https://stackoverflow.com/questions/951021/what-is-the-javascript-version-of-sleep */
+      const sleep = ms => new Promise(r => setTimeout(r, ms));
+      await sleep(200);
+  
+  
+      /*Endre hvilke bilder som vises */
+  
+      let skjul = førsteSynlig + 4,
+          vis = førsteSynlig - 1 ;
+
+
+
+
+    
+
+    if (vis >= 0) {
+        caruselWrap.children[vis].classList.add("pc-synlig");
+    } else if (vis === -1) {
+        caruselWrap.classList.remove("ajust-left");
+    }
+
+
+
+    if (caruselWrap.classList.contains("ajust-left")) {
+        caruselWrap.children[skjul].classList.remove("pc-synlig");
+
+    }
+
+
+     
+    
+
+
+      caruselWrap.classList.remove("slide-right");
+      
+  }
+  
+  function finnPcSynlig(){
+      
+      for (let i = 0; i < bildeWrap.length; i++) {
+  
+          if (bildeWrap[i].classList.contains("pc-synlig")) {
+              /* ved første treff returneres funnet index og søket avsluttes */
+           return i;   
+          }
+      }
    
 }
 
-/* * * * * * * * * * * * * * * * * * * * * * * * * *\
- 
-   ***           Mobil bilde-skifter           ***
- 
- * * * * * * * * * * * * * * * * * * * * * * * * * */
-
-
-
-
-      // Function to show a specific item
-  
