@@ -31,46 +31,111 @@ footer{
     text-align: center;
 
 }
+@media (max-width: 1250px) {
+    /**********************************\
+     *      Carusel for mobil         *
+    \**********************************/
+    :root{
+        --bilde-bredde:500px;
+        --bilde-wrap-høyde:400px;
+    }
+    #section-nr1{
+        
+        border: 1rem solid coral;
+        max-width: var(--bilde-bredde);
+        min-height: var(--bilde-wrap-høyde);
+        position: relative;
+        left:0;
+        right: 0;
+        margin: 0 auto;
+        
+        
+    
+    
+    }
+    .bilde-wrap{
+        box-sizing: border-box;
+        text-align: center;
+        border:15px solid green;
+        margin:0;
+        min-width:var(--bilde-bredde);
+        display: none;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+    .bilde-wrap.synlig{
+        display: block;
+        opacity: 1;
+    }
+    #dots {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #7c7777;
+        
+    }
+    #dots>.dot {
+          cursor: pointer;
+          height: 10px;
+          width: 10px;
+          background-color: #242421;
+          transition: background-color 0.2s ease;
+        }    
+        #dots>.dot.active,
+        #dots>.dot:hover {
+          background-color: #ffffe6;
+        }
 
-/********************\
- *      Carusel     *
-\********************/
 
+} /********** Mediaquery for mobil ferdig ****************/
+@media (min-width: 1250px) {
+/**********************************\
+ *      Carusel for PC-skjerm     *
+\**********************************/
+
+   
+  
 :root{
-    /* For å finne tre ganger  bildebreddde 
-       multipliser: 3 * (bildebredde + (margin*2) + (border*2))  
-       3 * (500 + 80 + 30 ) = 3 * (610 )
+    /* Bildebredde 500 + 2*14 border + 2*40 margin
+                    500 + 28 + 80 =608
        */
-    --bilde-wrap-bredde:calc(610*3px);
-    --bilde-wrap-negativ-bredde:calc(-610*3px);
+    --bilde-wrap-bredde:608px;
+    --bilde-wrap-bredde-3: calc(608 * 3px);
+
+    --bilde-wrap-negativ-bredde:-608px;
 
     --bilde-wrap-høyde:calc(413px + 40px);
     --bilde-bredde:500px;
+    
 }
 body{ 
     
     counter-reset: min-teller;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 /*img{display: none;}*/
 #section-nr1{
     border: 1rem solid coral;
-    max-width: var(--bilde-wrap-bredde);
+    max-width: var(--bilde-wrap-bredde-3);
     height:var(--bilde-wrap-høyde) ;
     position: relative;
     left:0;
     right: 0;
     margin: 300px auto;
+    
 
 
 }
-.carusel-wrap{
+#carusel-wrap{
     
     display: flex;
     position: relative;
-    /*
+    /* 
+         Skyver bildeserien en bildebredde til venstre
+         For å plassere siste bildet i serien på til venstre
+                                                                */
     left:var(--bilde-wrap-negativ-bredde);
-    */
+    
     height:100%;
 }
 .bilde-wrap{
@@ -79,33 +144,48 @@ body{
     
     position: relative;
     min-width:var(--bilde-bredde);
-    
-    
-    
-    
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
-.bilde-wrap::after{
-    
-    /*nummering for å se forskjell*/
-    counter-increment: min-teller +1;
-    content:counter(min-teller);
-    /*plasserer after-elementet over bildet*/
-    position: absolute;
-    top:0;
+.bilde-wrap.pc-synlig{
     display: block;
-    background-color: rgba(240, 248, 255, .8);
-    height:100%;
-    width: 100%;
-    /* justerer visningen av nummeret*/
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 3rem;
-    color: rgb(11, 109, 109);
-    text-align: center;
-    box-sizing: border-box;
-    padding-top:35%;
+    opacity: 1;
+}
 
-
-
+/*****************\
+ *     Slide     *
+\*****************/
+#carusel-wrap.slide-left{
+    left: var(--bilde-wrap-negativ-bredde);
+    left:calc(-608*2px);
 
 }
+#carusel-wrap.translate-right{
+    transform: translateX(var( --bilde-wrap-bredde));
+    
+
+}
+#carusel-wrap.remove-translate{
+    
+    transition: all 1000ms ease-out;
+    transform: translateX(0);
+
+}
+
+
+
+}/********* Media query fedig ********/
 figurecaption{display: block;}
+
+/*******************\
+ *     Buttons     *
+\*******************/
+.btn-wrap{
+    border:3px solid green;
+    width:16rem;
+}
+.btn-wrap> button{
+    width:50%;
+
+}
