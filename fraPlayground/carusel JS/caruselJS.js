@@ -101,126 +101,49 @@ function mobileNext() {
 }
 
 
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\
- *      Bildene flyttes til venstre med animasjon gjennom transition                         *
- *      Med tanke på at brukeren kan trykke igjen før animasjonen er ferdig                  *
- *      har vi valgt en løsning der animasjon oppstår i det translate fjernes.               *
- *      Bilderekken flyttes til venstre gjennom å få negaiv left verdi eks left: -500px      *
- *      Deretter flyttes bilderekken til høyre med transform:translate,                      *
- *      ingen endring i visningen                                                            *
- *      Bildeserien får transistion på translate og translate settes til 0, bildene glir     *
- *      over skjermen til sin nye posisjon, en bildebredde til høyre                         *
- *      Left verdien som flyttet posisjonen til bildene fjernes ikke før animasjonen er      *
- *      er ferdig. Først da endres får bildet som ikke lenger vises display none og          *
- *      kollapser. Kollapsen ville vanligvis ført til at bildene i bildeserien ble           *
- *      forskjøvet til høyre, men opphøret av en bildebreddes forskyvning til venstre        *
- *      gjør at bildene blir stående.                                                        * 
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-async function pcNext(){
- /* klassen slide-left flytter alle bildene til venstre, med avstanden en bildebredde */   
-caruselWrap.classList.add("slide-left");
-/* Klassen translate-right flytter bildene en bildebredde til høyre, bildene flyttes dermed ikke */
-caruselWrap.classList.add("translate-right");
-/* Denne pausen er viktig. Uten den ville det ikke blitt noen transition effekt */
-const sleep = ms => new Promise(r => setTimeout(r, ms));
-await sleep(1);
 
-/* Klassen remove-translate gir transition til carusel-wrap og
-   setter translate til 0. Dermed glir bildene over skjermen til
-   sin nye posisjon. en bildebredde til venstre */
+async function pcNext() {
+    /* Sjekker om bildeserien har kommet til enden */
+    let førsteSynlig = finnPcSynlig(), maxIndex = (bildeWrap.length -1);
+    if (førsteSynlig > (maxIndex-3)) return;
+    /* Forhindrer knappetrykk under animasjonen */
+    nextBtn.disabled = true;
 
-caruselWrap.classList.add("remove-translate");
+    caruselWrap.classList.add("slide-left");
 
 
-/* Her er en pause for at trasnition animasjonen skal bli ferdig */
-await sleep(1000);
+    /* Her er en pause for at trasnition animasjonen skal bli ferdig */
+    const sleep = ms => new Promise(r => setTimeout(r, ms));
+    await sleep(300);
 
 
-/*Endre hvilke bilder som vises */
+    /*Endre hvilke bilder som vises */
 
-let femSynlig = finnPcSynlig();
+    let skjul = førsteSynlig,
+        vis = førsteSynlig + 4 ;
 
-
-
-
-
-    let lavestIndex = Math.min(...femSynlig),
-        høyestIndex = Math.max(...femSynlig), maxIndex = (bildeWrap.length - 1);
-        console.log(lavestIndex);
-        console.log(høyestIndex);
-    if (høyestIndex === maxIndex && lavestIndex === 0) {
-
-
-        /*                     #0   #1   #2   #3    #4
-    if( femSynlig[1] > 1){      0   8    9    10    11  skjul 8     vis 1
-    if( femSynlig[2] > 2){      0   1    9    10    11  skjul 9     vis 2
-    if( femSynlig[2] > 1){      0   1    2    10    11  skjul 10    vis 3
-    if( femSynlig[2] > 1){      0   1    2    3     11  skjul 11    vis 4
-    
-          */
-        if (femSynlig[1] > 1) {
-            var vis = (lavestIndex + 1);
-            var skjul = (høyestIndex - 3);
-        } else if (femSynlig[2] > 2) {
-            var vis = (lavestIndex + 2);
-            var skjul = (høyestIndex - 2);
-
-        } else if (femSynlig[3] > 3) {
-            var vis = (lavestIndex + 3);
-            var skjul = (høyestIndex - 1);
-
-        } else {
-            var vis = (lavestIndex + 4);
-            var skjul = (høyestIndex);
-        }
-
-
-
-    } else {
-        var skjul = femSynlig[0];
-        var vis = (femSynlig[0] + 5) % bildeWrap.length;
-    }
 
     caruselWrap.children[skjul].classList.remove("pc-synlig");
-    caruselWrap.children[vis].classList.add("pc-synlig");
-
-
-console.log(' fjernet ' + skjul + ' viser ' + vis )
-
-
-
-
-
-
-
-
-
-
-/* klassen slide-left som flyttet alle bildene mot venstre oppheves og opphever
-   effekten av bildet som forsvant */
-caruselWrap.classList.remove("slide-left");
-caruselWrap.classList.remove("translate-right");
-/* klassen som fjernet translate med fjernes */
-caruselWrap.classList.remove("remove-translate");
-
-/***********************************************
- * Problemet med denne løsningen er å identifisere bildet som skal kollapses.
- * Hvilket bilde er skjøvet ut av rekken?
- * 
- * Jeg tror at løsningen ligger i bruk av dataset. Og vil lage mobilversjonen
- * først og så komme tilbake hit
- * 
- */
-
+    /* Hindrer visning av */
+    if (vis <= maxIndex ) {
+        caruselWrap.children[vis].classList.add("pc-synlig");
+    }
+    
+    caruselWrap.classList.remove("slide-left");
+    nextBtn.disabled = false;
 }
 
 function finnPcSynlig(){
-    let funnet = [];
+    
     for (let i = 0; i < bildeWrap.length; i++) {
+
         if (bildeWrap[i].classList.contains("pc-synlig")) {
-         funnet.push(i);
-         if(funnet.length>4) return funnet;
+         return i;   
         }
+         
+         
+         
+        
     }
 
 }
