@@ -61,39 +61,25 @@ header a {
 .hovedbilde .list .item .content .topic{
     color: rgb(255, 102, 0);
 }
-.kollone{
-  float: left;
-  width: 33.33%;
+
+/*Tre bilder på en rad*/
+* {
+  box-sizing: border-box;
+}
+
+.del1-underbilder {
+  display: flex;          
+  justify-content: center; 
+  gap: 10px;               /* setter distanse mellom de*/
   padding: 5px;
 }
-.del1-underbilder::after{
-content:"";
-display: table;
-clear: both;
 
+.kollone {
+  width: 30%;              
+  padding: 5px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Bilde og tekst */
 #main-footer{
     background-color: rgba(51, 51, 51, .5);
     color: #fff;
@@ -131,3 +117,86 @@ clear: both;
   padding: 40px 20px;
   text-align: center;
 }
+
+
+/*Bilde med tekst 1*/
+.Meg{
+  background-color: rgb(243, 243, 243);
+  display: flex;
+  justify-content: space-between;
+  padding: 120px;
+  width: 80vw;
+  margin: 10rem auto 0 auto;
+}
+
+.Meg img{
+  height: 600px;  
+
+}
+.Meg h1{
+  margin:0;
+  color: black;
+  font-size: 50px;
+}
+.Meg p{
+  color: black;
+  margin-right: 60px; /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden*/
+  font-size: 25px; /*Størrelsen på tekst*/
+}
+
+.Bilder{
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+  width: 80vw;
+  margin: 10rem auto 0 auto;
+}
+
+.Bilder img{
+  height: 600px;
+
+}
+
+.Bilder h1{
+  margin:0;
+  color: white;
+  font-size: 50px;
+}
+
+.Bilder p{
+  color: white;
+  margin-right: 70px; /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden*/
+  font-size: 25px; /*Størrelsen på tekst*/
+
+}
+
+/*Bilder2*/
+
+.Bilder2{
+  background-color: rgb(243, 243, 243);
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+  width: 80vw;
+  margin: 10rem auto 0 auto;
+}
+
+.Bilder2 img{
+  height: 500px;
+
+}
+
+.Bilder2 h1{
+  margin:0;
+  color: black;
+  font-size: 50px;
+}
+
+.Bilder2 p{
+  color: black;
+  margin-right: 70px; /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden*/
+  font-size: 25px; /*Størrelsen på tekst*/
+
+}
+
