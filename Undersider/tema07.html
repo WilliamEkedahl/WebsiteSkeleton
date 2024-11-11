@@ -4,23 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS\tema07style.css">
+    <link rel="stylesheet" href="..\CSS\main.css">
+    <link rel="stylesheet" href="..\CSS\styles02.css">
+    <link rel="stylesheet" href="..\CSS\mainNavBar.css">
     <title>Semesteroppgaven - tema07</title>
 
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="..\index.html">Hjem</a>
-            <a href="tema01.html">Tema 01</a>
-            <a href="tema02.html">Tema 02</a>
-            <a href="tema03.html">Tema 03</a>
-            <a href="tema04.html">Tema 04</a>
-            <a href="tema05.html">Tema 05</a>
-            <a href="tema06.html">Tema 06</a>
-            <a href="tema07.html">Tema 07</a>
-        </nav>
-    </header>
+<script src="..\JS\dropMenu.js" defer></script>
+<nav>
+    <!--back to the start page-->
+    <a class ="logo" href="logo.svg" alt="this is our logo"> </a>
+    <div class="dropdown" data-dropDown>
+        <button class="dropdown-items" data-dropDown-button> HOME </button>
+        <div class="dropdown-menu" dropdown-menu>
+            <ul>
+                <li class="dropdown-items"><a href="Tema02.html">HOME</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--Limt inn-->
+
+    <div class="dropdown" data-dropDown>
+        <button class="dropdown-items" data-dropDown-button> Bøker </button>
+        <div class="dropdown-menu" dropdown-menu>
+            <ul>
+                <li class="dropdown-items"><a href="Undersider\Boker undersider/harrypotter.html">HarryPotter</a></li>
+                <li class="dropdown-items"><a href="Undersider\Boker undersider/diaryOfAWimpyKid.html">Diary Of A WimpyKid</a></li>
+                <li class="dropdown-items"><a href="Undersider\Boker undersider/markedsforingsledelse.html"> Markedsföringsledelse</a></li>
+                <li class="dropdown-items"><a href="Undersider\Boker undersider/mobyDick.html"> MobyDick</a></li>
+                <li class="dropdown-items"><a href="Undersider\Boker undersider/NorskSvenskordbok.html"> NorskSvenskOrdbok</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Biler Dropdown -->
+    <div class="dropdown" data-dropDown>
+        <button class="dropdown-items" data-dropDown-button> Biler </button>
+        <div class="dropdown-menu" dropdown-menu>
+            <ul>
+                <li class="dropdown-items"><a href="Undersider\Biler undersider/Ferrari.html">Ferrari</a></li>
+                <li class="dropdown-items"><a href="Undersider\Biler undersider/Ford.html">Ford</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Frukt Dropdown -->
+    <div class="dropdown" data-dropDown>
+        <button class="dropdown-items" data-dropDown-button> Frukt </button>
+        <div class="dropdown-menu" dropdown-menu>
+            <ul>
+                <li class="dropdown-items"><a href="Undersider\Frukt undersider/bananer.html">Bananer</a></li>
+                <li class="dropdown-items"><a href="Undersider\Frukt undersider/salad.html">Salad</a></li>
+                <li class="dropdown-items"><a href="Undersider\Frukt undersider/äpple.html">Epple</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Verktøy Dropdown -->
+    <div class="dropdown" data-dropDown>
+        <button class="dropdown-items" data-dropDown-button> Verktøy </button>
+        <div class="dropdown-menu" dropdown-menu>
+            <ul>
+                <li class="dropdown-items"><a href="Undersider\Verktyg undersider/hammar.html">Hammar</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <ul id="nav-bar">
+        <li id="current-page" class="nav-li"><a href="index.html">Hovedside</a></li>
+        <li class="nav-li"><a href="Undersider\tema01.html">Analysere</a></li>
+        <li class="nav-li"><a href="Undersider\tema02.html">Design</a></li>
+        <li class="nav-li"><a href="Undersider\tema03.html">Virkeligjøre</a></li>
+        <li class="nav-li"><a href="Undersider\tema04.html">Andre utviklingsfaser</a></li>
+    </ul>
+</nav>
 
 <div class="hovedbilde">
     <div class="list">
