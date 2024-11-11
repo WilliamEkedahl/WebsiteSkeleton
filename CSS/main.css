@@ -13,12 +13,13 @@
        left: 0;
        right: 0;
        border: 3px solid #777;
+       
     }
   }
 
-body, #page-wrap{
+#page-wrap{
   
-  height:80%;
+padding-top: 500px;
 }
 
 /*
@@ -38,13 +39,25 @@ https://www.w3schools.com/cssref/css3_pr_background.php
 background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
 https://developer.mozilla.org/en-US/docs/Web/CSS/background
 */
-
 html{
+<<<<<<< HEAD
   background:url("../Bilder/AI.jpeg") no-repeat center; 
   height:3072px;
+=======
+  background-color: rgb(6, 49, 63);
+  /*height:3072px;*/
+>>>>>>> 51d56b00628026f282c2bfdfe6095bd83c635dab
 }
+body{
+  background:url("../Bilder/AI.jpeg") no-repeat center; 
+  background-position: 50% 0%;
+  height:1080px;
+}
+
 @media (min-width: 1440px) {
-  html{background-size: 100%;}
+  
+  body{background-size: 100%;}
+  
 }
 
 
@@ -86,31 +99,45 @@ section{
     min-width: 500px;
 }
 
-  /*******************************************\
-   *     Aside - vil være sidestolpe når     *
-   *     det er plass på skjermen            *
-  \*******************************************/
- aside{
-    border: 2px solid coral;
-    width:25%;
-    margin:0 3% ;
-    float:right;
-    padding: 0 .5em;
-    
-}
-#page-wrap::after{
-    content: "";
-    display: table;
-    clear: both;
-}
 } /*Media query ferdig*/
 
 /******************\
  *     Footer     *
 \******************/
-footer{
+#main-footer{
+    background-color: rgba(51, 51, 51, .5);
+    color: #fff;
+    padding: 20px ;
+    text-align: center;
     position: relative;
+    bottom: 0;
+    width: 100%;
     margin-top: 10rem;
-    background-color: #ddd;
-    padding: 5em ;
+}
+.footer-section{
+  margin-bottom: 20px;
+}
+.footer-section ul{
+  list-style: none;
+  padding: 0;
+}
+.footer-section ul li{
+  display: inline;
+  margin: 0 10px;
+}
+.footer-section ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+.footer-section ul li a:hover{
+  text-decoration: underline;
+}
+
+#footer-section-slutt{
+  background-color: #f7f7f7;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
 }

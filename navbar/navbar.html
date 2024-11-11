@@ -2,9 +2,112 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semesteroppgaven - tema01</title>
+    <link rel="stylesheet" href="..\CSS\main.css">
+    <link rel="stylesheet" href="..\CSS\aside.css">
+    <link rel="stylesheet" href="..\CSS\tema01style.css">
+    <link rel="stylesheet" href="..\CSS\mainNavBar.css">
+    <link rel="stylesheet" href="..\CSS\NAVBarNew.css">
+    <title> Hovedside </title>
 </head>
-<body>
 
+<div class="comment">
+    <p>William lager nav-bar med linker og eventuell plass til logo</p>
+</div>
+<!--The main wrapper for the navigation bar, nav defines navigation links -->
+<!--Use role for disability acessibility-->
+<nav class="mainNav" role="">
+    <!--A link to the logo -->
+    <a class="nav_logo" href="Logo"></a>
+    <ul id="main-menu" class="nav_menu" >
+        <li class="nav-li">
+            <a href="..\index.html">Hovedside</a>
+        </li>
+        <li  id="current-page" class="nav-li"><a href="tema01.html">Fase 1: Analysere/Forstå</a></li>
+        <li class="nav-li"><a href="Tema02.html">Fase 2: Design/Utforske</a></li>
+        <li class="nav-li"><a href="tema03.html">Fase 3: Virkeligjøre</a></li>
+        <li class="nav-li"><a href="tema04.html">Andre UtvikklingsFaser</a></li>
+        <li class="nav-li"><a href="tema05.html">Frukt</a></li>
+        <li class="nav-li"><a href="tema06.html">Tema 6</a></li>
+        <li class="nav-li"><a href="tema07.html">Tema 7</a></li>
+    </ul>
+     <li><a href="frukt.html" Frukt </a></li>
+    <ul class="dropdown">
+        <li><a href="bananer.html" Bananer </a></li>
+        <li><a href=""</a></li>
+    </ul>
+</nav>
+
+<body>
+<div id="page-wrap">
+    <p>Page-wrap får border og max-width ved en fastsatt pixel-bredde. Border er for vår del under utviklingen</p>
+    <div class="section-wrap">
+
+
+        <section id="section1-grid">
+            <p>Seksjon 1</p>
+            <h1>Du ser tema01 hovedinnhold</h1>
+
+            <a id="link1" href="#">
+                <img class = "image-link" src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg" alt="link web-design">
+            </a>
+            <a id="link2" href="#">
+                <img class = "image-link" src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg" alt="link web-design">
+            </a>
+            <a id="link3" href="#">
+                <img class = "image-link" src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg" alt="link web-design">
+            </a>
+            <a id="link4" href="#">
+                <img class = "image-link" src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg" alt="link web-design">
+            </a>
+
+
+        </section>
+        <section>
+            <p>Seksjon 2</p>
+            <h1>Du ser tema01 hovedinnhold del2</h1>
+        </section>
+    </div>
+    <aside>
+        <p>Sidestolpe</p>
+        <h2>Du ser tema01 landingssidens sidestolpe</h2>
+        <p> Denne stolpen vil ikke være en stolpe på skjermer med mindre enn 600px bredde.
+            Det er fordi sidestolper er dårlig nyheter for de med smal skjerm. Den blir stygg på stor skjerm også når den er altfor smal
+        </p>
+        <ul id="second-nav-bar">
+            <li class="nav-li"><a href="..\index.html">Home</a></li>
+            <li  id="current-page" class="nav-li"><a href="tema01.html">Tema 1</a></li>
+            <li class="nav-li"><a href="Tema02.html">Tema 2</a></li>
+            <li class="nav-li"><a href="tema03.html">Tema 3</a></li>
+            <li class="nav-li"><a href="tema04.html">Grønnsaker</a></li>
+            <li class="nav-li"><a href="tema05.html">Frukt</a></li>
+            <li class="nav-li"><a href="tema06.html">Tema 6</a></li>
+            <li class="nav-li"><a href="tema07.html">Tema 7</a></li>
+        </ul>
+    </aside>
+
+</div>
+<footer id="main-footer">
+    <div class="footer-content">
+
+    </div>
+    <div class="footer-section links">
+        <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="tema01.html">Tema 1</a></li>
+            <li><a href="Tema02.html">Tema 2</a></li>
+            <li><a href="tema03.html">Tema 3</a></li>
+            <li><a href="tema04.html">Tema 4</a></li>
+            <li><a href="tema05.html">Tema 5</a></li>
+            <li><a href="tema06.html">Tema 6</a></li>
+            <li><a href="tema07.html">Tema 7</a></li>
+        </ul>
+
+    </div>
+    <div class="footer-section-slutt">
+        <p>&copy; 2024 Gruppe 8.</p>
+    </div>
+</footer>
 </body>
 </html>

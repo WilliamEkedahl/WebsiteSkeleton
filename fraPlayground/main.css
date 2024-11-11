@@ -239,7 +239,7 @@ ul.drop>li>a:active{
   
   .breadcrumbs__item:before {
     background: #cbd2d9;
-    margin-left: 1px;
+    margin-left: 2px;
   }
   
   .breadcrumbs__item:last-child {
