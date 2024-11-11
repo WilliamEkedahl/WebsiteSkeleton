@@ -12,26 +12,61 @@
 <body>
     <script src="..\JS\dropMenu.js" defer></script>
 <nav>
-   
-   
-       
+    <!--back to the start page-->
+    <a class ="logo" href="logo.svg" alt="this is our logo"> </a>
+    <div class="dropdown" data-dropDown>
+        <button class="dropdown-items" data-dropDown-button> HOME </button>
+        <div class="dropdown-menu" dropdown-menu>
+            <ul>
+                <li class="dropdown-items"><a href="Tema02.html">HOME</a></li>
+            </ul>
+        </div>
+    </div>
 <!--Limt inn-->
-<a class ="logo" href="logo.svg" alt="this is our logo"> </a>
+
     <div class="dropdown" data-dropDown> 
         <button class="dropdown-items" data-dropDown-button> Bøker </button>
-        <div >
-        <ul id = "runar" class="dropdown information-grid dropdown-menu"   >
-            <li class="dropdown-items"><a href="Boker undersider/Harrypotter">HarryPotter</a></li>
-            <li class="dropdown-items"><a href="Boker undersider/diaryOfAWimpyKid.html">Diary Of A WimpyKid</a></li>
-            <li class="dropdown-items"><a href="Boker undersider/markedsforingsledelse.html"> Markedsföringsledelse</a></li>
-            <li class="dropdown-items"><a href="Boker undersider/mobyDick.html"> MobyDick</a></li>
-            <li class="dropdown-items"><a href="Boker undersider/NorskSvenskordbok.html"> NorskSvenskOrdbok</a></li>
-        </ul>
+        <div class="dropdown-menu" dropdown-menu>
+            <ul>
+                <li class="dropdown-items"><a href="Boker undersider/harrypotter.html">HarryPotter</a></li>
+                <li class="dropdown-items"><a href="Boker undersider/diaryOfAWimpyKid.html">Diary Of A WimpyKid</a></li>
+                <li class="dropdown-items"><a href="Boker undersider/markedsforingsledelse.html"> Markedsföringsledelse</a></li>
+                <li class="dropdown-items"><a href="Boker undersider/mobyDick.html"> MobyDick</a></li>
+                <li class="dropdown-items"><a href="Boker undersider/NorskSvenskordbok.html"> NorskSvenskOrdbok</a></li>
+            </ul>
+        </div>
     </div>
+    <!-- Biler Dropdown -->
+    <div class="dropdown" data-dropDown>
+        <button class="dropdown-items" data-dropDown-button> Biler </button>
+        <div class="dropdown-menu" dropdown-menu>
+            <ul>
+                <li class="dropdown-items"><a href="Biler undersider/Ferrari.html">Ferrari</a></li>
+                <li class="dropdown-items"><a href="Biler undersider/Ford.html">Ford</a></li>
+            </ul>
+        </div>
     </div>
-    
+    <!-- Frukt Dropdown -->
+    <div class="dropdown" data-dropDown>
+        <button class="dropdown-items" data-dropDown-button> Frukt </button>
+        <div class="dropdown-menu" dropdown-menu>
+            <ul>
+                <li class="dropdown-items"><a href="Frukt undersider/bananer.html">Bananer</a></li>
+                <li class="dropdown-items"><a href="Frukt undersider/salad.html">Salad</a></li>
+                <li class="dropdown-items"><a href="Frukt undersider/äpple.html">Epple</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Verktøy Dropdown -->
+    <div class="dropdown" data-dropDown>
+        <button class="dropdown-items" data-dropDown-button> Verktøy </button>
+        <div class="dropdown-menu" dropdown-menu>
+            <ul>
+                <li class="dropdown-items"><a href="Verktyg undersider/hammar.html">Hammar</a></li>
+            </ul>
+        </div>
+    </div>
 </nav>
-
 
 <div id="bakgrunn-wrap">
 <div id="background-img-data"></div>
