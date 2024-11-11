@@ -40,7 +40,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/background
 */
 
 html{
-  background:url("AI.jpeg") no-repeat center; 
+  background:url("../Bilder/AI.jpeg") no-repeat center; 
   height:3072px;
 }
 @media (min-width: 1440px) {
