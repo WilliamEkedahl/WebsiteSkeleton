@@ -11,7 +11,7 @@ nextDom.onclick=function(){
 prevDom.onclick=function(){
     showSlider('prev');
 }
-let timeAutoNext= 7000; //Dette er for at bildene skal gå automatisk uten å trykke på de
+let timeAutoNext= 1500; //Dette er for at bildene skal gå automatisk uten å trykke på de
 let runTimeOut;
 let runAutoRun = setTimeout(()=>{
     nextDom.click();
