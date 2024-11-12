@@ -40,13 +40,8 @@ background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-at
 https://developer.mozilla.org/en-US/docs/Web/CSS/background
 */
 html{
-<<<<<<< HEAD
   background:url("../Bilder/AI.jpeg") no-repeat center; 
   height:3072px;
-=======
-  background-color: rgb(6, 49, 63);
-  /*height:3072px;*/
->>>>>>> 51d56b00628026f282c2bfdfe6095bd83c635dab
 }
 body{
   background:url("../Bilder/AI.jpeg") no-repeat center; 

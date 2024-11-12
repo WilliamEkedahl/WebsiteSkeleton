@@ -1,13 +1,22 @@
+/**********************\
+ *     Hele siden     *
+\**********************/
+
+
 body {
     background-color: black;
     color: white;
     margin: 0;
     font-size: 17px;
 }
+
 a {
     text-decoration: none;
     color: white;
 }
+/***********************\
+ *     Øverste del     *
+\***********************/
 header {
     width: 1140px;
     max-width: 80%;
@@ -21,7 +30,9 @@ header {
 header a {
     margin-right: 60px;
 }
-
+/**************************\
+ *     Bakgrunnsbilde     *
+\**************************/
 .hovedbilde {
     width: 100vw;
     height: 100vh;
@@ -61,12 +72,23 @@ header a {
 .hovedbilde .list .item .content .topic{
     color: rgb(255, 102, 0);
 }
+/********************************\
+ *     Tre bilder på en rad     *
+\********************************/
 
-/*Tre bilder på en rad*/
+/* 
+box-sizing for hele siden ?
+Hvis den skal være for hele siden bør 
+den plasseres øverst.
+
+*/
 * {
   box-sizing: border-box;
 }
 
+/********************************\
+ *     Underbilder     *
+\********************************/
 .del1-underbilder {
   display: flex;          
   justify-content: center; 
@@ -80,46 +102,13 @@ header a {
 }
 
 /* Bilde og tekst */
-#main-footer{
-    background-color: rgba(51, 51, 51, .5);
-    color: #fff;
-    padding: 20px ;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    margin-top: 10rem;
-}
-.footer-section{
-  margin-bottom: 20px;
-}
-.footer-section ul{
-  list-style: none;
-  padding: 0;
-}
-.footer-section ul li{
-  display: inline;
-  margin: 0 10px;
-}
-.footer-section ul li a{
-  color: #fff;
-  text-decoration: none;
-  font-size: 0.9em;
-  font-weight: 600;
-}
-.footer-section ul li a:hover{
-  text-decoration: underline;
-}
-
-#footer-section-slutt{
-  background-color: #f7f7f7;
-  color: #fff;
-  padding: 40px 20px;
-  text-align: center;
-}
 
 
-/*Bilde med tekst 1*/
+
+/****************************\
+ *     Underbilder          *
+ *     Bilde med tekst 1    *
+\****************************/
 .Meg{
   background-color: rgb(243, 243, 243);
   display: flex;
@@ -170,8 +159,11 @@ header a {
   font-size: 25px; /*Størrelsen på tekst*/
 
 }
+/****************************\
+ *     Underbilder          *
+ *     Bilder2              *
+\****************************/
 
-/*Bilder2*/
 
 .Bilder2{
   background-color: rgb(243, 243, 243);
@@ -200,3 +192,44 @@ header a {
 
 }
 
+
+/******************\
+ *     Footer     *
+\******************/
+#main-footer{
+  background-color: rgba(51, 51, 51, .5);
+  color: #fff;
+  padding: 20px ;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 10rem;
+}
+.footer-section{
+margin-bottom: 20px;
+}
+.footer-section ul{
+list-style: none;
+padding: 0;
+}
+.footer-section ul li{
+display: inline;
+margin: 0 10px;
+}
+.footer-section ul li a{
+color: #fff;
+text-decoration: none;
+font-size: 0.9em;
+font-weight: 600;
+}
+.footer-section ul li a:hover{
+text-decoration: underline;
+}
+
+#footer-section-slutt{
+background-color: #f7f7f7;
+color: #fff;
+padding: 40px 20px;
+text-align: center;
+}
