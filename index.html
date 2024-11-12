@@ -6,6 +6,7 @@
     <title>Semesteroppgaven - Ny hovedside</title>
     <link rel="stylesheet" href="..\CSS\main.css">
     <link rel="stylesheet" href="..\CSS\styles02.css">
+    <link rel="stylesheet" href="..\CSS\homeindex.css">
     
 <link rel="stylesheet" href="..\CSS\mainNavBar.css">
 </head>
@@ -38,7 +39,7 @@
     </div>
     <!-- Biler Dropdown -->
     <div class="dropdown" data-dropDown>
-        <button class="dropdown-items" data-dropDown-button> Biler </button>
+        <button class="dropdown-items" data-dropDown-button> Design </button>
         <div class="dropdown-menu" dropdown-menu>
             <ul>
                 <li class="dropdown-items"><a href="Undersider\Biler undersider/Ferrari.html">Ferrari</a></li>
@@ -81,6 +82,55 @@
     </div>
 
 </nav>
+
+
+
+<!--Her starter carousel-->
+
+<div class="carousel"> <!--navnet på gruppen-->
+    <div class="list">
+      <div class="item"> <!--class er for hvilken gruppe de elementene tilhører. Vi kan sette flere elementer i en gruppe-->
+          <img src="..\Bilder\AI.jpeg">  <!--img er for bilde-->
+          <div class="content">
+              <div class="author">Gruppe 8</div> <!--Author, det er meg-->
+              <div class="title">Web og</div> <!--Hva jeg driver med. Dette er tittelen-->
+              <div class="topic">Systemutvikling</div> <!--Hva jeg viser nå. Derfor er fotografiene fremst-->
+          </div>
+      </div>
+      <div class="item">
+          <img src="..\Bilder\Data1.png">
+          <div class="content">
+              <div class="author">Gruppe 8</div>
+              <div class="title">Web og</div>
+              <div class="topic">Systemutvikling</div>
+          </div>
+      </div>
+      <div class="item">
+          <img src="..\Bilder\22.jpg">
+          <div class="content">
+              <div class="author">Gruppe 8</div>
+              <div class="title">Web og</div>
+              <div class="topic">Systemutvikling</div>
+          </div>
+      </div>
+    </div>
+    <div class="time"></div> <!--Time class ser på hvor lang tid animasjonen bruker--> 
+ </div>
+
+ <div class="thumbnail"> <!--navnet på gruppen-->
+     <div class="arrows">
+        <button id="prev"><</button> <!--Dette er for å trykke tilbake <button> i html er knapp-->
+        <button id="next">></button><!--Dette er for å trykke frem-->
+     </div>
+ </div>
+
+ <script src="java.js"></script>
+
+
+<!--Her slutter carousel-->
+
+
+
 
 <div id="bakgrunn-wrap">
 <div id="background-img-data"></div>

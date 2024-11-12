@@ -1,27 +1,29 @@
 body {
-    background-color: black;
-    color: white;
     margin: 0;
-    font-size: 17px;
+    font-size: 17px;   
 }
 a {
-    text-decoration: none;
-    color: white;
+    text-decoration: none;  /*Dette er for at det ikke skal være linjer under lenkene*/
+    
 }
-header {
-    width: 1140px;
-    max-width: 80%;
-    margin: auto;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    z-index: 100;
-}
-header a {
-    margin-right: 60px;
+/* Nav bar er der lenkene er på nettsiden */
+nav {
+  width: 100vw;           /* Full bredde */
+  max-width: 100%;        /* Max width er for at det skal dekke */
+  margin: 0;              
+  padding: .5rem 1rem;        /* Setter mellomrom */
+  display: flex;
+  align-items: center;
+  justify-content: space-around; 
+  background-color: #f3f3f3;
+  position: fixed;        /* Fikser nav på toppen */
+  top: 0;                 /* Dette sikrer på at den ligger på toppen. Lenkene skal ligge på toppen */
+  left: 0;
+  z-index: 100;
 }
 
+
+/* Hovedbilde som er på toppen */
 .hovedbilde {
     width: 100vw;
     height: 100vh;
@@ -55,11 +57,11 @@ header a {
 .hovedbilde .list .item .content .title,
 .hovedbilde .list .item .content .topic{
     font-weight: bold;
-    font-size: 3em;
+    font-size: 4em;
     list-style: 1.3em;
 }
 .hovedbilde .list .item .content .topic{
-    color: rgb(255, 102, 0);
+    color: rgb(57, 199, 251);            /*Fargen på ordet "Design".*/
 }
 
 /*Tre bilder på en rad*/
@@ -119,13 +121,13 @@ header a {
 }
 
 
-/*Bilde med tekst 1*/
+/*Bilde*/
 .Meg{
   background-color: rgb(243, 243, 243);
   display: flex;
   justify-content: space-between;
   padding: 120px;
-  width: 80vw;
+  width: 100vw;
   margin: 10rem auto 0 auto;
 }
 
@@ -144,12 +146,13 @@ header a {
   font-size: 25px; /*Størrelsen på tekst*/
 }
 
+/* Bilder med tekst */
 .Bilder{
   background-color: black;
   display: flex;
   justify-content: space-between;
   padding: 80px;
-  width: 80vw;
+  width: 100vw;
   margin: 10rem auto 0 auto;
 }
 
@@ -178,7 +181,7 @@ header a {
   display: flex;
   justify-content: space-between;
   padding: 80px;
-  width: 80vw;
+  width: 100vw;
   margin: 10rem auto 0 auto;
 }
 
@@ -195,8 +198,84 @@ header a {
 
 .Bilder2 p{
   color: black;
+  margin-right: 80px; /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden*/
+  font-size: 25px; /*Størrelsen på tekst*/
+
+}
+
+/* Bilde med tekst, gruppe tre */
+.Bilder3{
+  background-color: rgb(243, 243, 243);
+  display: flex;
+  justify-content: space-between;
+  padding: 120px;
+  width: 100vw;
+  margin: 10rem auto 0 auto;
+}
+
+.Bilder3 img{
+  height: 600px;  
+
+}
+.Bilder3 h1{
+  margin:0;
+  color: black;
+  font-size: 50px;
+}
+.Bilder3 p{
+  color: black;
+  margin-right: 60px; /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden*/
+  font-size: 25px; /*Størrelsen på tekst*/
+}
+/* Bilder4 */
+.Bilder4{
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+  width: 100vw;
+  margin: 10rem auto 0 auto;
+}
+
+.Bilder4 img{
+  height: 600px;
+
+}
+
+.Bilder4 h1{
+  margin:0;
+  color: white;
+  font-size: 50px;
+}
+
+.Bilder4 p{
+  color: white;
   margin-right: 70px; /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden*/
   font-size: 25px; /*Størrelsen på tekst*/
 
 }
+
+  .Kilder{
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    justify-content: space-between;
+    padding: 120px;
+    width: 100vw;
+    margin: 10rem auto 0 auto;
+  }
+  
+  .Kilder img{
+    height: 600px;  
+  
+  }
+  .Kilder h1{
+    margin:0;
+    color: black;
+    font-size: 50px;
+  }
+  .Kilder p{
+    color: black;
+    margin-right: 60px; /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden*/
+    font-size: 25px; /*Størrelsen på tekst*/
+  }
 
