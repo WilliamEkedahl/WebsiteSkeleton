@@ -13,6 +13,26 @@ nav{
     gap: 1rem; 
     z-index: 3;
 }
+
+/*********************************************************\
+*     For å få knappene til ikke å se ut som knapper     *
+*     De skal være knapper fordi de ikke er linker       *
+\*********************************************************/
+
+
+#nav-buttons{
+    background: none;
+    border:none;
+    text-decoration: none;
+    color: #777;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+
+
+
 /*****************************************************
  *** Linkene/knappene i nav-baren har klassen link ***
  *** Knapper som klikkes på viser flere linker     ***
