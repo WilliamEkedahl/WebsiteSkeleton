@@ -40,13 +40,13 @@ background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-at
 https://developer.mozilla.org/en-US/docs/Web/CSS/background
 */
 html{
-  background:url("../Bilder/AI.jpeg") no-repeat center; 
-  height:3072px;
+  /* background:url("../Bilder/AI.jpeg") no-repeat center;
+  height:3072px; */
 }
 body{
-  background:url("../Bilder/AI.jpeg") no-repeat center; 
+ /* background:url("../Bilder/AI.jpeg") no-repeat center;
   background-position: 50% 0%;
-  height:1080px;
+  height:1080px; */
 }
 
 @media (min-width: 1440px) {

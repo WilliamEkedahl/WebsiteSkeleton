@@ -4,25 +4,6 @@ body {
 }
 a {
     text-decoration: none;  /*Dette er for at det ikke skal være linjer under lenkene*/
-    
-}
-/* Nav bar er der lenkene er på nettsiden */
-nav {
-  width: 100vw;           /* Full bredde */
-  max-width: 100%;        /* Max width er for at det skal dekke */
-  margin: 0;              
-  padding: .5rem 1rem;        /* Setter mellomrom */
-  display: flex;
-  align-items: center;
-  justify-content: space-around; 
-  background-color: #f3f3f3;
-  position: fixed;        /* Fikser nav på toppen */
-  top: 0;                 /* Dette sikrer på at den ligger på toppen. Lenkene skal ligge på toppen */
-  left: 0;
-  z-index: 100;
-}
-
-
 
 /*carousel*/
 .carousel{
@@ -87,7 +68,7 @@ nav {
     border: none;
     background-color: white;
     letter-spacing: 3px;
-    font-family: Poppins;
+    font-family: Poppins, sans-serif; /* uses generic font sans-serif incase font is not avialable */
     font-weight: 500;
 }
 
@@ -263,7 +244,6 @@ nav {
 .carousel.next .arrows button,
 .carousel.next .arrows button{
     pointer-events: none;
-
 }
 
 

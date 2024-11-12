@@ -1,3 +1,4 @@
+//om vi vill använda skriv - KILDA Victoria :)
 let nextDom=document.getElementById('next');  //Knappen next
 let prevDom=document.getElementById('prev');  //knappen før
 let carouselDom=document.querySelector('.carousel'); //Dette er fra html <div class="carousel">
