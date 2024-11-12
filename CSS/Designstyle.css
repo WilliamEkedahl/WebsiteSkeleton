@@ -33,11 +33,11 @@ header {
 \**************************/
 /* Hovedbilde som er på toppen */
 .hovedbilde {
+
     width: 100vw;
     height: 100vh;
     overflow: hidden;
     position: relative;
-    margin-top: -50px;
     padding: 20px;
 }
 
@@ -89,7 +89,7 @@ den plasseres øverst.
  *     Underbilder     *
 \********************************/
 .del1-underbilder {
-  display: flex;          
+  display: flex;
   justify-content: center; 
   gap: 10px;               /* setter distanse mellom de*/
   padding: 5px;
@@ -102,92 +102,97 @@ den plasseres øverst.
 
 /* Bilde og tekst */
 
+@media (min-width: 1440px) {
+  
+
+  
+
+
 /****************************\
  *     Grid                 *
 \****************************/
+#text1-bilde,
+#text2-bilde,
+#text3-bilde,
+#text4-bilde,
+#text5-bilde
+{width:100%;}
 
-#section1{
+#section2{
   border: 5px solid green;
   display: grid;
 
-  grid-template-rows: repeat(16,minmax(100px,1fr)) ;
+  grid-template-rows: repeat(15,minmax(100px,1fr)) ;
   /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
-  grid-template-columns: 1fr repeat(4,minmax(50px,2fr)) 1fr;
+  grid-template-columns: repeat(5,minmax(50px,1fr));
 
 }
 
 #bilde-med-tekst1{
-grid-column: 2/10;
-grid-row: 1/10;
-}
-#bilde-med-tekst2{
+  border:5px solid coral;
 
+grid-column: 1/-1;
+grid-row: 1/4;
+
+}
+
+#bilde-med-tekst2{
+  grid-column: 1/-1;
+  grid-row: 4/7;
 }
 #bilde-med-tekst3{
-
+  grid-column: 1/-1;
+  grid-row: 7/10;
 }
 #bilde-med-tekst4{
-
+  grid-column: 1/-1;
+  grid-row: 10/13;
 }
 
+#bilde-med-tekst5{
+  grid-column: 1/-1;
+  grid-row: 13/16;
+}
+
+.text{
+  align-self: center;
+  
+  }
+  
+  figure{}
 
 
-#section2{
-  border: 5px solid green;
 
+}/*Media query ferdig*/
+@media (max-width: 600px) {
+
+
+  .Meg,.Bilder, .Bilder3, .Bilder4, .Kilder{
+
+  flex-wrap: wrap;
+  
+    
+  }
 }
 
 /****************************\
  *     Underbilder          *
  *     Bilde med tekst 1    *
 \****************************/
-#main-footer{
-    background-color: rgba(51, 51, 51, .5);
-    color: #fff;
-    padding: 20px ;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    margin-top: 10rem;
-}
-.footer-section{
-  margin-bottom: 20px;
-}
-.footer-section ul{
-  list-style: none;
-  padding: 0;
-}
-.footer-section ul li{
-  display: inline;
-  margin: 0 10px;
-}
-.footer-section ul li a{
-  color: #fff;
-  text-decoration: none;
-  font-size: 0.9em;
-  font-weight: 600;
-}
-.footer-section ul li a:hover{
-  text-decoration: underline;
-}
 
-#footer-section-slutt{
-  background-color: #f7f7f7;
-  color: #fff;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-
-/*Bilde*/
+/*Første bilde med tekst container*/
 .Meg{
   background-color: rgb(243, 243, 243);
   display: flex;
   justify-content: space-between;
-  padding: 120px;
+  padding: 120px; 
+  /*
+  Full bredde av viewport:
   width: 100vw;
+
+
   margin: 10rem auto 0 auto;
+  */  
 }
 
 .Meg img{
@@ -211,8 +216,9 @@ grid-row: 1/10;
   display: flex;
   justify-content: space-between;
   padding: 80px;
-  width: 100vw;
+  /*width: 100vw;
   margin: 10rem auto 0 auto;
+  */
 }
 
 .Bilder img{
@@ -243,8 +249,9 @@ grid-row: 1/10;
   display: flex;
   justify-content: space-between;
   padding: 80px;
-  width: 100vw;
+  /* width: 100vw; 
   margin: 10rem auto 0 auto;
+  */
 }
 
 .Bilder2 img{
@@ -260,7 +267,9 @@ grid-row: 1/10;
 
 .Bilder2 p{
   color: black;
-  margin-right: 80px; /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden*/
+  /*
+  margin-right: 80px; /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden
+  */
   font-size: 25px; /*Størrelsen på tekst*/
 
 }
@@ -271,8 +280,11 @@ grid-row: 1/10;
   display: flex;
   justify-content: space-between;
   padding: 120px;
+  /*
   width: 100vw;
+  
   margin: 10rem auto 0 auto;
+  */
 }
 
 .Bilder3 img{
@@ -295,8 +307,11 @@ grid-row: 1/10;
   display: flex;
   justify-content: space-between;
   padding: 80px;
+  /*
   width: 100vw;
+  
   margin: 10rem auto 0 auto;
+  */
 }
 
 .Bilder4 img{
@@ -312,7 +327,9 @@ grid-row: 1/10;
 
 .Bilder4 p{
   color: white;
-  margin-right: 70px; /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden*/
+  /*
+  margin-right: 70px; /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden
+  */
   font-size: 25px; /*Størrelsen på tekst*/
 
 }
@@ -322,8 +339,9 @@ grid-row: 1/10;
     display: flex;
     justify-content: space-between;
     padding: 120px;
-    width: 100vw;
+    /* width: 100vw; 
     margin: 10rem auto 0 auto;
+    */
   }
   
   .Kilder img{
@@ -337,7 +355,50 @@ grid-row: 1/10;
   }
   .Kilder p{
     color: black;
+    /*
     margin-right: 60px; /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden*/
     font-size: 25px; /*Størrelsen på tekst*/
   }
+
+
+/*******************\
+ *     Footer      *
+\*******************/
+#main-footer{
+  background-color: rgba(51, 51, 51, .5);
+  color: #fff;
+  padding: 20px ;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 10rem;
+}
+.footer-section{
+margin-bottom: 20px;
+}
+.footer-section ul{
+list-style: none;
+padding: 0;
+}
+.footer-section ul li{
+display: inline;
+margin: 0 10px;
+}
+.footer-section ul li a{
+color: #fff;
+text-decoration: none;
+font-size: 0.9em;
+font-weight: 600;
+}
+.footer-section ul li a:hover{
+text-decoration: underline;
+}
+
+#footer-section-slutt{
+background-color: #f7f7f7;
+color: #fff;
+padding: 40px 20px;
+text-align: center;
+}
 
