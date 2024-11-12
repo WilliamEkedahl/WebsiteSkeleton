@@ -7,66 +7,83 @@
     <link rel="stylesheet" href="..\CSS\main.css">
     <link rel="stylesheet" href="..\CSS\styles02.css">
     <link rel="stylesheet" href="..\CSS\homeindex.css">
-    
-<link rel="stylesheet" href="..\CSS\mainNavBar.css">
+
+    <link rel="stylesheet" href="../CSS/mainNavBar.css">
 </head>
 <body>
-    <script src="..\JS\dropMenu.js" defer></script>
+<script src="../JS/dropMenu.js" defer></script>
 <nav>
-    <!--back to the start page-->
-    <a class ="logo" href="logo.svg" alt="this is our logo"> </a>
+    <!-- Back to the start page -->
+    <a class="logo" href="logo.svg" alt="This is our logo"> </a>
+
+    <!-- Home Dropdown -->
     <div class="dropdown" data-dropDown>
-        <button id = "nav-buttons" class="dropdown-items" data-dropDown-button> HOME </button>
+        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> HOME </button>
         <div class="dropdown-menu" dropdown-menu>
             <ul>
                 <li class="dropdown-items"><a href="index.html">HOME</a></li>
             </ul>
         </div>
     </div>
-    <div class="dropdown" data-dropDown> 
-        <button id = "nav-buttons" class="dropdown-items" data-dropDown-button> Bøker </button>
-        <div class="dropdown-menu" dropdown-menu>
-            <ul>
-                <li class="dropdown-items"><a href="Undersider\Boker undersider/harrypotter.html">HarryPotter</a></li>
-                <li class="dropdown-items"><a href="Undersider\Boker undersider/diaryOfAWimpyKid.html">Diary Of A WimpyKid</a></li>
-                <li class="dropdown-items"><a href="Undersider\Boker undersider/markedsforingsledelse.html"> Markedsföringsledelse</a></li>
-                <li class="dropdown-items"><a href="Undersider\Boker undersider/mobyDick.html"> MobyDick</a></li>
-                <li class="dropdown-items"><a href="Undersider\Boker undersider/NorskSvenskordbok.html"> NorskSvenskOrdbok</a></li>
-            </ul>
-        </div>
-    </div>
-    <!-- Biler Dropdown -->
-    <div class="dropdown" data-dropDown>
-        <button class="dropdown-items" data-dropDown-button> Design </button>
 
-        <button id = "nav-buttons" class="dropdown-items" data-dropDown-button> Biler </button>
-        <div class="dropdown-menu" dropdown-menu>
-            <ul>
-                <li class="dropdown-items"><a href="Undersider\Biler undersider/Ferrari.html">Ferrari</a></li>
-                <li class="dropdown-items"><a href="Undersider\Biler undersider/Ford.html">Ford</a></li>
-            </ul>
-        </div>
-    </div>
-    <!-- Frukt Dropdown -->
+    <!-- Fase 1 Dropdown -->
     <div class="dropdown" data-dropDown>
-        <button id = "nav-buttons" class="dropdown-items" data-dropDown-button> Frukt </button>
+        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Analysere </button>
         <div class="dropdown-menu" dropdown-menu>
             <ul>
-                <li class="dropdown-items"><a href="Undersider\Frukt undersider/bananer.html">Bananer</a></li>
-                <li class="dropdown-items"><a href="Undersider\Frukt undersider/salad.html">Salad</a></li>
-                <li class="dropdown-items"><a href="Undersider\Frukt undersider/äpple.html">Epple</a></li>
+                <li class="dropdown-items"><a href="Undersider_Fase1/Personas.html">Personas</a></li>
+                <li class="dropdown-items"><a href="Undersider_Fase1/IA.html">IA</a></li>
             </ul>
         </div>
     </div>
-    <!-- Verktøy Dropdown -->
+
+    <!-- Fase 2 Dropdown -->
     <div class="dropdown" data-dropDown>
-        <button id = "nav-buttons" class="dropdown-items" data-dropDown-button> Verktøy </button>
+        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Design </button>
         <div class="dropdown-menu" dropdown-menu>
             <ul>
-                <li class="dropdown-items"><a href="Undersider\Verktyg undersider/hammar.html">Hammar</a></li>
+                <li class="dropdown-items"><a href="Undersider_Fase2/WireFrames.html">WireFrames</a></li>
+                <li class="dropdown-items"><a href="Undersider_Fase2/Design.html">Design</a></li>
+                <li class="dropdown-items"><a href="Undersider_Fase2/UX.html">UX</a></li>
             </ul>
         </div>
     </div>
+
+    <!-- Fase 3 Dropdown -->
+    <div class="dropdown" data-dropDown>
+        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Virkeligjøre </button>
+        <div class="dropdown-menu" dropdown-menu>
+            <ul>
+                <li class="dropdown-items"><a href="Undersider_Fase3/WCAG_kriteriene.html">WCAG Kriteriene</a></li>
+                <li class="dropdown-items"><a href="Undersider_Fase3/css.html">CSS</a></li>
+                <li class="dropdown-items"><a href="Undersider_Fase3/html.html">HTML</a></li>
+                <li class="dropdown-items"><a href="Undersider_Fase3/universell_utforming.html">Universell Utforming</a></li>
+                <li class="dropdown-items"><a href="Undersider_Fase3/Brukertesting.html">Brukertesting</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Systemutvecklings Metodik Dropdown -->
+    <div class="dropdown" data-dropDown>
+        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Systemutvecklings Metodik </button>
+        <div class="dropdown-menu" dropdown-menu>
+            <ul>
+                <li class="dropdown-items"><a href="Undersider_Systemutvecklings_Metodik/Agile_Metoder.html">Agile Metoder</a></li>
+                <li class="dropdown-items"><a href="Undersider_Systemutvecklings_Metodik/Tradisjonelle_Metoder.html">Tradisjonelle Metoder</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Kilder Dropdown -->
+    <div class="dropdown" data-dropDown>
+        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Kilder </button>
+        <div class="dropdown-menu" dropdown-menu>
+            <ul>
+                <li class="dropdown-items"><a href="Undersider_Kilder/Kilder.html">Kilder</a></li>
+            </ul>
+        </div>
+    </div>
+
 </nav>
 
 <div class="Headerbar"> <!--navnet på gruppen-->

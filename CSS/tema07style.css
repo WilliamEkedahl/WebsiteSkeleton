@@ -117,7 +117,8 @@ den plasseres øverst.
 }
 
 #bilde-med-tekst1{
-
+grid-column: 2/10;
+grid-row: 1/10;
 }
 #bilde-med-tekst2{
 
