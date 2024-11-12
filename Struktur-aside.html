@@ -8,7 +8,76 @@
     <link rel="stylesheet" href="CSS\aside.css"> 
 <link rel="stylesheet" href="CSS\mainNavBar.css">
 </head>
-<nav></nav>
+<nav>
+    <!--back to the start page-->
+    
+    <a id = "logo" href="index.html" alt="this is our logo">
+        <img src="logo.svg" alt=""> Logo her </a>
+    <a  href="#erstatt1" >Hjem-link</a>
+    
+    
+    
+<!--Bøker Dropdown-->
+
+    <div class="dropdown" data-dropDown> 
+        <button id = "nav-buttons" class="dropdown-items" data-dropDown-button> Analysere og forstå</button>
+        <div class="dropdown-menu" dropdown-menu>
+            <ul>
+                <li class="dropdown-items"><a href="#erstatt2">Personas</a></li>
+                <li class="dropdown-items"><a href="#erstatt3">IA</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Biler Dropdown -->
+    <div class="dropdown" data-dropDown>
+        <button id = "nav-buttons" class="dropdown-items" data-dropDown-button> Designe og utforske </button>
+        <div class="dropdown-menu" dropdown-menu>
+            <ul>
+                <li class="dropdown-items"><a href="#erstatt4">Wireframes</a></li>
+                <li class="dropdown-items"><a href="#erstatt5">Designvalg</a></li>
+                <li class="dropdown-items"><a href="#erstatt6">Webutvikling</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Frukt Dropdown -->
+    <div class="dropdown" data-dropDown>
+        <button id = "nav-buttons" class="dropdown-items" data-dropDown-button>Virkeliggjøre</button>
+        <div class="dropdown-menu" dropdown-menu>
+            <ul>
+                <li class="dropdown-items"><a href="#erstatt7">Brukertesting</a></li>
+                <li class="dropdown-items"><a href="#erstatt8">Kilder</a></li>
+                <li class="dropdown-items"><a href="#erstatt9">HTML og CSS</a></li>
+                <li class="dropdown-items"><a href="#erstatt10">KildWCAG-kriteriene</a></li>
+                <li class="dropdown-items"><a href="#erstatt11">Universell-utforming</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Verktøy Dropdown -->
+    <div class="dropdown" data-dropDown>
+        <button id = "nav-buttons" class="dropdown-items" data-dropDown-button> Annet </button>
+        <div class="dropdown-menu" dropdown-menu>
+            <ul>
+                <li class="dropdown-items"><a href="#erstatt12">Refleksjonsnotat til oppgaven</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="Headerbar"> <!--navnet på gruppen-->
+    <div class="list">
+        <div class="item">
+            <!--class er for hvilken gruppe de elementene tilhører. Vi kan sette flere elementer i en gruppe-->
+           
+            <div class="content">
+                <div class="title">Web og systemutvikling</div> <!--Hva jeg driver med. Dette er tittelen-->
+                <div class="topic">Programmering</div> <!--Hva jeg viser nå. Derfor er fotografiene fremst-->
+            </div>
+        </div>
+    </div>
+
+</nav>
+
 <body>
     <div id="page-wrap">
         <p>Page-wrap får border og max-width ved en fastsatt pixel-bredde. Border er for vår del under utviklingen</p>

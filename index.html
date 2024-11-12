@@ -4,66 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semesteroppgaven - Ny hovedside</title>
-    <link rel="stylesheet" href="..\CSS\main.css">
-    <link rel="stylesheet" href="..\CSS\hovedside.css">
-    <link rel="stylesheet" href="..\CSS\hovedside02.css">
+    <link rel="stylesheet" href="CSS\main.css">
     
-<link rel="stylesheet" href="..\CSS\mainNavBar.css">
+    <link rel="stylesheet" href="CSS\hovedside.css">
+    <link rel="stylesheet" href="CSS\hovedside02.css">
+    <link rel="stylesheet" href="..\CSS\mainNavBar.css">
+    
 </head>
 <body>
     <script src="..\JS\dropMenu.js" defer></script>
 <nav>
     <!--back to the start page-->
-    <a class ="logo" href="logo.svg" alt="this is our logo"> </a>
-    <div class="dropdown" data-dropDown>
-        <button id = "nav-buttons" class="dropdown-items" data-dropDown-button> HOME </button>
-        <div class="dropdown-menu" dropdown-menu>
-            <ul>
-                <li class="dropdown-items"><a href="index.html">HOME</a></li>
-            </ul>
-        </div>
-    </div>
-<!--Limt inn-->
+    
+    <a id = "logo" href="index.html" alt="this is our logo">
+        <img src="logo.svg" alt=""> Logo her </a>
+    <a  href="#erstatt1" >Hjem-link</a>
+    
+    
+    
+<!--Bøker Dropdown-->
 
     <div class="dropdown" data-dropDown> 
-        <button id = "nav-buttons" class="dropdown-items" data-dropDown-button> Bøker </button>
+        <button id = "nav-buttons" class="dropdown-items" data-dropDown-button> Analysere og forstå</button>
         <div class="dropdown-menu" dropdown-menu>
             <ul>
-                <li class="dropdown-items"><a href="Undersider\Boker undersider/harrypotter.html">HarryPotter</a></li>
-                <li class="dropdown-items"><a href="Undersider\Boker undersider/diaryOfAWimpyKid.html">Diary Of A WimpyKid</a></li>
-                <li class="dropdown-items"><a href="Undersider\Boker undersider/markedsforingsledelse.html"> Markedsföringsledelse</a></li>
-                <li class="dropdown-items"><a href="Undersider\Boker undersider/mobyDick.html"> MobyDick</a></li>
-                <li class="dropdown-items"><a href="Undersider\Boker undersider/NorskSvenskordbok.html"> NorskSvenskOrdbok</a></li>
+                <li class="dropdown-items"><a href="#erstatt2">Personas</a></li>
+                <li class="dropdown-items"><a href="#erstatt3">IA</a></li>
             </ul>
         </div>
     </div>
+
     <!-- Biler Dropdown -->
     <div class="dropdown" data-dropDown>
-        <button id = "nav-buttons" class="dropdown-items" data-dropDown-button> Design </button>
+        <button id = "nav-buttons" class="dropdown-items" data-dropDown-button> Designe og utforske </button>
         <div class="dropdown-menu" dropdown-menu>
             <ul>
-                <li class="dropdown-items"><a href="Undersider\Biler undersider/Ferrari.html">Ferrari</a></li>
-                <li class="dropdown-items"><a href="Undersider\Biler undersider/Ford.html">Ford</a></li>
+                <li class="dropdown-items"><a href="#erstatt4">Wireframes</a></li>
+                <li class="dropdown-items"><a href="#erstatt5">Designvalg</a></li>
+                <li class="dropdown-items"><a href="#erstatt6">Webutvikling</a></li>
             </ul>
         </div>
     </div>
     <!-- Frukt Dropdown -->
     <div class="dropdown" data-dropDown>
-        <button id = "nav-buttons" class="dropdown-items" data-dropDown-button> Frukt </button>
+        <button id = "nav-buttons" class="dropdown-items" data-dropDown-button>Virkeliggjøre</button>
         <div class="dropdown-menu" dropdown-menu>
             <ul>
-                <li class="dropdown-items"><a href="Undersider\Frukt undersider/bananer.html">Bananer</a></li>
-                <li class="dropdown-items"><a href="Undersider\Frukt undersider/salad.html">Salad</a></li>
-                <li class="dropdown-items"><a href="Undersider\Frukt undersider/äpple.html">Epple</a></li>
+                <li class="dropdown-items"><a href="#erstatt7">Brukertesting</a></li>
+                <li class="dropdown-items"><a href="#erstatt8">Kilder</a></li>
+                <li class="dropdown-items"><a href="#erstatt9">HTML og CSS</a></li>
+                <li class="dropdown-items"><a href="#erstatt10">KildWCAG-kriteriene</a></li>
+                <li class="dropdown-items"><a href="#erstatt11">Universell-utforming</a></li>
             </ul>
         </div>
     </div>
     <!-- Verktøy Dropdown -->
     <div class="dropdown" data-dropDown>
-        <button id = "nav-buttons" class="dropdown-items" data-dropDown-button> Verktøy </button>
+        <button id = "nav-buttons" class="dropdown-items" data-dropDown-button> Annet </button>
         <div class="dropdown-menu" dropdown-menu>
             <ul>
-                <li class="dropdown-items"><a href="Undersider\Verktyg undersider/hammar.html">Hammar</a></li>
+                <li class="dropdown-items"><a href="#erstatt12">Refleksjonsnotat til oppgaven</a></li>
             </ul>
         </div>
     </div>
@@ -146,7 +146,7 @@
             <section id="section1-grid">
                 
                 <h1>Tema 02</h1>
-                <a id="link1" href="#">
+                <a id="link1" href="#erstatt-a">
                     <img class="image-link"
                         src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg"
                         alt="link web-design">
@@ -156,12 +156,12 @@
 
                 </p>
                 
-                <a id="link3" href="#">
+                <a id="link3" href="#erstatt-b">
                     <img class="image-link"
                         src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg"
                         alt="link web-design">
                 </a>
-                <a id="link4" href="#">
+                <a id="link4" href="#erstatt-c">
                     <img class="image-link"
                         src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg"
                         alt="link web-design">
@@ -171,22 +171,22 @@
             <section id="section2-grid">
                 <p>Tema02</p>
                 <h1>Tema 2 seksjon 2</h1>
-                <a id="link5" href="#">
+                <a id="link5" href="#erstatt-d">
                     <img class="image-link"
                         src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg"
                         alt="link web-design">
                 </a>
-                <a id="link6" href="#">
+                <a id="link6" href="#erstatt-e">
                     <img class="image-link"
                         src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg"
                         alt="link web-design">
                 </a>
-                <a id="link7" href="#">
+                <a id="link7" href="#erstatt-f">
                     <img class="image-link"
                         src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg"
                         alt="link web-design">
                 </a>
-                <a id="link8" href="#">
+                <a id="link8" href="#erstatt-g">
                     <img class="image-link"
                         src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg"
                         alt="link web-design">
