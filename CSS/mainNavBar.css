@@ -11,7 +11,7 @@ nav{
     display: flex;
     padding: .5rem;
     gap: 1rem; 
-    z-index: 3;
+    z-index: 10;
 }
 
 /*********************************************************\
@@ -29,6 +29,11 @@ nav{
     font-size: inherit;
     cursor: pointer;
     padding: 0;
+}
+
+#Kilder-dropdown {
+    margin-left: auto;
+    margin-right: 10px;
 }
 
 
@@ -72,7 +77,10 @@ nav{
     box-shadow:2px 2px 5px black;
     transform: translateY(-1em);
     transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    transform: translatex(-50%);
+    right: auto;
     z-index: 3;
+
 
 }
 

@@ -12,76 +12,80 @@
 </head>
 
 <body>
-    <nav>
-        <!--back to the start page-->
-        
-        <a id = "logo" href="index.html" alt="this is our logo">
-            <img src="logo.svg" alt=""> Logo her </a>
-        <a  href="#erstatt1" >Hjem-link</a>
-        
-        
-        
-    <!--Bøker Dropdown-->
-    
-        <div class="dropdown" data-dropDown> 
-            <button id = "nav-buttons" class="dropdown-items" data-dropDown-button> Analysere og forstå</button>
-            <div class="dropdown-menu" dropdown-menu>
-                <ul>
-                    <li class="dropdown-items"><a href="#erstatt2">Personas</a></li>
-                    <li class="dropdown-items"><a href="#erstatt3">IA</a></li>
-                </ul>
-            </div>
+<script src="../JS/dropMenu.js" defer></script>
+
+<nav>
+    <!-- Back to the start page -->
+    <a class="logo" href="logo.svg" alt="This is our logo"> </a>
+
+    <!-- Home Dropdown -->
+    <div class="dropdown" data-dropDown>
+        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> HOME </button>
+        <div class="dropdown-menu" dropdown-menu>
+            <ul>
+                <li class="dropdown-items"><a href="index.html">HOME</a></li>
+            </ul>
         </div>
-    
-        <!-- Biler Dropdown -->
-        <div class="dropdown" data-dropDown>
-            <button id = "nav-buttons" class="dropdown-items" data-dropDown-button> Designe og utforske </button>
-            <div class="dropdown-menu" dropdown-menu>
-                <ul>
-                    <li class="dropdown-items"><a href="#erstatt4">Wireframes</a></li>
-                    <li class="dropdown-items"><a href="#erstatt5">Designvalg</a></li>
-                    <li class="dropdown-items"><a href="#erstatt6">Webutvikling</a></li>
-                </ul>
-            </div>
+    </div>
+
+    <!-- Fase 1 Dropdown -->
+    <div class="dropdown" data-dropDown>
+        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Analysere </button>
+        <div class="dropdown-menu" dropdown-menu>
+            <ul>
+                <li class="dropdown-items"><a href="Undersider_Fase1/Personas.html">Personas</a></li>
+                <li class="dropdown-items"><a href="Undersider_Fase1/IA.html">IA</a></li>
+            </ul>
         </div>
-        <!-- Frukt Dropdown -->
-        <div class="dropdown" data-dropDown>
-            <button id = "nav-buttons" class="dropdown-items" data-dropDown-button>Virkeliggjøre</button>
-            <div class="dropdown-menu" dropdown-menu>
-                <ul>
-                    <li class="dropdown-items"><a href="#erstatt7">Brukertesting</a></li>
-                    <li class="dropdown-items"><a href="#erstatt8">Kilder</a></li>
-                    <li class="dropdown-items"><a href="#erstatt9">HTML og CSS</a></li>
-                    <li class="dropdown-items"><a href="#erstatt10">KildWCAG-kriteriene</a></li>
-                    <li class="dropdown-items"><a href="#erstatt11">Universell-utforming</a></li>
-                </ul>
-            </div>
+    </div>
+
+    <!-- Fase 2 Dropdown -->
+    <div class="dropdown" data-dropDown>
+        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Design </button>
+        <div class="dropdown-menu" dropdown-menu>
+            <ul>
+                <li class="dropdown-items"><a href="Undersider_Fase2/WireFrames.html">WireFrames</a></li>
+                <li class="dropdown-items"><a href="Undersider_Fase2/Design.html">Design</a></li>
+                <li class="dropdown-items"><a href="Undersider_Fase2/UX.html">UX</a></li>
+            </ul>
         </div>
-        <!-- Verktøy Dropdown -->
-        <div class="dropdown" data-dropDown>
-            <button id = "nav-buttons" class="dropdown-items" data-dropDown-button> Annet </button>
-            <div class="dropdown-menu" dropdown-menu>
-                <ul>
-                    <li class="dropdown-items"><a href="#erstatt12">Refleksjonsnotat til oppgaven</a></li>
-                </ul>
-            </div>
+    </div>
+
+    <!-- Fase 3 Dropdown -->
+    <div class="dropdown" data-dropDown>
+        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Virkeligjøre </button>
+        <div class="dropdown-menu" dropdown-menu>
+            <ul>
+                <li class="dropdown-items"><a href="Undersider_Fase3/WCAG_kriteriene.html">WCAG Kriteriene</a></li>
+                <li class="dropdown-items"><a href="Undersider_Fase3/css.html">CSS</a></li>
+                <li class="dropdown-items"><a href="Undersider_Fase3/html.html">HTML</a></li>
+                <li class="dropdown-items"><a href="Undersider_Fase3/universell_utforming.html">Universell Utforming</a></li>
+                <li class="dropdown-items"><a href="Undersider_Fase3/Brukertesting.html">Brukertesting</a></li>
+            </ul>
         </div>
-    </nav>
-    
-    <div class="Headerbar"> <!--navnet på gruppen-->
-        <div class="list">
-            <div class="item">
-                <!--class er for hvilken gruppe de elementene tilhører. Vi kan sette flere elementer i en gruppe-->
-               
-                <div class="content">
-                    <div class="title">Web og systemutvikling</div> <!--Hva jeg driver med. Dette er tittelen-->
-                    <div class="topic">Programmering</div> <!--Hva jeg viser nå. Derfor er fotografiene fremst-->
-                </div>
-            </div>
+    </div>
+
+    <!-- Systemutvecklings Metodik Dropdown -->
+    <div class="dropdown" data-dropDown>
+        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Systemutvecklings Metodik </button>
+        <div class="dropdown-menu" dropdown-menu>
+            <ul>
+                <li class="dropdown-items"><a href="Undersider_Systemutvecklings_Metodik/Agile_Metoder.html">Agile Metoder</a></li>
+                <li class="dropdown-items"><a href="Undersider_Systemutvecklings_Metodik/Tradisjonelle_Metoder.html">Tradisjonelle Metoder</a></li>
+            </ul>
         </div>
-    
-    </nav>
-    
+    </div>
+
+    <!-- Kilder Dropdown -->
+    <div class="dropdown" id="Kilder-dropdown" data-dropDown>
+        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Kilder </button>
+        <div class="dropdown-menu" dropdown-menu>
+            <ul>
+                <li class="dropdown-items"><a href="Undersider_Kilder/Kilder.html">Kilder</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
     <div id="page-wrap">
         <div class="Headerbar"> <!--navnet på gruppen-->
