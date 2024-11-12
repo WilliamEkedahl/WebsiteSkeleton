@@ -117,7 +117,35 @@ den plasseres øverst.
 
 /* Bilde og tekst */
 
+/****************************\
+ *     Grid                 *
+\****************************/
 
+#section1{
+  border: 5px solid green;
+  display: grid;
+
+}
+
+#bilde-med-tekst1{
+
+}
+#bilde-med-tekst2{
+
+}
+#bilde-med-tekst3{
+
+}
+#bilde-med-tekst4{
+
+}
+
+
+
+#section2{
+  border: 5px solid green;
+
+}
 
 /****************************\
  *     Underbilder          *

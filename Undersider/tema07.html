@@ -72,6 +72,9 @@
 </nav>
 
 
+<!-- ********* ********* *********** ********** ********** ********** -->
+    <!--#            Bakgrunnsbildet                              #-->
+<!-- ********* ********* *********** ********** ********** ********** -->
 <div class="hovedbilde">
     <div class="list">
         <div class="item">
@@ -84,6 +87,11 @@
     </div>
 </div>
 
+<!-- ********* ********* *********** ********** ********** ********** -->
+    <!--#            Hoved innhold section 1                      #-->
+    <!--#            Bilder                                       #-->
+<!-- ********* ********* *********** ********** ********** ********** -->
+<section id ="section1">
 <div class="del1-underbilder">
     <div class="kollone">
         <img src="..\bilder\Wireframe 3.jpg" width="100%;">
@@ -95,8 +103,15 @@
         <img src="..\bilder\website.jpeg" width="100%;">
     </div>
 </div>
+</section>
 
-<div class="Meg">
+<!-- ********* ********* *********** ********** ********** ********** -->
+    <!--#            Hoved innhold section 2                      #-->
+    <!--#            Bilder med tekst                             #-->
+<!-- ********* ********* *********** ********** ********** ********** -->
+<section id ="section2">
+<!-- Lag til id for grid -->
+<div id = "bilde-med-tekst1" class="Meg">
     <div class="text">
         <h1>Fase 2: Design</h1>
         <p>Selve ordet design betyr formgiving, noe som betyr at det
@@ -114,7 +129,37 @@
     </p>
  </div>
 
- <div class="Bilder"> <!--Navnet på hovedgruppen gruppen-->
+ 
+ <!--
+ Struktur nå: 
+
+  <div class="Meg">
+       <div class="text">
+           <h1>Fase 2: Design</h1>
+           <p>
+        </div>
+           <img src="..\Bilder\image.png" alt="Koder">
+        </p>
+ </div>
+ 
+Struktur burde vært:
+
+ <div id="gruppering1">
+    <h1></h1>
+    <p></p>
+
+    <figure>
+       <img src="" alt="">
+       <figcaption>
+       </figcaption>
+    </figure>
+    
+ </div>
+
+ 
+ -->
+
+ <div id = "bilde-med-tekst2" class="Bilder"> <!--Navnet på hovedgruppen gruppen-->
     <div class="text"> <!--Navnet på den mindre gruppen som er inne i hovedgruppen-->
         <h1>Informasjonsarkitektur og Wireframe</h1> <!--h1 er størrelsen på teksten, men kan forandre den i css-->
         <p> Det er viktig å lage en informasjonsarkitektur (IA) 
@@ -134,7 +179,7 @@
         </p>     
  </div>
 
- <div class="Bilder3"> <!--Navnet på hovedgruppen gruppen-->
+ <div id = "bilde-med-tekst3" class="Bilder3"> <!--Navnet på hovedgruppen gruppen-->
     <div class="text"> <!--Navnet på den mindre gruppen som er inne i hovedgruppen-->
         <h1>Brukertesting</h1> <!--h1 er størrelsen på teksten, men kan forandre den i css-->
         <p> Etter å ha laget skisser, og sett på hvordan en nettside 
@@ -152,7 +197,7 @@
         </p>     
  </div>
 
- <div class="Bilder4"> <!--Navnet på hovedgruppen gruppen-->
+ <div id = "bilde-med-tekst4" class="Bilder4"> <!--Navnet på hovedgruppen gruppen-->
     <div class="text"> <!--Navnet på den mindre gruppen som er inne i hovedgruppen-->
         <h1>Universell utforming</h1> <!--h1 er størrelsen på teksten, men kan forandre den i css-->
         <p> Universell utforming, handler om at man skal lage
@@ -169,7 +214,7 @@
         </p>     
  </div>
 
- <div class="Kilder"> <!--Navnet på hovedgruppen gruppen-->
+ <div id = "bilde-med-tekst5" class="Kilder"> <!--Navnet på hovedgruppen gruppen-->
     <div class="text"> <!--Navnet på den mindre gruppen som er inne i hovedgruppen-->
         <h1>Kilder</h1> <!--h1 er størrelsen på teksten, men kan forandre den i css-->
         <p> ​​Dyrhaug, E. (2022, april 11). Design. Store Norske Leksikon: https://snl.no/design. Hentet 28.10.2024 
@@ -181,6 +226,11 @@
         <img src="..\Bilder\Pro.png" alt="Koder"> <!--img er for bilde-->
         </p>     
  </div>
+</section>
+
+<!-- ********* ********* *********** ********** ********** ********** -->
+    <!--#            Footer                                       #-->
+<!-- ********* ********* *********** ********** ********** ********** -->
 
     <footer id="main-footer">
         <div class="footer-content">
