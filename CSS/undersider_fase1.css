@@ -9,6 +9,7 @@ section#section1-grid{
     
 
     /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
+upstream:CSS/undersider_ fase1.css
     grid-template-columns: repeat(12,minmax(50px,1fr));
     border: 2px solid red;
 
