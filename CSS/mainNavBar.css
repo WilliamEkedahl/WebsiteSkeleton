@@ -110,7 +110,7 @@ nav{
 }
 .dropdown-links{
     display: flex;
-    flex-direction: column;
+    flex-direction: center;
     gap: .25rem;
 }
 
