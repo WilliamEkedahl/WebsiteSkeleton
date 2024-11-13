@@ -7,10 +7,12 @@ body{
 
 /**** Feltet rundt linkene/knappene ****/
 nav{
+    /*
     background-color: #f3f3f3;
+    */
     display: flex;
-    padding: .5rem;
     gap: 1rem; 
+    height: 1.5rem;
     z-index: 10;
 }
 
@@ -20,6 +22,13 @@ nav{
 \*********************************************************/
 
 
+#home-link{
+/*Spesiell justering for hjem-linken*/
+}
+#home-link>img{
+    height:1rem;
+
+}
 #nav-buttons{
     background: none;
     border:none;
