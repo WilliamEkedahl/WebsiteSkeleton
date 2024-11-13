@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\CSS\main.css">
+<!-- -->
+    <link rel="stylesheet" href="..\CSS\Designstyle.css">
+<!-- -->
+    <link rel="stylesheet" href="..\CSS\mainNavBar.css">
+     
+    <title>Semesteroppgaven - tema07</title>
+</head>
+<body>
+<script src="../JS/dropMenu.js" defer></script>
+<nav >
+    <!-- Back to the start page -->
+    <a class="logo" href="logo.svg" alt="This is our logo"> </a>
+
+    <!-- Home Dropdown -->
+    <div class="dropdown" data-dropDown>
+        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> HOME </button>
+        <div class="dropdown-menu" dropdown-menu>
+            <ul>
+                <li class="dropdown-items"><a href="index.html">HOME</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Fase 1 Dropdown -->
+    <div class="dropdown" data-dropDown>
+        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Analysere </button>
+        <div class="dropdown-menu" dropdown-menu>
+            <ul>
+                <li class="dropdown-items"><a href="Undersider_Fase1/Personas.html">Personas</a></li>
+                <li class="dropdown-items"><a href="Undersider_Fase1/IA.html">IA</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Fase 2 Dropdown -->
+    <div class="dropdown" data-dropDown>
+        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Design </button>
+        <div class="dropdown-menu" dropdown-menu>
+            <ul>
+                <li class="dropdown-items"><a href="Undersider_Fase2/WireFrames.html">WireFrames</a></li>
+                <li class="dropdown-items"><a href="Undersider_Fase2/Design.html">Design</a></li>
+                <li class="dropdown-items"><a href="Undersider_Fase2/UX.html">UX</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Fase 3 Dropdown -->
+    <div class="dropdown" data-dropDown>
+        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Virkeligjøre </button>
+        <div class="dropdown-menu" dropdown-menu>
+            <ul>
+                <li class="dropdown-items"><a href="Undersider_Fase3/WCAG_kriteriene.html">WCAG Kriteriene</a></li>
+                <li class="dropdown-items"><a href="Undersider_Fase3/css.html">CSS</a></li>
+                <li class="dropdown-items"><a href="Undersider_Fase3/html.html">HTML</a></li>
+                <li class="dropdown-items"><a href="Undersider_Fase3/universell_utforming.html">Universell Utforming</a></li>
+                <li class="dropdown-items"><a href="Undersider_Fase3/Brukertesting.html">Brukertesting</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Systemutvecklings Metodik Dropdown -->
+    <div class="dropdown" data-dropDown>
+        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Systemutvecklings Metodik </button>
+        <div class="dropdown-menu" dropdown-menu>
+            <ul>
+                <li class="dropdown-items"><a href="Undersider_Systemutvecklings_Metodik/Agile_Metoder.html">Agile Metoder</a></li>
+                <li class="dropdown-items"><a href="Undersider_Systemutvecklings_Metodik/Tradisjonelle_Metoder.html">Tradisjonelle Metoder</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Kilder Dropdown -->
+    <div class="dropdown" id="Kilder-dropdown" data-dropDown>
+        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Kilder </button>
+        <div class="dropdown-menu" dropdown-menu>
+            <ul>
+                <li class="dropdown-items"><a href="Undersider_Kilder/Kilder.html">Kilder</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- ********* ********* *********** ********** ********** ********** -->
+    <!--#            Bakgrunnsbildet                              #-->
+<!-- ********* ********* *********** ********** ********** ********** -->
+<div class="hovedbilde">
+    <div class="list">
+        <div class="item">
+            <img src="..\Bilder\Topbilde2.png">
+            <div class="content">
+                <div class="title">Design</div>
+                <div class="topic">UX</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="page-wrap"> 
+<!-- ********* ********* *********** ********** ********** ********** -->
+    <!--#            Hoved innhold section 1                      #-->
+    <!--#            Bilder                                       #-->
+<!-- ********* ********* *********** ********** ********** ********** -->
+<section id ="section1">
+<div class="del1-underbilder">
+    <div class="kollone">
+        <img src="..\bilder\Phones.png" width="100%;">
+    </div>
+    <div class="kollone">
+        <img src="..\bilder\Phones2.png" width="100%;">
+    </div>
+    <div class="kollone">
+        <img src="..\bilder\Phones3.png" width="100%;">
+    </div>
+</div>
+</section>
+
+<!-- ********* ********* *********** ********** ********** ********** -->
+    <!--#            Hoved innhold section 2                      #-->
+    <!--#            Bilder med tekst                             #-->
+<!-- ********* ********* *********** ********** ********** ********** -->
+<section id ="section2">
+<!-- Lag til id for grid -->
+<div id = "bilde-med-tekst1" class="Meg">
+    <div class="text">
+        <h1>Fase 2: UX</h1>
+        <p>   UX handler om brukeropplevelse. Med andre ord, 
+              hvordan en person opplever å bruke et digitalt
+              produkt. Når man skal skape et produkt, er det
+              viktig å kunne forskjellen på å utvikle og 
+              designe et konsept (UX-design) og å programmere 
+              (UX-utvikling) (Coelho, 2021).  
+        </p>
+    </div>
+       <figure id="text1-bilde">
+    <img src="..\Bilder\UX.png" alt="Koder">
+</figure> 
+ </div>
+     
+ <!--
+ Struktur nå: 
+
+  <div class="Meg">
+       <div class="text">
+           <h1>Fase 2: Design</h1>
+           <p>
+        </div>
+           <img src="..\Bilder\image.png" alt="Koder">
+        </p>
+ </div>
+ 
+Struktur burde vært:
+
+ <div id="gruppering1">
+    <h1></h1>
+    <p></p>
+
+    <figure>
+       <img src="" alt="">
+       <figcaption>
+       </figcaption>
+    </figure>
+    
+ </div>
+
+ 
+ -->
+
+ <div id = "bilde-med-tekst2" class="Bilder"> <!--Navnet på hovedgruppen gruppen-->
+    <div class="text"> <!--Navnet på den mindre gruppen som er inne i hovedgruppen-->
+        <h1>UX-design</h1> <!--h1 er størrelsen på teksten, men kan forandre den i css-->
+        <p> En UX-designer 
+            tenker både på opplevelser og behov 
+            (Coelho, 2021). En designer må tenke på 
+            farger, hvordan ting blir plassert, om de er 
+            lett å finne og om det ser bra ut. Det skal
+            ikke være for mange bilder, og det skal ikke
+            være for lite tekst. Designeren må også tenke 
+            på om det blir lett for brukeren  å finne 
+            ikoner og knapper, og ikke på at det skal
+            bare se bra ut. Med andre ord, at personen 
+            ikke blir forvirret av hvilken knapp er for hva.
+        
+        </p>     
+        </div>
+        <figure id = "text2-bilde">
+        <img src="..\Bilder\UXdesigner.png" alt="Koder"> <!--img er for bilde-->
+    </figure>
+ </div>
+
+ <div id = "bilde-med-tekst3" class="Bilder3"> <!--Navnet på hovedgruppen gruppen-->
+    <div class="text"> <!--Navnet på den mindre gruppen som er inne i hovedgruppen-->
+        <h1>UX-utvikler</h1> <!--h1 er størrelsen på teksten, men kan forandre den i css-->
+        <p> En UX-utvikler ser på hvordan det har blitt 
+            designet, og tar av seg kodingen. Det er 
+            viktig at man skriver inn koder der nettsiden
+            kan bli tilpasset i hvilken som helst skjermer. 
+            Det skal ikke bare passe for en datamaskin, men 
+            det skal også passe for mobil. Det er viktig å 
+            ha en god struktur på en nettside, slik at det 
+            blir enkelt for  hver brukeren å finne det man 
+            leter etter.  
+        </p>     
+        </div>
+        <figure id = "text3-bilde">
+        <img src="..\Bilder\Mancoding2.png" alt="Koder"> <!--img er for bilde-->
+    </figure>
+ </div>
+
+ 
+<!-- ********* ********* *********** ********** ********** ********** -->
+    <!--#            Footer                                       #-->
+<!-- ********* ********* *********** ********** ********** ********** -->
+
+    <footer id="main-footer">
+        <div class="footer-content">
+    
+    </div>
+    <div class="footer-section links">
+        <ul>
+            <li><a href="..\index.html">Hjem</a></li>
+            <li><a href="tema01.html">Tema 1</a></li>
+            <li><a href="Tema02.html">Tema 2</a></li>
+            <li><a href="tema03.html">Tema 3</a></li>
+            <li><a href="tema04.html">Tema 4</a></li>
+            <li><a href="tema05.html">Tema 5</a></li>
+            <li><a href="tema06.html">Tema 6</a></li>
+            <li><a href="Design.html">Tema 7</a></li>
+        </ul>
+    
+    </div>
+    <div class="footer-section-slutt">
+        <p>&copy; 2024 Gruppe 8.</p>
+    </div>
+    </footer>
+</body>
+</html>
