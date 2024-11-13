@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semesteroppgaven - HTML</title>
     <link rel="stylesheet" href="..\..\CSS\main.css">
-    <link rel="stylesheet" media="screen and (min-width: 1400px)" href="..\..\CSS\html-big.css">
+    <link rel="stylesheet" media="screen and (min-width: 140px)" href="..\..\CSS\html-big.css">
     <link rel="stylesheet"  href="..\..\CSS\html.css">
     <link rel="stylesheet" href="..\..\CSS\mainNavBar.css">
 </head>
@@ -89,41 +89,69 @@
 
 <div id = "bakgrunnsbildet"></div>
 
-    <div id="page-wrap">
-        <div class="Headerbar"> <!--navnet på gruppen-->
-            <div class="list">
-                <div class="item">
-                    <!--class er for hvilken gruppe de elementene tilhører. Vi kan sette flere elementer i en gruppe-->
-                    <img style="display:none;" src="../Bilder/AI.jpeg"> <!--img er for bilde-->
-                    <!-- Bildet skal være bakgrunnsbilde .. ? tenker jeg. Se begrunnelser i main.css for valg av bakrunnsbildet gjen backgroun-image i CSS heller enn img-tag i HTML-->
-                    <div class="content">
-                        <div class="title">Web og systemutvikling</div> <!--Hva jeg driver med. Dette er tittelen-->
-                        <div class="topic">Programmering</div> <!--Hva jeg viser nå. Derfor er fotografiene fremst-->
-                    </div>
-                </div>
-            </div>
-        </div>
+   
 
 
 
 
-        <p>Page-wrap får border og max-width ved en fastsatt pixel-bredde. Border er for vår del under utviklingen
-        </p>
+    <div id="temamarkør"> Emnemarkør</div>
+
         <section id="section1-grid">
-            <p>Seksjon 1 - alt som kan klikkes på plasseres her</p>
-            <h1>Hovedside seksjon 1</h1>
-        
+          
 
 <!-- bildeboks1-->
 
 
             <div id="text1" class="text">
-                <h3>Oversriften til første bildeboks</h3>
-                <p>Tekst til det første bildet</p>
+                <h3>HTML er dokumentformatet for netleseren</h3>
+                <p>Hoveddel
+Når du ser på internett, bruker du en nettleser. 
+Nettleseren leser en slags oppskrift og skaper en digital representasjon som du kan se og interagere med.
+Den digitale representasjonen kalles Document Object Model (DOM).  
+HTML er en viktig byggekloss i denne modellen.
+HTML har en enkel oppbygning og struktur, likevel gir det mange muligheter. </p> 
+<p> Det finnes forskjellige meninger om hvorvidt HTML kan sies å være et programmeringsspråk
+    <a href="https://css-tricks.com/html-is-not-a-programming-language/">(https://css-tricks.com/html-is-not-a-programming-language/)</a>
+     ,
+    til forskjell fra programmeringsspråk har ikke HTML logiske operasjoner og det er mye mindre omfattende, lettere å lære.
+HTML dokumenter bruker tag-ger. Det heter tag på engelsk, som «merkelapp/merke» på norsk.
+ Tekst som skal representeres på siden er vanligvis omsluttet av en åpner- og lukker-tag. En åpner tag ser slik ut: 
+
+ <span class = "kode-i-tekst">&lt;section&gt;</span>
+ 
+ 
+ med tilhørende lukker-tag:
+ <span class = "kode-i-tekst">&lt;/section&gt;</span>
+  .
+
+
+  Ordet inni tag-gen har en semantisk betydning for programmerer, nettlesere og skjermlesere som gjør det lettere å arbeide med. 
+</p>
+<p> Dette er tag for paragraf, tekstavsnitt:
+
+
+  <span class = "kode-i-tekst">&lt;p&gt;&lt;/p&gt;</span>. 
+  Tekst som plasseres mellom disse vil få litt avstand til andre elementer på siden.
+   Hvis du ønsker å markere noe i teksten med fet skrift kan du bruke tag-en:
+
+   <span class = "kode-i-tekst">&lt;strong&gt;&lt;/strong&gt;</span>. 
+
+   For Eksempel:
+   
+   <span class = "kode-i-tekst">&lt;p&gt; Vi skal ikke bruke &lt;strong&gt; <strong>altfor</strong>&lt;/strong&gt; mye tid på tag-er&lt;/p&gt;</span>
+   
+   . To tag-ger utgjør 
+   til sammen et element. Disse elementene har noen konfigurasjoner, noen egenskaper, som påvirker utseendet eller 
+   representasjonen på skjermen. De skal vi komme tilbake til. 
+   HTML-dokumenter har en del faste tag-er og krav til oppbygning for at nettleserne skal tolke dem riktig.
+
+                </p>
             </div>
         
             <figure id="bilde1" class="bilde-bokser"><img
-                    src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg" alt="">
+                    src="..\Bilder\Runars bildekilde\html5.png" alt="">
+                
+                    
             </figure>
 
             <div id="text-og-bilde1-bakgrunn" class="tekst-og-bildeboks"></div>
@@ -135,12 +163,54 @@
 
             <div id="text2" class="text">
                 <h3>Oversriften til andre bildeboks</h3>
-                <p>Tekst til det andre bildet</p>
+                <p>
+                    
+                    
+                    <ul>
+                        <li>
+                            <span class="kode-i-text">&lt;&#33;doctype html&gt;</span> 
+                            er ikke en HTML-tag. Den forteller nettleseren hvilken type dokument det er. 
+                        </li>
+                        <li>
+                            <span class="kode-i-text">&lt;html&gt;&lt;/html&gt;</span>
+                            html-elementet. Det strekker seg fra begynnelsen til slutten og omfavner alt innholdet på hele siden. 
+                            Det inneholder også en språkmarkør som indikerer det primære språket i dokumentet. 
+                            Webdesignere bør bruke denne slik at det blir lettere å finne informasjon på det språket man ønsker å lese.
+                        </li>
+                        
+                        <li> 
+                            <span class="kode-i-text">&lt;head&gt;&lt;/head&gt;</span>
+                            head-elementet er oppbevaringsplassen, containeren for alt du vil inkludere i HTML-dokumentet som ikke er vises til leserne av siden. 
+                            Det kan være nøkkelord, beskrivelse av siden som kan vises i søkemotor-resultater, lenker til CSS og mer.
+                        </li>
+                        <li><span class="kode-i-text">&lt;meta charset="utf-8"&gt;</span> 
+                            Dette elementet setter tegn-settet dokumentet ditt skal bruke til utf-8 som inneholder de fleste tegnene i majoriteten av språk. 
+                        </li>
+                        <li>
+                            <span class="kode-i-text">&lt;meta name="viewport" content="width=device-width"&gt;</span> 
+                            Denne kalles: viewport-element. Her settes innholdets bredde til device-width. 
+                            Det vil si enhetens bredde. 
+                            Uten denne spesifikasjonen kunne det skjedd at mobile enheter med mindre skjerm enn en laptop ville vist en nedskalert side og 
+                            redusert brukervennligheten betraktelig. 
+                        </li>
+                        <li>
+                            <span class="kode-i-text">&lt;body&gt;&lt;/body&gt;</span>
+                             body-elementet. Denne inneholder alt innholdet du vil vise til brukerne som besøker nettsiden. 
+                             Det kan være bilder, video, spill, lydspor med mer.
+                        </li>
+                    </ul>
+                    
+
+                   
+                    
+                   
+                    
+                </p>
             </div>
 
 
             <figure id="bilde2" class="bilde-bokser"><img
-                    src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg" alt="">
+                    src="..\Bilder\Runars bildekilde\html kodeblokk1.jpg" alt="">
             </figure>
             <div id="text-og-bilde2-bakgrunn" class="tekst-og-bildeboks"></div>
           
@@ -148,16 +218,23 @@
 <!-- bildeboks3-->
   
 
-            <div id="text3" class="text">
+            <div id="text3" class="text"> 
                 <h3>Oversriften til tredje bildeboks</h3>
                 <p>Tekst til det tredje bildet</p>
             </div>
+            
+          
+            <a id="link1" href="#">
+                <img class="image-link"
+                    src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg"
+                    alt="link web-design">
+            </a>
         
-
+<!--
             <figure id="bilde3" class="bilde-bokser"><img
                     src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg" alt="">
             </figure>
-        
+ -->
             <div id="text-og-bilde3-bakgrunn" class="tekst-og-bildeboks"></div>
           
  <!-- bildeboks4-->

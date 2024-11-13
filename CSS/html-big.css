@@ -5,7 +5,7 @@
 
 section#section1-grid{
     display: grid;
-    grid-template-rows:repeat(12,1fr) ;
+    grid-template-rows:repeat(8,1fr) ;
     
 
     /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
@@ -17,28 +17,8 @@ section#section1-grid{
     
   }
   
-  #tidligere-a{
-    box-sizing: border-box;
-    border: 5px solid orange;
-    background-color:rgb(18, 219, 48);
-    border-radius: 10px;
-    text-align: center;
-    
-    
-  }
-  #section1-grid>h1{
-    
-    grid-row:1/2 ;
-    grid-column:1/3 ;
-    /*background-color: black;*/
-    
-  }
-  #section1-grid>p{
-    grid-row:1/2 ;
-    grid-column:3/5 ;
-    /*background-color: black;*/
-    
-  }
+ 
+
   /*
   Struktur: 
   #text1.text
@@ -52,12 +32,22 @@ section#section1-grid{
 figure{
   
 z-index:2;}
+
   .tekst-og-bildeboks{
     background-color: aqua;
     z-index: 1;
+  
   }
+
+  #section1-grid figure>img{
+
+    width:100%;
+    align-self: center;
+  }
+
   .text{
     z-index: 2;
+    padding-left:1.5rem;
     
   }
 
@@ -70,49 +60,92 @@ z-index:2;}
     
     
 
-    grid-area: 2/1/4/-1;
+    grid-area: 1/1/3/-1;
 
   }
 
   #text1{
-    grid-area: 2/1/4/3;
+    grid-area: 1/1/3/4;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 2rem 2rem 1.5rem;
   }
+  #text1>p{
+    
+  }
+  #text1 .kode-i-tekst{ background-color: #ddd;} 
   #bilde1{
-    grid-area: 2/3/4/5;
+    grid-area: 1/4/3/5;
+    display:flex;
+  }
+  #bilde1>img{
+    width:100%;
+    align-self: center;
   }
     /* Andre bilde tekst bildeboks kombo*/
   #text-og-bilde2-bakgrunn{
     
-    grid-area: 4/1/6/-1;
+    grid-area: 3/1/5/-1;
   }
   #text2{
-    grid-area: 4/3/6/5;
+    grid-area: 3/3/5/5;
+  }
+  #text2 .kode-i-text{
+    background-color: #ddd;
   }
   #bilde2{
     text-align: center;
     
-    grid-area: 4/1/6/3;
+    grid-area: 3/1/5/3;
+    display: flex;
+
+  }
+  #bilde2>img{
+    align-self: center;
 
   }
     /* Tredje bilde tekst bildeboks kombo*/
+
+    /* bildeboks 3 har link i stedet for bilde */
+    /*
+      
+      
+    */
+    #link1{
+      box-sizing: border-box;
+      border: 5px solid orange;
+      background-color:rgb(240, 142, 15);
+      border-radius: 10px;
+      text-align: center;
+      
+      
+    }
+
+    
+    /*
+    .image-link
+
+    OOOOOOOOoooooooOOOOOOOO */
   #text-og-bilde3-bakgrunn{
-    grid-area: 6/1/8/-1;
+    grid-area: 5/1/7/-1;
   }
   #text3{
-    grid-area: 6/1/8/3;
+    grid-area: 5/1/7/3;
   }
   #bilde3{ 
-    grid-area: 6/3/8/5;
+    grid-area: 5/3/7/5;
   }
     /* Fjerde bilde tekst bildeboks kombo*/
   #text-og-bilde4-bakgrunn{
-    grid-area: 8/1/10/-1;
+    display:none;
+    grid-area: 7/1/9/-1;
   }
   #text4{
-    grid-area: 8/1/10/3;
+    grid-area: 7/1/9/3;
   }
   #bilde4{
-    grid-area: 8/3/10/5;
+    grid-area: 7/3/9/5;
   }
   .image-link{
     
