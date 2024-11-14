@@ -2,10 +2,13 @@
      Bakgrunns bilde
 \******************************/
 #bakgrunnsbildet-html{
-  
- Bilder\Topbilde2.png
-}
 
+  background:url("..\..\Bilder\Topbilde2.png") no-repeat center;
+  background-color: aqua;
+  
+  height:2000px;
+ 
+}
 /******************************\
      Grid første seksjon
 \******************************/
