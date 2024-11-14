@@ -1,16 +1,19 @@
+ 
 
-
-#background
 
 /******************************\
      Grid første seksjon
 \******************************/
+
 :root{ 
   --bakgrunnsfarge-text-bilde-bakgrunn: #ABDEE6;
   --bakgrunnsfarge-text-bilde-bakgrunn2: #E6B3AB;
   --textfarge-til-bakgrunnsfargen:black;
   --text-bakgrunnsfarge-til-kode-text:#ddd;
+  font-size: 20px;
+ 
 }
+
 section#section1-grid{
     display: grid;
     grid-template-rows:1fr 1fr 5rem 250px;
@@ -46,7 +49,8 @@ z-index:2;}
 
   .tekst-og-bildeboks{
     background-color: aqua;
-    background-color: var(--bakgrunnsfarge-text-bilde-bakgrunn);
+    background-color: var( --bakgrunnsfarge-text-bilde-bakgrunn);
+    
     
     z-index: 1;
   
@@ -63,7 +67,7 @@ z-index:2;}
 
   .text{
     z-index: 2;
-    padding-left:1.5rem;
+    padding: 0 1.5rem;
     
   }
 
@@ -191,7 +195,7 @@ z-index:2;}
   \******************************/
   section#section2-grid{
     margin-top:5rem;
-    display: grid;|
+    display: grid;
     grid-template-rows: repeat(5,1fr) ;
     /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
     grid-template-columns: repeat(7,minmax(50px,1fr));
