@@ -198,7 +198,7 @@ grid-row: 1/4;
 
 /* Bilder med tekst */
 .Bilder{
-  background-color hsl(228 27% 25%);
+  background-color: hsl(228 27% 25%);
   display: flex;
   justify-content: space-between;
   padding: 80px;
