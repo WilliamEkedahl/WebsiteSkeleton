@@ -147,13 +147,8 @@ grid-row: 1/4;
 
 .text{
   align-self: center;
-  
   }
   
-  figure{}
-
-
-
 }/*Media query ferdig*/
 @media (max-width: 600px) {
 

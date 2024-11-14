@@ -59,29 +59,39 @@ z-index:2;}
 
   #text-og-bilde1-bakgrunn{
     
-    grid-row:2/3 ;
-    grid-column:2/4 ;
-    grid-area: 9/9/9/9;
+    grid-row:1/6 ;
+    grid-column:1/9 ;
+    grid-area:2/2/8/11;
 
   } 
 
   #text1{
-    grid-area: 2/1/4/3;
+    grid-row:2/5 ;
+    grid-column:3/6 ;
+    grid-area:4/3/8/7;
+    
+     
   }
+  
   #bilde1{
-    grid-row: 2/3;
+    margin:0;
+    grid-row: 2/10;
     grid-column: 2/4;
-    grid-area: 2/2/3/4;
+    grid-area: 3/3/3/6;
   
   }
 
+  #bilde1>img{width: 100%;}
     /* Andre bilde tekst bildeboks kombo*/
   #text-og-bilde2-bakgrunn{
-    
-    grid-area: 9/9/9/9;
+    grid-row: 2/3;
+    grid-column:2/4;
+    grid-area: 2/2/3/4;
   }
   #text2{
-    grid-area: 9/9/9/9;
+    grid-row: 6/7;
+    grid-column: 6/7;
+    grid-area: 6/6/7/7;
   }
   #bilde2{
     text-align: center;
