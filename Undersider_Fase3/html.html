@@ -111,7 +111,7 @@ Den digitale representasjonen kalles Document Object Model (DOM).
 HTML er en viktig byggekloss i denne modellen.
 HTML har en enkel oppbygning og struktur, likevel gir det mange muligheter. </p> 
 <p> Det finnes forskjellige meninger om hvorvidt HTML kan sies å være et programmeringsspråk
-    <a href="https://css-tricks.com/html-is-not-a-programming-language/">(https://css-tricks.com/html-is-not-a-programming-language/)</a>
+    <a href="https://css-tricks.com/html-is-not-a-programming-language/">(mer om det her)</a>
      ,
     til forskjell fra programmeringsspråk har ikke HTML logiske operasjoner og det er mye mindre omfattende, lettere å lære.
 HTML dokumenter bruker tag-ger. Det heter tag på engelsk, som «merkelapp/merke» på norsk.
@@ -219,15 +219,17 @@ HTML dokumenter bruker tag-ger. Det heter tag på engelsk, som «merkelapp/merke
   
 
             <div id="text3" class="text"> 
-                <h3>Oversriften til tredje bildeboks</h3>
-                <p>Tekst til det tredje bildet</p>
+                <h3>Les videre om HTML som verktøy</h3>
+                
             </div>
             
           
             <a id="link1" href="#">
+                <figcaption>Lær om HTML som verktøy</figcaption>
                 <img 
-                    src="..\Bilder\Runars bildekilde\klikkflate-eksempel.jpg"
+                    src="..\Bilder\Runars bildekilde\klikkflate-fisker.jpg"
                     alt="link web-design">
+                    
             </a>
         
 <!--
@@ -237,52 +239,58 @@ HTML dokumenter bruker tag-ger. Det heter tag på engelsk, som «merkelapp/merke
  -->
             <div id="text-og-bilde3-bakgrunn" class="tekst-og-bildeboks"></div>
           
- <!-- bildeboks4-->
-
-
-            <div id="text4" class="text">
-                <h3>Oversriften til fjerde bildeboks</h3>
-                <p>Tekst til det fjerde bildet</p>
-            </div>
-        
-        
-            <figure id="bilde4" class="bilde-bokser"><img
-                    src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg" alt="">
-            </figure>
-        
-            <div id="text-og-bilde4-bakgrunn" class="tekst-og-bildeboks"></div>
-        
-        
-        
         </section>
-        <section id="section2-grid">
-            <p>Hovedside</p>
-            <h1>Tema 3 seksjon 2</h1>
-            <a id="link5" href="#">
-                <img class="image-link"
-                    src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg"
-                    alt="link web-design">
-            </a>
-            <a id="link6" href="#">
-                <img class="image-link"
-                    src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg"
-                    alt="link web-design">
-            </a>
-            <a id="link7" href="#">
-                <img class="image-link"
-                    src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg"
-                    alt="link web-design">
-            </a>
-            <a id="link8" href="#">
-                <img class="image-link"
-                    src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg"
-                    alt="link web-design">
-            </a>
+     
+
+  <!-- Ny seksjon seksjon 2 ********* -->          
+ 
+ <section id="section2-grid">
+         <!-- bildeboks4--> 
+
+         <div id="text4" class="text">
+            <h3>Oversriften til fjerde bildeboks</h3>
+            <p>Tekst til det fjerde bildet</p>
+        </div>
+    
+    
+        <figure id="bilde4" class="bilde-bokser"><img
+                src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg" alt="">
+                
+        </figure>
+    
+        <div id="text-og-bilde4-bakgrunn" class="tekst-og-bildeboks"></div>
+   
+        <!-- bildeboks5 skal være tekst og fire linker --> 
+        <div id="text5" class="text">
+            <h3>Linkboks tekst</h3>
+            <p>Beskrivelse til linkene</p>
+            
+        </div>
+    
+    
+        <!--
+        linker her 
+        -->
+        <div id="link-box">
+            <ul>
+                <li><a href="#">link1</a></li>
+                <li><a href="#">link2</a></li>
+                <li><a href="#">link3</a></li>
+                <li><a href="#">link4</a></li>
+                <li><a href="#">link5</a></li>
+            </ul>
+            
+        </div>
+
+    
+        <div id="text-og-bilde5-bakgrunn" class="tekst-og-bildeboks"></div>
+
+ </section>
 
 
-        </section>
-
-
+        
+        
+       
     </div>
     <footer id="main-footer">
         <div class="footer-content">

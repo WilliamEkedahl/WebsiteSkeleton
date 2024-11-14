@@ -21,6 +21,9 @@ nav{
 *     De skal være knapper fordi de ikke er linker       *
 \*********************************************************/
 
+#logo{
+height:100%;
+}
 
 #home-link{
 /*Spesiell justering for hjem-linken*/
