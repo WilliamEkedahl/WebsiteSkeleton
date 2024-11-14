@@ -7,10 +7,12 @@ body{
 
 /**** Feltet rundt linkene/knappene ****/
 nav{
+    /*
     background-color: #f3f3f3;
+    */
     display: flex;
-    padding: .5rem;
     gap: 1rem; 
+    height: 1.5rem;
     z-index: 10;
 }
 
@@ -20,6 +22,13 @@ nav{
 \*********************************************************/
 
 
+#home-link{
+/*Spesiell justering for hjem-linken*/
+}
+#home-link>img{
+    height:1rem;
+
+}
 #nav-buttons{
     background: none;
     border:none;
@@ -33,7 +42,8 @@ nav{
 
 #Kilder-dropdown {
     margin-left: auto;
-    margin-right: 10px;
+   /* margin-right: 10px;*/
+   right:100px;
 }
 
 
@@ -96,6 +106,10 @@ nav{
     grid-template-columns: repeat(2, max-content);
     gap:2rem;
 }
+#Kilder-dropdown.dropdown.active .dropdown-menu{
+    right:0;
+    left:-6rem;
+}
 .dropdown.active > .link + .dropdown-menu{
     opacity: 1;
     transform: translateY(0);
@@ -110,7 +124,7 @@ nav{
 }
 .dropdown-links{
     display: flex;
-    flex-direction: column;
+    flex-direction: center;
     gap: .25rem;
 }
 

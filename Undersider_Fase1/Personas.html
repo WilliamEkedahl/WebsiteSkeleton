@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semesteroppgaven - landingssiden</title>
-    <link rel="stylesheet" href="..\CSS\main.css">
-    <link rel="stylesheet" media="screen and (min-width: 1400px)" href="..\CSS\Undersider_Fase1.css">
-    <link rel="stylesheet" href="..\CSS\mainNavBar.css">
+    <title>Semesteroppgaven - HTML</title>
+    <link rel="stylesheet" href="..\..\CSS\main.css">
+    <link rel="stylesheet" media="screen and (min-width: 1400px)" href="..\..\CSS\html-big.css">
+    <link rel="stylesheet" href="..\..\CSS\html.css">
+    <link rel="stylesheet" href="..\..\CSS\mainNavBar.css">
+    <link rel="stylesheet" href="..\..\CSS\undersider_fase1.css">
+
 </head>
 
 <body>
@@ -19,7 +22,7 @@
 
     <!-- Home Dropdown -->
     <div class="dropdown" data-dropDown>
-        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> HOME </button>
+        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> HOME</button>
         <div class="dropdown-menu" dropdown-menu>
             <ul>
                 <li class="dropdown-items"><a href="index.html">HOME</a></li>
@@ -29,7 +32,7 @@
 
     <!-- Fase 1 Dropdown -->
     <div class="dropdown" data-dropDown>
-        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Analysere </button>
+        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Analysere</button>
         <div class="dropdown-menu" dropdown-menu>
             <ul>
                 <li class="dropdown-items"><a href="Undersider_Fase1/Personas.html">Personas</a></li>
@@ -40,7 +43,7 @@
 
     <!-- Fase 2 Dropdown -->
     <div class="dropdown" data-dropDown>
-        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Design </button>
+        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Design</button>
         <div class="dropdown-menu" dropdown-menu>
             <ul>
                 <li class="dropdown-items"><a href="Undersider_Fase2/WireFrames.html">WireFrames</a></li>
@@ -52,13 +55,14 @@
 
     <!-- Fase 3 Dropdown -->
     <div class="dropdown" data-dropDown>
-        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Virkeligjøre </button>
+        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Virkeligjøre</button>
         <div class="dropdown-menu" dropdown-menu>
             <ul>
                 <li class="dropdown-items"><a href="Undersider_Fase3/WCAG_kriteriene.html">WCAG Kriteriene</a></li>
                 <li class="dropdown-items"><a href="Undersider_Fase3/css.html">CSS</a></li>
                 <li class="dropdown-items"><a href="Undersider_Fase3/html.html">HTML</a></li>
-                <li class="dropdown-items"><a href="Undersider_Fase3/universell_utforming.html">Universell Utforming</a></li>
+                <li class="dropdown-items"><a href="Undersider_Fase3/universell_utforming.html">Universell Utforming</a>
+                </li>
                 <li class="dropdown-items"><a href="Undersider_Fase3/Brukertesting.html">Brukertesting</a></li>
             </ul>
         </div>
@@ -66,18 +70,20 @@
 
     <!-- Systemutvecklings Metodik Dropdown -->
     <div class="dropdown" data-dropDown>
-        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Systemutvecklings Metodik </button>
+        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Systemutvecklings Metodik</button>
         <div class="dropdown-menu" dropdown-menu>
             <ul>
-                <li class="dropdown-items"><a href="Undersider_Systemutvecklings_Metodik/Agile_Metoder.html">Agile Metoder</a></li>
-                <li class="dropdown-items"><a href="Undersider_Systemutvecklings_Metodik/Tradisjonelle_Metoder.html">Tradisjonelle Metoder</a></li>
+                <li class="dropdown-items"><a href="Undersider_Systemutvecklings_Metodik/Agile_Metoder.html">Agile
+                    Metoder</a></li>
+                <li class="dropdown-items"><a href="Undersider_Systemutvecklings_Metodik/Tradisjonelle_Metoder.html">Tradisjonelle
+                    Metoder</a></li>
             </ul>
         </div>
     </div>
 
     <!-- Kilder Dropdown -->
     <div class="dropdown" id="Kilder-dropdown" data-dropDown>
-        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Kilder </button>
+        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Kilder</button>
         <div class="dropdown-menu" dropdown-menu>
             <ul>
                 <li class="dropdown-items"><a href="Undersider_Kilder/Kilder.html">Kilder</a></li>
@@ -86,82 +92,126 @@
     </div>
 </nav>
 
-    <div id="page-wrap">
-        <div class="Headerbar"> <!--navnet på gruppen-->
-            <div class="list">
-                <div class="item">
-                    <!--class er for hvilken gruppe de elementene tilhører. Vi kan sette flere elementer i en gruppe-->
-                    <img style="display:none;" src="../Bilder/AI.jpeg"> <!--img er for bilde-->
-                    <!-- Bildet skal være bakgrunnsbilde .. ? tenker jeg. Se begrunnelser i main.css for valg av bakrunnsbildet gjen backgroun-image i CSS heller enn img-tag i HTML-->
-                    <div class="content">
-                        <div class="title"></div> <!--Hva jeg driver med. Dette er tittelen-->
-                        <div class="topic"></div> <!--Hva jeg viser nå. Derfor er fotografiene fremst-->
-                    </div>
+<div id="bakgrunnsbildet"></div>
+
+<div id="page-wrap">
+    <div class="Headerbar"> <!--navnet på gruppen-->
+        <div class="list">
+            <div class="item">
+                <!--class er for hvilken gruppe de elementene tilhører. Vi kan sette flere elementer i en gruppe-->
+                <img style="display:none;" src="../Bilder/AI.jpeg"> <!--img er for bilde-->
+                <!-- Bildet skal være bakgrunnsbilde .. ? tenker jeg. Se begrunnelser i main.css for valg av bakrunnsbildet gjen backgroun-image i CSS heller enn img-tag i HTML-->
+                <div class="content">
+                    <div class="title"></div> <!--Hva jeg driver med. Dette er tittelen-->
+                    <div class="topic"></div> <!--Hva jeg viser nå. Derfor er fotografiene fremst-->
                 </div>
             </div>
         </div>
-
-
-        <section id="section1-grid">
-            <p></p>
-            <h1>Hovedside seksjon 1</h1>
-            <a id="link1" href="#">
-                <img class="image-link"
-                    src="../Bilder/Fase1 bilder/personasMindre.png"
-                    alt="link web-design">
-            </a>
-            <a id="link2" href="#">
-                <img class="image-link"
-                    src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg"
-                    alt="link web-design">
-            </a>
-            <a id="link3" href="#">
-                <img class="image-link"
-                    src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg"
-                    alt="link web-design">
-            </a>
-            <a id="link4" href="#">
-                <img class="image-link"
-                    src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg"
-                    alt="link web-design">
-            </a>
-
-        </section>
-        <section id="section2-grid">
-            <p>Hovedside</p>
-            <h1>Tema 3 seksjon 2</h1>
-            <a id="link5" href="#">
-                <img class="image-link"
-                    src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg"
-                    alt="link web-design">
-            </a>
-            <a id="link6" href="#">
-                <img class="image-link"
-                    src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg"
-                    alt="link web-design">
-            </a>
-            <a id="link7" href="#">
-                <img class="image-link"
-                    src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg"
-                    alt="link web-design">
-            </a>
-            <a id="link8" href="#">
-                <img class="image-link"
-                    src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg"
-                    alt="link web-design">
-            </a>
-
-
-        </section>
-
-
     </div>
-    <footer id="main-footer">
-        <div class="footer-content">
+
+
+    
+    <section id="section1-grid">
+        <p>Seksjon 1 - alt som kan klikkes på plasseres her</p>
+        <h1>Hovedside seksjon 1</h1>
+
+
+        <!-- bildeboks1-->
+
+
+        <div id="text1" class="text">
 
         </div>
-        <div id="footer-section-grid">
-            <section>
+
+        <figure id="bilde1" class="bilde-bokser"><img
+                src="../Bilder\Fase1 bilder\personas_300x300.jpg"alt="bilde av personas">
+        </figure>
+
+        <div id="text-og-bilde1-bakgrunn" class="tekst-og-bildeboks"></div>
+
+
+        <!-- bildeboks2-->
+
+
+        <div id="text2" class="text">
+            <h3>Oversriften til andre bildeboks</h3>
+            <p>Tekst til det andre bildet</p>
+        </div>
+
+
+        <figure id="bilde2" class="bilde-bokser"><img
+                src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg" alt="">
+        </figure>
+        <div id="text-og-bilde2-bakgrunn" class="tekst-og-bildeboks"></div>
+
+
+        <!-- bildeboks3-->
+
+
+        <div id="text3" class="text">
+            <h3>Oversriften til tredje bildeboks</h3>
+            <p>Tekst til det tredje bildet</p>
+        </div>
+
+
+        <figure id="bilde3" class="bilde-bokser"><img
+                src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg" alt="">
+        </figure>
+
+        <div id="text-og-bilde3-bakgrunn" class="tekst-og-bildeboks"></div>
+
+        <!-- bildeboks4-->
+
+
+        <div id="text4" class="text">
+            <h3>Oversriften til fjerde bildeboks</h3>
+            <p>Tekst til det fjerde bildet</p>
+        </div>
+
+
+        <figure id="bilde4" class="bilde-bokser"><img
+                src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg" alt="">
+        </figure>
+
+        <div id="text-og-bilde4-bakgrunn" class="tekst-og-bildeboks"></div>
+
+
+    </section>
+    <section id="section2-grid">
+        <p>Hovedside</p>
+        <h1>Tema 3 seksjon 2</h1>
+        <a id="link5" href="#">
+            <img class="image-link"
+                 src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg"
+                 alt="link web-design">
+        </a>
+        <a id="link6" href="#">
+            <img class="image-link"
+                 src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg"
+                 alt="link web-design">
+        </a>
+        <a id="link7" href="#">
+            <img class="image-link"
+                 src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg"
+                 alt="link web-design">
+        </a>
+        <a id="link8" href="#">
+            <img class="image-link"
+                 src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg"
+                 alt="link web-design">
+        </a>
+
+
+    </section>
+
+
+</div>
+<footer id="main-footer">
+    <div class="footer-content">
+
+    </div>
+    <div id="footer-section-grid">
+        <section>
             <ul>
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="Undersider\tema01.html">Tema 1</a></li>
@@ -172,14 +222,14 @@
                 <li><a href="Undersider\tema06.html">Tema 6</a></li>
                 <li><a href="Undersider\tema07.html">Tema 7</a></li>
             </ul>
-            </section>
-        </div>
-        <div class="footer-section-slutt">
-            <section>
-                <p>&copy; 2024 Gruppe 8.</p>
-            </section>
-            
-        </div>
-    </footer>
+        </section>
+    </div>
+    <div class="footer-section-slutt">
+        <section>
+            <p>&copy; 2024 Gruppe 8.</p>
+        </section>
+
+    </div>
+</footer>
 </body>
 </html>
