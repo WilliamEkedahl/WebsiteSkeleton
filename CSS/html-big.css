@@ -4,6 +4,7 @@
 \******************************/
 :root{ 
   --bakgrunnsfarge-text-bilde-bakgrunn: #ABDEE6;
+  --bakgrunnsfarge-text-bilde-bakgrunn2: #E6B3AB;
   --textfarge-til-bakgrunnsfargen:black;
   --text-bakgrunnsfarge-til-kode-text:#ddd;
 }
@@ -14,7 +15,7 @@ section#section1-grid{
 
     /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
     grid-template-columns: repeat(4,minmax(100px,1fr));
-    border: 2px solid red;
+    
 
     column-gap: 50px;
     row-gap: 25px;
@@ -142,20 +143,24 @@ z-index:2;}
     
   #text-og-bilde3-bakgrunn{
     grid-area: 3/2/5/4;
+    background-color: var(--bakgrunnsfarge-text-bilde-bakgrunn2);
+    
+    border-radius:15px;
+  
   }
   #text3{
     grid-area: 3/2/4/4;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    
+   
   }
 
 
  
   #link1{
     border-radius: 10px;
-    padding: 0 2em 0 2em;
+    padding: 0 2em 2rem 2em;
 
     grid-area: 4/2/5/-2;
     z-index: 6;
@@ -172,6 +177,7 @@ z-index:2;}
 
   }
   #link1>img{ 
+    height: 100%;
     width:100%;
   }
   
@@ -181,7 +187,8 @@ z-index:2;}
    *     Grid andre seksjon      *
   \******************************/
   section#section2-grid{
-    display: grid;
+    margin-top:5rem;
+    display: grid;|
     grid-template-rows: repeat(5,1fr) ;
     /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
     grid-template-columns: repeat(7,minmax(50px,1fr));
@@ -198,6 +205,7 @@ z-index:2;}
     
     grid-area: 1/1/2/-1;
     background-color: blanchedalmond;
+    
   }
   #text4{
     grid-area: 1/1/2/4;
@@ -212,10 +220,11 @@ z-index:2;}
   
    /* Femte bilde tekst bildeboks kombo*/
 
-   #text-og-bilde4-bakgrunn{
+   #text-og-bilde5-bakgrunn{
     
     grid-area: 2/1/3/-1;
     background-color: blanchedalmond;
+    z-index: inherit;
   }
 
   #text5{
