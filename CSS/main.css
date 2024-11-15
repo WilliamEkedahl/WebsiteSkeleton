@@ -34,13 +34,31 @@ https://www.w3schools.com/cssref/css3_pr_background.php
 background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
 https://developer.mozilla.org/en-US/docs/Web/CSS/background
 */
-html{
 
+
+/*
+Vi er enige om:
+  Helvetica 20px for paragrafer
+  35px for overskrifter
+
+  Dette ble basert på begrunnelser fra best-pratice
+  William kan kanskje finne begrunnelsen igjen??
+
+  */
+
+  /* Root setter størelsen for rem - enhetene */
+
+:root{ 
+  font-size: 20px;
 }
+
 body{
- /* background:url("../Bilder/AI.jpeg") no-repeat center;
-  background-position: 50% 0%;
-  height:1080px; */
+font-family: Arial, Helvetica;
+font-size: 1rem;
+}
+body h1{
+  font-family: Arial, Helvetica;
+font-size: 35px;
 }
 
 
@@ -50,8 +68,7 @@ body{
   
 }
 
-
-
+/* Root setter font-size for rem  */
 
 
 /*
