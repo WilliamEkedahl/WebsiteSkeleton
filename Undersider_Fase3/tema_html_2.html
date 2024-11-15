@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semesteroppgaven - HTML side 2</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
     <link rel="stylesheet" href="..\..\CSS\main.css">
     <link rel="stylesheet" media="screen and (min-width: 140px)" href="..\..\CSS\tema_html_2-big.css">
     <link rel="stylesheet"  href="..\..\CSS\tema_html_2.css">
@@ -14,78 +15,78 @@
 <body>
 <script src="../JS/dropMenu.js" defer></script>
 
+
 <nav>
-    <!-- Back to the start page -->
-    <a class="logo" href="logo.svg" alt="This is our logo"> </a>
+    <div id="nav-home-links">
+        <!-- Back to the start page -->
+        <a  class="logo" href="../index.html" ><img id= "logo" src="../Bilder\Runars bildekilde\SuperLogo.svg" alt="logo"> </a>
 
-    <!-- Home Dropdown -->
-    <div class="dropdown" data-dropDown>
-        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> HOME </button>
-        <div class="dropdown-menu" dropdown-menu>
-            <ul>
-                <li class="dropdown-items"><a href="index.html">HOME</a></li>
-            </ul>
-        </div>
+        <!-- Home link -->
+        <a id="home-link" href="index.html"><img src="../Bilder/imagesforWebsite.png"> Home</a></li>
     </div>
-
-    <!-- Fase 1 Dropdown -->
-    <div class="dropdown" data-dropDown>
-        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Analysere </button>
-        <div class="dropdown-menu" dropdown-menu>
-            <ul>
-                <li class="dropdown-items"><a href="Undersider_Fase1/Personas.html">Personas</a></li>
-                <li class="dropdown-items"><a href="Undersider_Fase1/IA.html">IA</a></li>
-            </ul>
+    <div id="nav-wrapper">
+        <!-- Fase 1 Dropdown -->
+        <div class="dropdown" data-dropDown>
+            <button  class="dropdown-items" data-dropDown-button> Analysere </button>
+            <div class="dropdown-menu" dropdown-menu>
+                <ul>
+                    <li class="dropdown-items"><a href="../Undersider_Fase1/Personas.html">Personas</a></li>
+                    <li class="dropdown-items"><a href="../Undersider_Fase1/IA.html">IA</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
 
-    <!-- Fase 2 Dropdown -->
-    <div class="dropdown" data-dropDown>
-        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Design </button>
-        <div class="dropdown-menu" dropdown-menu>
-            <ul>
-                <li class="dropdown-items"><a href="Undersider_Fase2/WireFrames.html">WireFrames</a></li>
-                <li class="dropdown-items"><a href="Undersider_Fase2/Design.html">Design</a></li>
-                <li class="dropdown-items"><a href="Undersider_Fase2/UX.html">UX</a></li>
-            </ul>
+        <!-- Fase 2 Dropdown -->
+        <div class="dropdown" data-dropDown>
+            <button class="dropdown-items" data-dropDown-button> Design </button>
+            <div class="dropdown-menu" dropdown-menu>
+                <ul>
+                    <li class="dropdown-items"><a href="../Undersider_Fase2/WireFrames.html">WireFrames</a></li>
+                    <li class="dropdown-items"><a href="../Undersider_Fase2/Design.html">Design</a></li>
+                    <li class="dropdown-items"><a href="../Undersider_Fase2/UX.html">UX</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
 
-    <!-- Fase 3 Dropdown -->
-    <div class="dropdown" data-dropDown>
-        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Virkeligjøre </button>
-        <div class="dropdown-menu" dropdown-menu>
-            <ul>
-                <li class="dropdown-items"><a href="Undersider_Fase3/WCAG_kriteriene.html">WCAG Kriteriene</a></li>
-                <li class="dropdown-items"><a href="Undersider_Fase3/css.html">CSS</a></li>
-                <li class="dropdown-items"><a href="Undersider_Fase3/html.html">HTML</a></li>
-                <li class="dropdown-items"><a href="Undersider_Fase3/universell_utforming.html">Universell Utforming</a></li>
-                <li class="dropdown-items"><a href="Undersider_Fase3/Brukertesting.html">Brukertesting</a></li>
-            </ul>
+        <!-- Fase 3 Dropdown -->
+        <div class="dropdown" data-dropDown>
+            <button  class="dropdown-items" data-dropDown-button> Virkeligjøre </button>
+            <div class="dropdown-menu" dropdown-menu>
+                <ul>
+                    <li class="dropdown-items"><a href="WCAG_kriteriene.html">WCAG Kriteriene</a></li>
+                    <li class="dropdown-items"><a href="css.html">CSS</a></li>
+                    <li class="dropdown-items"><a href="tema_html_1.html">HTML</a></li>
+                    <li class="dropdown-items"><a href="universell_utforming.html">Universell Utforming</a></li>
+                    <li class="dropdown-items"><a href="Brukertesting.html">Brukertesting</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
 
-    <!-- Systemutvecklings Metodik Dropdown -->
-    <div class="dropdown" data-dropDown>
-        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Systemutvecklings Metodik </button>
-        <div class="dropdown-menu" dropdown-menu>
-            <ul>
-                <li class="dropdown-items"><a href="Undersider_Systemutvecklings_Metodik/Agile_Metoder.html">Agile Metoder</a></li>
-                <li class="dropdown-items"><a href="Undersider_Systemutvecklings_Metodik/Tradisjonelle_Metoder.html">Tradisjonelle Metoder</a></li>
-            </ul>
+        <!-- Systemutvecklings Metodik Dropdown -->
+        <div class="dropdown" data-dropDown>
+            <button  class="dropdown-items" data-dropDown-button> Systemutvecklings Metodik </button>
+            <div class="dropdown-menu" dropdown-menu>
+                <ul>
+                    <li class="dropdown-items"><a href="../Undersider_Systemutvecklings_Metodik/Systemutvecklings_Metodik.html">Systemutvecklings Metodik</a></li>
+                    <li class="dropdown-items"><a href="../Undersider_Systemutvecklings_Metodik/Agile_Metoder.html">Agile Metoder</a></li>
+                    <li class="dropdown-items"><a href="../Undersider_Systemutvecklings_Metodik/Tradisjonelle_Metoder.html">Tradisjonelle Metoder</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
 
-    <!-- Kilder Dropdown -->
-    <div class="dropdown" id="Kilder-dropdown" data-dropDown>
-        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Kilder </button>
-        <div class="dropdown-menu" dropdown-menu>
-            <ul>
-                <li class="dropdown-items"><a href="Undersider_Kilder/Kilder.html">Kilder</a></li>
-            </ul>
+        <!-- Grunnlag Dropdown -->
+        <div class="dropdown" id="grunnlag" data-dropDown>
+            <button class="dropdown-items" data-dropDown-button> Grunnlag </button>
+            <div id="grunnlag-dropdown" class="dropdown-menu" dropdown-menu>
+                <ul>
+                    <li class="dropdown-items"><a href="../Undersider_Grunnlag/Kilder.html">Kilder</a></li>
+                    <li class="dropdown-items"><a href="../begrunnelser.html"> Begrunnelser </a> </li>
+                </ul>
+            </div>
         </div>
     </div>
 </nav>
+
 
 <div id = "bakgrunnsbildet"></div>
 
@@ -103,53 +104,19 @@
 
 
             <div id="text1" class="text">
-                <h3>JADDA dette er side 2</h3>
-                <p>Hoveddel
-Når du ser på internett, bruker du en nettleser. 
-Nettleseren leser en slags oppskrift og skaper en digital representasjon som du kan se og interagere med.
-Den digitale representasjonen kalles Document Object Model (DOM).  
-HTML er en viktig byggekloss i denne modellen.
-HTML har en enkel oppbygning og struktur, likevel gir det mange muligheter. </p> 
-<p> Det finnes forskjellige meninger om hvorvidt HTML kan sies å være et programmeringsspråk
-    <a href="https://css-tricks.com/html-is-not-a-programming-language/">(mer om det her)</a>
-     ,
-    til forskjell fra programmeringsspråk har ikke HTML logiske operasjoner og det er mye mindre omfattende, lettere å lære.
-HTML dokumenter bruker tag-ger. Det heter tag på engelsk, som «merkelapp/merke» på norsk.
- Tekst som skal representeres på siden er vanligvis omsluttet av en åpner- og lukker-tag. En åpner tag ser slik ut: 
-
- <span class = "kode-i-tekst">&lt;section&gt;</span>
- 
- 
- med tilhørende lukker-tag:
- <span class = "kode-i-tekst">&lt;/section&gt;</span>
-  .
-
-
-  Ordet inni tag-gen har en semantisk betydning for programmerer, nettlesere og skjermlesere som gjør det lettere å arbeide med. 
-</p>
-<p> Dette er tag for paragraf, tekstavsnitt:
-
-
-  <span class = "kode-i-tekst">&lt;p&gt;&lt;/p&gt;</span>. 
-  Tekst som plasseres mellom disse vil få litt avstand til andre elementer på siden.
-   Hvis du ønsker å markere noe i teksten med fet skrift kan du bruke tag-en:
-
-   <span class = "kode-i-tekst">&lt;strong&gt;&lt;/strong&gt;</span>. 
-
-   For Eksempel:
-   
-   <span class = "kode-i-tekst">&lt;p&gt; Vi skal ikke bruke &lt;strong&gt; <strong>altfor</strong>&lt;/strong&gt; mye tid på tag-er&lt;/p&gt;</span>
-   
-   . To tag-ger utgjør 
-   til sammen et element. Disse elementene har noen konfigurasjoner, noen egenskaper, som påvirker utseendet eller 
-   representasjonen på skjermen. De skal vi komme tilbake til. 
-   HTML-dokumenter har en del faste tag-er og krav til oppbygning for at nettleserne skal tolke dem riktig.
+                <h1>Sette inn bilder på nettsiden</h1>
+                <p>
+                    Med HTML kan du sette inn bilder på siden med bildetaggen: <br>
+                    <span class="kode-i-tekst"> &lt;img src = «»  src = «» &gt; </span>
+                    som er en tag som avviker litt fra de andre, den har ikke åpner og lukker.
+                     «Src» angir kilden, hvor bildet kan lastes fra, og «alt» er beskrivelse av bildet som blir synlig for brukeren ved å føre musen over bildet. 
+                    Denne beskrivelsen er viktig for mennesker uten normalt fargesyn eller andre som bruker skjermleser. 
 
                 </p>
             </div>
         
             <figure id="bilde1" class="bilde-bokser"><img
-                    src="..\Bilder\Runars bildekilde\html5.png" alt="">
+                    src="..\Bilder\Runars bildekilde\html5.png" alt="Html5 logo">
                 
                     
             </figure>
@@ -165,43 +132,6 @@ HTML dokumenter bruker tag-ger. Det heter tag på engelsk, som «merkelapp/merke
                 <h3>Oversriften til andre bildeboks</h3>
                 <p>
                     
-                    
-                    <ul>
-                        <li>
-                            <span class="kode-i-text">&lt;&#33;doctype html&gt;</span> 
-                            er ikke en HTML-tag. Den forteller nettleseren hvilken type dokument det er. 
-                        </li>
-                        <li>
-                            <span class="kode-i-text">&lt;html&gt;&lt;/html&gt;</span>
-                            html-elementet. Det strekker seg fra begynnelsen til slutten og omfavner alt innholdet på hele siden. 
-                            Det inneholder også en språkmarkør som indikerer det primære språket i dokumentet. 
-                            Webdesignere bør bruke denne slik at det blir lettere å finne informasjon på det språket man ønsker å lese.
-                        </li>
-                        
-                        <li> 
-                            <span class="kode-i-text">&lt;head&gt;&lt;/head&gt;</span>
-                            head-elementet er oppbevaringsplassen, containeren for alt du vil inkludere i HTML-dokumentet som ikke er vises til leserne av siden. 
-                            Det kan være nøkkelord, beskrivelse av siden som kan vises i søkemotor-resultater, lenker til CSS og mer.
-                        </li>
-                        <li><span class="kode-i-text">&lt;meta charset="utf-8"&gt;</span> 
-                            Dette elementet setter tegn-settet dokumentet ditt skal bruke til utf-8 som inneholder de fleste tegnene i majoriteten av språk. 
-                        </li>
-                        <li>
-                            <span class="kode-i-text">&lt;meta name="viewport" content="width=device-width"&gt;</span> 
-                            Denne kalles: viewport-element. Her settes innholdets bredde til device-width. 
-                            Det vil si enhetens bredde. 
-                            Uten denne spesifikasjonen kunne det skjedd at mobile enheter med mindre skjerm enn en laptop ville vist en nedskalert side og 
-                            redusert brukervennligheten betraktelig. 
-                        </li>
-                        <li>
-                            <span class="kode-i-text">&lt;body&gt;&lt;/body&gt;</span>
-                             body-elementet. Denne inneholder alt innholdet du vil vise til brukerne som besøker nettsiden. 
-                             Det kan være bilder, video, spill, lydspor med mer.
-                        </li>
-                    </ul>
-                    
-
-                   
                     
                    
                     
@@ -219,7 +149,7 @@ HTML dokumenter bruker tag-ger. Det heter tag på engelsk, som «merkelapp/merke
   
 
             <div id="text3" class="text"> 
-                <h1>Lær om bruk av bilder i HTML strukturen</h1>
+                <h1>Lær om bruk Neste trinn</h1>
                 
             </div>
             
@@ -227,7 +157,7 @@ HTML dokumenter bruker tag-ger. Det heter tag på engelsk, som «merkelapp/merke
             <a id="link1" href="#">
                 <figure id="link1-figure">
                     <img src="..\Bilder\Runars bildekilde\klikkflate-fisker.jpg" alt="link web-design">
-                    <figcaption>God bruk av &lt;img&gt; taggen</figcaption>
+                    <figcaption>God bruk av netste side</figcaption>
                 </figure>
             </a>
         

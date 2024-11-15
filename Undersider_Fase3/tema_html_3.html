@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semesteroppgaven - HTML</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
     <link rel="stylesheet" href="..\..\CSS\main.css">
     <link rel="stylesheet" media="screen and (min-width: 140px)" href="..\..\CSS\html-big.css">
     <link rel="stylesheet"  href="..\..\CSS\html.css">
@@ -15,74 +16,72 @@
 <script src="../JS/dropMenu.js" defer></script>
 
 <nav>
-    <!-- Back to the start page -->
-    <a class="logo" href="logo.svg" alt="This is our logo"> </a>
+    <div id="nav-home-links">
+        <!-- Back to the start page -->
+        <a  class="logo" href="../index.html" ><img id= "logo" src="../Bilder\Runars bildekilde\SuperLogo.svg" alt="logo"> </a>
 
-    <!-- Home Dropdown -->
-    <div class="dropdown" data-dropDown>
-        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> HOME </button>
-        <div class="dropdown-menu" dropdown-menu>
-            <ul>
-                <li class="dropdown-items"><a href="index.html">HOME</a></li>
-            </ul>
-        </div>
+        <!-- Home link -->
+        <a id="home-link" href="index.html"><img src="../Bilder/imagesforWebsite.png"> Home</a></li>
     </div>
-
-    <!-- Fase 1 Dropdown -->
-    <div class="dropdown" data-dropDown>
-        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Analysere </button>
-        <div class="dropdown-menu" dropdown-menu>
-            <ul>
-                <li class="dropdown-items"><a href="Undersider_Fase1/Personas.html">Personas</a></li>
-                <li class="dropdown-items"><a href="Undersider_Fase1/IA.html">IA</a></li>
-            </ul>
+    <div id="nav-wrapper">
+        <!-- Fase 1 Dropdown -->
+        <div class="dropdown" data-dropDown>
+            <button  class="dropdown-items" data-dropDown-button> Analysere </button>
+            <div class="dropdown-menu" dropdown-menu>
+                <ul>
+                    <li class="dropdown-items"><a href="../Undersider_Fase1/Personas.html">Personas</a></li>
+                    <li class="dropdown-items"><a href="../Undersider_Fase1/IA.html">IA</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
 
-    <!-- Fase 2 Dropdown -->
-    <div class="dropdown" data-dropDown>
-        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Design </button>
-        <div class="dropdown-menu" dropdown-menu>
-            <ul>
-                <li class="dropdown-items"><a href="Undersider_Fase2/WireFrames.html">WireFrames</a></li>
-                <li class="dropdown-items"><a href="Undersider_Fase2/Design.html">Design</a></li>
-                <li class="dropdown-items"><a href="Undersider_Fase2/UX.html">UX</a></li>
-            </ul>
+        <!-- Fase 2 Dropdown -->
+        <div class="dropdown" data-dropDown>
+            <button class="dropdown-items" data-dropDown-button> Design </button>
+            <div class="dropdown-menu" dropdown-menu>
+                <ul>
+                    <li class="dropdown-items"><a href="../Undersider_Fase2/WireFrames.html">WireFrames</a></li>
+                    <li class="dropdown-items"><a href="../Undersider_Fase2/Design.html">Design</a></li>
+                    <li class="dropdown-items"><a href="../Undersider_Fase2/UX.html">UX</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
 
-    <!-- Fase 3 Dropdown -->
-    <div class="dropdown" data-dropDown>
-        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Virkeligjøre </button>
-        <div class="dropdown-menu" dropdown-menu>
-            <ul>
-                <li class="dropdown-items"><a href="Undersider_Fase3/WCAG_kriteriene.html">WCAG Kriteriene</a></li>
-                <li class="dropdown-items"><a href="Undersider_Fase3/css.html">CSS</a></li>
-                <li class="dropdown-items"><a href="Undersider_Fase3/html.html">HTML</a></li>
-                <li class="dropdown-items"><a href="Undersider_Fase3/universell_utforming.html">Universell Utforming</a></li>
-                <li class="dropdown-items"><a href="Undersider_Fase3/Brukertesting.html">Brukertesting</a></li>
-            </ul>
+        <!-- Fase 3 Dropdown -->
+        <div class="dropdown" data-dropDown>
+            <button  class="dropdown-items" data-dropDown-button> Virkeligjøre </button>
+            <div class="dropdown-menu" dropdown-menu>
+                <ul>
+                    <li class="dropdown-items"><a href="WCAG_kriteriene.html">WCAG Kriteriene</a></li>
+                    <li class="dropdown-items"><a href="css.html">CSS</a></li>
+                    <li class="dropdown-items"><a href="tema_html_1.html">HTML</a></li>
+                    <li class="dropdown-items"><a href="universell_utforming.html">Universell Utforming</a></li>
+                    <li class="dropdown-items"><a href="Brukertesting.html">Brukertesting</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
 
-    <!-- Systemutvecklings Metodik Dropdown -->
-    <div class="dropdown" data-dropDown>
-        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Systemutvecklings Metodik </button>
-        <div class="dropdown-menu" dropdown-menu>
-            <ul>
-                <li class="dropdown-items"><a href="Undersider_Systemutvecklings_Metodik/Agile_Metoder.html">Agile Metoder</a></li>
-                <li class="dropdown-items"><a href="Undersider_Systemutvecklings_Metodik/Tradisjonelle_Metoder.html">Tradisjonelle Metoder</a></li>
-            </ul>
+        <!-- Systemutvecklings Metodik Dropdown -->
+        <div class="dropdown" data-dropDown>
+            <button  class="dropdown-items" data-dropDown-button> Systemutvecklings Metodik </button>
+            <div class="dropdown-menu" dropdown-menu>
+                <ul>
+                    <li class="dropdown-items"><a href="../Undersider_Systemutvecklings_Metodik/Systemutvecklings_Metodik.html">Systemutvecklings Metodik</a></li>
+                    <li class="dropdown-items"><a href="../Undersider_Systemutvecklings_Metodik/Agile_Metoder.html">Agile Metoder</a></li>
+                    <li class="dropdown-items"><a href="../Undersider_Systemutvecklings_Metodik/Tradisjonelle_Metoder.html">Tradisjonelle Metoder</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
 
-    <!-- Kilder Dropdown -->
-    <div class="dropdown" id="Kilder-dropdown" data-dropDown>
-        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Kilder </button>
-        <div class="dropdown-menu" dropdown-menu>
-            <ul>
-                <li class="dropdown-items"><a href="Undersider_Kilder/Kilder.html">Kilder</a></li>
-            </ul>
+        <!-- Grunnlag Dropdown -->
+        <div class="dropdown" id="grunnlag" data-dropDown>
+            <button class="dropdown-items" data-dropDown-button> Grunnlag </button>
+            <div id="grunnlag-dropdown" class="dropdown-menu" dropdown-menu>
+                <ul>
+                    <li class="dropdown-items"><a href="../Undersider_Grunnlag/Kilder.html">Kilder</a></li>
+                    <li class="dropdown-items"><a href="../begrunnelser.html"> Begrunnelser </a> </li>
+                </ul>
+            </div>
         </div>
     </div>
 </nav>
@@ -149,7 +148,7 @@ HTML dokumenter bruker tag-ger. Det heter tag på engelsk, som «merkelapp/merke
             </div>
         
             <figure id="bilde1" class="bilde-bokser"><img
-                    src="..\Bilder\Runars bildekilde\html5.png" alt="">
+                    src="..\Bilder\Runars bildekilde\html5.png" alt="Html5 logo">
                 
                     
             </figure>
