@@ -109,43 +109,72 @@ section{
 
 } /*Media query ferdig*/
 
-/******************\
- *     Footer     *
-\******************/
-#main-footer{
-    background-color: rgba(51, 51, 51, .5);
+/*******************\
+ *     Footer      *
+\*******************/
+#main-footer {
+    background-color: rgba(51, 51, 51, 0.5);
     color: #fff;
-    padding: 20px ;
     text-align: center;
     position: relative;
     bottom: 0;
     width: 100%;
-    margin-top: 10rem;
-}
-.footer-section{
-  margin-bottom: 20px;
-}
-.footer-section ul{
-  list-style: none;
-  padding: 0;
-}
-.footer-section ul li{
-  display: inline;
-  margin: 0 10px;
-}
-.footer-section ul li a{
-  color: #fff;
-  text-decoration: none;
-  font-size: 0.9em;
-  font-weight: 600;
-}
-.footer-section ul li a:hover{
-  text-decoration: underline;
+    /*
+    Denne marginen lager mellomrom mellom footer
+    og grid
+
+    */
+    margin-top: 5rem;
 }
 
-#footer-section-slutt{
-  background-color: #f7f7f7;
-  color: #fff;
-  padding: 40px 20px;
-  text-align: center;
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Fordeler seksjonene jevnt */
+    align-items: flex-start;
+    text-align: center;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+.links{ /* Treffer overskiften til linkene */
+    color: orange;
+}
+
+.footer-section ul { /* Markerer stilen på listen til UL */
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 0 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 600;
+    transition: color 0.3s ease; /* Overgangseffekt for mykere fargeskifte */
+}
+
+.footer-section ul li a:hover {
+    color: #ffffff75; /* Skifter farge ved hover */
+    text-decoration: none; /* Fjerner streken under ordet */
+}
+
+.footer-section-slutt {
+    background-color: black;
+    color: #fff;
+    padding: 40px 100px;
+    text-align: center;
+}
+.home a{
+    color: orange;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.home a:hover{
+    color: grey;
+    text-decoration: none;
 }
