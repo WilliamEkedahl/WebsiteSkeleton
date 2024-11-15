@@ -251,7 +251,7 @@ z-index:2;}
     
     display: flex;
 
-    /*justify-content: space-evenly;*/
+    justify-content: space-evenly;
     flex-direction: column;
     
     height:100%;
@@ -281,8 +281,9 @@ z-index:2;}
   transition: all 200ms ease;
 
 }
-#link-box>ul>li>a:nth-of-type(1)::after{content:"link1";}
-
+/*
+#link-box>ul>li>a#link1::after{content:"linker1";}
+*/
 
 #link-box>ul>li>a:hover::after{
 transform:translateY(-4px) translateX(4px);
