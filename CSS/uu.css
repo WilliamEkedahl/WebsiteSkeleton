@@ -191,10 +191,7 @@ z-index:2;}
     margin-top:5rem;
     display: grid;
     grid-template-rows: repeat(5,1fr) ;
-    /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
-    grid-template-columns: repeat(7,minmax(50px,1fr));
-    border: 2px solid red;
-    column-gap: 50px;
+    grid-template-columns: repeat(7,minmax(50px,1fr));column-gap: 50px;
     row-gap: 25px;
     
   }

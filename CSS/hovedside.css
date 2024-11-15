@@ -36,17 +36,13 @@ section#section1-grid{
     grid-template-rows: repeat(16,minmax(100px,1fr)) ;
     /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
     grid-template-columns: 1fr repeat(4,minmax(50px,2fr)) 1fr;
-    border: 2px solid red;
+    
     
     
   }
   
   #section1-grid>a, #section1-grid>p  {
     box-sizing: border-box;
-    /*
-    border: 5px solid orange;
-    background-color:rgb(240, 142, 15);
-    */
     border-radius: 10px;
     text-align: center;
     
@@ -98,9 +94,7 @@ section#section1-grid{
   section#section2-grid{
     display: grid;
     grid-template-rows: repeat(5,1fr) ;
-    /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
     grid-template-columns: repeat(4,1fr);
-    border: 2px solid red;
     column-gap: 50px;
     row-gap: 25px;
     

@@ -107,7 +107,7 @@ den plasseres øverst.
 {width:100%;}
 
 #section2{
-  border: 5px solid green;
+  
   display: grid;
 
   grid-template-rows: repeat(15,minmax(100px,1fr)) ;
@@ -117,7 +117,7 @@ den plasseres øverst.
 }
 
 #bilde-med-tekst1{
-  border:5px solid coral;
+  
 
 grid-column: 1/-1;
 grid-row: 1/4;
