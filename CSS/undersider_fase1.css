@@ -3,7 +3,7 @@ body{
   font-family: verdana, sans-serif; 
 }
 h1{
-  font-size: 28px;
+  font-size: 50px;
 }
 h2{
   font-size: 24px;
@@ -56,23 +56,36 @@ figure{
   
 z-index:2;}
   .tekst-og-bildeboks{
-    background-color: aqua;
+    background-color: rgb(70, 94, 107);
     z-index: 1;
   }
   .text{
     z-index: 2;
     
   }
+  .stor_overskrift{
+    z-index: 2;
+  
+  }
 
   /* Første bilde tekst bildeboks kombo*/
 
   #text-og-bilde1-bakgrunn{
-    
-    grid-row:2/8 ;
+    grid-row:1/8 ;
     grid-column:2/11 ;
-    grid-area:2/2/8/11;
+    grid-area:1/2/8/11;
 
   } 
+
+  h1 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  
+  #stor_overskrift1{
+    margin-left: 35px;
+    grid-area: 1/-1/2/2;
+  }
 
   #text1{
     grid-row:4/8 ;
@@ -88,10 +101,10 @@ z-index:2;}
   }
   
   #bilde1{
-    margin:0;
-    grid-row: 2/10;
+    margin:5;
+    grid-row: 2/3;
     grid-column: 2/4;
-    grid-area: 3/3/3/6;
+    grid-area: 2/2/3/6;
   
   }
 
@@ -121,19 +134,24 @@ z-index:2;}
   #text-og-bilde3-bakgrunn{
     grid-row: 8/-15;
     grid-column: 11/-2;
-    grid-area: 8/11/-15/-2;
-    width: 0,5fr;
-    height: 0,1fr;
-    margin: 20px;
-    padding: 10px;
+    grid-area: 1/11/4/15;
+    width: 0.5fr;
+    height: 0.1fr;
     border: 1px solid black;
 
   }
+
+  #text3_h2{
+    margin-left: 15px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
   #text3{
     margin-top: 25px;
-    grid-row: 11/-15;
-    grid-column: 11/-2;
-    grid-area: 11/11/-15/-2;
+    grid-row: 1/2;
+    grid-column: 11/15;
+    grid-area: 1/11/2/15;
   }
 
   #text3_h4{
