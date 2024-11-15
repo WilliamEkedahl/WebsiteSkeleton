@@ -1,0 +1,50 @@
+#hover-effekt-container{
+    height:35rem;
+    background-color: aqua;
+    padding-top:10rem;
+    padding-left:5rem;
+    
+}
+
+#my-link-box{
+    height:250px;
+    width:200px;
+    background-color: black;
+    
+    cursor:pointer;  
+    z-index: 1;
+    transition: all 200ms ease;
+}
+
+/*
+#my-link-box:hover{
+    transform:translateY(5px) translateX(-5px);
+}
+*/
+
+
+
+
+#my-link-box::after{
+    box-sizing: border-box;
+    content: "after";
+    display:block;
+    background-color: green;
+    height:100%;
+    
+    transition: all 200ms ease;
+
+}
+#my-link-box:hover::after{
+    height:100%;
+    
+    transform:translateY(-4px) translateX(4px);
+    
+    color:blue;
+
+}
+#my-link-box:hover{
+    transform:translateY(2px) translateX(-2px);
+}
+
+/*Start at the beginning by learning HTML basics — an important foundation for building and editing web pages.*/
