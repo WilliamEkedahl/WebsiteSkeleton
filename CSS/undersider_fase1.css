@@ -92,13 +92,13 @@ bilde-bokser_z3{
   #text-og-bilde1-bakgrunn{
     grid-row:1/8 ;
     grid-column:2/11 ;
-    grid-area:1/2/5/11;
+    grid-area:1/2/8/11;
 
   } 
 
   #border-innehold1{
     border: 1px solid black;
-    grid-area: 1/2/5/6;
+    grid-area: 1/2/8/6;
   }
 
   #stor_overskrift1{
@@ -136,7 +136,7 @@ bilde-bokser_z3{
   #text-og-bilde2-bakgrunn{
     grid-row: 2/3;
     grid-column:2/4;
-    grid-area: 5/2/9/15;
+    grid-area: 8/2/12/15;
   }
   #text2{
     grid-row: 1/3;
@@ -155,7 +155,7 @@ bilde-bokser_z3{
   #text-og-bilde3-bakgrunn{
     grid-row: 8/-15;
     grid-column: 11/-2;
-    grid-area: 1/11/4/15;
+    grid-area: 1/11/7/15;
     width: 0.5fr;
     height: 0.1fr;
     border: 1px solid black;
@@ -186,7 +186,7 @@ bilde-bokser_z3{
   #text-og-bilde4-bakgrunn{
     grid-row: 8/10;
     grid-column: 2/15;
-    grid-area: 9/2/13/15;
+    grid-area: 12/2/16/15;
   }
   #text4{
     z-index: 4;
@@ -205,7 +205,7 @@ bilde-bokser_z3{
   }
 
   #text-og-bilde5-bakgrunn{
-    grid-area: 4/11/5/15;
+    grid-area: 7/11/8/15;
   }
 
   #text5{
