@@ -192,7 +192,7 @@ bilde-bokser_z3{
     z-index: 4;
     grid-row: 8/10;
     grid-column: 2/15;
-    grid-area: 5/3/9/14;
+    grid-area: 11/3/17/14;
     height: 300px;
     width: 100%;
   }
@@ -211,7 +211,7 @@ bilde-bokser_z3{
   #text5{
     grid-row: 8/10;
     grid-column: 2/15;
-    grid-area: 9/3/15/11;
+    grid-area: 19/3/14/25;
   }
 
 
