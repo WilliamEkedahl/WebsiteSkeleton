@@ -100,6 +100,8 @@ z-index:2;}
   }
   
   #bilde1{
+    width: 165px;
+    height: auto;
     margin:5;
     grid-row: 2/3;
     grid-column: 2/4;
