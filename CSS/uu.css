@@ -1,120 +1,269 @@
 
-/******************************\
-     Grid første seksjon
-\******************************/
+:root{ 
+  --bakgrunnsfarge-text-bilde-bakgrunn: #ABDEE6;
+  --bakgrunnsfarge-text-bilde-bakgrunn2: #E6B3AB;
+  --textfarge-til-bakgrunnsfargen:black;
+  --text-bakgrunnsfarge-til-kode-text:#ddd;
+  font-size: 20px;
+ 
+}
 
 section#section1-grid{
-  display: grid;
-  grid-template-rows:repeat(4,1fr) ;
+    display: grid;
+    grid-template-rows:1fr 1fr 5rem 250px;
+    
+
+    /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
+    grid-template-columns: repeat(4,minmax(100px,1fr));
+    
+
+    column-gap: 50px;
+    row-gap: 25px;
+
+    /*PRøver med height 
+    Height:500px;
+  */
+  }
   
+ 
 
-  /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
-  grid-template-columns: repeat(4,minmax(100px,1fr));
-  border: 2px solid red;
-
-  column-gap: 50px;
-  row-gap: 25px;
+  /*
+  Struktur: 
+  #text1.text
+  #bilde1.bilde-bokser
+  #text-og-bilde1-bakgrunn.tekst-og-bildeboks
   
-}
+  */
 
-#tidligere-a{
-  box-sizing: border-box;
-  border: 5px solid orange;
-  background-color:rgb(18, 219, 48);
-  border-radius: 10px;
-  text-align: center;
+  /*Felles justeringer*/
+
+  figure{
   
-  
-}
-
-/*
-Struktur: 
-#text1.text
-#bilde1.bilde-bokser
-#text-og-bilde1-bakgrunn.tekst-og-bildeboks
-
-*/
-
-
-/*Felles justeringer*/
-figure{
-
 z-index:2;}
-.tekst-og-bildeboks{
-  background-color: aqua;
-  z-index: 1;
-}
-.text{
-  z-index: 2;
+
+  .tekst-og-bildeboks{
+    background-color: aqua;
+    background-color: var( --bakgrunnsfarge-text-bilde-bakgrunn);
+    
+    
+    z-index: 1;
   
-}
+  }
+  .text p, .text h3{
+    color:var(--textfarge-til-bakgrunnsfargen);
 
-/* Første bilde tekst bildeboks kombo*/
+  }
+  #section1-grid figure>img{
 
-#text-og-bilde1-bakgrunn{
+    width:100%;
+    align-self: center;
+  }
+
+  .text{
+    z-index: 2;
+    padding: 0 1.5rem;
+    
+  }
+
+  /* Første bilde tekst bildeboks kombo*/
+
+  #text-og-bilde1-bakgrunn{
+    
+    grid-row:2/4 ;
+    grid-column:1/3 ;
+       
+
+    grid-area: 1/1/2/-1;
+
+  }
+
+  #text1{
+    grid-area: 1/1/2/4;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 2rem 2rem 1.5rem;
+  }
+  #text1>p{
+    
+  }
+
+  #text1 .kode-i-tekst{ 
+    background-color:var(--text-bakgrunnsfarge-til-kode-text);
+
+    
+  } 
+  #text1 a{
+   /*Link i første avsnitt*/
   
-  grid-row:2/4 ;
-  grid-column:1/3 ;
+  }
+
+
+  #bilde1{
+    grid-area: 1/4/2/5;
+    display:flex;
+    
+  }
+  #bilde1>img{
+    width:100%;
+    align-self: center;
+    
+  }
+    /* Andre bilde tekst bildeboks kombo*/
+  #text-og-bilde2-bakgrunn{
+    
+    grid-area: 2/1/3/-1;
+  }
+  #text2{
+    grid-area: 2/3/3/5;
+  }
+  #text2 .kode-i-text{
+    background-color: #ddd;
+  }
+  #bilde2{
+    text-align: center;
+    
+    grid-area: 2/1/3/3;
+    display: flex;
+    
+
+  }
+  #bilde2>img{
+    align-self: center;
+  }
+    /* Tredje bilde tekst bildeboks kombo*/
+
+    /* bildeboks 3 har link i stedet for bilde */
+    /*
+      
+      
+    */
+   
+
+    
+    
+  #text-og-bilde3-bakgrunn{
+    grid-area: 3/2/5/4;
+    background-color: var(--bakgrunnsfarge-text-bilde-bakgrunn2);
+    
+    border-radius:15px;
   
+  }
+  #text3{
+    grid-area: 3/2/4/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+   
+  }
+
+
+ 
+  #link1{
+    border-radius: 10px;
+    padding: 0 2em 2rem 2em;
+
+    grid-area: 4/2/5/-2;
+    z-index: 6;
+    position: relative;
+
+    
+  }
+  #link1>figcaption{
+    position: absolute;
+    color:rgb(34, 90, 163);
+    text-decoration: underline;
+    font-size: 1.5rem;
+    
+
+  }
+  #link1>img{ 
+    height: 100%;
+    width:100%;
+  }
   
+   
 
-  grid-area: 1/1/2/-1;
+  /******************************\
+   *     Grid andre seksjon      *
+  \******************************/
+  section#section2-grid{
+    margin-top:5rem;
+    display: grid;
+    grid-template-rows: repeat(5,1fr) ;
+    /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
+    grid-template-columns: repeat(7,minmax(50px,1fr));
+    border: 2px solid red;
+    column-gap: 50px;
+    row-gap: 25px;
+    
+  }
 
-}
 
-#text1{
-  grid-area: 1/1/2/3;
-}
-#bilde1{
-  grid-area: 1/3/2/5;
-}
-#bilde1>img{
-  width: 100%;
-}
-  /* Andre bilde tekst bildeboks kombo*/
-#text-og-bilde2-bakgrunn{
+   /* Fjerde bilde tekst bildeboks kombo*/
+
+   #text-og-bilde4-bakgrunn{
+    
+    grid-area: 1/1/2/-1;
+    background-color: blanchedalmond;
+    
+  }
+  #text4{
+    grid-area: 1/1/2/4;
+  }
+  #bilde4{
+    grid-area:  1/4/2/6;
+  }
+  #bilde4>img{ 
+
+  }
+
   
-  grid-area: 2/1/3/5;
-}
-#text2{
-  grid-area: 2/3/3/5;
-}
-#bilde2{
-  text-align: center;
-  display: flex;
-  grid-area: 2/1/3/3;
-  background-color: red;
+   /* Femte bilde tekst bildeboks kombo*/
 
-}
-#bilde2>img{
-  width: 100%;
-}
-  /* Tredje bilde tekst bildeboks kombo*/
-#text-og-bilde3-bakgrunn{
-  grid-area: 3/1/4/5;
-}
-#text3{
-  grid-area: 3/1/4/3;
-}
-#bilde3{ 
-  grid-area: 3/3/4/5;
-}
-  /* Fjerde bilde tekst bildeboks kombo*/
-#text-og-bilde4-bakgrunn{
-  grid-area: 4/1/5/5;
-}
-#text4{
-  grid-area: 4/3/5/6;
-  align-self: center;
-}
+   #text-og-bilde5-bakgrunn{
+    
+    grid-area: 2/1/3/-1;
+    background-color: blanchedalmond;
+    z-index: inherit;
+  }
 
-#bilde4{
-  grid-area: 4/1/6/5;
-  display: flex;
-}
-#bilde4>img{
-  align-self: center;
-}
+  #text5{
+    grid-area: 2/1/3/4;
+    
+  }
+  /*Linkboks for fire linker */
+  #link-box{
+    grid-area:  2/4/3/7;
+    background-color: aqua;
+    z-index: 1;
+  }
+  #link-box>ul{
+    
+    box-sizing: border-box;
+    margin:0; padding:0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height:100%;
+    list-style: none;
+
+
+  }
+  #link-box>ul>li{
+    border:2px solid green;
+  }
+  #link-box a{
+    font-size: 1.5rem;
+    line-height: 4rem;
+    display: block;
+    padding-left: 2rem;
+
+  }
+  #link-box a:hover{
+    cursor: pointer;
+
+  }
 
 
 /*******************\

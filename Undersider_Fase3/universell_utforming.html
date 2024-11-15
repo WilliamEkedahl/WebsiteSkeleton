@@ -89,44 +89,38 @@
 
 <div id = "bakgrunnsbildet"></div>
 
-    <div id="page-wrap">
-        <figure><img src="../Bilder/uu.jpeg" alt=""></figure>
-        <div class="Headerbar"> <!--navnet på gruppen-->
-            <div class="list">
-                <div class="item">
-                    <!--class er for hvilken gruppe de elementene tilhører. Vi kan sette flere elementer i en gruppe-->
-                    <img style="display:none;" src="../Bilder/AI.jpeg"> <!--img er for bilde-->
-                    <!-- Bildet skal være bakgrunnsbilde .. ? tenker jeg. Se begrunnelser i main.css for valg av bakrunnsbildet gjen backgroun-image i CSS heller enn img-tag i HTML-->
-                    <div class="content">
-                        <div class="title">Web og systemutvikling</div> <!--Hva jeg driver med. Dette er tittelen-->
-                        <div class="topic">Programmering</div> <!--Hva jeg viser nå. Derfor er fotografiene fremst-->
-                    </div>
-                </div>
-            </div>
-        </div>
+   
 
 
 
 
-        <p>Page-wrap får border og max-width ved en fastsatt pixel-bredde. Border er for vår del under utviklingen
-        </p>
+    <div id="temamarkør"> Emnemarkør</div>
+
         <section id="section1-grid">
-        
+          
 
 <!-- bildeboks1-->
 
 
             <div id="text1" class="text">
-                <h1>Universell Utforming</h1>
-                <h3>Hva er Universell Utforming</h3>
-                <p>Universell utforming, forkortet som UU, handler om å lage løsninger som alle kan bruke, uansett hvilken nedsatt funksjonsevne en person kan ha. 
-                    Universell utforming innebærer alt av å designe bygg, produkter, tjenester og omgivelser på best mulig måte sånn at det kan brukes av alle. 
-                    Målet med Universell utforming er å kunne redusere eller fjerne barrierer som kan hindre deltakelse gjennom utforming som sosiale og kulturelle institusjoner, bygde omgivelser og IKT (Lid, 2024). </p>
+                <h3>Hva er Universell Utforming?</h3>
+                <p>Universell utforming, forkortet som UU,
+                    handler om å lage løsninger som alle kan bruke, 
+                    uansett hvilken nedsatt funksjonsevne en person kan ha.
+                    Universell utforming innebærer alt av å designe bygg, produkter, tjenester og omgivelser på best mulig måte 
+                    sånn at det kan brukes av alle. Målet med Universell utforming er å kunne redusere eller fjerne barrierer
+                    som kan hindre deltakelse gjennom utforming som sosiale og kulturelle institusjoner, bygde omgivelser og IKT (Lid, 2024). </p>
                 
+                  <p> Når det kommer til Universell Utforming så finnes det to offisielle definisjoner på dette i Norge.
+                    
+
+                </p>
             </div>
         
             <figure id="bilde1" class="bilde-bokser"><img
-                    src="../Bilder/datauu.jpeg" alt="">
+                    src="..\Bilder\datauu.jpeg" alt="">
+                
+                    
             </figure>
 
             <div id="text-og-bilde1-bakgrunn" class="tekst-og-bildeboks"></div>
@@ -137,13 +131,55 @@
 
 
             <div id="text2" class="text">
-                <h3>Oversriften til andre bildeboks</h3>
-                <p>Tekst til det andre bildet</p>
+                <h3>Eksempler på Universell Utforming</h3>
+                <p>
+                    
+                    
+                    <ul>
+                        <li>
+                            <span class="kode-i-text">&lt;&#33;doctype html&gt;</span> 
+                            er ikke en HTML-tag. Den forteller nettleseren hvilken type dokument det er. 
+                        </li>
+                        <li>
+                            <span class="kode-i-text">&lt;html&gt;&lt;/html&gt;</span>
+                            html-elementet. Det strekker seg fra begynnelsen til slutten og omfavner alt innholdet på hele siden. 
+                            Det inneholder også en språkmarkør som indikerer det primære språket i dokumentet. 
+                            Webdesignere bør bruke denne slik at det blir lettere å finne informasjon på det språket man ønsker å lese.
+                        </li>
+                        
+                        <li> 
+                            <span class="kode-i-text">&lt;head&gt;&lt;/head&gt;</span>
+                            head-elementet er oppbevaringsplassen, containeren for alt du vil inkludere i HTML-dokumentet som ikke er vises til leserne av siden. 
+                            Det kan være nøkkelord, beskrivelse av siden som kan vises i søkemotor-resultater, lenker til CSS og mer.
+                        </li>
+                        <li><span class="kode-i-text">&lt;meta charset="utf-8"&gt;</span> 
+                            Dette elementet setter tegn-settet dokumentet ditt skal bruke til utf-8 som inneholder de fleste tegnene i majoriteten av språk. 
+                        </li>
+                        <li>
+                            <span class="kode-i-text">&lt;meta name="viewport" content="width=device-width"&gt;</span> 
+                            Denne kalles: viewport-element. Her settes innholdets bredde til device-width. 
+                            Det vil si enhetens bredde. 
+                            Uten denne spesifikasjonen kunne det skjedd at mobile enheter med mindre skjerm enn en laptop ville vist en nedskalert side og 
+                            redusert brukervennligheten betraktelig. 
+                        </li>
+                        <li>
+                            <span class="kode-i-text">&lt;body&gt;&lt;/body&gt;</span>
+                             body-elementet. Denne inneholder alt innholdet du vil vise til brukerne som besøker nettsiden. 
+                             Det kan være bilder, video, spill, lydspor med mer.
+                        </li>
+                    </ul>
+                    
+
+                   
+                    
+                   
+                    
+                </p>
             </div>
 
 
             <figure id="bilde2" class="bilde-bokser"><img
-                    src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg" alt="">
+                    src="..\Bilder\uu.jpeg" alt="">
             </figure>
             <div id="text-og-bilde2-bakgrunn" class="tekst-og-bildeboks"></div>
           
@@ -151,43 +187,79 @@
 <!-- bildeboks3-->
   
 
-            <div id="text3" class="text">
-                <h3>Oversriften til tredje bildeboks</h3>
-                <p>Tekst til det tredje bildet</p>
+            <div id="text3" class="text"> 
+                <h3>Les videre om HTML som verktøy</h3>
+                
             </div>
+            
+          
+            <a id="link1" href="#">
+                <figcaption>Lær om HTML som verktøy</figcaption>
+                <img 
+                    src="..\Bilder\Runars bildekilde\klikkflate-fisker.jpg"
+                    alt="link web-design">
+                    
+            </a>
         
-
+<!--
             <figure id="bilde3" class="bilde-bokser"><img
                     src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg" alt="">
             </figure>
-        
+ -->
             <div id="text-og-bilde3-bakgrunn" class="tekst-og-bildeboks"></div>
           
- <!-- bildeboks4-->
-
-
-            <div id="text4" class="text">
-                <h3>Eventuelle linker her</h3>
-                <p>link</p>
-                <p>link</p>
-                <p>link</p>
-                <p>link</p>
-                
-            
-            </div>
-        
-        
-            <figure id="bilde4" class="bilde-bokser"><img
-                    src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg" alt="">
-            </figure>
-        
-            <div id="text-og-bilde4-bakgrunn" class="tekst-og-bildeboks"></div>
-        
-        
-        
         </section>
+     
 
-    </div>
+  <!-- Ny seksjon seksjon 2 ********* -->          
+ 
+ <section id="section2-grid">
+         <!-- bildeboks4--> 
+
+         <div id="text4" class="text">
+            <h3>Oversriften til fjerde bildeboks</h3>
+            <p>I eksempelet med strong taggen så vi at teksten mellom taggene fikk tekst 
+                stilen «bold» eller fet. Forskjellige tagger har forskjellig innvirkning på innholdet. 
+                En nyttig tag som gir punktliste i teksten er kombinasjonen av UL, 
+                som betyr «unordered list» eventuelt OL som betyr «ordered list» og «li» 
+                som betyr list item.  
+            </p>
+        </div>
+    
+    
+        <figure id="bilde4" class="bilde-bokser"><img
+                src="../Bilder\Runars bildekilde\Hjemmelaget.png" alt="">
+                
+        </figure>
+    
+        <div id="text-og-bilde4-bakgrunn" class="tekst-og-bildeboks"></div>
+   
+        <!-- bildeboks5 skal være tekst og fire linker --> 
+        <div id="text5" class="text">
+            <h3>Mer nyttig informasjon</h3>
+            <p>Beskrivelse til linkene</p>
+            
+        </div>
+    
+        <div id="text-og-bilde5-bakgrunn" class="tekst-og-bildeboks"></div>
+        <!--
+        linker her 
+        -->
+        <div id="link-box">
+            <ul>
+                <li><a href="#">link1</a></li>
+                <li><a href="#">link2</a></li>
+                <li><a href="#">link3</a></li>
+                <li><a href="#">link4</a></li>
+                <li><a href="#">link5</a></li>
+            </ul>
+            
+        </div>
+
+    
+        <div id="text-og-bilde5-bakgrunn" class="tekst-og-bildeboks"></div>
+
+ </section>
     <!-- ********* ********* *********** ********** ********** ********** -->
     <!--#            Footer                                       #-->
 <!-- ********* ********* *********** ********** ********** ********** -->
