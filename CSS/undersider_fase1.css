@@ -93,16 +93,16 @@ z-index:2;}
     grid-area:3/2/5/6;
     width: 0.5fr;
     height: 0.1fr;
-    border: 1px solid black
-    
-     
+    border: 1px solid black;
+    margin-bottom: 30px;
   }
   
   #bilde1{
     margin:5;
     grid-row: 2/3;
     grid-column: 2/4;
-    grid-area: 2/2/3/6;
+    grid-area: 1/2/3/6;
+    margin-top: 30px;
   
   }
 
