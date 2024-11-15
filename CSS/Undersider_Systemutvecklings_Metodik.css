@@ -4,17 +4,20 @@
 body{
     font-size: 20px;
     font-family: vardana, sans serif;
+    color:white;
 }
 h1{
     font-size: 50px;
+    margin: 0px;
+
 }
 h2{
     font-size: 24px;
 }
 
 #background-image {
-    background-image: url("../Bilder/SystemeutvecklingsMetodik_Bilder/HeaderSystemMetodik.png");
-    padding-bottom: 500px;
+ /*   background-image: url("../Bilder/SystemeutvecklingsMetodik_Bilder/HeaderSystemMetodik.png");
+    padding-bottom: 500px; */
 }
 /******************************\
      Grid første seksjon
@@ -93,10 +96,13 @@ figure {
     grid-column: 1/16;
     grid-area: 1/1/6/16;
 }
+#language-info{
+    margin-left: 15px;
+    grid-area: 1/1/1/16;
+}
 
 #text1{
-    width: 0.7fr;
-    color:white;
+    width: 1.5fr;
     grid-area: 2/2/6/7;
 }
 #bilde1{
@@ -111,12 +117,14 @@ figure {
     grid-area: 9/9/9/9;
 }
 #text2{
-    grid-area: 9/9/9/9;
+    color: black;
+    grid-area: 6/2/9/14;
+
 }
 #bilde2{
     text-align: center;
 
-    grid-area: 9/9/9/9;
+    grid-area: 9/2/12/6;
 
 }
 /* Tredje bilde tekst bildeboks kombo*/
@@ -127,7 +135,7 @@ figure {
     grid-area: 9/9/9/9;
 }
 #bilde3{
-    grid-area: 9/9/9/9;
+    grid-area: 9/11/12/15;
 }
 /* Fjerde bilde tekst bildeboks kombo*/
 #text-og-bilde4-bakgrunn{
@@ -137,12 +145,13 @@ figure {
     grid-area: 8/1/10/3;
 }
 #bilde4{
-    grid-area: 8/3/10/5;
+    grid-area: 13/3/15/5;
 }
 .image-link{
 
-
 }
+
+
 
 /******************************\
  *     Grid andre seksjon      *
