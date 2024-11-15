@@ -21,7 +21,7 @@
 
 section#section1-grid{
     display: grid;
-    grid-template-rows:1fr 1fr 5rem 250px;
+    grid-template-rows:1fr 1fr .1fr 250px;
     
 
     /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
@@ -75,7 +75,7 @@ z-index:2;}
     padding: 0 1.5rem;
     
   }
-
+  .text h1{ margin:0;}
   /* Første bilde tekst bildeboks kombo*/
 
   #text-og-bilde1-bakgrunn{
@@ -128,7 +128,7 @@ z-index:2;}
   #text2{
     grid-area: 2/3/3/5;
   }
-  #text2 .kode-i-text{
+  #text2 .kode-i-tekst{
     background-color: #ddd;
   }
   #bilde2{
