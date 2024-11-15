@@ -73,7 +73,7 @@ z-index:2;}
   #text-og-bilde1-bakgrunn{
     grid-row:1/8 ;
     grid-column:2/11 ;
-    grid-area:1/2/4/11;
+    grid-area:1/2/5/11;
 
   } 
 
@@ -90,7 +90,7 @@ z-index:2;}
   #text1{
     grid-row:4/8 ;
     grid-column:3/6 ;
-    grid-area:2/2/4/6;
+    grid-area:3/2/5/6;
     width: 0.5fr;
     height: 0.1fr;
     border: 1px solid black
@@ -102,7 +102,7 @@ z-index:2;}
     margin:5;
     grid-row: 2/3;
     grid-column: 2/4;
-    grid-area: 1/2/2/6;
+    grid-area: 2/2/3/6;
   
   }
 
