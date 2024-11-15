@@ -281,9 +281,14 @@ z-index:2;}
   transition: all 200ms ease;
 
 }
-/*
-#link-box>ul>li>a#link1::after{content:"linker1";}
-*/
+
+
+
+#link-box>ul>li:nth-of-type(1)>a:after{content:"linker1";}
+#link-box>ul>li:nth-of-type(2)>a:after{content:"linker2";}
+#link-box>ul>li:nth-of-type(3)>a:after{content:"linker3";}
+#link-box>ul>li:nth-of-type(4)>a:after{content:"linker4";}
+#link-box>ul>li:nth-of-type(5)>a:after{content:"linker5";}
 
 #link-box>ul>li>a:hover::after{
 transform:translateY(-4px) translateX(4px);
