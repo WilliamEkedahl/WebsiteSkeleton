@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semesteroppgaven - HTML</title>
     <link rel="stylesheet" href="..\..\CSS\main.css">
-    <link rel="stylesheet" media="screen and (min-width: 1400px)" href="..\..\CSS\html-big.css">
+    <link rel="stylesheet" media="screen and (min-width: 1400px)"  href="..\..\CSS\undersider_Systemutvecklings_Metodik.css">
     <link rel="stylesheet" href="..\..\CSS\html.css">
     <link rel="stylesheet" href="..\..\CSS\mainNavBar.css">
-    <link rel="stylesheet" href="..\..\CSS\undersider_fase1.css">
 
 </head>
 
@@ -17,82 +16,76 @@
 <script src="../JS/dropMenu.js" defer></script>
 
 <nav>
-    <!-- Back to the start page -->
-    <a class="logo" href="logo.svg" alt="This is our logo"> </a>
+    <div id="nav-home-links">
+        <!-- Back to the start page -->
+        <a  class="logo" href="" alt="logo hjem link"><img id= "logo" src="../Bilder\Runars bildekilde\SuperLogo.svg" alt="logo"> </a>
 
-    <!-- Home Dropdown -->
-    <div class="dropdown" data-dropDown>
-        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> HOME</button>
-        <div class="dropdown-menu" dropdown-menu>
-            <ul>
-                <li class="dropdown-items"><a href="index.html">HOME</a></li>
-            </ul>
-        </div>
+        <!-- Home link -->
+        <a id="home-link" href="index.html"><img src="../Bilder/imagesforWebsite.png"> Home</a></li>
     </div>
-
-    <!-- Fase 1 Dropdown -->
-    <div class="dropdown" data-dropDown>
-        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Analysere</button>
-        <div class="dropdown-menu" dropdown-menu>
-            <ul>
-                <li class="dropdown-items"><a href="Undersider_Fase1/Personas.html">Personas</a></li>
-                <li class="dropdown-items"><a href="Undersider_Fase1/IA.html">IA</a></li>
-            </ul>
+    <div id="nav-wrapper">
+        <!-- Fase 1 Dropdown -->
+        <div class="dropdown" data-dropDown>
+            <button  class="dropdown-items" data-dropDown-button> Analysere </button>
+            <div class="dropdown-menu" dropdown-menu>
+                <ul>
+                    <li class="dropdown-items"><a href="Undersider_Fase1/Personas.html">Personas</a></li>
+                    <li class="dropdown-items"><a href="Undersider_Fase1/IA.html">IA</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
 
-    <!-- Fase 2 Dropdown -->
-    <div class="dropdown" data-dropDown>
-        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Design</button>
-        <div class="dropdown-menu" dropdown-menu>
-            <ul>
-                <li class="dropdown-items"><a href="Undersider_Fase2/WireFrames.html">WireFrames</a></li>
-                <li class="dropdown-items"><a href="Undersider_Fase2/Design.html">Design</a></li>
-                <li class="dropdown-items"><a href="Undersider_Fase2/UX.html">UX</a></li>
-            </ul>
+        <!-- Fase 2 Dropdown -->
+        <div class="dropdown" data-dropDown>
+            <button class="dropdown-items" data-dropDown-button> Design </button>
+            <div class="dropdown-menu" dropdown-menu>
+                <ul>
+                    <li class="dropdown-items"><a href="Undersider_Fase2/WireFrames.html">WireFrames</a></li>
+                    <li class="dropdown-items"><a href="Undersider_Fase2/Design.html">Design</a></li>
+                    <li class="dropdown-items"><a href="Undersider_Fase2/UX.html">UX</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
 
-    <!-- Fase 3 Dropdown -->
-    <div class="dropdown" data-dropDown>
-        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Virkeligjøre</button>
-        <div class="dropdown-menu" dropdown-menu>
-            <ul>
-                <li class="dropdown-items"><a href="Undersider_Fase3/WCAG_kriteriene.html">WCAG Kriteriene</a></li>
-                <li class="dropdown-items"><a href="Undersider_Fase3/css.html">CSS</a></li>
-                <li class="dropdown-items"><a href="Undersider_Fase3/html.html">HTML</a></li>
-                <li class="dropdown-items"><a href="Undersider_Fase3/universell_utforming.html">Universell Utforming</a>
-                </li>
-                <li class="dropdown-items"><a href="Undersider_Fase3/Brukertesting.html">Brukertesting</a></li>
-            </ul>
+        <!-- Fase 3 Dropdown -->
+        <div class="dropdown" data-dropDown>
+            <button  class="dropdown-items" data-dropDown-button> Virkeligjøre </button>
+            <div class="dropdown-menu" dropdown-menu>
+                <ul>
+                    <li class="dropdown-items"><a href="Undersider_Fase3/WCAG_kriteriene.html">WCAG Kriteriene</a></li>
+                    <li class="dropdown-items"><a href="Undersider_Fase3/css.html">CSS</a></li>
+                    <li class="dropdown-items"><a href="Undersider_Fase3/html.html">HTML</a></li>
+                    <li class="dropdown-items"><a href="Undersider_Fase3/universell_utforming.html">Universell Utforming</a></li>
+                    <li class="dropdown-items"><a href="Undersider_Fase3/Brukertesting.html">Brukertesting</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
 
-    <!-- Systemutvecklings Metodik Dropdown -->
-    <div class="dropdown" data-dropDown>
-        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Systemutvecklings Metodik</button>
-        <div class="dropdown-menu" dropdown-menu>
-            <ul>
-                <li class="dropdown-items"><a href="Undersider_Systemutvecklings_Metodik/Agile_Metoder.html">Agile
-                    Metoder</a></li>
-                <li class="dropdown-items"><a href="Undersider_Systemutvecklings_Metodik/Tradisjonelle_Metoder.html">Tradisjonelle
-                    Metoder</a></li>
-            </ul>
+        <!-- Systemutvecklings Metodik Dropdown -->
+        <div class="dropdown" data-dropDown>
+            <button  class="dropdown-items" data-dropDown-button> Systemutvecklings Metodik </button>
+            <div class="dropdown-menu" dropdown-menu>
+                <ul>
+                    <li class="dropdown-items"><a href="Undersider_Systemutvecklings_Metodik/Agile_Metoder.html">Agile Metoder</a></li>
+                    <li class="dropdown-items"><a href="Undersider_Systemutvecklings_Metodik/Tradisjonelle_Metoder.html">Tradisjonelle Metoder</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
 
-    <!-- Kilder Dropdown -->
-    <div class="dropdown" id="Kilder-dropdown" data-dropDown>
-        <button id="nav-buttons" class="dropdown-items" data-dropDown-button> Kilder</button>
-        <div class="dropdown-menu" dropdown-menu>
-            <ul>
-                <li class="dropdown-items"><a href="Undersider_Kilder/Kilder.html">Kilder</a></li>
-            </ul>
+        <!-- Grunnlag Dropdown -->
+        <div class="dropdown" id="grunnlag" data-dropDown>
+            <button class="dropdown-items" data-dropDown-button> Grunnlag </button>
+            <div id="grunnlag-dropdown" class="dropdown-menu" dropdown-menu>
+                <ul>
+                    <li class="dropdown-items"><a href="Undersider_Grunnlag/Kilder.html">Kilder</a></li>
+                    <li class="dropdown-items"><a href="begrunnelser.html"> Begrunnelser </a> </li>
+                </ul>
+            </div>
         </div>
     </div>
 </nav>
 
-<div id="bakgrunnsbildet"></div>
+<div id="background-image"></div>
 
 <div id="page-wrap">
     <div class="Headerbar"> <!--navnet på gruppen-->
@@ -102,30 +95,24 @@
                 <img style="display:none;" src="../Bilder/AI.jpeg"> <!--img er for bilde-->
                 <!-- Bildet skal være bakgrunnsbilde .. ? tenker jeg. Se begrunnelser i main.css for valg av bakrunnsbildet gjen backgroun-image i CSS heller enn img-tag i HTML-->
                 <div class="content">
-                    <div class="title">Web og systemutvikling</div> <!--Hva jeg driver med. Dette er tittelen-->
-                    <div class="topic">Programmering</div> <!--Hva jeg viser nå. Derfor er fotografiene fremst-->
+
                 </div>
             </div>
         </div>
     </div>
 
 
-    <p>Page-wrap får border og max-width ved en fastsatt pixel-bredde. Border er for vår del under utviklingen
-    </p>
-    <section id="section1-grid">
-        <p>Seksjon 1 - alt som kan klikkes på plasseres her</p>
-        <h1>Hovedside seksjon 1</h1>
 
+    <section id="section1-grid">
 
         <!-- bildeboks1-->
-
 
         <div id="text1" class="text">
 
         </div>
 
         <figure id="bilde1" class="bilde-bokser"><img
-                src="../Bilder\Fase1 bilder\personasMindre.png" alt="bilde av personas">
+                src="..\Bilder/SystemeutvecklingsMetodik_Bilder/theScope.png" alt="bilde1 ändra">
         </figure>
 
         <div id="text-og-bilde1-bakgrunn" class="tekst-og-bildeboks"></div>

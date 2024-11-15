@@ -7,13 +7,11 @@ body{
 
 /**** Feltet rundt linkene/knappene ****/
 nav{
-    /*
-    background-color: #f3f3f3;
-    */
-    display: flex;
-    gap: 1rem; 
-    height: 1.5rem;
+    background-color: rgb(102, 102, 104);
+    gap: 1rem;
     z-index: 10;
+    margin: 1rem;
+    flex-wrap: wrap;
 }
 
 /*********************************************************\
@@ -21,174 +19,144 @@ nav{
 *     De skal være knapper fordi de ikke er linker       *
 \*********************************************************/
 
+    @media (max-width: 600px) {
+        #nav-wrapper {
+            display: flex;
+            flex-direction: column;
+            border: 2px solid yellow;
+        }
+        #nav-home-links {
+            display:flex;
+            column-gap: 10px;
+            justify-content: space-between;
+        }
+        #grunnlag {
+            margin: 0.5rem 0; /* Adjust margin for smaller screens */
+            width: 100%; /* Make elements take full width */
+            text-align: center; /* Center-align for readability */
+        }
+    }
 
-#home-link{
-/*Spesiell justering for hjem-linken*/
-}
-#home-link>img{
-    height:1rem;
+    @media (min-width: 601px) {
+        #nav-wrapper {
+            display: flex;
+            flex-direction: row;
+            border: 2px solid yellow;
+        }
+    }
 
-}
-#nav-buttons{
-    background: none;
-    border:none;
-    text-decoration: none;
-    color: #777;
-    font-family: inherit;
-    font-size: inherit;
-    cursor: pointer;
-    padding: 0;
-}
+    #nav-home-links{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        column-gap: 10px;
+        align-items: center;
+        margin-inside: 50px;
+        padding: 10px;
+    }
 
-#Kilder-dropdown {
-    margin-left: auto;
-   /* margin-right: 10px;*/
-   right:100px;
-}
+    #logo{
+        height:100%;
+        max-height: 50px;
+    }
 
-
-
-/*****************************************************
- *** Linkene/knappene i nav-baren har klassen link ***
- *** Knapper som klikkes på viser flere linker     ***
- *** Alle linkene har også klassen link            ***/
-.link{
-    background: none;
-    border:none;
-    text-decoration: none;
-    color: #777;
-    font-family: inherit;
-    font-size: inherit;
-    cursor: pointer;
-    padding: 0;
-}
- /******************************************************************************
- *** Klassen active legges til og fjernes av javascript ved klikk            ***
- *** Klassen legges til og fjernes fra elementet som har klassen dropdown    ***
- *** Knappene som viser flere linker når de trykkes på har klassen dropdown  ***/
-.dropdown.active > .link,
-.link:hover{
-    color:black;
-}
-
-.dropdown{
-    position: relative;
-
-}
-
-.dropdown-menu{
-    align-content: center;
-    display: none;
-    position: absolute;
-    left: 0;
-    background-color: white;
-    padding:0.75rem;
-    border-radius: 0.25rem;
-    box-shadow:2px 2px 5px black;
-    transform: translateY(-1em);
-    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
-    transform: translatex(-50%);
-    right: auto;
-    z-index: 3;
+    #home-link,#home-link:visited{
+        /*Spesiell justering for hjem-linken*/
+        color: black;
+    }
+    #home-link>img{
+        height:1rem;
+    }
 
 
+
+    #nav-buttons{
+        background: none;
+        border:none;
+        text-decoration: none;
+        color: #000000;
+        font-family: inherit;
+        font-size: inherit;
+        cursor: pointer;
+        padding: 0;
+        border: 2px solid yellow;
+    }
+
+    #grunnlag {
+        margin-left: auto;
+        /* margin-right: 10px;*/
+        right:100px;
+    }
+
+
+
+    /*****************************************************
+     *** Linkene/knappene i nav-baren har klassen link ***
+     *** Knapper som klikkes på viser flere linker     ***
+     *** Alle linkene har også klassen link            ***/
+    .link{
+        background: none;
+        border:none;
+        text-decoration: none;
+        font-family: inherit;
+        font-size: inherit;
+        cursor: pointer;
+        padding: 0;
+    }
+    /******************************************************************************
+    *** Klassen active legges til og fjernes av javascript ved klikk            ***
+    *** Klassen legges til og fjernes fra elementet som har klassen dropdown    ***
+    *** Knappene som viser flere linker når de trykkes på har klassen dropdown  ***/
+    .dropdown.active > .link,
+    .link:hover{
+        color:black;
+    }
+
+    .dropdown{
+        position: relative;
+
+    }
+
+    .dropdown-menu{
+        align-content: center;
+        display: none;
+        position: absolute;
+        left: 0;
+        background-color: white;
+        padding:0.75rem;
+        border-radius: 0.25rem;
+        box-shadow:2px 2px 5px black;
+        transform: translateY(-1em);
+        transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+        transform: translatex(-50%);
+        right: auto;
+        z-index: 3;
+    }
+
+    .dropdown.active .dropdown-menu{
+        align-content: center;
+        display : block;
+        opacity: 1;
+        /*new styling */
+        transform: translateY(0);
+        pointer-events: auto;
+        /* code copied from .information grid*/
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        gap:2rem;
+    }
+
+    #grunnlag .dropdown.active .dropdown-menu{
+        right:0;
+        left:-6rem;
+    }
+    .dropdown.active > .link + .dropdown-menu{
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
 }
 
-.dropdown.active .dropdown-menu{
-    align-content: center;
-    display : block;
-    opacity: 1;
-    /*new styling */
-    transform: translateY(0);
-    pointer-events: auto;
-    /* code copied from .information grid*/
-    display: grid;
-    grid-template-columns: repeat(2, max-content);
-    gap:2rem;
-}
-#Kilder-dropdown.dropdown.active .dropdown-menu{
-    right:0;
-    left:-6rem;
-}
-.dropdown.active > .link + .dropdown-menu{
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-}
-.information-grid{
- /*
-    display: grid;
-    grid-template-columns: repeat(2, max-content);
-    gap:2rem;
-    */
-}
-.dropdown-links{
-    display: flex;
-    flex-direction: center;
-    gap: .25rem;
-}
-
-/***********************************\
- *                                 *
- *    Nedforstående koden hørte    *
- *    til tidligere versjon av     *
- *    nav-bar                      *
-\***********************************/
-
-/*
-*{box-sizing: border-box;}
-body{margin:0;}
-.comment{ 
-    display: block;
-    background-color: #ddd;
-    padding: 5px 0;
-    font-size: 1.5rem;;
-    font-weight: bold;
-    color: orange;
-}
-#nav-bar{
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    gap:2em;
-    background-color: rgba(119, 119, 119, 0);
-    margin-top: ;
-    padding-top: 2rem;
-    padding-bottom: .5rem;
-        
-}
-
-#nav-bar>li{ 
-border:2px solid #ddd;
-text-align: center;
-}
-#nav-bar>li>a,
-#nav-bar>li>a:visited{
-    text-decoration: none;
-    font-size: 16px;    
-    color: aliceblue;display: block;
-    width:5em;
-}
-#nav-bar>li:active{
-    border-color: #777;
-    
-
-}
-#nav-bar>li>a:active{
-    color:#1ce6e6;
-    
-}
-
-#nav-bar>li>a:hover{
-    cursor: pointer;
-    color: #9a5e5d;
- }
-
- #current-page>a{
-     color: #9a5e5d;
- }
-
- */
 
 
  
