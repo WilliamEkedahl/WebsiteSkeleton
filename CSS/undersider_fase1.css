@@ -52,9 +52,11 @@ section#section1-grid{
   */
 
   /*Felles justeringer*/
+
 figure{
-  
-z-index:2;}
+  marigin: 0px;
+  z-index:2;
+}
   .tekst-og-bildeboks{
     background-color: rgb(70, 94, 107);
     z-index: 1;
