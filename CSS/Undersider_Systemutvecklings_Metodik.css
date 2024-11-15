@@ -15,6 +15,15 @@ h2{
     font-size: 24px;
 }
 
+#language-info{
+    font-size: 14px;
+}
+/* Begrunnelser
+"For secondary text – like lesser labels, captions,
+etc. – use a size a couple notches smaller – such as 13px or 14px."
+https://www.learnui.design/blog/mobile-desktop-website-font-size-guidelines.html
+ */
+
 #background-image {
  /*   background-image: url("../Bilder/SystemeutvecklingsMetodik_Bilder/HeaderSystemMetodik.png");
     padding-bottom: 500px; */
