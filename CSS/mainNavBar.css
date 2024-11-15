@@ -7,7 +7,7 @@ body{
 
 /**** Feltet rundt linkene/knappene ****/
 nav{
-    background-color: rgb(102, 102, 104);
+    background-color: rgb(188, 21, 21);
     gap: 1rem;
     z-index: 10;
     margin: 1rem;
@@ -41,7 +41,6 @@ nav{
         #nav-wrapper {
             display: flex;
             flex-direction: row;
-            border: 2px solid yellow;
         }
     }
 
@@ -79,7 +78,6 @@ nav{
         font-size: inherit;
         cursor: pointer;
         padding: 0;
-        border: 2px solid yellow;
     }
 
     #grunnlag {
@@ -94,7 +92,7 @@ nav{
      *** Linkene/knappene i nav-baren har klassen link ***
      *** Knapper som klikkes på viser flere linker     ***
      *** Alle linkene har også klassen link            ***/
-    .link{
+    div.dropdown-menu>li>a{
         background: none;
         border:none;
         text-decoration: none;
