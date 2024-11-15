@@ -68,6 +68,10 @@ z-index:2;}
   
   }
 
+  .border-around{
+    z-index: 2;
+  }
+
   /* Første bilde tekst bildeboks kombo*/
 
   #text-og-bilde1-bakgrunn{
@@ -84,6 +88,7 @@ z-index:2;}
 
   #border-innehold1{
     border: 1px solid black;
+    grid-area: 2/2/5/6;
   }
 
   #stor_overskrift1{
