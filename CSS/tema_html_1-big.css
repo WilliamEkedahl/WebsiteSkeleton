@@ -9,7 +9,12 @@
   --bakgrunnsfarge-text-bilde-bakgrunn: #ABDEE6;
   --bakgrunnsfarge-text-bilde-bakgrunn2: #E6B3AB;
   --textfarge-til-bakgrunnsfargen:black;
+  --skygge-svart-farge:rgba(0, 0, 0, 0.7);
   --text-bakgrunnsfarge-til-kode-text:#ddd;
+  /*
+  Helvetica 20px for paragrafer
+  35px for overskrifter
+  */
   font-size: 20px;
  
 }
@@ -164,26 +169,73 @@ z-index:2;}
   }
 
 
+ /*
+ link1-figure
+ */
  
-  #link1{
+ /*link1 er a ***********/
+ #link1{
     border-radius: 10px;
     padding: 0 2em 2rem 2em;
 
     grid-area: 4/2/5/-2;
     z-index: 6;
-    position: relative;
-
+    color:transparent;
+    
+    text-decoration: none;
+    
     
   }
-  #link1>figcaption{
+  
+  #link1-figure{
+    height: 100%; 
+    width:100%;
+    margin:0;
+    position: relative;
+    transition: all 200ms ease;
+  
+  }
+  
+
+  #link1-figure:hover{
+    transform:translateY(-4px) translateX(4px);
+  }
+
+  #link1-figure::before{
+    content: "-";
+    background-color: var(--skygge-svart-farge);
+    
+    display: block;
+    height:100%;
+    width:100%;
+    transition: all 200ms ease;
+    
+    
+
+  }
+  #link1-figure:hover::before{
+    transform:translateY(8px) translateX(-8px);
+  }
+
+  /*
+  
+**********
+*********
+
+  
+  */
+  #link1-figure>figcaption{
     position: absolute;
+    top:0;
     color:rgb(34, 90, 163);
     text-decoration: underline;
     font-size: 1.5rem;
     
 
   }
-  #link1>img{ 
+  #link1-figure>img{ 
+    position: absolute;
+    top:0;
     height: 100%;
     width:100%;
   }
@@ -261,7 +313,7 @@ z-index:2;}
   }
   #link-box>ul>li>a{
   
-  background-color: black;
+  background-color:var(--skygge-svart-farge);
   
   cursor:pointer;  
   z-index: 1;

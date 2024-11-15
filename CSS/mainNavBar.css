@@ -23,7 +23,6 @@ nav{
         #nav-wrapper {
             display: flex;
             flex-direction: column;
-            border: 2px solid yellow;
         }
         #nav-home-links {
             display:flex;
