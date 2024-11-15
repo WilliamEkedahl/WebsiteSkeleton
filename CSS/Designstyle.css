@@ -244,12 +244,12 @@ grid-row: 1/4;
 
 .Bilder2 h1{
   margin:0;
-  color: black;
+  color: rgb(255, 254, 254);
   font-size: 50px;
 }
 
 .Bilder2 p{
-  color: black;
+  color: rgb(255, 254, 254);
   /*
   margin-right: 80px; /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden
   */
@@ -383,5 +383,11 @@ background-color: #f7f7f7;
 color: #fff;
 padding: 40px 20px;
 text-align: center;
+}
+
+.Barebilde img{
+  height: 600px;
+  width: 100%;       /*Dette er for å få bildet til å dekke skjermen. Ikke hele skjermen, men at den når enden på begge sider*/
+  object-fit: cover;
 }
 
