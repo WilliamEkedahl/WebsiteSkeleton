@@ -52,9 +52,10 @@ section#section1-grid{
   */
 
   /*Felles justeringer*/
-
-figure{
-  marigin: 0px;
+bilde-bokser_z3{
+  z-index: 3;
+}
+.bilde-bokser{
   z-index:2;
 }
   .tekst-og-bildeboks{
@@ -103,12 +104,11 @@ figure{
     margin-top: 0px;
     margin-right: 0px;
   }
+
   #text1{
     grid-row:4/8 ;
     grid-column:3/6 ;
     grid-area:2/2/5/6;
-    width: 0.5fr;
-    height: 0.1fr;
     margin-top: 50px;
     margin-left:25px;
   }
