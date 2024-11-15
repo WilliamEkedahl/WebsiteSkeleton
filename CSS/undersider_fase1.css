@@ -178,9 +178,13 @@ z-index:2;}
     grid-area: 8/2/10/15;
   }
   .image-link{
-    
-    
   }
+
+  #text-og-bilde5-bakgrunn{
+    grid-area: 4/11/5/15;
+  }
+
+
 
   /******************************\
    *     Grid andre seksjon      *
