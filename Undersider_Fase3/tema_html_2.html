@@ -7,7 +7,7 @@
     <title>Semesteroppgaven - HTML side 2</title>
     <link rel="stylesheet" href="..\..\CSS\main.css">
     <link rel="stylesheet" media="screen and (min-width: 140px)" href="..\..\CSS\tema_html_2-big.css">
-    <link rel="stylesheet"  href="..\..\CSS\tema_html_2.css">
+    <link rel="stylesheet"  href="..\..\CSS\tema_html_felles.css">
     <link rel="stylesheet" href="..\..\CSS\mainNavBar.css">
 </head>
 
@@ -94,7 +94,14 @@
 
 
 
-    <div id="temamarkør"> Emnemarkør</div>
+    <div id="temamarkør"> Emnemarkør
+        <figure id="emnemarkør-bilde" >
+            <img src="..\Bilder\Runars bildekilde\html5.png" alt="Html5 logo">
+        
+            
+    </figure>
+
+    </div>
 
         <section id="section1-grid">
           
@@ -108,7 +115,8 @@
                     Med HTML kan du sette inn bilder på siden med bildetaggen: <br>
                     <span class="kode-i-tekst"> &lt;img src = «»  src = «» &gt; </span>
                     som er en tag som avviker litt fra de andre, den har ikke åpner og lukker.
-                     «Src» angir kilden, hvor bildet kan lastes fra, og «alt» er beskrivelse av bildet som blir synlig for brukeren ved å føre musen over bildet. 
+                     «Src» angir kilden, hvor bildet kan lastes fra, og «alt» er beskrivelse av bildet som blir synlig for brukeren dersom bildet ikke lastes inn.
+                     For eksempel fordi det er en feil i kilde-url som er satt i "src".
                     Denne beskrivelsen er viktig for mennesker uten normalt fargesyn eller andre som bruker skjermleser. 
 
                 </p>
@@ -129,17 +137,33 @@
 
             <div id="text2" class="text">
                 <h3>Oversriften til andre bildeboks</h3>
-                <p>
-                    
-                    
-                   
-                    
-                </p>
+                <p> Her er bildet satt inn med "img"-taggen:
+                    <span class="kode-i-tekst">&lt;img src= «mitt bilde.png»
+                        alt="Enkel grafikk som etterligner Slottsfjellet i Tønsberg" &gt;</span>.
+                    <br> <br>
+            
+                    Bildet blir lastet inn akkurat der img befinner seg i dokumentet. God praksis er å bruke "figure"-taggen og la bilde-taggen
+                    omsluttes av figure tagger: <br>
+                    <span class="kode-i-tekst">&lt;figure&gt; </span>
+                    <span class="kode-i-tekst">
+                        &lt;img src= «mitt bilde.png» alt = «Landskapsbilde av solnedgang i Tønsberg, fra Slottsfjellet juni 2024» >
+                        &lt;/figure&gt;</span>
+                        <br> <br>
+                    Og bruke taggen <span class="kode-i-tekst">&lt;figcaption&gt;</span> for å sette inn overskrift eller legge
+                    tekst over bildet. <strong>For eksempel: </strong> <br>
+                    <span class="kode-i-tekst">&lt;figure&gt;
+                        &lt;figcaption&gt; Byfjorden i juni &lt;/figcaption&gt;
+                        &lt;img src= «mitt bilde.png» alt = «Landskapsbilde av solnedgang i Tønsberg, fra Slottsfjellet juni 2024»
+                        &gt;
+            
+                        &lt;/figure&gt;
+                    </span>            </p>
             </div>
 
 
-            <figure id="bilde2" class="bilde-bokser"><img
-                    src="..\Bilder\Runars bildekilde\html kodeblokk1.jpg" alt="">
+            <figure id="bilde2" class="bilde-bokser">
+                <figcaption> <p>Solnedgang på Slottsfjellet</p>  </figcaption>
+                <img src="..\Bilder\Runars bildekilde\Slottsfjellet.jpg" alt="Enkel grafikk som etterligner Slottsfjellet i Tønsberg">
             </figure>
             <div id="text-og-bilde2-bakgrunn" class="tekst-og-bildeboks"></div>
           
@@ -148,7 +172,7 @@
   
 
             <div id="text3" class="text"> 
-                <h1>Lær om bruk Neste trinn</h1>
+                <h1>HTML sin plass i design prosessen</h1>
                 
             </div>
             
@@ -156,7 +180,7 @@
             <a id="link1" href="#">
                 <figure id="link1-figure">
                     <img src="..\Bilder\Runars bildekilde\klikkflate-fisker.jpg" alt="link web-design">
-                    <figcaption>God bruk av netste side</figcaption>
+                    <figcaption>Les om HTML i designprosessen</figcaption>
                 </figure>
             </a>
         
@@ -176,18 +200,23 @@
          <!-- bildeboks4--> 
 
          <div id="text4" class="text">
-            <h3>Oversriften til fjerde bildeboks</h3>
-            <p>I eksempelet med strong taggen så vi at teksten mellom taggene fikk tekst 
-                stilen «bold» eller fet. Forskjellige tagger har forskjellig innvirkning på innholdet. 
-                En nyttig tag som gir punktliste i teksten er kombinasjonen av UL, 
-                som betyr «unordered list» eventuelt OL som betyr «ordered list» og «li» 
-                som betyr list item.  
+            <h3>Bilderettigheter</h3>
+            <p>
+                Nå vet du hvordan du kan legge til bilder i nettsider.
+                Det er lett å finne bilder, men det er ikke uten videre lov
+                å publisere andres bilder. <br>
+                Publisere vil si å gjøre tilgjengelig for andre, for eksempel ved å 
+                inkludere bildene på en nettside.
+                <br><br>
+                Sjekk rettighetene på bildene før du laster dem ned. Mange bilder tilbys med brukerlinser
+                som krever at fotografen eller kunstneren krediteres for eksempel ved å inkludere en 
+                lenke til kilden eller bare oppgi navn på fotografen. 
             </p>
         </div>
     
     
         <figure id="bilde4" class="bilde-bokser"><img
-                src="../Bilder\Runars bildekilde\Hjemmelaget.png" alt="">
+                src="..\Bilder\Runars bildekilde\bilderettigheter.jpg" alt="">
                 
         </figure>
     

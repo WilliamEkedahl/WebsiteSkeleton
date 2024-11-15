@@ -7,7 +7,7 @@
     <title>Semesteroppgaven - HTML side 1</title>
     <link rel="stylesheet" href="..\..\CSS\main.css">
     <link rel="stylesheet" media="screen and (min-width: 140px)" href="..\..\CSS\tema_html_1-big.css">
-    <link rel="stylesheet"  href="..\..\CSS\tema_html_1.css">
+    <link rel="stylesheet"  href="..\..\CSS\tema_html_felles.css">
     <link rel="stylesheet" href="..\..\CSS\mainNavBar.css">
 </head>
 
@@ -102,7 +102,7 @@
 
             <div id="text1" class="text">
                 <h3>HTML er dokumentformatet for netleseren</h3>
-                <p>Hoveddel
+                <p>
 Når du ser på internett, bruker du en nettleser. 
 Nettleseren leser en slags oppskrift og skaper en digital representasjon som du kan se og interagere med.
 Den digitale representasjonen kalles Document Object Model (DOM).  
@@ -239,26 +239,48 @@ HTML dokumenter bruker tag-ger. Det heter tag på engelsk, som «merkelapp/merke
         </section>
      
 
+
   <!-- Ny seksjon seksjon 2 ********* -->          
  
  <section id="section2-grid">
          <!-- bildeboks4--> 
-
+        <h1>HTML-tagger påvirker innholdet de omslutter</h1>
          <div id="text4" class="text">
-            <h3>Oversriften til fjerde bildeboks</h3>
-            <p>I eksempelet med strong taggen så vi at teksten mellom taggene fikk tekst 
-                stilen «bold» eller fet. Forskjellige tagger har forskjellig innvirkning på innholdet. 
+            
+            <p>I eksempelet med strong-taggen så vi at teksten mellom taggene fikk tekst 
+                stilen «bold» eller «fet» som gav teksten fetere skrifttype .
+            <br><br>
+                Forskjellige tagger har forskjellig innvirkning på innholdet. 
+            <br><br>
                 En nyttig tag som gir punktliste i teksten er kombinasjonen av UL, 
                 som betyr «unordered list» eventuelt OL som betyr «ordered list» og «li» 
                 som betyr list item.  
             </p>
+            
         </div>
     
     
         <figure id="bilde4" class="bilde-bokser"><img
-                src="../Bilder\Runars bildekilde\Hjemmelaget.png" alt="">
+                src="../Bilder\Runars bildekilde\Hjemmelaget.jpg" alt="">
                 
         </figure>
+        <h1>Her kan du se hvordan det virker</h1>
+        <div id="lister-eksempelkode">
+        
+            <ul class="min-liste-uten-tall">
+                <h2>Listen uten tall er unordered list</h2>
+                <li>Dette blir første punkt på listen</li>
+                <li>Dette blir punkt nummer to</li>
+            </ul>
+        
+            <ol class="min-liste-med-tall">
+                <h2>Liste med tall er ordered list</h2>
+                <li> Dette blir første punkt på listen</li>
+                <li>Dette blir punkt nummer 2</li>
+            </ol>
+        
+        
+        </div>
     
         <div id="text-og-bilde4-bakgrunn" class="tekst-og-bildeboks"></div>
    
@@ -285,8 +307,6 @@ HTML dokumenter bruker tag-ger. Det heter tag på engelsk, som «merkelapp/merke
         </div>
 
     
-        <div id="text-og-bilde5-bakgrunn" class="tekst-og-bildeboks"></div>
-
  </section>
 
 

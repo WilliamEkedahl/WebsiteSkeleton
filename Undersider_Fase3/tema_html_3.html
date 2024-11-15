@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semesteroppgaven - HTML</title>
+    <title>Semesteroppgaven - HTML side 3</title>
     <link rel="stylesheet" href="..\..\CSS\main.css">
-    <link rel="stylesheet" media="screen and (min-width: 140px)" href="..\..\CSS\html-big.css">
-    <link rel="stylesheet"  href="..\..\CSS\html.css">
+    <link rel="stylesheet" media="screen and (min-width: 140px)" href="..\..\CSS\tema_html_3-big.css">
+    <link rel="stylesheet"  href="..\..\CSS\tema_html_felles.css">
     <link rel="stylesheet" href="..\..\CSS\mainNavBar.css">
 </head>
 
 <body>
 <script src="../JS/dropMenu.js" defer></script>
+
 
 <nav>
     <div id="nav-home-links">
@@ -85,6 +86,7 @@
     </div>
 </nav>
 
+
 <div id = "bakgrunnsbildet"></div>
 
    
@@ -92,7 +94,14 @@
 
 
 
-    <div id="temamarkør"> Emnemarkør</div>
+    <div id="temamarkør"> Emnemarkør
+        <figure id="emnemarkør-bilde" >
+            <img src="..\Bilder\Runars bildekilde\html5.png" alt="Html5 logo">
+        
+            
+    </figure>
+
+    </div>
 
         <section id="section1-grid">
           
@@ -101,47 +110,14 @@
 
 
             <div id="text1" class="text">
-                <h3>HTML er dokumentformatet for netleseren</h3>
-                <p>Hoveddel
-Når du ser på internett, bruker du en nettleser. 
-Nettleseren leser en slags oppskrift og skaper en digital representasjon som du kan se og interagere med.
-Den digitale representasjonen kalles Document Object Model (DOM).  
-HTML er en viktig byggekloss i denne modellen.
-HTML har en enkel oppbygning og struktur, likevel gir det mange muligheter. </p> 
-<p> Det finnes forskjellige meninger om hvorvidt HTML kan sies å være et programmeringsspråk
-    <a href="https://css-tricks.com/html-is-not-a-programming-language/">(mer om det her)</a>
-     ,
-    til forskjell fra programmeringsspråk har ikke HTML logiske operasjoner og det er mye mindre omfattende, lettere å lære.
-HTML dokumenter bruker tag-ger. Det heter tag på engelsk, som «merkelapp/merke» på norsk.
- Tekst som skal representeres på siden er vanligvis omsluttet av en åpner- og lukker-tag. En åpner tag ser slik ut: 
-
- <span class = "kode-i-tekst">&lt;section&gt;</span>
- 
- 
- med tilhørende lukker-tag:
- <span class = "kode-i-tekst">&lt;/section&gt;</span>
-  .
-
-
-  Ordet inni tag-gen har en semantisk betydning for programmerer, nettlesere og skjermlesere som gjør det lettere å arbeide med. 
-</p>
-<p> Dette er tag for paragraf, tekstavsnitt:
-
-
-  <span class = "kode-i-tekst">&lt;p&gt;&lt;/p&gt;</span>. 
-  Tekst som plasseres mellom disse vil få litt avstand til andre elementer på siden.
-   Hvis du ønsker å markere noe i teksten med fet skrift kan du bruke tag-en:
-
-   <span class = "kode-i-tekst">&lt;strong&gt;&lt;/strong&gt;</span>. 
-
-   For Eksempel:
-   
-   <span class = "kode-i-tekst">&lt;p&gt; Vi skal ikke bruke &lt;strong&gt; <strong>altfor</strong>&lt;/strong&gt; mye tid på tag-er&lt;/p&gt;</span>
-   
-   . To tag-ger utgjør 
-   til sammen et element. Disse elementene har noen konfigurasjoner, noen egenskaper, som påvirker utseendet eller 
-   representasjonen på skjermen. De skal vi komme tilbake til. 
-   HTML-dokumenter har en del faste tag-er og krav til oppbygning for at nettleserne skal tolke dem riktig.
+                <h1>Sette inn bilder på nettsiden</h1>
+                <p>
+                    Med HTML kan du sette inn bilder på siden med bildetaggen: <br>
+                    <span class="kode-i-tekst"> &lt;img src = «»  src = «» &gt; </span>
+                    som er en tag som avviker litt fra de andre, den har ikke åpner og lukker.
+                     «Src» angir kilden, hvor bildet kan lastes fra, og «alt» er beskrivelse av bildet som blir synlig for brukeren dersom bildet ikke lastes inn.
+                     For eksempel fordi det er en feil i kilde-url som er satt i "src".
+                    Denne beskrivelsen er viktig for mennesker uten normalt fargesyn eller andre som bruker skjermleser. 
 
                 </p>
             </div>
@@ -161,54 +137,33 @@ HTML dokumenter bruker tag-ger. Det heter tag på engelsk, som «merkelapp/merke
 
             <div id="text2" class="text">
                 <h3>Oversriften til andre bildeboks</h3>
-                <p>
-                    
-                    
-                    <ul>
-                        <li>
-                            <span class="kode-i-text">&lt;&#33;doctype html&gt;</span> 
-                            er ikke en HTML-tag. Den forteller nettleseren hvilken type dokument det er. 
-                        </li>
-                        <li>
-                            <span class="kode-i-text">&lt;html&gt;&lt;/html&gt;</span>
-                            html-elementet. Det strekker seg fra begynnelsen til slutten og omfavner alt innholdet på hele siden. 
-                            Det inneholder også en språkmarkør som indikerer det primære språket i dokumentet. 
-                            Webdesignere bør bruke denne slik at det blir lettere å finne informasjon på det språket man ønsker å lese.
-                        </li>
-                        
-                        <li> 
-                            <span class="kode-i-text">&lt;head&gt;&lt;/head&gt;</span>
-                            head-elementet er oppbevaringsplassen, containeren for alt du vil inkludere i HTML-dokumentet som ikke er vises til leserne av siden. 
-                            Det kan være nøkkelord, beskrivelse av siden som kan vises i søkemotor-resultater, lenker til CSS og mer.
-                        </li>
-                        <li><span class="kode-i-text">&lt;meta charset="utf-8"&gt;</span> 
-                            Dette elementet setter tegn-settet dokumentet ditt skal bruke til utf-8 som inneholder de fleste tegnene i majoriteten av språk. 
-                        </li>
-                        <li>
-                            <span class="kode-i-text">&lt;meta name="viewport" content="width=device-width"&gt;</span> 
-                            Denne kalles: viewport-element. Her settes innholdets bredde til device-width. 
-                            Det vil si enhetens bredde. 
-                            Uten denne spesifikasjonen kunne det skjedd at mobile enheter med mindre skjerm enn en laptop ville vist en nedskalert side og 
-                            redusert brukervennligheten betraktelig. 
-                        </li>
-                        <li>
-                            <span class="kode-i-text">&lt;body&gt;&lt;/body&gt;</span>
-                             body-elementet. Denne inneholder alt innholdet du vil vise til brukerne som besøker nettsiden. 
-                             Det kan være bilder, video, spill, lydspor med mer.
-                        </li>
-                    </ul>
-                    
-
-                   
-                    
-                   
-                    
-                </p>
+                <p> Her er bildet satt inn med "img"-taggen:
+                    <span class="kode-i-tekst">&lt;img src= «mitt bilde.png»
+                        alt="Enkel grafikk som etterligner Slottsfjellet i Tønsberg" &gt;</span>.
+                    <br> <br>
+            
+                    Bildet blir lastet inn akkurat der img befinner seg i dokumentet. God praksis er å bruke "figure"-taggen og la bilde-taggen
+                    omsluttes av figure tagger: <br>
+                    <span class="kode-i-tekst">&lt;figure&gt; </span>
+                    <span class="kode-i-tekst">
+                        &lt;img src= «mitt bilde.png» alt = «Landskapsbilde av solnedgang i Tønsberg, fra Slottsfjellet juni 2024» >
+                        &lt;/figure&gt;</span>
+                        <br> <br>
+                    Og bruke taggen <span class="kode-i-tekst">&lt;figcaption&gt;</span> for å sette inn overskrift eller legge
+                    tekst over bildet. <strong>For eksempel: </strong> <br>
+                    <span class="kode-i-tekst">&lt;figure&gt;
+                        &lt;figcaption&gt; Byfjorden i juni &lt;/figcaption&gt;
+                        &lt;img src= «mitt bilde.png» alt = «Landskapsbilde av solnedgang i Tønsberg, fra Slottsfjellet juni 2024»
+                        &gt;
+            
+                        &lt;/figure&gt;
+                    </span>            </p>
             </div>
 
 
-            <figure id="bilde2" class="bilde-bokser"><img
-                    src="..\Bilder\Runars bildekilde\html kodeblokk1.jpg" alt="">
+            <figure id="bilde2" class="bilde-bokser">
+                <figcaption> <p>Solnedgang på Slottsfjellet</p>  </figcaption>
+                <img src="..\Bilder\Runars bildekilde\Slottsfjellet.jpg" alt="Enkel grafikk som etterligner Slottsfjellet i Tønsberg">
             </figure>
             <div id="text-og-bilde2-bakgrunn" class="tekst-og-bildeboks"></div>
           
@@ -217,17 +172,16 @@ HTML dokumenter bruker tag-ger. Det heter tag på engelsk, som «merkelapp/merke
   
 
             <div id="text3" class="text"> 
-                <h1>Lær om bruk av bilder i HTML strukturen</h1>
+                <h1>HTML sin plass i design prosessen</h1>
                 
             </div>
             
           
             <a id="link1" href="#">
-                <figcaption>God bruk av &lt;img&gt; taggen</figcaption>
-                <img 
-                    src="..\Bilder\Runars bildekilde\klikkflate-fisker.jpg"
-                    alt="link web-design">
-                    
+                <figure id="link1-figure">
+                    <img src="..\Bilder\Runars bildekilde\klikkflate-fisker.jpg" alt="link web-design">
+                    <figcaption>Les om HTML i designprosessen</figcaption>
+                </figure>
             </a>
         
 <!--
@@ -246,18 +200,23 @@ HTML dokumenter bruker tag-ger. Det heter tag på engelsk, som «merkelapp/merke
          <!-- bildeboks4--> 
 
          <div id="text4" class="text">
-            <h3>Oversriften til fjerde bildeboks</h3>
-            <p>I eksempelet med strong taggen så vi at teksten mellom taggene fikk tekst 
-                stilen «bold» eller fet. Forskjellige tagger har forskjellig innvirkning på innholdet. 
-                En nyttig tag som gir punktliste i teksten er kombinasjonen av UL, 
-                som betyr «unordered list» eventuelt OL som betyr «ordered list» og «li» 
-                som betyr list item.  
+            <h3>Bilderettigheter</h3>
+            <p>
+                Nå vet du hvordan du kan legge til bilder i nettsider.
+                Det er lett å finne bilder, men det er ikke uten videre lov
+                å publisere andres bilder. <br>
+                Publisere vil si å gjøre tilgjengelig for andre, for eksempel ved å 
+                inkludere bildene på en nettside.
+                <br><br>
+                Sjekk rettighetene på bildene før du laster dem ned. Mange bilder tilbys med brukerlinser
+                som krever at fotografen eller kunstneren krediteres for eksempel ved å inkludere en 
+                lenke til kilden eller bare oppgi navn på fotografen. 
             </p>
         </div>
     
     
         <figure id="bilde4" class="bilde-bokser"><img
-                src="../Bilder\Runars bildekilde\Hjemmelaget.png" alt="">
+                src="..\Bilder\Runars bildekilde\bilderettigheter.jpg" alt="">
                 
         </figure>
     
