@@ -4,9 +4,17 @@ body{
 }
 h1{
   font-size: 50px;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 h2{
   font-size: 24px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+p{
+  margin: 0;
 }
 /******************************\
      Grid første seksjon
@@ -72,8 +80,10 @@ bilde-bokser_z3{
   }
 
   .border-around{
-    z-index: 2;
+    z-index: 3;
   }
+
+
 
   /* Første bilde tekst bildeboks kombo*/
 
@@ -83,16 +93,6 @@ bilde-bokser_z3{
     grid-area:1/2/5/11;
 
   } 
-
-  h1 {
-    margin-bottom: 0px;
-    margin-top: 0px;
-  }
-
-  h2{
-    margin-bottom: 0px;
-    margin-top: 0px;
-  }
 
   #border-innehold1{
     border: 1px solid black;
@@ -187,9 +187,12 @@ bilde-bokser_z3{
     grid-area: 9/2/13/15;
   }
   #text4{
+    z-index: 4;
     grid-row: 8/10;
     grid-column: 2/15;
     grid-area: 5/3/9/14;
+    height: 300px;
+    width: 100%;
   }
   #bilde4{
     grid-row: 8/10;
