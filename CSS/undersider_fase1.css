@@ -113,7 +113,7 @@ z-index:2;}
   #text-og-bilde2-bakgrunn{
     grid-row: 2/3;
     grid-column:2/4;
-    grid-area: 5/2/10/11;
+    grid-area: 5/2/9/15;
   }
   #text2{
     grid-row: 1/3;
@@ -165,7 +165,7 @@ z-index:2;}
   #text-og-bilde4-bakgrunn{
     grid-row: 8/10;
     grid-column: 2/15;
-    grid-area: 10/2/15/11;
+    grid-area: 9/2/13/15;
   }
   #text4{
     grid-row: 8/10;
