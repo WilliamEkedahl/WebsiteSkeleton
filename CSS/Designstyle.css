@@ -344,47 +344,6 @@ grid-row: 1/4;
   }
 
 
-/*******************\
- *     Footer      *
-\*******************/
-#main-footer{
-  background-color: rgba(51, 51, 51, .5);
-  color: #fff;
-  padding: 20px ;
-  text-align: center;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  margin-top: 10rem;
-}
-.footer-section{
-margin-bottom: 20px;
-}
-.footer-section ul{
-list-style: none;
-padding: 0;
-}
-.footer-section ul li{
-display: inline;
-margin: 0 10px;
-}
-.footer-section ul li a{
-color: #fff;
-text-decoration: none;
-font-size: 0.9em;
-font-weight: 600;
-}
-.footer-section ul li a:hover{
-text-decoration: underline;
-}
-
-#footer-section-slutt{
-background-color: #f7f7f7;
-color: #fff;
-padding: 40px 20px;
-text-align: center;
-}
-
 .Barebilde img{
   height: 600px;
   width: 100%;       /*Dette er for å få bildet til å dekke skjermen. Ikke hele skjermen, men at den når enden på begge sider*/
