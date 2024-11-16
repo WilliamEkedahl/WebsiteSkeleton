@@ -241,34 +241,63 @@ z-index:2;}
   /*Linkboks for fire linker */
   #link-box{
     grid-area:  2/4/3/7;
-    background-color: aqua;
+    
     z-index: 1;
   }
   #link-box>ul{
     
     box-sizing: border-box;
     margin:0; padding:0;
+    
     display: flex;
-    justify-content: space-evenly;
+
+    /*justify-content: space-evenly;*/
     flex-direction: column;
+    
     height:100%;
     list-style: none;
 
 
   }
-  #link-box>ul>li{
-    border:2px solid green;
+  #link-box>ul>li>a{
+  
+  background-color: black;
+  
+  cursor:pointer;  
+  z-index: 1;
+  transition: all 200ms ease;
   }
+  #link-box>ul>li>a:hover{
+    transform:translateY(2px) translateX(-2px);
+}
+
+  #link-box>ul>li>a::after{
+  box-sizing: border-box;
+  content: "_";
+  display:block;
+  background-color: var(--bakgrunnsfarge-text-bilde-bakgrunn) ;
+  
+  
+  transition: all 200ms ease;
+
+}
+#link-box>ul>li>a:nth-of-type(1)::after{content:"link1";}
+
+
+#link-box>ul>li>a:hover::after{
+transform:translateY(-4px) translateX(4px);
+    
+color:blue;
+}
+
   #link-box a{
     font-size: 1.5rem;
     line-height: 4rem;
     display: block;
-    padding-left: 2rem;
 
   }
-  #link-box a:hover{
-    cursor: pointer;
 
+  #link-box a:hover{
   }
   
   
