@@ -1,21 +1,31 @@
 :root{
     --background-color-text-og-bilde1-bakgrund: #195B69;
 }
+/* Turn the white text color to black when the screen
+goes smaller then 1000px, which is the breakpoint where the css styling stops*/
+@media (max-width: 1000px) {
+    body{
+        color: black
+    }
+}
+
 body{
     font-size: 20px;
     font-family: vardana, sans serif;
     color:white;
 }
 h1{
+    font-family: Georgia, serif;
     font-size: 50px;
     margin: 0px;
-
 }
 h2{
+    font-family: Georgia, serif;
     font-size: 24px;
 }
 
 #language-info{
+    margin: 0px;
     font-size: 14px;
 }
 /* Begrunnelser
@@ -81,7 +91,6 @@ Struktur:
 }
 
 figure{
-    max-width: 100%;
     z-index:2;
 }
 .tekst-og-bildeboks{
@@ -94,6 +103,11 @@ figure{
 
 figure {
     margin: 0;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /* Første bilde tekst bildeboks kombo*/
@@ -110,11 +124,14 @@ figure {
 }
 
 #text1{
+    margin: 35px;
     width: 1.5fr;
-    grid-area: 2/2/6/7;
+    grid-area: 2/2/6/9;
 }
 #bilde1{
-    grid-area: 1/10/5/15;
+    align-content: center;
+    max-width: 100%;
+    grid-area: 1/9/6/15;
 }
 
 /* Andre bilde tekst bildeboks kombo*/
@@ -123,8 +140,9 @@ figure {
     grid-area: 9/9/9/9;
 }
 #text2{
+    align-self: center;
     color: black;
-    grid-area: 6/2/9/14;
+    grid-area: 6/2/9/15;
 
 }
 #bilde2{
@@ -148,7 +166,7 @@ figure {
     grid-area: 8/1/10/-1;
 }
 #text4{
-    grid-area: 8/1/10/3;
+    grid-area: 15/1/15/3;
 }
 #bilde4{
     grid-area: 13/3/15/5;
