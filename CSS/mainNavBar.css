@@ -1,8 +1,4 @@
-body{
-    margin:0;
-    font-size: 20px;
-    font-family: vardana, sans serif;
-}
+
 /**********************************\
     #Nav-bar
 \**********************************/
@@ -15,6 +11,9 @@ nav{
     z-index: 10;
     margin: 1rem;
     flex-wrap: wrap;
+    margin:0;
+    font-size: 20px;
+    font-family: Verdana, sans-serif;
 }
 
 /*********************************************************\
@@ -183,8 +182,8 @@ button:focus{
 .dropdown-button  {
     margin-bottom: 10px;
     color: white;
-    font-size: 20px;
-    font-family: vardana, sans serif;
+    font-size: 35px;
+    font-family: Georgia, serif;
 }
 #home-link{
     color: white;
