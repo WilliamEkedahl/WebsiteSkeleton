@@ -10,7 +10,8 @@ body{
 
 /**** Feltet rundt linkene/knappene ****/
 nav{
-    background-color: rgb(188, 21, 21);
+    color: white;
+    background-image: linear-gradient(to left, #339edb, #d57434);
     gap: 1rem;
     z-index: 10;
     margin: 1rem;
@@ -52,7 +53,6 @@ nav{
         justify-content: left;
         column-gap: 10px;
         align-items: center;
-        margin-inside: 50px;
         padding: 10px;
     }
 
@@ -107,11 +107,15 @@ nav{
     *** Klassen active legges til og fjernes av javascript ved klikk            ***
     *** Klassen legges til og fjernes fra elementet som har klassen dropdown    ***
     *** Knappene som viser flere linker når de trykkes på har klassen dropdown  ***/
-    .dropdown.active > .dropdown-items,
-    .dropdown-items:hover{
+    .dropdown.active > .dropdown-button,
+    .dropdown-button:hover{
         color:black;
         font-weight: bold;
     }
+.dropdown-items{
+    color:black;
+    font-weight: bold;
+}
 
     .dropdown{
         position: relative;
@@ -151,12 +155,12 @@ nav{
         right:0;
         left:-6rem;
     }
-    .dropdown.active > .dropdown-items + .dropdown-menu{
+    .dropdown.active > .dropdown-button + .dropdown-menu{
         opacity: 1;
         transform: translateY(0);
         pointer-events: auto;
     }
-}
+
 
 button{
     background: transparent;
@@ -167,4 +171,15 @@ button:focus{
     border: none;
 }
 
- 
+.dropdown-button  {
+    margin-bottom: 10px;
+    color: white;
+    font-size: 20px;
+    font-family: vardana, sans serif;
+}
+#home-link{
+    color: white;
+    font-size: 20px;
+    font-family: vardana, sans serif;
+}
+
