@@ -174,3 +174,12 @@ z-index:2;}
   padding: 40px 100px;
   text-align: center;
 }
+.home a{
+  color: orange;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.home a:hover{
+  color: grey;
+  text-decoration: none;
+}
