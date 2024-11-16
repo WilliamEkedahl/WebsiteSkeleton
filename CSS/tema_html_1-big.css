@@ -6,6 +6,8 @@
 \******************************/
 
 :root{ 
+  
+ 
   --bakgrunnsfarge-text-bilde-bakgrunn: #ABDEE6;
   --bakgrunnsfarge-text-bilde-bakgrunn2: #E6B3AB;
   --textfarge-til-bakgrunnsfargen:black;
@@ -25,6 +27,7 @@ section, #temamarkør{
        left: 0;
        right: 0;
 }
+
 section#section1-grid{
     display: grid;
     
@@ -207,6 +210,7 @@ z-index:2;}
     content: "-";
     background-color: var(--skygge-svart-farge);
     
+    
     display: block;
     height:100%;
     width:100%;
@@ -252,7 +256,7 @@ z-index:2;}
     grid-template-rows: .2fr 1fr .2fr repeat(6,1fr) ;
     /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
     grid-template-columns: repeat(8,minmax(50px,1fr));
-    border: 2px solid red;
+    
     column-gap: 50px;
     
     
@@ -342,6 +346,7 @@ width:100%;
   content: "_";
   display:block;
   background-color: var(--bakgrunnsfarge-text-bilde-bakgrunn) ;
+  
   
   
   transition: all 200ms ease;

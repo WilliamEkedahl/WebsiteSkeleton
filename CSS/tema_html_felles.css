@@ -1,7 +1,24 @@
 /******************************\
      Bakgrunns bilde
 \******************************/
+:root{
+  --bakgrunnsfarge-tema-markør:#5f94aa;
+  --tema-markør-oransje:#f16529;
+}
 #bakgrunnsbildet{
     background:url("../Bilder/Topbilde2-skalert2.png") no-repeat center;
     height:500px;
   }
+  #temamarkør{
+     background-color: var(--bakgrunnsfarge-tema-markør);
+     position: relative;
+     height:150px;
+     text-align: center;
+     padding-top:50px;
+     color:var(--tema-markør-oransje);
+     }
+     #temamarkør>figure{
+       margin-top:0;
+       position: absolute;
+       top:-150px;
+     }

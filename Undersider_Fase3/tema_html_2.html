@@ -9,11 +9,13 @@
     <link rel="stylesheet" href="..\..\CSS\main.css">
     <link rel="stylesheet" media="screen and (min-width: 140px)" href="..\..\CSS\tema_html_2-big.css">
     <link rel="stylesheet"  href="..\..\CSS\tema_html_felles.css">
+    <link rel="stylesheet"  href="..\..\CSS\tema_html_2_carusel.css">
     <link rel="stylesheet" href="..\..\CSS\mainNavBar.css">
 </head>
 
 <body>
 <script src="../JS/dropMenu.js" defer></script>
+<script src="../JS/caruselJS.js" defer></script>
 
 
 <nav>
@@ -91,19 +93,12 @@
 <div id = "bakgrunnsbildet"></div>
 
    
-
-
-
-
-    <div id="temamarkør"> Emnemarkør
-        <figure id="emnemarkør-bilde" >
-            <img src="..\Bilder\Runars bildekilde\html5.png" alt="Html5 logo">
-        
-            
+<div id="temamarkør">
+    <h1>HTML - grunnleggende</h1>
+    <figure id="emnemarkør-bilde">
+        <img src="..\Bilder\Runars bildekilde\html5.png" alt="Html5 logo">
     </figure>
-
-    </div>
-
+</div>
         <section id="section1-grid">
           
 
@@ -123,10 +118,69 @@
                 </p>
             </div>
         
-            <figure id="bilde1" class="bilde-bokser"><img
-                    src="..\Bilder\Runars bildekilde\html5.png" alt="Html5 logo">
+            <figure id="bilde1" class="bilde-bokser">
+                <div id="carusel-wrap-outer">
+
+                <div id="carusel-wrap-inner">
+                    <!--https://www.ntb.no/blogg/bilderettigheter-kort-forklart-->
+
+                    <figure id="bildewrap-nr1" class="bilde-wrap synlig pc-synlig">
+                        <img src="..\Bilder\Sykkel-karusell\sykling1.jpg" alt="Tenåring med terrengsykkel i skog">
+                        <figurecaption>Terrengsykling</figurecaption>
+                    </figure>
+                    <figure id="bildewrap-nr2" class="bilde-wrap pc-synlig">
+                        <img src="..\Bilder\Sykkel-karusell\sykling2.jpg" alt="Sport: En gruppe kvinner på terrengsykkel ">
+                        <figurecaption>Full fart med godt humør</figurecaption>
+                    </figure>
+                    <figure id="bildewrap-nr3" class="bilde-wrap pc-synlig">
+                        <img src="..\Bilder\Sykkel-karusell\sykling3.jpg" alt="Terrengsykling i natur">
+                        <figurecaption>Frihet, adrenalin, hjerte som banker</figurecaption>
+                    </figure>
+                    <figure id="bildewrap-nr4" class="bilde-wrap pc-synlig">
+                        <img src="..\Bilder\Sykkel-karusell\sykling4.jpg" alt="Ung gutt i lufta med terrengsykkel">
+                        <figurecaption>Bildene er hentet fra https://pxhere.com </figurecaption>
+                    </figure>
+                    <figure id="bildewrap-nr5" class="bilde-wrap pc-synlig ">
+                        <img src="..\Bilder\Sykkel-karusell\sykling5.jpg" alt="Terrengsykling i tørt klima">
+                        <figurecaption>Variert natur</figurecaption>
+                    </figure>
+                    <figure id="bildewrap-nr6" class="bilde-wrap">
+                        <img src="..\Bilder\Sykkel-karusell\sykling6.jpg" alt="Sporty kledd ung jente på dirt bike">
+                        <figurecaption> Hvor er hjelmen?</figurecaption>
+                    </figure>
+                    <figure id="bildewrap-nr7" class="bilde-wrap">
+                        <img src="..\Bilder\Sykkel-karusell\sykling7.jpg" alt="Dirt bike konkurranse">
+                        <figurecaption> Bilder kan være dekorativ og interressante</figurecaption>
+                    </figure>
+                    <figure id="bildewrap-nr8" class="bilde-wrap">
+                        <img src="..\Bilder\Sykkel-karusell\sykling8.png" alt="Middelaldrende i farta på dirt bike">
+                        <figurecaption>Opphavsrettigheter er viktig å forholde seg til</figurecaption>
+                    </figure>
+                    <figure id="bildewrap-nr9" class="bilde-wrap">
+                        <img src="..\Bilder\Sykkel-karusell\sykling9.jpg" alt="Vidvinkel to mennesker på terrengsykkel i det fjerne">
+                        <figurecaption>Terregnsykling er en fin måte å oppleve naturen på!</figurecaption>
+                    </figure>
+                    <figure id="bildewrap-nr10" class="bilde-wrap">
+                        <img src="..\Bilder\Sykkel-karusell\sykling10.jpg" alt="Nærbilde av sykkelstyre sett bakfra, action perspektiv ">
+                        <figurecaption>Tør du?</figurecaption>
+                    </figure>
+                    <figure id="bildewrap-nr11" class="bilde-wrap">
+                        <img src="..\Bilder\Sykkel-karusell\sykling11.jpg" alt="Kvinnelig sportssyklist feirer ved å holde sykkelen opp i lufta">
+                        <figurecaption>Den følelsen</figurecaption>
+                    </figure>
+                    <figure id="bildewrap-nr12" class="bilde-wrap">
+                        <img src="..\Bilder\Sykkel-karusell\sykling12.jpg" alt="Terrengsyklist fotografer nedenfra under luftig svev">
+                        <figurecaption>Luftige svev</figurecaption>
+                    </figure>
+                    <div id="dots"></div> <!-- Limt inn dots container-->
+                </div>
+                <div id="button-wrap">
+                    <div id="prev" class="control-buttons"> &lt;&lt;</div>
+                    <div id="next" class="control-buttons">&gt;&gt;</div>
+                </div>
+        
                 
-                    
+            </div>  
             </figure>
 
             <div id="text-og-bilde1-bakgrunn" class="tekst-og-bildeboks"></div>
