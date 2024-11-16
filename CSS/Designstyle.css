@@ -33,10 +33,6 @@ header {
 \**************************/
 /* Hovedbilde som er på toppen */
 .hovedbilde {
-
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
     position: relative;
 }
 
@@ -198,7 +194,7 @@ grid-row: 1/4;
 
 /* Bilder med tekst */
 .Bilder{
-  background-color: black;
+  background-color: hsl(228 27% 25%);
   display: flex;
   justify-content: space-between;
   padding: 80px;
@@ -231,7 +227,7 @@ grid-row: 1/4;
 
 
 .Bilder2{
-  background-color: rgb(243, 243, 243);
+  background-color: hsl(228 27% 25%);
   display: flex;
   justify-content: space-between;
   padding: 80px;
@@ -289,7 +285,7 @@ grid-row: 1/4;
 }
 /* Bilder4 */
 .Bilder4{
-  background-color: black;
+    background-color: hsl(228 27% 25%);
   display: flex;
   justify-content: space-between;
   padding: 80px;
