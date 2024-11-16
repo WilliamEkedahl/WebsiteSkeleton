@@ -54,11 +54,11 @@ jada :)
 }
 
 body{
-font-family: Arial, Helvetica;
+font-family: verdana, sans-serif;
 font-size: 1rem;
 }
 body h1{
-  font-family: Arial, Helvetica;
+  font-family: Georgia, Serif;
 font-size: 35px;
 }
 
@@ -128,7 +128,6 @@ section{
 }
 
 .footer-content {
-    margin-top: 20px;
     display: flex;
     justify-content: space-between; /* Fordeler seksjonene jevnt */
     align-items: flex-start;
