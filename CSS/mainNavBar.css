@@ -56,6 +56,15 @@ nav{
         padding: 10px;
     }
 
+    #nav-home-links a,
+    .nav-buttons,
+    #home-link {
+        position: relative;
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+    }
+
     #logo{
         height:100%;
         max-height: 50px;
@@ -114,6 +123,7 @@ nav{
     }
 .dropdown-items{
     color:black;
+    transition: color 0.3s ease-in-out;
     font-weight: bold;
 }
 
