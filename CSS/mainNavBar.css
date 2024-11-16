@@ -135,7 +135,7 @@ nav{
         transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
         transform: translatex(-50%);
         right: auto;
-        z-index: 3;
+        z-index: 5;
     }
 
     .dropdown.active .dropdown-menu{
