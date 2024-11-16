@@ -8,7 +8,6 @@
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
     <link rel="stylesheet" href="..\..\CSS\main.css">
     <link rel="stylesheet" media="screen and (min-width: 1000px)"  href="..\..\CSS\undersider_Systemutvecklings_Metodik.css">
-    <link rel="stylesheet" href="..\..\CSS\html.css">
     <link rel="stylesheet" href="..\..\CSS\mainNavBar.css">
 
 </head>
@@ -22,12 +21,12 @@
         <a  class="logo" href="../index.html" ><img id= "logo" src="../Bilder\Runars bildekilde\SuperLogo.svg" alt="logo"> </a>
 
         <!-- Home link -->
-        <a id="home-link" href="index.html"><img src="../Bilder/imagesforWebsite.png"> Home</a></li>
+        <a id="home-link" class="clickable-home-link" href="../index.html"><img src="../Bilder/imagesforWebsite.png"> Home</a></li>
     </div>
     <div id="nav-wrapper">
         <!-- Fase 1 Dropdown -->
         <div class="dropdown" data-dropDown>
-            <button  class="dropdown-items" data-dropDown-button> Analysere </button>
+            <button  class="dropdown-button" data-dropDown-button> Analysere </button>
             <div class="dropdown-menu" dropdown-menu>
                 <ul>
                     <li class="dropdown-items"><a href="../Undersider_Fase1/Personas.html">Personas</a></li>
@@ -38,7 +37,7 @@
 
         <!-- Fase 2 Dropdown -->
         <div class="dropdown" data-dropDown>
-            <button class="dropdown-items" data-dropDown-button> Design </button>
+            <button class="dropdown-button" data-dropDown-button> Design </button>
             <div class="dropdown-menu" dropdown-menu>
                 <ul>
                     <li class="dropdown-items"><a href="../Undersider_Fase2/WireFrames.html">WireFrames</a></li>
@@ -50,7 +49,7 @@
 
         <!-- Fase 3 Dropdown -->
         <div class="dropdown" data-dropDown>
-            <button  class="dropdown-items" data-dropDown-button> Virkeligjøre </button>
+            <button  class="dropdown-button" data-dropDown-button> Virkeligjøre </button>
             <div class="dropdown-menu" dropdown-menu>
                 <ul>
                     <li class="dropdown-items"><a href="../Undersider_Fase3/WCAG_kriteriene.html">WCAG Kriteriene</a></li>
@@ -64,7 +63,7 @@
 
         <!-- Systemutvecklings Metodik Dropdown -->
         <div class="dropdown" data-dropDown>
-            <button  class="dropdown-items" data-dropDown-button> Systemutvecklings Metodik </button>
+            <button  class="dropdown-button" data-dropDown-button> Systemutvecklings Metodik </button>
             <div class="dropdown-menu" dropdown-menu>
                 <ul>
                     <li class="dropdown-items"><a href="Systemutvecklings_Metodik.html">Systemutvecklings Metodik</a></li>
@@ -76,7 +75,7 @@
 
         <!-- Grunnlag Dropdown -->
         <div class="dropdown" id="grunnlag" data-dropDown>
-            <button class="dropdown-items" data-dropDown-button> Grunnlag </button>
+            <button class="dropdown-button" data-dropDown-button> Grunnlag </button>
             <div id="grunnlag-dropdown" class="dropdown-menu" dropdown-menu>
                 <ul>
                     <li class="dropdown-items"><a href="../Undersider_Grunnlag/Kilder.html">Kilder</a></li>
@@ -94,7 +93,7 @@
         <div class="list">
             <div class="item">
                 <!--class er for hvilken gruppe de elementene tilhører. Vi kan sette flere elementer i en gruppe-->
-                <img style="display:none;" src="../Bilder/AI.jpeg"> <!--img er for bilde-->
+                <img style="display:none;" src="../Bilder/SystemeutvecklingsMetodik_Bilder/HeaderSystemMetodik.png"> <!--img er for bilde-->
                 <!-- Bildet skal være bakgrunnsbilde .. ? tenker jeg. Se begrunnelser i main.css for valg av bakrunnsbildet gjen backgroun-image i CSS heller enn img-tag i HTML-->
                 <div class="content">
 
@@ -108,7 +107,9 @@
     <section id="section1-grid">
 
         <!-- bildeboks1-->
-        <div id="language-info" </div>
+        <div id="language-info" class="text">
+        <p> <i> Välkommen till andra sidan gränsen, det svenska landet, ingen återvändo. </i></p>
+        </div>
 
         <div id="text1" class="text">
             <h1>Systemutvecklings metodik</h1>
@@ -119,7 +120,7 @@
         </div>
 
         <figure id="bilde1" class="bilde-bokser"><img
-                src="..\Bilder/SystemeutvecklingsMetodik_Bilder/theScope.png!" alt="bilde1 ändra">
+                src="..\Bilder/SystemeutvecklingsMetodik_Bilder/theScope.png" alt="bilde1 ändra">
         </figure>
 
         <div id="text-og-bilde1-bakgrunn" class="tekst-og-bildeboks"></div>
@@ -129,8 +130,12 @@
 
 
         <div id="text2" class="text">
-            <h2>Oversriften til andre bildeboks</h2>
-            <p>Tekst til det andre bildet</p>
+            <h2>Skillnaden mellan de två olika Systemutvecklings metodikerna</h2>
+            <p> När man pratar om Systemutvecklings Metodiker är det två viktigaste
+                Strukturerade metoder och Agile metoder den stora skillnaden mellan dessa är
+                att i strukturerade metoder måste man i förväg veta vart man ska och man jobbar
+                med systemutvecklingen stegvis man blir först färdig med en sak före man går vidare
+                med nästa. Medan man i Agila metoder kan</p>
         </div>
 
 
@@ -150,7 +155,7 @@
 
 
         <figure id="bilde3" class="bilde-bokser"><img
-                src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg" alt="">
+                src="..Bilder/SystemeutvecklingsMetodik_Bilder/AgileMethodsexample.png" alt="">
         </figure>
 
         <div id="text-og-bilde3-bakgrunn" class="tekst-og-bildeboks"></div>
@@ -165,7 +170,7 @@
 
 
         <figure id="bilde4" class="bilde-bokser"><img
-                src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg" alt="">
+                src="../Bilder/" alt="">
         </figure>
 
         <div id="text-og-bilde4-bakgrunn" class="tekst-og-bildeboks"></div>
@@ -200,31 +205,61 @@
     </section>
 
 
+    <footer id="main-footer">
+        <div class="footer-content">
+            <div class="home">
+
+            </div>
+
+            <div class="footer-section links">
+                <h2>Analysere</h2>
+                <ul>
+                    <li><a href="../Undersider_Fase1/IA.html">IA</a></li>
+                    <li><a href="../Undersider_Fase1/Personas.html">Personas</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section links">
+                <h2>Design</h2>
+                <ul>
+                    <li><a href="../Undersider_Fase2/Design.html">Design</a></li>
+                    <li><a href="../Undersider_Fase2/UX.html">UX</a></li>
+                    <li><a href="../Undersider_Fase2/WireFrames.html">WireFrames</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section links">
+                <h2>Virkeligjøre</h2>
+                <ul>
+                    <li><a href="../Undersider_Fase3/WCAG_kriteriene.html">WCAG Kriteriene</a></li>
+                    <li><a href="../Undersider_Fase3/css.html">CSS</a></li>
+                    <li><a href="../Undersider_Fase3/tema_html_1.html">HTML</a></li>
+                    <li><a href="../Undersider_Fase3/universell_utforming.html">Universell Utforming</a></br></li>
+                    <li><a href="../Undersider_Fase3/Brukertesting.html">Brukertesting</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section links">
+                <h2>Systemsutviklings Metodikk</h2>
+                <ul>
+                    <li><a href="../Undersider_Systemutvecklings_Metodik/Systemutvecklings_Metodik.html">Systemutvecklings Metodik</a></li>
+                    <li><a href="../Undersider_Systemutvecklings_Metodik/Agile_Metoder.html">Agile Metoder</a></li>
+                    <li><a href="../Undersider_Systemutvecklings_Metodik/Tradisjonelle_Metoder.html">Tradisjonelle Metoder</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section links">
+                <h2>Grunnlag</h2>
+                <ul>
+                    <li><a href="../Undersider_Kilder/Kilder.html"> kilder</a></li>
+                    <li class="dropdown-items"><a href="../Undersider_Grunnlag/begrunnelser.html"> Begrunnelser </a> </li>
+                </ul>
+            </div>
+
+        <div class="footer-section-slutt">
+        </div>
+        </div>
 </div>
-<footer id="main-footer">
-    <div class="footer-content">
-
-    </div>
-    <div id="footer-section-grid">
-        <section>
-            <ul>
-                <li><a href="index.html">Hjem</a></li>
-                <li><a href="Undersider\tema01.html">Tema 1</a></li>
-                <li><a href="Undersider\tema02.html">Tema 2</a></li>
-                <li><a href="Undersider\tema03.html">Tema 3</a></li>
-                <li><a href="Undersider\tema04.html">Tema 4</a></li>
-                <li><a href="Undersider\tema05.html">Tema 5</a></li>
-                <li><a href="Undersider\tema06.html">Tema 6</a></li>
-                <li><a href="Undersider\tema07.html">Tema 7</a></li>
-            </ul>
-        </section>
-    </div>
-    <div class="footer-section-slutt">
-        <section>
-            <p>&copy; 2024 Gruppe 8.</p>
-        </section>
-
-    </div>
-</footer>
+    </footer>
 </body>
 </html>
