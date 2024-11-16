@@ -113,7 +113,7 @@ section{
  *     Footer      *
 \*******************/
 #main-footer {
-    background-color: rgba(51, 51, 51, 0.5);
+    background-image: linear-gradient(to top right, #339edb, #d57434);
     color: #fff;
     text-align: center;
     position: relative;
@@ -164,10 +164,8 @@ section{
 }
 
 .footer-section-slutt {
-    background-color: black;
     color: #fff;
-    padding: 40px 100px;
-    text-align: center;
+
 }
 .home a{
     color: orange;
