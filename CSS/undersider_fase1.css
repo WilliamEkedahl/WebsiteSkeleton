@@ -71,7 +71,7 @@ bilde-bokser_z3{
   z-index:2;
 }
   .tekst-og-bildeboks{
-    background-color: rgb(70, 94, 107);
+    background-color: rgba(73, 152, 196, 0.84);
     z-index: 1;
   }
   .text{
