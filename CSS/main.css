@@ -159,8 +159,8 @@ section{
 }
 
 .footer-section ul li a:hover {
-    color: #ffffff75; /* Skifter farge ved hover */
-    text-decoration: none; /* Fjerner streken under ordet */
+    color: rgba(255, 255, 255, 0.46); /* Skifter farge ved hover */
+    text-decoration: underline; /* Fjerner streken under ordet */
 }
 
 .footer-section-slutt {
@@ -173,6 +173,6 @@ section{
     transition: color 0.3s ease;
 }
 .home a:hover{
-    color: grey;
-    text-decoration: none;
+    color: #ffffff;
+    text-decoration: underline;
 }
