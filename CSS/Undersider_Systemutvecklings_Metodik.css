@@ -139,16 +139,18 @@ img {
 
     grid-area: 9/9/9/9;
 }
-#text2{
+#text2, #text3, #text4{
     align-self: center;
     color: black;
-    grid-area: 6/2/9/15;
-
 }
+#text2 {
+    grid-area: 6/2/9/15;
+}
+
 #bilde2{
     text-align: center;
 
-    grid-area: 9/2/12/6;
+    grid-area: 9/2/14/6;
 
 }
 /* Tredje bilde tekst bildeboks kombo*/
@@ -156,17 +158,17 @@ img {
     grid-area: 9/9/9/9;
 }
 #text3{
-    grid-area: 9/9/9/9;
+    grid-area: 14/2/14/7;
 }
 #bilde3{
-    grid-area: 9/11/12/15;
+    grid-area: 9/11/14/15;
 }
 /* Fjerde bilde tekst bildeboks kombo*/
 #text-og-bilde4-bakgrunn{
     grid-area: 8/1/10/-1;
 }
 #text4{
-    grid-area: 15/1/15/3;
+    grid-area: 14/11/14/15;
 }
 #bilde4{
     grid-area: 13/3/15/5;
