@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semesteroppgaven - HTML side 3</title>
+    <title>HTML side 3</title>
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
     <link rel="stylesheet" href="..\..\CSS\main.css">
     <link rel="stylesheet" media="screen and (min-width: 140px)" href="..\..\CSS\tema_html_3-big.css">
@@ -87,8 +87,9 @@
     </div>
 </nav>
 
-
+<div id="page-wrap">
 <div id = "bakgrunnsbildet"></div>
+
 
 <div id="temamarkør">
     <h1>HTML - grunnleggende</h1>
@@ -105,8 +106,21 @@
             <div id="text1" class="text">
                 <h1>HTMl i prosessen</h1>
                 <p>
-                    Forklare planlegging er viktig
-
+                    HTML- taggene utgjør den grunnleggende strukturen for hva som skal vises på nettsiden. 
+                    I utgangspunktet ligger elementene i en stabel oppå hverandre. Som et tårn av byggeklosser.
+                </p>
+                <p>
+                    De fleste elementene er block-elementer og tar opp 100% av tilgjengelig plass sideveideis
+                     og har ingen høyde. Innholdet i elementet, for eksempel bokstaver vil gi dem høyde.
+                     Inline-elementer tar så liten plass de kan sideveis, det er innholdet som gir dem bredde. Inline-elementer er gjerne beholdere for tekst som «p», «h1-h4» taggene.
+                     Og «span» som kan brukes for å påvirke utvalgte deler av teksten.
+                </p>
+                <p>
+                    Når vi skal skrive html er det mye lettere om vi har en klar ide om hva vi forsøker 
+                    å skape. Vi kan for eksempel bruke grafikkprogrammer som Adobe Photoshop og konstruere 
+                    bilder som viser hvordan vi ser for oss at nettsiden skal se ut. Det er mye raskere å 
+                    lage en visuell fremstilling i et slikt program enn å skrive html og CSS for å se 
+                    hvordan nettleseren presenterer koden. 
                 </p>
             </div>
         
@@ -122,36 +136,32 @@
 <!-- bildeboks2-->
   
 
-
+<h1 id = "text2-header">Planlegging gjennom visuell fremstilling</h1>
             <div id="text2" class="text">
-                <h3>Oversriften til andre bildeboks</h3>
-                <p> Her er bildet satt inn med "img"-taggen:
-                    <span class="kode-i-tekst">&lt;img src= «mitt bilde.png»
-                        alt="Enkel grafikk som etterligner Slottsfjellet i Tønsberg" &gt;</span>.
-                    <br> <br>
-            
-                    Bildet blir lastet inn akkurat der img befinner seg i dokumentet. God praksis er å bruke "figure"-taggen og la bilde-taggen
-                    omsluttes av figure tagger: <br>
-                    <span class="kode-i-tekst">&lt;figure&gt; </span>
-                    <span class="kode-i-tekst">
-                        &lt;img src= «mitt bilde.png» alt = «Landskapsbilde av solnedgang i Tønsberg, fra Slottsfjellet juni 2024» >
-                        &lt;/figure&gt;</span>
-                        <br> <br>
-                    Og bruke taggen <span class="kode-i-tekst">&lt;figcaption&gt;</span> for å sette inn overskrift eller legge
-                    tekst over bildet. <strong>For eksempel: </strong> <br>
-                    <span class="kode-i-tekst">&lt;figure&gt;
-                        &lt;figcaption&gt; Byfjorden i juni &lt;/figcaption&gt;
-                        &lt;img src= «mitt bilde.png» alt = «Landskapsbilde av solnedgang i Tønsberg, fra Slottsfjellet juni 2024»
-                        &gt;
-            
-                        &lt;/figure&gt;
-                    </span>            </p>
+                
+                <p>
+                    Figma er et grafikkprogram med funksjonalitet for å lage visuelle fremstillinger
+                     av internettsider nettopp for å kunne planlegge og bli enige med  hverandre om 
+                     hvordan det ferdige resultatet skal se ut.
+                </p>
+                <p>
+                    Selv  om HTML er de første nødvendige bygeklossene i den digitale 
+                    representasjonen som netlleseren forholder seg til, er ikke skriving 
+                    av HTML først skritt i prosessen med å lage nettsider.
+                </p>
+
+                <p>
+                    Med digitale modeller kan vi vise hverandre og kundene hva vi har tenkt, 
+                    og få tilbakemeldinger vi kan justere oss etter før vi har kodet. 
+                    Vi kan også presentere egne ideer uten å bruke lang tid.
+                </p>
+
             </div>
 
 
             <figure id="bilde2" class="bilde-bokser">
-                <figcaption> <p>Solnedgang på Slottsfjellet</p>  </figcaption>
-                <img src="..\Bilder\Runars bildekilde\Slottsfjellet.jpg" alt="Enkel grafikk som etterligner Slottsfjellet i Tønsberg">
+                <figcaption> <p>Figma eksempel</p>  </figcaption>
+                <img src="..\Bilder\Runars bildekilde\FigmaSample.jpg" alt="Skjermutsnitt viser wireframe i Figma">
             </figure>
             <div id="text-og-bilde2-bakgrunn" class="tekst-og-bildeboks"></div>
           
@@ -160,23 +170,31 @@
   
 
             <div id="text3" class="text"> 
-                <h1>HTML sin plass i design prosessen</h1>
-                
+                <p>
+                    <strong>Kilder til kunnskap</strong> <br>
+                    Det finnes mange gode forum på nettet der likesinnede deler sine frustrasjoner, 
+                    problemer, kunnskaper og løsninger. Webutviklere har lang tradisjon for samarbeid 
+                    og utvikling gjennom refleksjon, prøving og feiling. I tillegg er finnes det 
+                    dokumentasjon som forteller og forklarer hvilke egenskaper utviklerne kan benytte 
+                    seg av, og vi kan anbefale w3schools. <br><br>
+                    
+                </p>
+                <p><strong>Verktøy for jobben </strong> <br>
+                    Selv om det er teoretisk mulig å skrive koden i et hvilket som helst 
+                    tekst-redigeringsprogram som Notepad eller Word, er det utrolig tregt, 
+                    arbeidsomt og kjedelig. Gode kodeprogram kommer i mange varianter. 
+                    De hjelper deg ved å sette forskjellig farge på teksten avhengig av
+                     hvilken rolle teksten har i koden. Og det er til stor hjelp.
+                     
+                    </p>
             </div>
-            
           
-            <a id="link1" href="#">
-                <figure id="link1-figure">
-                    <img src="..\Bilder\Runars bildekilde\klikkflate-fisker.jpg" alt="link web-design">
-                    <figcaption>Les om HTML i designprosessen</figcaption>
-                </figure>
-            </a>
         
-<!--
+
             <figure id="bilde3" class="bilde-bokser"><img
-                    src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg" alt="">
+                    src="..\Bilder\Runars bildekilde\vscSample.jpg" alt="">
             </figure>
- -->
+
             <div id="text-og-bilde3-bakgrunn" class="tekst-og-bildeboks"></div>
           
         </section>
@@ -188,23 +206,17 @@
          <!-- bildeboks4--> 
 
          <div id="text4" class="text">
-            <h3>Bilderettigheter</h3>
-            <p>
-                Nå vet du hvordan du kan legge til bilder i nettsider.
-                Det er lett å finne bilder, men det er ikke uten videre lov
-                å publisere andres bilder. <br>
-                Publisere vil si å gjøre tilgjengelig for andre, for eksempel ved å 
-                inkludere bildene på en nettside.
-                <br><br>
-                Sjekk rettighetene på bildene før du laster dem ned. Mange bilder tilbys med brukerlinser
-                som krever at fotografen eller kunstneren krediteres for eksempel ved å inkludere en 
-                lenke til kilden eller bare oppgi navn på fotografen. 
+            <h1>Emmet</h1>
+            <p>Når du skal skrive HTML finnes det et veldig praktisk programtillegg som heter Emmet.
+                 Emmet er integrert flere kodeprogram og finnes ellers fortsatt som tillegg. 
+                 Emmet aksepterer små koder som forteller hvilke elementer du vil lage. 
+                 Du skriver litt, Emmet skriver masse for deg. 
             </p>
         </div>
     
     
         <figure id="bilde4" class="bilde-bokser"><img
-                src="..\Bilder\Runars bildekilde\bilderettigheter.jpg" alt="">
+                src="..\Bilder\Runars bildekilde\emmetWikipedia.jpg" alt="">
                 
         </figure>
     
@@ -212,8 +224,14 @@
    
         <!-- bildeboks5 skal være tekst og fire linker --> 
         <div id="text5" class="text">
-            <h3>Linkboks tekst</h3>
-            <p>Beskrivelse til linkene</p>
+            <h1>Videre lesning</h1>
+            <p>
+                Vi ønsker å inspirere og være til hjelp for deg som er interessert 
+                i å lære mer om web-utvikling. <br><br>
+                 Som du ser i topp-menyen er det mange aspekter ved webutvikling, 
+                 ikke la det overvelde deg. Alt henger sammen og endringer kan 
+                 gjøres underveis i prosessen. 
+                </p>
             
         </div>
     
@@ -223,11 +241,11 @@
         -->
         <div id="link-box">
             <ul>
-                <li><a id = "linkboks-link1" href="#"></a></li>
-                <li><a id = "linkboks-link2" href="#"></a></li>
-                <li><a id = "linkboks-link3" href="#"></a></li>
-                <li><a id = "linkboks-link4" href="#"></a></li>
-                <li><a id = "linkboks-link5" href="#"></a></li>
+                <li><a id = "linkboks-link1" href="tema_html_1.html"></a></li>
+                <li><a id = "linkboks-link2" href="tema_html_2.html"></a></li>
+                <li><a id = "linkboks-link3" href="tema_html_3.html"></a></li>
+                <li><a id = "linkboks-link4" href="tema_css_1.html"></a></li>
+                <li><a id = "linkboks-link5" href="tema_css_2.html"></a></li>
             </ul>
             
         </div>
@@ -243,6 +261,7 @@
         
        
     </div>
+
     <footer id="main-footer">
         <div class="footer-content">
 
