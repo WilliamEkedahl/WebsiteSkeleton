@@ -1,5 +1,5 @@
 :root{
-    --background-color-text-og-bilde1-bakgrund: #195B69;
+    --background-color-text-og-bilde1-bakgrund: #496ea4;
 }
 /* Turn the white text color to black when the screen
 goes smaller then 1000px, which is the breakpoint where the css styling stops*/
@@ -28,6 +28,10 @@ h2{
     margin: 0px;
     font-size: 14px;
 }
+
+#agile-metoder{
+    margin-top: 0px;
+}
 /* Begrunnelser
 "For secondary text – like lesser labels, captions,
 etc. – use a size a couple notches smaller – such as 13px or 14px."
@@ -35,8 +39,8 @@ https://www.learnui.design/blog/mobile-desktop-website-font-size-guidelines.html
  */
 
 #background-image {
- /*   background-image: url("../Bilder/SystemeutvecklingsMetodik_Bilder/HeaderSystemMetodik.png");
-    padding-bottom: 500px; */
+  background-image: url("../Bilder/SystemeutvecklingsMetodik_Bilder/HeaderSystemMetodik.jpg" )!important;
+  background-size:cover;
 }
 /******************************\
      Grid første seksjon
@@ -48,7 +52,7 @@ section#section1-grid{
 
     /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
     grid-template-columns: repeat(15,minmax(25px,0.2fr));
-    border: 2px solid red;
+
 
     column-gap: 25px;
     row-gap: 25px;
@@ -84,7 +88,6 @@ Struktur:
 /*Felles justeringer*/
 .bilde-bokser{
     margin:0;
-    background-color: green;
 }
 
 .texte-bokser{
@@ -109,8 +112,10 @@ img {
     max-width: 100%;
     max-height: 100%;
 }
-
-/* Første bilde tekst bildeboks kombo*/
+#waterfallmethodsummery_text>p {
+    padding-bottom: 0px;
+}
+      /* Første bilde tekst bildeboks kombo*/
 
 #text-og-bilde1-bakgrunn{
     background-color: var(--background-color-text-og-bilde1-bakgrund);
@@ -136,21 +141,21 @@ img {
 
 /* Andre bilde tekst bildeboks kombo*/
 #text-og-bilde2-bakgrunn{
-
-    grid-area: 9/9/9/9;
+    background-color: var(--background-color-text-og-bilde1-bakgrund);
+    grid-area: 9/1/16/16;
 }
-#text2, #text3, #text4{
+#text2{
     align-self: center;
     color: black;
-}
-#text2 {
     grid-area: 6/2/9/15;
 }
+
+
 
 #bilde2{
     text-align: center;
 
-    grid-area: 9/2/14/6;
+    grid-area: 13/1/17/6;
 
 }
 /* Tredje bilde tekst bildeboks kombo*/
@@ -158,17 +163,19 @@ img {
     grid-area: 9/9/9/9;
 }
 #text3{
-    grid-area: 14/2/14/7;
+    grid-area: 9/7/12/15;
 }
 #bilde3{
-    grid-area: 9/11/14/15;
+    margin-top: 25px;
+    margin-left: 10px;
+    grid-area: 9/1/16/7;
 }
 /* Fjerde bilde tekst bildeboks kombo*/
 #text-og-bilde4-bakgrunn{
     grid-area: 8/1/10/-1;
 }
 #text4{
-    grid-area: 14/11/14/15;
+    grid-area: 12/7/15/15;
 }
 #bilde4{
     grid-area: 13/3/15/5;
@@ -187,7 +194,6 @@ section#section2-grid{
     grid-template-rows: repeat(5,1fr) ;
     /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
     grid-template-columns: repeat(4,minmax(100px,1fr));
-    border: 2px solid red;
     column-gap: 50px;
     row-gap: 25px;
 
