@@ -1,43 +1,3 @@
-
-.hovedbilde {
-    position: relative;
-  }
-  
-  .hovedbilde .item img {
-    /*Størrelsen på hovedbilde_design som er på toppen. Tar hele skjermen*/
-    width: 100%;
-    height: 100%;
-  }
-  
-  .hovedbilde .content {
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    /* transform: translateX(-50%); */
-    width: 80%;
-    max-width: 1140px;
-    color: white;
-    text-shadow: 0 5px 10px #0004;
-    z-index: 1;
-    text-align: left;
-  }
-  
-  .hovedbilde .list .item .content .title,
-  .hovedbilde .list .item .content .topic {
-    font-weight: bold;
-    /*Størrelsen på teksten som er på hovedbilde_designt*/
-    font-size: 2em;
-  }
-  
-  .hovedbilde .list .item .content .topic {
-    color: rgb(250, 132, 36);
-    /*Fargen på ordet "Design". Det er teksten i hovedbilde_design*/
-  }
-  
-
-
-
-
 :root{
     --background-color-text-og-bilde1-bakgrund: #1b8aac;
 }
@@ -78,10 +38,6 @@ etc. – use a size a couple notches smaller – such as 13px or 14px."
 https://www.learnui.design/blog/mobile-desktop-website-font-size-guidelines.html
  */
 
-#background-image {
-  background-image: url("../Bilder/SystemeutvecklingsMetodik_Bilder/HeaderSystemMetodik.jpg" )!important;
-  background-size:cover;
-}
 /******************************\
      Grid første seksjon
 \******************************/
@@ -229,3 +185,48 @@ img {
     padding: 5px;
     box-shadow: 1px 1px 1px black;
 }
+
+
+/*********************/
+/*Header text and styling*/
+/*********************/
+
+
+.hovedbilde {
+    position: relative;
+}
+
+.hovedbilde .header_text img {
+    /*Størrelsen på hovedbilde_design som er på toppen. Tar hele skjermen*/
+    width: 100%;
+    height: 100%;
+}
+
+.hovedbilde .content {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    /* transform: translateX(-50%); */
+    width: 80%;
+    max-width: 1140px;
+    color: white;
+    text-shadow: 0 5px 10px #0004;
+    z-index: 1;
+    text-align: left;
+}
+
+.hovedbilde .list .header_text .content .title,
+.hovedbilde .list .header_text .content .topic {
+    font-weight: bold;
+    /*Størrelsen på teksten som er på hovedbilde_designt*/
+    font-size: 3em;
+}
+
+.hovedbilde .list .header_text .content .topic {
+    color: rgb(250, 132, 36);
+    /*Fargen på ordet "Design". Det er teksten i hovedbilde_design*/
+}
+
+
+
+

@@ -253,5 +253,43 @@ section#section1-grid-IA{
 /******************************\
 \******************************/
 
+/*********************/
+/*Header text and styling*/
+/*********************/
 
+
+.hovedbilde {
+  position: relative;
+}
+
+.hovedbilde .header_text img {
+  /*Størrelsen på hovedbilde_design som er på toppen. Tar hele skjermen*/
+  width: 100%;
+  height: 600px;
+}
+
+.hovedbilde .content {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  /* transform: translateX(-50%); */
+  width: 80%;
+  max-width: 1140px;
+  color: white;
+  text-shadow: 0 5px 10px #0004;
+  z-index: 1;
+  text-align: left;
+}
+
+.hovedbilde .list .header_text .content .title,
+.hovedbilde .list .header_text .content .topic {
+  font-weight: bold;
+  /*Størrelsen på teksten som er på hovedbilde_designt*/
+  font-size: 3em;
+}
+
+.hovedbilde .list .header_text .content .topic {
+  color: rgb(250, 132, 36);
+  /*Fargen på ordet "Design". Det er teksten i hovedbilde_design*/
+}
 
