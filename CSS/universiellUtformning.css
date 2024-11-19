@@ -65,8 +65,8 @@ section#section1-grid{
   /*Felles justeringer*/
 
   figure{
-  
-z-index:2;}
+      z-index:2;
+  }
 
 #text-og-bilde2-bakgrunn,
 #text-og-bilde4-bakgrunn{
