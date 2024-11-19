@@ -6,9 +6,10 @@
      Grid første seksjon
 \******************************/
 
-:root{ 
-  
- 
+:root{
+
+  --bakgrunnsfarge-tema-markør:#5f94aa;
+  --tema-markør-oransje:#f16529;
   --bakgrunnsfarge-text-bilde-bakgrunn: #ABDEE6;
   --bakgrunnsfarge-text-bilde-bakgrunn2: #E6B3AB;
   --textfarge-til-bakgrunnsfargen:black;
@@ -18,9 +19,13 @@
   Helvetica 20px for paragrafer
   35px for overskrifter
   */
-  
- 
 }
+
+#bakgrunnsbildet{
+    background:url("../Bilder/Topbilde2-skalert2.png") no-repeat center;
+    height:500px;
+}
+
 section, #temamarkør{
   max-width: 1440px;
        margin: auto;
@@ -315,3 +320,107 @@ width:100%;
     
     z-index: 2;
   }
+
+/******************************\
+   Bakgrunns bilde
+\******************************/
+
+/******************************\
+     Justering pageWrap
+\******************************/
+@media (min-width: 900px) {
+
+    #page-wrap{
+        max-width: 1300px;;
+    }
+}
+/******************************\
+     Tema markør
+\******************************/
+#temamarkør {
+    background-color: var(--bakgrunnsfarge-tema-markør);
+    position: relative;
+    height: 150px;
+    text-align: center;
+    padding-top: 50px;
+    color: var(--tema-markør-oransje);
+}
+
+#temamarkør > figure {
+    margin: 0;
+    position: absolute;
+    top: 35px;
+    left: 50%; /* Sentraliserer bildet horisontalt */
+    transform: translateX(-350%); /* For å justere fra venstre */
+}
+
+#temamarkør > figure img {
+    width: 100px;
+    border-radius: 30%; /* Gjør sånn at logoen blir litt rundere i kantene */
+}
+/******************************\
+     Linkboks for fire linker
+\******************************/
+
+#link-box>ul{
+
+    box-sizing: border-box;
+    margin:0; padding:0;
+
+    display: flex;
+
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    height:100%;
+    list-style: none;
+
+
+}
+#link-box>ul>li>a{
+
+    background-color:var(--skygge-svart-farge);
+
+    cursor:pointer;
+    z-index: 1;
+    transition: all 200ms ease;
+}
+#link-box>ul>li>a:hover{
+    transform:translateY(2px) translateX(-2px);
+}
+
+#link-box>ul>li>a::after{
+    box-sizing: border-box;
+    content: "_";
+    display:block;
+    background-color: var(--bakgrunnsfarge-text-bilde-bakgrunn) ;
+
+
+
+    transition: all 200ms ease;
+
+}
+
+
+
+#link-box>ul>li:nth-of-type(1)>a:after{content:"HTML 1 Tagger";}
+#link-box>ul>li:nth-of-type(2)>a:after{content:"HTML 2 Bilder";}
+#link-box>ul>li:nth-of-type(3)>a:after{content:"HTML 3 prosessen";}
+#link-box>ul>li:nth-of-type(4)>a:after{content:"CSS1";}
+#link-box>ul>li:nth-of-type(5)>a:after{content:"CSS2";}
+
+#link-box>ul>li>a:hover::after{
+    transform:translateY(-4px) translateX(4px);
+
+    color:blue;
+}
+
+#link-box a{
+    font-size: 1.5rem;
+    line-height: 4rem;
+    display: block;
+
+}
+
+#link-box a:hover{
+}
