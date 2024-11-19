@@ -341,7 +341,6 @@ den plasseres øverst.
     grid-template-rows: repeat(5,1fr) ;
     /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
     grid-template-columns: repeat(7,minmax(50px,1fr));
-    border: 2px solid red;
     column-gap: 50px;
     row-gap: 25px;
 
@@ -401,14 +400,15 @@ den plasseres øverst.
 
   #text2-bilde img {
     width: 200px;
-  }  
+  }
+
   .Bilder3,
   .Bilder4,
   .Kilder {
 
     flex-wrap: wrap;
   }
-
+}
   
 
 .hovedbilde_design .list .item .content .title,
