@@ -6,6 +6,7 @@
 body {
   margin: 0;
   font-size: 17px;
+  overflow-x: scroll;
 }
 
 a {
@@ -33,22 +34,22 @@ header {
 /**************************\
  *     Bakgrunnsbilde     *
 \**************************/
-/* Hovedbilde som er på toppen */
-.hovedbilde {
+/* hovedbilde_design som er på toppen */
+.hovedbilde_design {
   position: relative;
 }
 
-.hovedbilde .item img {
-  /*Størrelsen på hovedbilde som er på toppen. Tar hele skjermen*/
+.hovedbilde_design .item img {
+  /*Størrelsen på hovedbilde_design som er på toppen. Tar hele skjermen*/
   width: 100%;
   height: 100%;
 }
 
-.hovedbilde .content {
+.hovedbilde_design .content {
   position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 10%;
+  left: 10%;
+  /* transform: translateX(-50%); */
   width: 80%;
   max-width: 1140px;
   color: white;
@@ -57,17 +58,16 @@ header {
   text-align: left;
 }
 
-.hovedbilde .list .item .content .title,
-.hovedbilde .list .item .content .topic {
+.hovedbilde_design .list .item .content .title,
+.hovedbilde_design .list .item .content .topic {
   font-weight: bold;
-  /*Størrelsen på teksten som er på hovedbildet*/
-  font-size: 4em;
-  list-style: 1.3em;
+  /*Størrelsen på teksten som er på hovedbilde_designt*/
+  font-size: 2em;
 }
 
-.hovedbilde .list .item .content .topic {
+.hovedbilde_design .list .item .content .topic {
   color: rgb(57, 199, 251);
-  /*Fargen på ordet "Design". Det er teksten i hovedbilde*/
+  /*Fargen på ordet "Design". Det er teksten i hovedbilde_design*/
 }
 
 /********************************\
@@ -94,6 +94,7 @@ den plasseres øverst.
   gap: 10px;
   /* setter distanse mellom de*/
   padding: 5px;
+
 }
 
 .kollone {
@@ -102,80 +103,7 @@ den plasseres øverst.
   padding: 5px;
 }
 
-/* Bilde og tekst */
 
-@media (min-width: 1440px) {
-
-  /****************************\
- *     Grid                 *
-\****************************/
-  #text1-bilde,
-  #text2-bilde,
-  #text3-bilde,
-  #text4-bilde,
-  #text5-bilde {
-    width: 100%;
-  }
-
-  #section2 {
-
-    display: grid;
-
-    grid-template-rows: repeat(15, minmax(100px, 1fr));
-    /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
-    grid-template-columns: repeat(5, minmax(50px, 1fr));
-
-  }
-
-  #bilde-med-tekst1 {
-
-
-    grid-column: 1/-1;
-    grid-row: 1/4;
-
-  }
-
-  #bilde-med-tekst2 {
-    grid-column: 1/-1;
-    grid-row: 4/7;
-  }
-
-  #bilde-med-tekst3 {
-    grid-column: 1/-1;
-    grid-row: 7/10;
-  }
-
-  #bilde-med-tekst4 {
-    grid-column: 1/-1;
-    grid-row: 10/13;
-  }
-
-  #bilde-med-tekst5 {
-    grid-column: 1/-1;
-    grid-row: 13/16;
-  }
-
-  .text {
-    align-self: center;
-  }
-
-}
-
-/*Media query ferdig*/
-@media (max-width: 600px) {
-
-
-  .Meg,
-  .Bilder,
-  .Bilder3,
-  .Bilder4,
-  .Kilder {
-
-    flex-wrap: wrap;
-
-
-  }
-}
 
 /****************************\
  *     Underbilder          *
@@ -187,8 +115,9 @@ den plasseres øverst.
   background-color: rgb(243, 243, 243);
   display: flex;
   justify-content: space-between;
+  justify-content: center;
   /*Bakgrunnen på tekst og bilde*/
-  padding: 120px;
+  padding: 50px;
   /*
   Full bredde av viewport:
   width: 100vw;
@@ -199,7 +128,7 @@ den plasseres øverst.
 }
 
 .Meg img {
-  height: 600px;
+  width: 300px;
 
 }
 
@@ -221,19 +150,16 @@ den plasseres øverst.
 /* Bilder med tekst */
 .Bilder {
   background-color: hsl(228 27% 25%);
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   /*Bakgrunnsfarge på bilde og tekst. */
-  padding: 80px;
+  padding: 20px;
   /*width: 100vw;
   margin: 10rem auto 0 auto;
   */
 }
 
-.Bilder img {
-  height: 600px;
 
-}
 
 .Bilder h1 {
   margin: 0;
@@ -255,6 +181,18 @@ den plasseres øverst.
  *     Bilder2              *
 \****************************/
 
+#bilde-med-tekst2 {
+  display: flex;
+  flex-direction: row;
+}
+
+#bilde-med-tekst2 p{
+  font-size: 20px;
+}
+
+#bilde-med-tekst2 img {
+  width: 200px;
+}
 
 .Bilder2 {
   background-color: hsl(228 27% 25%);
@@ -291,8 +229,10 @@ den plasseres øverst.
 .Bilder3 {
   background-color: rgb(243, 243, 243);
   display: flex;
-  justify-content: space-between;
-  padding: 120px;
+  flex-direction: row;
+  justify-items: center;
+  padding: 10%;
+  margin-bottom: 50px;
   /*
   width: 100vw;
   
@@ -301,7 +241,7 @@ den plasseres øverst.
 }
 
 .Bilder3 img {
-  height: 600px;
+  width: 300px;
 
 }
 
@@ -388,4 +328,121 @@ den plasseres øverst.
   width: 100%;
   /*Dette er for å få bildet til å dekke skjermen. Ikke hele skjermen, men at den når enden på begge sider*/
   object-fit: cover;
+}
+
+
+/* Bilde og tekst */
+
+@media (min-width: 1920px) {
+
+  /****************************\
+ *     Grid                 *
+\****************************/
+  #text1-bilde,
+  /* #text2-bilde, */
+  /* #text3-bilde, */
+  #text4-bilde,
+  #text5-bilde {
+    width: 100%;
+  }
+
+  #section2 {
+
+    display: grid;
+
+    grid-template-rows: repeat(15, minmax(100px, 1fr));
+    /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
+    grid-template-columns: repeat(5, minmax(50px, 1fr));
+
+  }
+
+  #bilde-med-tekst1 {
+
+
+    grid-column: 1/-1;
+    grid-row: 1/4;
+
+  }
+
+  #bilde-med-tekst2 {
+    grid-column: 1/-1;
+    grid-row: 4/7;
+  }
+
+  /* #bilde-med-tekst3 {
+    grid-column: 1/-1;
+    grid-row: 7/10;
+  } */
+
+  #bilde-med-tekst4 {
+    grid-column: 1/-1;
+    grid-row: 10/13;
+  }
+
+  #bilde-med-tekst5 {
+    grid-column: 1/-1;
+    grid-row: 13/16;
+  }
+
+  .text {
+    align-self: center;
+  }
+
+}
+
+/*Media query ferdig*/
+@media (max-width: 600px) {
+
+  #bilde-med-tekst2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #text2-bilde img {
+    width: 200px;
+  }  
+  .Bilder3,
+  .Bilder4,
+  .Kilder {
+
+    flex-wrap: wrap;
+  }
+
+  
+
+.hovedbilde_design .list .item .content .title,
+.hovedbilde_design .list .item .content .topic {
+  font-weight: bold;
+  /*Størrelsen på teksten som er på hovedbilde_designt*/
+  font-size: 2.1em;
+}
+
+.Meg {
+  display: flex;
+  flex-direction: column;
+}
+
+.Meg img {
+  width: 200px;
+}
+
+.Meg h1 {
+  margin: 0;
+  color: black;
+  /*Farge på tekst og størrelse*/
+  font-size: 40px;
+}
+
+.Meg p {
+  color: black;
+  /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden*/
+  font-size: 15px;
+  /*Størrelsen på tekst*/
+  width: 80%;
+} 
+
+#bilde-med-tekst3 img{
+  width: 100%;
+}
+
 }

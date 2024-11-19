@@ -6,9 +6,10 @@
      Grid første seksjon
 \******************************/
 
-:root{ 
-  
- 
+:root{
+
+  --bakgrunnsfarge-tema-markør:#5f94aa;
+  --tema-markør-oransje:#f16529;
   --bakgrunnsfarge-text-bilde-bakgrunn: #ABDEE6;
   --bakgrunnsfarge-text-bilde-bakgrunn2: #E6B3AB;
   --textfarge-til-bakgrunnsfargen:black;
@@ -18,9 +19,13 @@
   Helvetica 20px for paragrafer
   35px for overskrifter
   */
-  
- 
 }
+
+#bakgrunnsbildet{
+    background:url("../Bilder/Topbilde2-skalert2.png") no-repeat center;
+    height:500px;
+}
+
 section, #temamarkør{
   max-width: 1440px;
        margin: auto;
@@ -32,7 +37,7 @@ section, #temamarkør{
 section#section1-grid{
     display: grid;
     
-    grid-template-rows:repeat(6, 1fr) .1fr 250px 1fr;
+    grid-template-rows:repeat(6, 1fr) .1fr 250px 50px;
     
 
     /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
@@ -254,12 +259,12 @@ z-index:2;}
   \******************************/
   section#section2-grid{
     display: grid;
-    grid-template-rows: .2fr 1fr .2fr repeat(6,1fr) ;
+    grid-template-rows: .2fr 1fr .2fr  repeat(3,1fr) ;
     /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
     grid-template-columns: repeat(8,minmax(50px,1fr));
     
     column-gap: 50px;
-    
+    row-gap: 25px;
     
   }
 
@@ -302,16 +307,119 @@ width:100%;
    /* Femte bilde tekst bildeboks kombo*/
 
    #text-og-bilde5-bakgrunn{
-    grid-area: 7/1/9/-1;
+    grid-area: 6/1/8/-1;
   }
 
   #text5{
-    grid-area: 7/1/9/4;
+    grid-area: 6/1/8/4;
     
   }
   /*Linkboks for fire linker */
   #link-box{
-    grid-area:  7/4/9/7;
+    grid-area:  6/4/8/7;
     
     z-index: 2;
   }
+
+/******************************\
+   Bakgrunns bilde
+\******************************/
+
+/******************************\
+     Justering pageWrap
+\******************************/
+@media (min-width: 900px) {
+
+    #page-wrap{
+        max-width: 1300px;;
+    }
+}
+/******************************\
+     Tema markør
+\******************************/
+#temamarkør {
+    background-color: var(--bakgrunnsfarge-tema-markør);
+    position: relative;
+    height: 150px;
+    text-align: center;
+    padding-top: 50px;
+    color: var(--tema-markør-oransje);
+}
+
+#temamarkør > figure {
+    margin: 0;
+    position: absolute;
+    top: 35px;
+    left: 50%; /* Sentraliserer bildet horisontalt */
+    transform: translateX(-350%); /* For å justere fra venstre */
+}
+
+#temamarkør > figure img {
+    width: 100px;
+    border-radius: 30%; /* Gjør sånn at logoen blir litt rundere i kantene */
+}
+/******************************\
+     Linkboks for fire linker
+\******************************/
+
+#link-box>ul{
+
+    box-sizing: border-box;
+    margin:0; padding:0;
+
+    display: flex;
+
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    height:100%;
+    list-style: none;
+
+
+}
+#link-box>ul>li>a{
+
+    background-color:var(--skygge-svart-farge);
+
+    cursor:pointer;
+    z-index: 1;
+    transition: all 200ms ease;
+}
+#link-box>ul>li>a:hover{
+    transform:translateY(2px) translateX(-2px);
+}
+
+#link-box>ul>li>a::after{
+    box-sizing: border-box;
+    content: "_";
+    display:block;
+    background-color: var(--bakgrunnsfarge-text-bilde-bakgrunn) ;
+
+
+
+    transition: all 200ms ease;
+
+}
+
+
+
+#link-box>ul>li:nth-of-type(1)>a:after{content:"WCAG Kriteriene";}
+#link-box>ul>li:nth-of-type(2)>a:after{content:"Design";}
+#link-box>ul>li:nth-of-type(3)>a:after{content:"Personas";}
+
+
+#link-box>ul>li>a:hover::after{
+    transform:translateY(-4px) translateX(4px);
+
+    color:blue;
+}
+
+#link-box a{
+    font-size: 1.5rem;
+    line-height: 4rem;
+    display: block;
+
+}
+
+#link-box a:hover{
+}

@@ -1,5 +1,45 @@
+
+.hovedbilde {
+    position: relative;
+  }
+  
+  .hovedbilde .item img {
+    /*Størrelsen på hovedbilde_design som er på toppen. Tar hele skjermen*/
+    width: 100%;
+    height: 100%;
+  }
+  
+  .hovedbilde .content {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    /* transform: translateX(-50%); */
+    width: 80%;
+    max-width: 1140px;
+    color: white;
+    text-shadow: 0 5px 10px #0004;
+    z-index: 1;
+    text-align: left;
+  }
+  
+  .hovedbilde .list .item .content .title,
+  .hovedbilde .list .item .content .topic {
+    font-weight: bold;
+    /*Størrelsen på teksten som er på hovedbilde_designt*/
+    font-size: 2em;
+  }
+  
+  .hovedbilde .list .item .content .topic {
+    color: rgb(57, 199, 251);
+    /*Fargen på ordet "Design". Det er teksten i hovedbilde_design*/
+  }
+  
+
+
+
+
 :root{
-    --background-color-text-og-bilde1-bakgrund: #496ea4;
+    --background-color-text-og-bilde1-bakgrund: #1b8aac;
 }
 /* Turn the white text color to black when the screen
 goes smaller then 1000px, which is the breakpoint where the css styling stops*/
@@ -61,8 +101,6 @@ section#section1-grid{
 
 #tidligere-a{
     box-sizing: border-box;
-    border: 5px solid orange;
-    background-color:rgb(18, 219, 48);
     border-radius: 10px;
 }
 #section1-grid>h1{
@@ -122,6 +160,7 @@ img {
     grid-row: 1/-10;
     grid-column: 1/16;
     grid-area: 1/1/6/16;
+    box-shadow: 1px 1px 1px black;
 }
 #language-info{
     margin-left: 15px;
@@ -141,6 +180,7 @@ img {
 #text-og-bilde2-bakgrunn{
     background-color: var(--background-color-text-og-bilde1-bakgrund);
     grid-area: 9/1/18/16;
+    box-shadow: 1px 1px 1px black;
 }
 #text2{
     align-self: center;
@@ -160,6 +200,7 @@ img {
     grid-area: 5/1/10/16;
     background-color: var(--background-color-text-og-bilde1-bakgrund);
     z-index: 1;
+    box-shadow: 1px 1px 1px black;
 }
 #text3{
     grid-area: 9/7/12/15;
@@ -186,4 +227,5 @@ img {
     background-color: white;
     border-radius: 10px;
     padding: 5px;
+    box-shadow: 1px 1px 1px black;
 }
