@@ -30,7 +30,6 @@ section#section1-grid{
 
     /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
     grid-template-columns: repeat(15,minmax(25px,0.2fr));
-    border: 2px solid red;
 
     column-gap: 25px;
     row-gap: 25px;
@@ -191,13 +190,13 @@ bilde-bokser_z3{
   #text-og-bilde4-bakgrunn{
     grid-row: 8/10;
     grid-column: 2/15;
-    grid-area: 10/2/18/15;
+    grid-area: 10/2/15/15;
   }
   #text4{
     z-index: 4;
     grid-row: 8/10;
     grid-column: 2/15;
-    grid-area: 10/2/18/15;
+    grid-area: 11/3/18/14;
     height: 300px;
     width: 100%;
   }
@@ -210,13 +209,11 @@ bilde-bokser_z3{
   }
 
   #text-og-bilde5-bakgrunn{
-    grid-area: 18/2/26/15;
+    grid-area: 16/2/22/15;
   }
 
   #text5{
-    grid-row: 8/10;
-    grid-column: 2/15;
-    grid-area: 18/2/26/15;
+    grid-area: 17/3/22/14;
   }
 
 
