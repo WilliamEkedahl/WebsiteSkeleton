@@ -7,8 +7,6 @@ body{
 h1{
   font-family: Georgia, serif;
   font-size: 50px;
-  margin-bottom: 0px;
-  margin-top: 0px;
 }
 h2{
   font-family: Georgia, serif;
@@ -116,8 +114,7 @@ bilde-bokser_z3{
     grid-row:4/8 ;
     grid-column:3/6 ;
     grid-area:2/2/5/6;
-    margin-top: 50px;
-    margin-left:25px;
+
   }
   
   #bilde1{
@@ -143,7 +140,6 @@ bilde-bokser_z3{
     grid-column: 1/11;
     grid-area: 1/6/5/11;
     padding: 5px;
-    border: 1px solid black;
   }
   #bilde2{
     text-align: center;
