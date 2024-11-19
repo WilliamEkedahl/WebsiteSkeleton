@@ -215,7 +215,8 @@ z-index:2;}
    #text-og-bilde4-bakgrunn{
     
     grid-area: 1/1/4/-1;
-    background-color: blanchedalmond;
+    
+    background-color: var(--bakgrunnsfarge-text-bilde-bakgrunn2);
     
   }
   #text4{
