@@ -240,7 +240,7 @@ den plasseres øverst.
 }
 
 .Bilder3 img {
-  width: 300px;
+  width: 500px;
 
 }
 
@@ -388,7 +388,7 @@ den plasseres øverst.
     align-self: center;
   }
 
-}
+
 
 /*Media query ferdig*/
 @media (max-width: 600px) {
@@ -446,4 +446,3 @@ den plasseres øverst.
   width: 100%;
 }
 
-}
