@@ -1,10 +1,412 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="sv">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS side 1</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="..\..\CSS\main.css">
+    <link rel="stylesheet" media="screen and (min-width: 140px)" href="..\..\CSS\tema_css_1-big.css">
+    <link rel="stylesheet"  href="..\..\CSS\tema_css_felles.css">
+    <link rel="stylesheet" href="..\..\CSS\mainNavBar.css">
 </head>
-<body>
 
+<body>
+<script src="../JS/dropMenu.js" defer></script>
+
+<nav class="navbar">
+    <div id="nav-home-links">
+        <!-- Back to the start page -->
+        <a  class="logo" href="../index.html" ><img id= "logo" src="../Bilder\Runars bildekilde\SuperLogo.svg" alt="logo"> </a>
+
+        <!-- Home link -->
+        <a id="home-link" href="../index.html"><img src="../Bilder/imagesforWebsite.png"> Home</a></li>
+    </div>
+    <div id="nav-wrapper">
+        <!-- Fase 1 Dropdown -->
+        <div class="dropdown" data-dropDown>
+            <button  class="dropdown-button" data-dropDown-button> Analysere </button>
+            <div class="dropdown-menu" dropdown-menu>
+                <ul>
+                    <li class="dropdown-items"><a href="../Undersider_Fase1/Personas.html">Personas</a></li>
+                    <li class="dropdown-items"><a href="../Undersider_Fase1/IA.html">IA</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Fase 2 Dropdown -->
+        <div class="dropdown" data-dropDown>
+            <button class="dropdown-button" data-dropDown-button> Design </button>
+            <div class="dropdown-menu" dropdown-menu>
+                <ul>
+                    <li class="dropdown-items"><a href="../Undersider_Fase2/WireFrames.html">WireFrames</a></li>
+                    <li class="dropdown-items"><a href="../Undersider_Fase2/Design.html">Design</a></li>
+                    <li class="dropdown-items"><a href="../Undersider_Fase2/UX.html">UX</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Fase 3 Dropdown -->
+        <div class="dropdown" data-dropDown>
+            <button  class="dropdown-button" data-dropDown-button> Virkeligjøre </button>
+            <div class="dropdown-menu" dropdown-menu>
+                <ul>
+                    <li class="dropdown-items"><a href="WCAG_kriteriene.html">WCAG Kriteriene</a></li>
+                    <li class="dropdown-items">
+                        <p style = "margin:0;">CSS</p>
+                        <ul>
+                            <li><a href="tema_css_1.html">Bruk farger</a></li>
+                            <li><a href="tema_css_2.html">Endre plasseringer</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-items">
+                        <p style = "margin:0;">HTML</p>
+                        <ul>
+                            <li><a href="tema_html_1.html">Tagger</a></li>
+                            <li><a href="tema_html_2.html">Sett inn bilder</a></li>
+                            <li><a href="tema_html_3.html">Struktur i tekst</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-items"><a href="universell_utforming.html">Universell Utforming</a></li>
+                    <li class="dropdown-items"><a href="Brukertesting.html">Brukertesting</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Systemutvecklings Metodik Dropdown -->
+        <div class="dropdown" data-dropDown>
+            <button  class="dropdown-button" data-dropDown-button> Systemutvecklings Metodik </button>
+            <div class="dropdown-menu" dropdown-menu>
+                <ul>
+                    <li class="dropdown-items"><a href="../Undersider_Systemutvecklings_Metodik/Systemutvecklings_Metodik.html">Systemutvecklings Metodik</a></li>
+                    <li class="dropdown-items"><a href="../Undersider_Systemutvecklings_Metodik/Agile_Metoder.html">Agile Metoder</a></li>
+                    <li class="dropdown-items"><a href="../Undersider_Systemutvecklings_Metodik/Tradisjonelle_Metoder.html">Tradisjonelle Metoder</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Grunnlag Dropdown -->
+        <div class="dropdown" id="grunnlag" data-dropDown>
+            <button class="dropdown-button" data-dropDown-button> Grunnlag </button>
+            <div id="grunnlag-dropdown" class="dropdown-menu" dropdown-menu>
+                <ul>
+                    <li class="dropdown-items"><a href="../Undersider_Grunnlag/Kilder.html">Kilder</a></li>
+                    <li class="dropdown-items"><a href="../begrunnelser.html"> Begrunnelser </a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div id = "bakgrunnsbildet"></div>
+<div id="page-wrap"></div>
+<div id="page-wrap"></div>
+   
+
+
+
+
+  
+<div id="temamarkør">
+    <h1>HTML - grunnleggende</h1>
+    <figure id="emnemarkør-bilde">
+        <img src="..\Bilder\Runars bildekilde\logo-css-3-512.png" alt="Html5 logo">
+    </figure>
+</div>
+
+        <section id="section1-grid">
+          
+
+<!-- bildeboks1-->
+
+
+            <div id="text1" class="text">
+                <h3>HTML er dokumentformatet for netleseren</h3>
+                <p>
+Når du ser på internett, bruker du en nettleser. 
+Nettleseren leser en slags oppskrift og skaper en digital representasjon som du kan se og interagere med.
+Den digitale representasjonen kalles Document Object Model (DOM).  
+HTML er en viktig byggekloss i denne modellen.
+HTML har en enkel oppbygning og struktur, likevel gir det mange muligheter. </p> 
+<p> Det finnes forskjellige meninger om hvorvidt HTML kan sies å være et programmeringsspråk
+    <a href="https://css-tricks.com/html-is-not-a-programming-language/">(mer om det her)</a>
+     ,
+    til forskjell fra programmeringsspråk har ikke HTML logiske operasjoner og det er mye mindre omfattende, lettere å lære.
+HTML dokumenter bruker tag-ger. Det heter tag på engelsk, som «merkelapp/merke» på norsk.
+ Tekst som skal representeres på siden er vanligvis omsluttet av en åpner- og lukker-tag. En åpner tag ser slik ut: 
+
+ <span class = "kode-i-tekst">&lt;section&gt;</span>
+ 
+ 
+ med tilhørende lukker-tag:
+ <span class = "kode-i-tekst">&lt;/section&gt;</span>
+  .
+
+
+  Ordet inni tag-gen har en semantisk betydning for programmerer, nettlesere og skjermlesere som gjør det lettere å arbeide med. 
+</p>
+<p> Dette er tag for paragraf, tekstavsnitt:
+
+
+  <span class = "kode-i-tekst">&lt;p&gt;&lt;/p&gt;</span>. 
+  Tekst som plasseres mellom disse vil få litt avstand til andre elementer på siden.
+   Hvis du ønsker å markere noe i teksten med fet skrift kan du bruke tag-en:
+
+   <span class = "kode-i-tekst">&lt;strong&gt;&lt;/strong&gt;</span>. 
+
+   For Eksempel:
+   
+   <span class = "kode-i-tekst">&lt;p&gt; Vi skal ikke bruke &lt;strong&gt; <strong>altfor</strong>&lt;/strong&gt; mye tid på tag-er&lt;/p&gt;</span>
+   
+   . To tag-ger utgjør 
+   til sammen et element. Disse elementene har noen konfigurasjoner, noen egenskaper, som påvirker utseendet eller 
+   representasjonen på skjermen. De skal vi komme tilbake til. 
+   HTML-dokumenter har en del faste tag-er og krav til oppbygning for at nettleserne skal tolke dem riktig.
+
+                </p>
+            </div>
+        
+            <figure id="bilde1" class="bilde-bokser"><img
+                    src="..\Bilder\Runars bildekilde\html5.png" alt="Html5 logo">
+                
+                    
+            </figure>
+
+            <div id="text-og-bilde1-bakgrunn" class="tekst-og-bildeboks"></div>
+            
+        
+<!-- bildeboks2-->
+  
+
+
+            <div id="text2" class="text">
+                <h3>Oversriften til andre bildeboks</h3>
+                <p>
+                    
+                    
+                    <ul>
+                        <li>
+                            <span class="kode-i-text">&lt;&#33;doctype html&gt;</span> 
+                            er ikke en HTML-tag. Den forteller nettleseren hvilken type dokument det er. 
+                        </li>
+                        <li>
+                            <span class="kode-i-text">&lt;html&gt;&lt;/html&gt;</span>
+                            html-elementet. Det strekker seg fra begynnelsen til slutten og omfavner alt innholdet på hele siden. 
+                            Det inneholder også en språkmarkør som indikerer det primære språket i dokumentet. 
+                            Webdesignere bør bruke denne slik at det blir lettere å finne informasjon på det språket man ønsker å lese.
+                        </li>
+                        
+                        <li> 
+                            <span class="kode-i-text">&lt;head&gt;&lt;/head&gt;</span>
+                            head-elementet er oppbevaringsplassen, containeren for alt du vil inkludere i HTML-dokumentet som ikke er vises til leserne av siden. 
+                            Det kan være nøkkelord, beskrivelse av siden som kan vises i søkemotor-resultater, lenker til CSS og mer.
+                        </li>
+                        <li><span class="kode-i-text">&lt;meta charset="utf-8"&gt;</span> 
+                            Dette elementet setter tegn-settet dokumentet ditt skal bruke til utf-8 som inneholder de fleste tegnene i majoriteten av språk. 
+                        </li>
+                        <li>
+                            <span class="kode-i-text">&lt;meta name="viewport" content="width=device-width"&gt;</span> 
+                            Denne kalles: viewport-element. Her settes innholdets bredde til device-width. 
+                            Det vil si enhetens bredde. 
+                            Uten denne spesifikasjonen kunne det skjedd at mobile enheter med mindre skjerm enn en laptop ville vist en nedskalert side og 
+                            redusert brukervennligheten betraktelig. 
+                        </li>
+                        <li>
+                            <span class="kode-i-text">&lt;body&gt;&lt;/body&gt;</span>
+                             body-elementet. Denne inneholder alt innholdet du vil vise til brukerne som besøker nettsiden. 
+                             Det kan være bilder, video, spill, lydspor med mer.
+                        </li>
+                    </ul>
+                    
+
+                   
+                    
+                   
+                    
+                </p>
+            </div>
+
+
+            <figure id="bilde2" class="bilde-bokser"><img
+                    src="..\Bilder\Runars bildekilde\html kodeblokk1.jpg" alt="">
+            </figure>
+            <div id="text-og-bilde2-bakgrunn" class="tekst-og-bildeboks"></div>
+          
+
+<!-- bildeboks3-->
+  
+
+            <div id="text3" class="text"> 
+                <h1>Lær om bruk av bilder i HTML strukturen</h1>
+                
+            </div>
+            
+          
+            <a id="link1" href="tema_html_2.html">
+                <figure id="link1-figure">
+                    <img src="..\Bilder\Runars bildekilde\klikkflate-fisker.jpg" alt="link web-design">
+                    <figcaption>God bruk av &lt;img&gt; taggen</figcaption>
+                </figure>
+            </a>
+        
+<!--
+            <figure id="bilde3" class="bilde-bokser"><img
+                    src="../Bilder/pastel-rainbow-coloured-watercolour-texture-background/web-design-photo.jpg" alt="">
+            </figure>
+ -->
+            <div id="text-og-bilde3-bakgrunn" class="tekst-og-bildeboks"></div>
+          
+        </section>
+     
+
+
+  <!-- Ny seksjon seksjon 2 ********* -->          
+ 
+ <section id="section2-grid">
+         <!-- bildeboks4--> 
+        <h1>HTML-tagger påvirker innholdet de omslutter</h1>
+         <div id="text4" class="text">
+            
+            <p>I eksempelet med strong-taggen så vi at teksten mellom taggene fikk tekst 
+                stilen «bold» eller «fet» som gav teksten fetere skrifttype .
+            <br><br>
+                Forskjellige tagger har forskjellig innvirkning på innholdet. 
+            <br><br>
+                En nyttig tag som gir punktliste i teksten er kombinasjonen av UL, 
+                som betyr «unordered list» eventuelt OL som betyr «ordered list» og «li» 
+                som betyr list item.  
+            </p>
+            
+        </div>
+    
+    
+        <figure id="bilde4" class="bilde-bokser"><img
+                src="../Bilder\Runars bildekilde\Hjemmelaget.jpg" alt="">
+                
+        </figure>
+        <h1>Her kan du se hvordan det virker</h1>
+        <div id="lister-eksempelkode">
+        
+            <ul class="min-liste-uten-tall">
+                <h2>Listen uten tall er unordered list</h2>
+                <li>Dette blir første punkt på listen</li>
+                <li>Dette blir punkt nummer to</li>
+            </ul>
+        
+            <ol class="min-liste-med-tall">
+                <h2>Liste med tall er ordered list</h2>
+                <li> Dette blir første punkt på listen</li>
+                <li>Dette blir punkt nummer 2</li>
+            </ol>
+        
+        
+        </div>
+    
+        <div id="text-og-bilde4-bakgrunn" class="tekst-og-bildeboks"></div>
+   
+        <!-- bildeboks5 skal være tekst og fire linker --> 
+        <div id="text5" class="text">
+            <h3>Linkboks tekst</h3>
+            <p>Beskrivelse til linkene</p>
+            
+        </div>
+    
+        <div id="text-og-bilde5-bakgrunn" class="tekst-og-bildeboks"></div>
+        <!--
+        linker her 
+        -->
+        <div id="link-box">
+            <ul>
+                <li><a id = "linkboks-link1" href="tema_html_1.html"></a></li>
+                <li><a id = "linkboks-link2" href="tema_html_2.html"></a></li>
+                <li><a id = "linkboks-link3" href="tema_html_3.html"></a></li>
+                <li><a id = "linkboks-link4" href="tema_css_1.html"></a></li>
+                <li><a id = "linkboks-link5" href="tema_css_2.html"></a></li>
+              
+            </ul>
+            
+        </div>
+
+    
+ </section>
+
+
+
+
+
+
+<footer id="main-footer">
+    <div class="footer-content">
+        <div class="home">
+
+        </div>
+
+        <div class="footer-section links">
+            <h2>Analysere</h2>
+            <ul>
+                <li><a href="../Undersider_Fase1/IA.html">IA</a></li>
+                <li><a href="../Undersider_Fase1/Personas.html">Personas</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section links">
+            <h2>Design</h2>
+            <ul>
+                <li><a href="../Undersider_Fase2/Design.html">Design</a></li>
+                <li><a href="../Undersider_Fase2/UX.html">UX</a></li>
+                <li><a href="../Undersider_Fase2/WireFrames.html">WireFrames</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section links">
+            <h2>Virkeligjøre</h2>
+            <ul>
+                <li><a href="../Undersider_Fase3/WCAG_kriteriene.html">WCAG Kriteriene</a></li><li class="dropdown-items">
+                        <p style = "margin:0;">CSS</p>
+                        <ul>
+                            <li><a href="tema_css_1.html">Bruk farger</a></li>
+                            <li><a href="tema_css_2.html">Endre plasseringer</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-items">
+                        <p style = "margin:0;">HTML</p>
+                        <ul>
+                            <li><a href="tema_html_1.html">Tagger</a></li>
+                            <li><a href="tema_html_2.html">Sett inn bilder</a></li>
+                            <li><a href="tema_html_3.html">Struktur i tekst</a></li>
+                        </ul>
+                        <a href="tema_html_1.html">HTML</a>
+                    </li>
+                    <!-- Limt inn fjern kommentar når adressene stemmer -->
+                <li><a href="../Undersider_Fase3/css.html">CSS</a></li>
+                <li><a href="../Undersider_Fase3/tema_html_1.html">HTML</a></li>
+                <li><a href="../Undersider_Fase3/universell_utforming.html">Universell Utforming</a></br></li>
+                <li><a href="../Undersider_Fase3/Brukertesting.html">Brukertesting</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section links">
+            <h2>Systemsutviklings Metodikk</h2>
+            <ul>
+                <li><a href="../Undersider_Systemutvecklings_Metodik/Systemutvecklings_Metodik.html">Systemutvecklings Metodik</a></li>
+                <li><a href="../Undersider_Systemutvecklings_Metodik/Agile_Metoder.html">Agile Metoder</a></li>
+                <li><a href="../Undersider_Systemutvecklings_Metodik/Tradisjonelle_Metoder.html">Tradisjonelle Metoder</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section links">
+            <h2>Grunnlag</h2>
+            <ul>
+                <li><a href="../Undersider_Kilder/Kilder.html"> kilder</a></li>
+                <li class="dropdown-items"><a href="../Undersider_Grunnlag/begrunnelser.html"> Begrunnelser </a> </li>
+            </ul>
+        </div>
+
+        <div class="footer-section-slutt">
+        </div>
+    </div>
+    </div>
+</footer>
 </body>
 </html>
