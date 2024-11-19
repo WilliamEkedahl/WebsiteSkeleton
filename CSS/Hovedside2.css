@@ -334,11 +334,22 @@ body {
   
   /* Bilde og tekst */
   
-  @media (min-width: 1920px) {
+
   
     /****************************\
    *     Grid                 *
   \****************************/
+section#section2-grid{
+  margin-top:5rem;
+  display: grid;
+  grid-template-rows: repeat(5,1fr) ;
+  /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
+  grid-template-columns: repeat(7,minmax(50px,1fr));
+  column-gap: 50px;
+  row-gap: 25px;
+
+}
+
     #text1-bilde,
     /* #text2-bilde, */
     /* #text3-bilde, */
@@ -347,15 +358,7 @@ body {
       width: 100%;
     }
   
-    #section2 {
-  
-      display: grid;
-  
-      grid-template-rows: repeat(15, minmax(100px, 1fr));
-      /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
-      grid-template-columns: repeat(5, minmax(50px, 1fr));
-  
-    }
+
   
     #bilde-med-tekst1 {
   
@@ -393,21 +396,23 @@ body {
   
   /*Media query ferdig*/
   @media (max-width: 600px) {
-  
+
     #bilde-med-tekst2 {
       display: flex;
       flex-direction: column;
     }
-  
+
     #text2-bilde img {
       width: 200px;
-    }  
+    }
+
     .Bilder3,
     .Bilder4,
     .Kilder {
-  
+
       flex-wrap: wrap;
     }
+  }
   
     
   
