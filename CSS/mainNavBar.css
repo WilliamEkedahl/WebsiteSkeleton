@@ -69,8 +69,11 @@ nav{
     }
 
     #logo{
+         max-height: 50px;
+    }
+    #logo img{
         height:100%;
-        max-height: 50px;
+        max-height: 150px;
     }
 
     #home-link,#home-link:visited{
