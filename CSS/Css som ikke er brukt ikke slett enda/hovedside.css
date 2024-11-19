@@ -1,12 +1,12 @@
 body{background: none;}
 
   #background-img-data{
-    background:url("../Bilder/AI.jpeg") no-repeat center;
+    background:url("../../Bilder/AI.jpeg") no-repeat center;
     height:500px;
   }
   #background-img-lyn{
 
-    background:url("../Bilder/lynet.svg") no-repeat center;
+    background:url("../../Bilder/lynet.svg") no-repeat center;
     height:2500px;
     
   }
