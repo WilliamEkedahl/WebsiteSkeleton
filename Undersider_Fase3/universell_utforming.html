@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semesteroppgaven - HTML</title>
+    <title>HTML side 1</title>
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
     <link rel="stylesheet" href="..\..\CSS\main.css">
-    <link rel="stylesheet" media="screen and (min-width: 1400px)" href="..\..\CSS\uu.css">
-    <link rel="stylesheet"  href="..\..\CSS\uu.css">
+    <link rel="stylesheet" media="screen and (min-width: 140px)" href="..\..\CSS\uu.css">
+    <link rel="stylesheet"  href="..\..\CSS\uu_felles.css">
     <link rel="stylesheet" href="..\..\CSS\mainNavBar.css">
 </head>
 
 <body>
 <script src="../JS/dropMenu.js" defer></script>
 
-<nav>
+<nav class="navbar">
     <div id="nav-home-links">
         <!-- Back to the start page -->
         <a  class="logo" href="../index.html" ><img id= "logo" src="../Bilder\Runars bildekilde\SuperLogo.svg" alt="logo"> </a>
@@ -99,13 +99,20 @@
 </nav>
 
 <div id = "bakgrunnsbildet"></div>
-
+<div id="page-wrap"></div>
+<div id="page-wrap"></div>
    
 
 
 
 
-    <div id="temamarkør"> Emnemarkør</div>
+  
+<div id="temamarkør">
+    <h1>Universell Utforming</h1>
+    <figure id="emnemarkør-bilde">
+        <img src="..\Bilder\uulogo.jpeg">
+    </figure>
+</div>
 
         <section id="section1-grid">
           
@@ -115,18 +122,29 @@
 
             <div id="text1" class="text">
                 <h3>Hva er Universell Utforming?</h3>
-                <p>Universell utforming, forkortet som UU,
-                    handler om å lage løsninger som alle kan bruke, 
+                <p>
+                    Universell utforming, forkortet som UU,
+                    handler om å lage løsninger som alle kan bruke,
                     uansett hvilken nedsatt funksjonsevne en person kan ha.
-                    Universell utforming innebærer alt av å designe bygg, produkter, tjenester og omgivelser på best mulig måte 
-                    sånn at det kan brukes av alle. Målet med Universell utforming er å kunne redusere eller fjerne barrierer
-                    som kan hindre deltakelse gjennom utforming som sosiale og kulturelle institusjoner, bygde omgivelser og IKT (Lid, 2024). </p>
-                
-                  <p> Når det kommer til Universell Utforming så finnes det to offisielle definisjoner på dette i Norge.</p>
+                    Universell utforming innebærer alt av å designe bygg, produkter, tjenester og omgivelser
+                    på best mulig måte sånn at det kan brukes av alle.
+                    Målet med Universell utforming er å kunne redusere eller fjerne barrierer
+                    som kan hindre deltakelse gjennom utforming som sosiale og kulturelle institusjoner,
+                    bygde omgivelser og IKT (Lid, 2024).    
+                </p>
+                Når det kommer til Universell Utforming
+                så finnes det to offisielle definisjoner på dette i Norge.
+                På Store Norske Leksikon
+                <p>
+                    
+                </p>
+
+                <p> 
+                </p>
             </div>
         
             <figure id="bilde1" class="bilde-bokser"><img
-                    src="..\Bilder\datauu.jpeg" alt="">
+                    src="../Bilder/uu.jpeg" alt="Html5 logo">
                 
                     
             </figure>
@@ -139,55 +157,56 @@
 
 
             <div id="text2" class="text">
-                <h3>Eksempler på Universell Utforming</h3>
+                <h3>Eksempler på Universell Uforming</h3>
                 <p>
-                    
-                    
-                    <ul>
-                        <li>
-                            <span class="kode-i-text">&lt;&#33;doctype html&gt;</span> 
-                            er ikke en HTML-tag. Den forteller nettleseren hvilken type dokument det er. 
-                        </li>
-                        <li>
-                            <span class="kode-i-text">&lt;html&gt;&lt;/html&gt;</span>
-                            html-elementet. Det strekker seg fra begynnelsen til slutten og omfavner alt innholdet på hele siden. 
-                            Det inneholder også en språkmarkør som indikerer det primære språket i dokumentet. 
-                            Webdesignere bør bruke denne slik at det blir lettere å finne informasjon på det språket man ønsker å lese.
-                        </li>
-                        
-                        <li> 
-                            <span class="kode-i-text">&lt;head&gt;&lt;/head&gt;</span>
-                            head-elementet er oppbevaringsplassen, containeren for alt du vil inkludere i HTML-dokumentet som ikke er vises til leserne av siden. 
-                            Det kan være nøkkelord, beskrivelse av siden som kan vises i søkemotor-resultater, lenker til CSS og mer.
-                        </li>
-                        <li><span class="kode-i-text">&lt;meta charset="utf-8"&gt;</span> 
-                            Dette elementet setter tegn-settet dokumentet ditt skal bruke til utf-8 som inneholder de fleste tegnene i majoriteten av språk. 
-                        </li>
-                        <li>
-                            <span class="kode-i-text">&lt;meta name="viewport" content="width=device-width"&gt;</span> 
-                            Denne kalles: viewport-element. Her settes innholdets bredde til device-width. 
-                            Det vil si enhetens bredde. 
-                            Uten denne spesifikasjonen kunne det skjedd at mobile enheter med mindre skjerm enn en laptop ville vist en nedskalert side og 
-                            redusert brukervennligheten betraktelig. 
-                        </li>
-                        <li>
-                            <span class="kode-i-text">&lt;body&gt;&lt;/body&gt;</span>
-                             body-elementet. Denne inneholder alt innholdet du vil vise til brukerne som besøker nettsiden. 
-                             Det kan være bilder, video, spill, lydspor med mer.
-                        </li>
-                    </ul>
-                    
+                    Det finnes flere eksempler på universell utforming, både fysisk og teknologisk.
+                    Eksempler på fysiske universelle utforminger, som en kan legge merke til ute i det offentlige,
+                    kan være rampene som du finner ved inngangene til en butikk og spor i bakken for personer med nedsatt syn.
+                    Du har også automatiske dører, sånn at du slipper å måtte fysiskt åpne de.
+                    Farger for å skille dører, vegger og trapper tydelig. Benker,
+                    reserverte plasser for rullestoller og barnevogner, visuelle annonseringer å mye mer.
+                    Universell utforming handler om løsninger som skal kunne være tilgjengelig for flest mulig,
+                    og at det skal være lettere for personer med nedsatt funksjonsevne å kunne komme seg fra A til B,
+                    å delta på lik linje som alle andre. 
+                </p>
 
-                   
-                    
-                   
-                    
+                <p>
+                    Et annet eksempel på universell utforming er det teknologiske, som for eksempel brukervennlige nettsider.
+                    Formålet med en brukervennlig nettside er at det skal være
+                    enkelt å forstå og navigere seg rundt for alle.
+                    På en nettside så er det gjerne lett å navigere seg rundt for personer uten noe nedsatt funksjonsevne,
+                    men for noen som sliter med nedsatt syn, hørsel eller andre behov, så kan dette være utfordrende.
+                    For å bidra til en god og brukervennlig nettside, så finnes det ulike ting man kan tenke over når en lager nettside.
+                    Her kan en ta utgangspunkt i WCAG kriteriene.
+
+                    <ul>
+                        <h5>Nedsatt syn/fargebind</h5>
+                        <li>
+                            På nettsiden skal det være god kontrast mellom farger. 
+                        </li>
+                        <li>
+                            Det skal ikke være for mange eller for lite bilder. Det samme er det også med tekst. 
+                        </li>
+                        <li>
+                            Det skal være lett for brukeren å se på informasjonen som h*n leter etter.
+                        </li>
+                        <li>
+                            Bruke sterke kontraster og mønstre for å kunne skille mellom tekst og bakgrunn.
+                            Det er ikke bare farger som vi må tilpasse, men også logoer og symboler.
+                        </li>
+                        <li>
+                            Noen bilder inneholder tekst, og dette må gjøres tilgjengelig for de som ikke ser det (Grolid, 2022). Bildetekster og alt-tekster kan brukes til å gjøre det lettere for de som har nedsatt syn (Grolid, 2022).
+                        </li> 
+                    </ul>
+                
+ 
+
                 </p>
             </div>
 
 
             <figure id="bilde2" class="bilde-bokser"><img
-                    src="..\Bilder\uu.jpeg" alt="">
+                    src="..\Bilder\datauu.jpeg" alt="">
             </figure>
             <div id="text-og-bilde2-bakgrunn" class="tekst-og-bildeboks"></div>
           
@@ -196,18 +215,10 @@
   
 
             <div id="text3" class="text"> 
-                <h3>Les videre om HTML som verktøy</h3>
+                <h1>Overskrift til trykkbar link</h1>
                 
             </div>
             
-          
-            <a id="link1" href="#">
-                <figcaption>Lær om HTML som verktøy</figcaption>
-                <img 
-                    src="..\Bilder\Runars bildekilde\klikkflate-fisker.jpg"
-                    alt="link web-design">
-                    
-            </a>
         
 <!--
             <figure id="bilde3" class="bilde-bokser"><img
@@ -219,32 +230,48 @@
         </section>
      
 
+
   <!-- Ny seksjon seksjon 2 ********* -->          
  
  <section id="section2-grid">
          <!-- bildeboks4--> 
-
+        <h1>Enlan overskrift for noe innenfor Universell Utforming</h1>
          <div id="text4" class="text">
-            <h3>Oversriften til fjerde bildeboks</h3>
-            <p>I eksempelet med strong taggen så vi at teksten mellom taggene fikk tekst 
-                stilen «bold» eller fet. Forskjellige tagger har forskjellig innvirkning på innholdet. 
-                En nyttig tag som gir punktliste i teksten er kombinasjonen av UL, 
-                som betyr «unordered list» eventuelt OL som betyr «ordered list» og «li» 
-                som betyr list item.  
+            
+            <p>
+              
             </p>
+            
         </div>
     
     
         <figure id="bilde4" class="bilde-bokser"><img
-                src="../Bilder\Runars bildekilde\Hjemmelaget.png" alt="">
+                src="../Bilder/uu.jpeg" alt="">
                 
         </figure>
+        
+        <h1>Overskrift som forklarer bilde under</h1>
+        <div id="lister-eksempelkode">
+        
+            <div class="min-liste-uten-tall">
+                <h2>Teksten starter under herr</h2>
+                <p>
+                    test
+                </p>
+
+            </div>
+                
+          
+        
+           
+        
+        </div>
     
         <div id="text-og-bilde4-bakgrunn" class="tekst-og-bildeboks"></div>
    
         <!-- bildeboks5 skal være tekst og fire linker --> 
         <div id="text5" class="text">
-            <h3>Mer nyttig informasjon</h3>
+            <h3>Linkboks tekst</h3>
             <p>Beskrivelse til linkene</p>
             
         </div>
@@ -255,29 +282,30 @@
         -->
         <div id="link-box">
             <ul>
-                <li><a href="#">link1</a></li>
-                <li><a href="#">link2</a></li>
-                <li><a href="#">link3</a></li>
-                <li><a href="#">link4</a></li>
-                <li><a href="#">link5</a></li>
+                <li><a id = "linkboks-link1" href="tema_html_1.html"></a></li>
+                <li><a id = "linkboks-link2" href="tema_html_2.html"></a></li>
+                <li><a id = "linkboks-link3" href="tema_html_3.html"></a></li>
+                <li><a id = "linkboks-link4" href="tema_css_1.html"></a></li>
+                <li><a id = "linkboks-link5" href="tema_css_2.html"></a></li>
+              
             </ul>
             
         </div>
 
     
-        <div id="text-og-bilde5-bakgrunn" class="tekst-og-bildeboks"></div>
-
  </section>
-    <!-- ********* ********* *********** ********** ********** ********** -->
-    <!--#            Footer                                       #-->
-<!-- ********* ********* *********** ********** ********** ********** -->
+
+
+
+
+
 
 <footer id="main-footer">
     <div class="footer-content">
         <div class="home">
-            <a id="home-link" href="index.html"><img src="../Bilder/hjem.jpeg"> Home</a></li>
+
         </div>
-        
+
         <div class="footer-section links">
             <h2>Analysere</h2>
             <ul>
@@ -322,21 +350,23 @@
         <div class="footer-section links">
             <h2>Systemsutviklings Metodikk</h2>
             <ul>
+                <li><a href="../Undersider_Systemutvecklings_Metodik/Systemutvecklings_Metodik.html">Systemutvecklings Metodik</a></li>
                 <li><a href="../Undersider_Systemutvecklings_Metodik/Agile_Metoder.html">Agile Metoder</a></li>
                 <li><a href="../Undersider_Systemutvecklings_Metodik/Tradisjonelle_Metoder.html">Tradisjonelle Metoder</a></li>
             </ul>
         </div>
 
         <div class="footer-section links">
-            <h2>Kilder</h2>
+            <h2>Grunnlag</h2>
             <ul>
-                <li><a href="../Undersider_Kilder/Kilder.html"> Våre kilder</a></li>
+                <li><a href="../Undersider_Kilder/Kilder.html"> kilder</a></li>
+                <li class="dropdown-items"><a href="../Undersider_Grunnlag/begrunnelser.html"> Begrunnelser </a> </li>
             </ul>
         </div>
-    </div>
 
-    <div class="footer-section-slutt">
-        <p>&copy; 2024 Gruppe 8.</p>
+        <div class="footer-section-slutt">
+        </div>
+    </div>
     </div>
 </footer>
 </body>
