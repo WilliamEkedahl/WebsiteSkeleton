@@ -189,8 +189,15 @@ button:focus{
     font-family: Georgia, serif;
     text-decoration: none;
 }
+.dropdown-items>ul{
+    list-style: none;
+}
+.dropdown-items>p {
+    color: #afb7c2;
+    text-align: center;
+}
 .dropdown-items>ul a {
-    font-size: .7rem;
+    
 }
 
 /************************************************\
