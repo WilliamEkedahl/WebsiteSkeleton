@@ -442,7 +442,6 @@ section#section2-grid{
   .Meg p {
     color: black;
     /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden*/
-    font-size: 15px;
     /*Størrelsen på tekst*/
     width: 80%;
   } 
