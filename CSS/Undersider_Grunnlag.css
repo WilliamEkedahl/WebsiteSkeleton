@@ -1,113 +1,448 @@
+/**********************\
+ *     Hele siden     *
+\**********************/
 
-/******************************\
-     Grid første seksjon
-\******************************/
 
-section#section1-grid{
-    display: grid;
-    grid-template-rows: repeat(5,1fr) ;
-    /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
-    grid-template-columns: repeat(4,minmax(100px,1fr));
-    column-gap: 50px;
-    row-gap: 25px;
-
-}
-
-#section1-grid>a{
+body {
+    margin: 0;
+    font-size: 17px;
+    overflow-x: scroll;
+  }
+  
+  a {
+    text-decoration: none;
+    /*Dette er for at det ikke skal være linjer under lenkene*/
+  
+  }
+  
+  /* Nav bar er der lenkene er på nettsiden */
+  
+  /***********************\
+   *     Øverste del     *
+  \***********************/
+  header {
+    width: 1140px;
+    max-width: 80%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /**************************\
+   *     Bakgrunnsbilde     *
+  \**************************/
+  /* hovedbilde_design som er på toppen */
+  .hovedbilde_design {
+    position: relative;
+  }
+  
+  .hovedbilde_design .item img {
+    /*Størrelsen på hovedbilde_design som er på toppen. Tar hele skjermen*/
+    width: 100%;
+    height: 100%;
+  }
+  
+  .hovedbilde_design .content {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    /* transform: translateX(-50%); */
+    width: 80%;
+    max-width: 1140px;
+    color: white;
+    text-shadow: 0 5px 10px #0004;
+    z-index: 1;
+    text-align: left;
+  }
+  
+  .hovedbilde_design .list .item .content .title,
+  .hovedbilde_design .list .item .content .topic {
+    font-weight: bold;
+    /*Størrelsen på teksten som er på hovedbilde_designt*/
+    font-size: 2em;
+  }
+  
+  .hovedbilde_design .list .item .content .topic {
+    color: rgb(249, 241, 73);
+    /*Fargen på ordet "Design". Det er teksten i hovedbilde_design*/
+  }
+  
+  /********************************\
+   *     Tre bilder på en rad     *
+  \********************************/
+  
+  /* 
+  box-sizing for hele siden ?
+  Hvis den skal være for hele siden bør 
+  den plasseres øverst.
+  
+  */
+  /*Gruppe som gjør at tre bilder står på en rad*/
+  * {
     box-sizing: border-box;
-    border: 5px solid orange;
-    background-color:rgb(240, 142, 15);
-    border-radius: 10px;
-    text-align: center;
-
-
-}
-#section1-grid>h1{
-
-    grid-row:1/2 ;
-    grid-column:1/3 ;
-    /*background-color: black;*/
-
-}
-#section1-grid>p{
-    grid-row:1/2 ;
-    grid-column:3/5 ;
-    /*background-color: black;*/
-
-}
-
-#link1{
-    grid-row:2/4 ;
-    grid-column:1/3 ;
-    grid-area: 2/1/4/3;
-}
-#link2{
-
-    grid-area: 2/3/4/5;
-}
-#link3{
-    grid-area: 4/1/6/3;
-}
-#link4{
-    grid-area: 4/3/6/5;
-}
-.image-link{
-
-
-}
-
-/******************************\
- *     Grid andre seksjon      *
-\******************************/
-section#section2-grid{
-    display: grid;
-    grid-template-rows: repeat(5,1fr) ;
-    /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
-    grid-template-columns: repeat(4,minmax(100px,1fr));
-    column-gap: 50px;
-    row-gap: 25px;
-
-}
-
-#section2-grid>a{
-    box-sizing: border-box;
-    border: 5px solid orange;
-    background-color:rgb(240, 142, 15);
-    border-radius: 10px;
-    text-align: center;
-
-
-}
-#section2-grid>h1{
-
-    grid-row:1/2 ;
-    grid-column:1/3 ;
-    /*background-color: black;*/
-
-}
-#section2-grid>p{
-    grid-row:1/2 ;
-    grid-column:3/5 ;
-    /*background-color: black;*/
-
-}
-
-#link5{
-    grid-row:2/4 ;
-    grid-column:1/3 ;
-    grid-area: 2/1/4/3;
-}
-#link6{
-
-    grid-area: 2/3/4/5;
-}
-#link7{
-    grid-area: 4/1/6/3;
-}
-#link8{
-    grid-area: 4/3/6/5;
-}
-.image-link{
-
-
-}
+  }
+  
+  /********************************\
+   *     Underbilder     *
+  \********************************/
+  .del1-underbilder {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    /* setter distanse mellom de*/
+    padding: 5px;
+  
+  }
+  
+  .kollone {
+    width: 30%;
+    /*Denne gruppen, fra box sizing til .kollone, sørger for at de tre bildene står ved siden av hverandre.*/
+    padding: 5px;
+  }
+  
+  
+  
+  /****************************\
+   *     Underbilder          *
+   *     Bilde med tekst 1    *
+  \****************************/
+  
+  /*Første bilde med tekst container*/
+  .Meg {
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    /*Bakgrunnen på tekst og bilde*/
+    padding: 50px;
+    /*
+    Full bredde av viewport:
+    width: 100vw;
+  
+  
+    margin: 10rem auto 0 auto;
+    */
+  }
+  
+  .Meg img {
+    width: 300px;
+  
+  }
+  
+  .Meg h1 {
+    margin: 0;
+    color: black;
+    /*Farge på tekst og størrelse*/
+    font-size: 50px;
+  }
+  
+  .Meg p {
+    color: black;
+    margin-right: 60px;
+    /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden*/
+    font-size: 25px;
+    /*Størrelsen på tekst*/
+  }
+  
+  /* Bilder med tekst */
+  .Bilder {
+    background-color: hsl(271, 51%, 31%);
+    /* display: flex; */
+    justify-content: space-between;
+    /*Bakgrunnsfarge på bilde og tekst. */
+    padding: 20px;
+    /*width: 100vw;
+    margin: 10rem auto 0 auto;
+    */
+  }
+  
+  
+  
+  .Bilder h1 {
+    margin: 0;
+    color: white;
+    font-size: 50px;
+  }
+  
+  .Bilder p {
+    color: white;
+    margin-right: 70px;
+    /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden*/
+    font-size: 25px;
+    /*Størrelsen på tekst*/
+  
+  }
+  
+  /****************************\
+   *     Underbilder          *
+   *     Bilder2              *
+  \****************************/
+  
+  #bilde-med-tekst2 {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #bilde-med-tekst2 p{
+    font-size: 20px;
+  }
+  
+  #bilde-med-tekst2 img {
+    width: 200px;
+  }
+  
+  .Bilder2 {
+    background-color: hsl(296, 76%, 21%);
+    display: flex;
+    justify-content: space-between;
+    padding: 80px;
+    /* width: 100vw; 
+    margin: 10rem auto 0 auto;
+    */
+  }
+  
+  .Bilder2 img {
+    height: 500px;
+  
+  }
+  
+  .Bilder2 h1 {
+    margin: 0;
+    color: rgb(255, 254, 254);
+    font-size: 50px;
+  }
+  
+  .Bilder2 p {
+    color: rgb(255, 254, 254);
+    /*
+    margin-right: 80px; /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden
+    */
+    font-size: 25px;
+    /*Størrelsen på tekst*/
+  
+  }
+  
+  /* Bilde med tekst, gruppe tre */
+  .Bilder3 {
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    padding: 10%;
+    margin-bottom: 50px;
+    /*
+    width: 100vw;
+    
+    margin: 10rem auto 0 auto;
+    */
+  }
+  
+  .Bilder3 img {
+    width: 300px;
+  
+  }
+  
+  .Bilder3 h1 {
+    margin: 0;
+    color: black;
+    font-size: 50px;
+  }
+  
+  .Bilder3 p {
+    color: black;
+    margin-right: 60px;
+    /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden*/
+    font-size: 25px;
+    /*Størrelsen på tekst*/
+  }
+  
+  /* Bilder4 */
+  .Bilder4 {
+    background-color: hsl(228 27% 25%);
+    display: flex;
+    justify-content: space-between;
+    padding: 80px;
+    /*
+    width: 100vw;
+    
+    margin: 10rem auto 0 auto;
+    */
+  }
+  
+  .Bilder4 img {
+    height: 600px;
+  
+  }
+  
+  .Bilder4 h1 {
+    margin: 0;
+    color: white;
+    font-size: 50px;
+  }
+  
+  .Bilder4 p {
+    color: white;
+    /*
+    margin-right: 70px; /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden
+    */
+    font-size: 25px;
+    /*Størrelsen på tekst*/
+  
+  }
+  
+  .Kilder {
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    justify-content: space-between;
+    padding: 120px;
+    /* width: 100vw; 
+      margin: 10rem auto 0 auto;
+      */
+  }
+  
+  .Kilder img {
+    height: 600px;
+  
+  }
+  
+  .Kilder h1 {
+    margin: 0;
+    color: black;
+    font-size: 50px;
+  }
+  
+  .Kilder p {
+    color: black;
+    /*
+      margin-right: 60px; /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden*/
+    font-size: 25px;
+    /*Størrelsen på tekst*/
+  }
+  
+  
+  .Barebilde img {
+    height: 600px;
+    width: 100%;
+    /*Dette er for å få bildet til å dekke skjermen. Ikke hele skjermen, men at den når enden på begge sider*/
+    object-fit: cover;
+  }
+  
+  
+  /* Bilde og tekst */
+  
+  @media (min-width: 1440px) {
+  
+    /****************************\
+   *     Grid                 *
+  \****************************/
+    #text1-bilde,
+    /* #text2-bilde, */
+    /* #text3-bilde, */
+    #text4-bilde,
+    #text5-bilde {
+      width: 100%;
+    }
+  
+    #section2 {
+  
+      display: grid;
+  
+      grid-template-rows: repeat(15, minmax(100px, 1fr));
+      /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
+      grid-template-columns: repeat(5, minmax(50px, 1fr));
+  
+    }
+  
+    #bilde-med-tekst1 {
+  
+  
+      grid-column: 1/-1;
+      grid-row: 1/4;
+  
+    }
+  
+    #bilde-med-tekst2 {
+      grid-column: 1/-1;
+      grid-row: 4/7;
+    }
+  
+    /* #bilde-med-tekst3 {
+      grid-column: 1/-1;
+      grid-row: 7/10;
+    } */
+  
+    #bilde-med-tekst4 {
+      grid-column: 1/-1;
+      grid-row: 10/13;
+    }
+  
+    #bilde-med-tekst5 {
+      grid-column: 1/-1;
+      grid-row: 13/16;
+    }
+  
+    .text {
+      align-self: center;
+    }
+  
+  }
+  
+  /*Media query ferdig*/
+  @media (max-width: 600px) {
+  
+    #bilde-med-tekst2 {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    #text2-bilde img {
+      width: 200px;
+    }  
+    .Bilder3,
+    .Bilder4,
+    .Kilder {
+  
+      flex-wrap: wrap;
+    }
+  
+    
+  
+  .hovedbilde_design .list .item .content .title,
+  .hovedbilde_design .list .item .content .topic {
+    font-weight: bold;
+    /*Størrelsen på teksten som er på hovedbilde_designt*/
+    font-size: 2.1em;
+  }
+  
+  .Meg {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Meg img {
+    width: 200px;
+  }
+  
+  .Meg h1 {
+    margin: 0;
+    color: black;
+    /*Farge på tekst og størrelse*/
+    font-size: 40px;
+  }
+  
+  .Meg p {
+    color: black;
+    /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden*/
+    font-size: 15px;
+    /*Størrelsen på tekst*/
+    width: 80%;
+  } 
+  
+  #bilde-med-tekst3 img{
+    width: 100%;
+  }
+  
+  }
