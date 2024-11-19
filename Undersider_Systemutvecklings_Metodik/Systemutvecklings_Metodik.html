@@ -15,7 +15,7 @@
 <body>
 <script src="../JS/dropMenu.js" defer></script>
 
-<nav>
+<nav class ="navbar">
     <div id="nav-home-links">
         <!-- Back to the start page -->
         <a  class="logo" href="../index.html" ><img id= "logo" src="../Bilder\Runars bildekilde\SuperLogo.svg" alt="logo"> </a>
@@ -89,21 +89,6 @@
 <div id="background-image"></div>
 
 <div id="page-wrap">
-    <div class="Headerbar"> <!--navnet på gruppen-->
-        <div class="list">
-            <div class="item">
-                <!--class er for hvilken gruppe de elementene tilhører. Vi kan sette flere elementer i en gruppe-->
-                <img style="display:none;" src="../Bilder/SystemeutvecklingsMetodik_Bilder/HeaderSystemMetodik.png"> <!--img er for bilde-->
-                <!-- Bildet skal være bakgrunnsbilde .. ? tenker jeg. Se begrunnelser i main.css for valg av bakrunnsbildet gjen backgroun-image i CSS heller enn img-tag i HTML-->
-                <div class="content">
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
     <section id="section1-grid">
 
         <!-- bildeboks1-->
@@ -132,10 +117,16 @@
         <div id="text2" class="text">
             <h2>Skillnaden mellan de två olika Systemutvecklings metodikerna</h2>
             <p> När man pratar om Systemutvecklings Metodiker är det två viktigaste
-                <a href="Tradisjonelle_Metoder.html">Strukturerade metoder </a>  och <a href="Agile_Metoder.html"> Agile metoder </a> den stora skillnaden mellan dessa är
+                Strukturerade metoder och Agile metoder. Den stora skillnaden mellan dessa är
                 att i strukturerade metoder måste man i förväg veta vart man ska och man jobbar
                 med systemutvecklingen stegvis man blir först färdig med en sak före man går vidare
-                med nästa. Medan man i Agila metoder kan vara mer fleksibel </p>
+                med nästa. Vattenfallsmetoden är beroende av att teamet tillsammans prövar att gissa hur mycket tid och
+                pengar det krävs för att utveckla en slutprodukt med ett fast antal krav.
+                Medan om man jobbar med en agile systemutvecklings metod så prövar man inte att gissa exakt vilka delar slutprodukten
+                kommer att ha istället jobbar man konsekvent med det som användaren och produkt ägaren bestämmer är viktigast, Vilka är det viktigaste
+                "användare behoven" att utveckla först och så fortsätter man på det sättet med något nytt och går tillbaka till det man gjort tidigare
+                för att förbättra det flera gånger, iterativt (ynch., 2016, s. 73)
+            </p>
         </div>
 
 
@@ -149,13 +140,16 @@
 
 
         <div id="text3" class="text">
-            <h3>Oversriften til tredje bildeboks</h3>
-            <p>Tekst til det tredje bildet</p>
+            <h2>Traditionella metoder kort sammanfattat</h2>
+            <p id="waterfallmethodsummery_text">I vattenfallsmodellen så utför man stegvis utveckling där varje steg endast kan fortsätta att utvecklas
+                efter att det tidigare steget har blivit helt fullfört, det vill säga att man inte börjar på designen före man har gjort
+                färdig kravanalysen och inte börjar med programmeringen före man är färdig med all design (ynch., 2016, s. 74)  </p>
+            <a id="link1" href="Tradisjonelle_Metoder.html"> Läs mer om traditionella metoder här </a>
         </div>
 
 
         <figure id="bilde3" class="bilde-bokser"><img
-                src="../Bilder/SystemeutvecklingsMetodik_Bilder/AgileMethodsexample.png" alt="">
+                src="../Bilder/SystemeutvecklingsMetodik_Bilder/Agile-vs-Waterfall-Blogpost_featured.png" alt="Bilde av Traditionella vs agila metoder">
         </figure>
 
         <div id="text-og-bilde3-bakgrunn" class="tekst-og-bildeboks"></div>
@@ -164,33 +158,21 @@
 
 
         <div id="text4" class="text">
-            <h3>Oversriften til fjerde bildeboks</h3>
-            <p>Tekst til det fjerde bildet</p>
+            <h2 id="agile-metoder">Agila metoder kort sammanfattat</h2>
+            <p>Den Iterativa metoden (Agile metoder) utvecklades för att lösa två huvudsakliga svårigheter med Strukturerade metoder,
+                1. Att tillåta nya och ändrade krav under utvecklingsfasen. 2. Men som fortfarande har en strikt hierarki för att fortsätta
+                att hålla sig till planen och inte komma bort för långt från det huvudsakliga målet för systemutvecklingen från början (ynch., 2016, s. 77).
+                Det liknar väldigt mycket på vattenfallsmetoden men den är något mer flexibel, i stället för att projektet går från start till slut så jobbar
+                man genom så kallade sprints, små projektutvecklings faser som man delar upp projektet i där man bestämmer nya delmål genom till exempel scrum möten.  </p>
+               <a id="link2" href="Agile_Metoder.html"> Läs mer om agila metoder här </a>
         </div>
 
         <div id="text-og-bilde4-bakgrunn" class="tekst-og-bildeboks"></div>
 
     </section>
-    <section id="section2-grid">
-        <p>Hovedside</p>
-        <h1>Tema 3 seksjon 2</h1>
-        <a id="link5" href="#">
-            <img class="image-link"
-                 src=""
-                 alt="link web-design">
-        </a>
-        <a id="link6" href="#">
-            <img class="image-link"
-                 src=""
-                 alt="link web-design">
-        </a>
+</div>
 
-
-
-    </section>
-
-
-    <footer id="main-footer">
+<footer id="main-footer">
         <div class="footer-content">
             <div class="home">
 
@@ -241,10 +223,9 @@
                 </ul>
             </div>
 
-        <div class="footer-section-slutt">
+            <div class="footer-section-slutt">
+            </div>
         </div>
-        </div>
-</div>
-    </footer>
+</footer>
 </body>
 </html>

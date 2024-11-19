@@ -6,14 +6,18 @@
 /**** Feltet rundt linkene/knappene ****/
 nav{
     color: white;
-    background-image: linear-gradient(to left, #339edb, #d57434);
+    background-color: #4A6FA5;
     gap: 1rem;
     z-index: 10;
     margin: 1rem;
     flex-wrap: wrap;
     margin:0;
-    font-size: 20px;
-    font-family: Verdana, sans-serif;
+    box-shadow: -10px 0px 10px 0px rgba(0,0,0,0.2);
+    align-items: flex-start;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
 }
 
 /*********************************************************\
@@ -42,6 +46,7 @@ nav{
         #nav-wrapper {
             display: flex;
             flex-direction: row;
+            padding: 17px;
         }
     }
 
@@ -59,6 +64,7 @@ nav{
     #home-link {
         position: relative;
         color: white;
+        background-color: #4A6FA5;
         text-decoration: none;
         transition: color 0.3s ease-in-out;
     }
@@ -70,7 +76,7 @@ nav{
 
     #home-link,#home-link:visited{
         /*Spesiell justering for hjem-linken*/
-        color: black;
+        color: #ffffff;
     }
     #home-link>img{
         height:1rem;
@@ -82,18 +88,13 @@ nav{
         background: none;
         border:none;
         text-decoration: none;
-        color: #000000;
+        color: #ffffff;
         font-family: inherit;
         font-size: inherit;
         cursor: pointer;
         padding: 0;
     }
 
-    #grunnlag {
-        margin-left: auto;
-        /* margin-right: 10px;*/
-        right:100px;
-    }
 
 
 
@@ -115,27 +116,26 @@ nav{
     *** Klassen legges til og fjernes fra elementet som har klassen dropdown    ***
     *** Knappene som viser flere linker når de trykkes på har klassen dropdown  ***/
     .dropdown.active > .dropdown-button,
-    .dropdown-button:hover{
-        color:black;
-        font-weight: bold;
+    .dropdown-button:hover {
+        color: #ffffff;
+        text-decoration: underline;
+
     }
 .dropdown-items{
-    color:black;
     transition: color 0.3s ease-in-out;
-    font-weight: bold;
 }
 
     .dropdown{
         position: relative;
-
     }
 
     .dropdown-menu{
         align-content: center;
         display: none;
         position: absolute;
+        text-decoration: none;
         left: 0;
-        background-color: white;
+        background-color: #4A6FA5;;
         padding:0.75rem;
         border-radius: 0.25rem;
         box-shadow:2px 2px 5px black;
@@ -143,7 +143,7 @@ nav{
         transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
         transform: translatex(-50%);
         right: auto;
-        z-index: 5;
+        z-index: 11;
     }
 
     .dropdown.active .dropdown-menu{
@@ -179,15 +179,12 @@ button:focus{
     border: none;
 }
 
-.dropdown-button  {
+.dropdown-button, #home-link, .dropdown-items>a {
     margin-bottom: 10px;
     color: white;
-    font-size: 35px;
+    font-size: 28px;
     font-family: Georgia, serif;
+    text-decoration: none;
 }
-#home-link{
-    color: white;
-    font-size: 20px;
-    font-family: vardana, sans serif;
-}
+
 
