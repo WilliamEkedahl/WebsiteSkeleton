@@ -116,7 +116,7 @@ body {
     background-color: rgb(243, 243, 243);
     display: flex;
     justify-content: space-between;
-    justify-content: center;
+
     /*Bakgrunnen på tekst og bilde*/
     padding: 50px;
     /*
@@ -141,10 +141,10 @@ body {
   }
   
   .Meg p {
+    width: 80%;
     color: black;
     margin-right: 60px;
     /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden*/
-    font-size: 25px;
     /*Størrelsen på tekst*/
   }
   
@@ -391,9 +391,7 @@ section#section2-grid{
     .text {
       align-self: center;
     }
-  
-  }
-  
+
   /*Media query ferdig*/
   @media (max-width: 600px) {
 
@@ -413,13 +411,12 @@ section#section2-grid{
       flex-wrap: wrap;
     }
   }
-  
-    
-  
+
+
+/*Størrelsen på teksten som er på hovedbilde_designt*/
   .hovedbilde_design .list .item .content .title,
   .hovedbilde_design .list .item .content .topic {
     font-weight: bold;
-    /*Størrelsen på teksten som er på hovedbilde_designt*/
     font-size: 2.1em;
   }
   
@@ -438,16 +435,7 @@ section#section2-grid{
     /*Farge på tekst og størrelse*/
     font-size: 40px;
   }
-  
-  .Meg p {
-    color: black;
-    /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden*/
-    /*Størrelsen på tekst*/
-    width: 80%;
-  } 
-  
+
   #bilde-med-tekst3 img{
     width: 100%;
-  }
-  
   }

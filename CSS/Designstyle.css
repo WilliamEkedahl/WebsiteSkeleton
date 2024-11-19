@@ -388,7 +388,6 @@ den plasseres øverst.
     align-self: center;
   }
 
-}
 
 /*Media query ferdig*/
 @media (max-width: 600px) {
@@ -444,6 +443,4 @@ den plasseres øverst.
 
 #bilde-med-tekst3 img{
   width: 100%;
-}
-
 }
