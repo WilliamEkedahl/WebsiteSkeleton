@@ -7,14 +7,10 @@ body{
 h1{
   font-family: Georgia, serif;
   font-size: 50px;
-  margin-bottom: 0px;
-  margin-top: 0px;
 }
 h2{
   font-family: Georgia, serif;
   font-size: 24px;
-  margin-bottom: 0px;
-  margin-top: 0px;
 }
 
 p{
@@ -25,12 +21,11 @@ p{
 \******************************/
 section#section1-grid{
     display: grid;
-    grid-template-rows:repeat(30,minmax(25px,0.1fr)) ;
+    grid-template-rows:repeat(22,minmax(25px,0.1fr)) ;
     
 
     /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
     grid-template-columns: repeat(15,minmax(25px,0.2fr));
-    border: 2px solid red;
 
     column-gap: 25px;
     row-gap: 25px;
@@ -39,8 +34,6 @@ section#section1-grid{
   
   #tidligere-a{
     box-sizing: border-box;
-    border: 5px solid orange;
-    background-color:rgb(18, 219, 48);
     border-radius: 10px; 
   }
   #section1-grid>h1{
@@ -71,8 +64,9 @@ bilde-bokser_z3{
   z-index:2;
 }
   .tekst-og-bildeboks{
-    background-color: rgba(73, 152, 196, 0.84);
+    background-color: rgba(216, 216, 216, 0.84);
     z-index: 1;
+    box-shadow: 2px 2px 2px black;
   }
   .text{
     z-index: 2;
@@ -120,8 +114,7 @@ bilde-bokser_z3{
     grid-row:4/8 ;
     grid-column:3/6 ;
     grid-area:2/2/5/6;
-    margin-top: 50px;
-    margin-left:25px;
+
   }
   
   #bilde1{
@@ -147,7 +140,6 @@ bilde-bokser_z3{
     grid-column: 1/11;
     grid-area: 1/6/5/11;
     padding: 5px;
-    border: 1px solid black;
   }
   #bilde2{
     text-align: center;
@@ -190,13 +182,13 @@ bilde-bokser_z3{
   #text-og-bilde4-bakgrunn{
     grid-row: 8/10;
     grid-column: 2/15;
-    grid-area: 10/2/18/15;
+    grid-area: 10/2/15/15;
   }
   #text4{
     z-index: 4;
     grid-row: 8/10;
     grid-column: 2/15;
-    grid-area: 10/2/18/15;
+    grid-area: 11/3/18/14;
     height: 300px;
     width: 100%;
   }
@@ -209,13 +201,15 @@ bilde-bokser_z3{
   }
 
   #text-og-bilde5-bakgrunn{
-    grid-area: 18/2/26/15;
+    grid-area: 16/2/22/15;
   }
 
   #text5{
-    grid-row: 8/10;
-    grid-column: 2/15;
-    grid-area: 18/2/26/15;
+    grid-area: 17/3/22/14;
+  }
+
+  #link1{
+    margin-left: 30px;
   }
 
 
@@ -229,7 +223,6 @@ bilde-bokser_z3{
     grid-template-rows: repeat(5,1fr) ;
     /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
     grid-template-columns: repeat(4,minmax(100px,1fr));
-    border: 2px solid red;
     column-gap: 50px;
     row-gap: 25px;
     

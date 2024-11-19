@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,21 +7,21 @@
     <title>Semesteroppgaven - HTML</title>
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
     <link rel="stylesheet" href="..\..\CSS\main.css">
-    <link rel="stylesheet" media="screen and (min-width: 1000px)"  href="..\..\CSS\undersider_Systemutvecklings_Metodik.css">
+    <link rel="stylesheet" media="screen and (min-width: 1000px)" href="..\..\CSS\undersider_fase1.css">
     <link rel="stylesheet" href="..\..\CSS\mainNavBar.css">
-
 </head>
 
 <body>
 <script src="../JS/dropMenu.js" defer></script>
 
-<nav class ="navbar">
+
+<nav>
     <div id="nav-home-links">
         <!-- Back to the start page -->
-        <a  class="logo" href="../index.html" ><img id= "logo" src="../Bilder\Runars bildekilde\SuperLogo.svg" alt="logo"> </a>
+        <a  class="logo" href="" alt="logo hjem link"><img id= "logo" src="../Bilder\Runars bildekilde\SuperLogo.svg" alt="logo"> </a>
 
         <!-- Home link -->
-        <a id="home-link" class="clickable-home-link" href="../index.html"><img src="../Bilder/imagesforWebsite.png"> Home</a></li>
+        <a id="home-link" href="../index.html"><img src="../Bilder/imagesforWebsite.png"> Home</a></li>
     </div>
     <div id="nav-wrapper">
         <!-- Fase 1 Dropdown -->
@@ -29,8 +29,8 @@
             <button  class="dropdown-button" data-dropDown-button> Analysere </button>
             <div class="dropdown-menu" dropdown-menu>
                 <ul>
-                    <li class="dropdown-items"><a href="../Undersider_Fase1/Personas.html">Personas</a></li>
-                    <li class="dropdown-items"><a href="../Undersider_Fase1/IA.html">IA</a></li>
+                    <li class="dropdown-items"><a href="Personas.html">Personas</a></li>
+                    <li class="dropdown-items"><a href="IA.html">IA</a></li>
                 </ul>
             </div>
         </div>
@@ -79,9 +79,9 @@
             <button  class="dropdown-button" data-dropDown-button> Systemutvecklings Metodik </button>
             <div class="dropdown-menu" dropdown-menu>
                 <ul>
-                    <li class="dropdown-items"><a href="Systemutvecklings_Metodik.html">Systemutvecklings Metodik</a></li>
-                    <li class="dropdown-items"><a href="Agile_Metoder.html">Agile Metoder</a></li>
-                    <li class="dropdown-items"><a href="Tradisjonelle_Metoder.html">Tradisjonelle Metoder</a></li>
+                    <li class="dropdown-items"><a href="../Undersider_Systemutvecklings_Metodik/Systemutvecklings_Metodik.html">Systemutvecklings Metodik</a></li>
+                    <li class="dropdown-items"><a href="../Undersider_Systemutvecklings_Metodik/Agile_Metoder.html">Agile Metoder</a></li>
+                    <li class="dropdown-items"><a href="../Undersider_Systemutvecklings_Metodik/Tradisjonelle_Metoder.html">Tradisjonelle Metoder</a></li>
                 </ul>
             </div>
         </div>
@@ -91,35 +91,59 @@
             <button class="dropdown-button" data-dropDown-button> Grunnlag </button>
             <div id="grunnlag-dropdown" class="dropdown-menu" dropdown-menu>
                 <ul>
-                    <li class="dropdown-items"><a href="../Undersider_Grunnlag/Kilder.html">Kilder</a></li>
-                    <li class="dropdown-items"><a href="../Undersider_Grunnlag/begrunnelser.html"> Begrunnelser </a> </li>
+                    <li class="dropdown-items"><a href="Undersider_Grunnlag/Kilder.html">Kilder</a></li>
+                    <li class="dropdown-items"><a href="begrunnelser.html"> Begrunnelser </a> </li>
                 </ul>
             </div>
         </div>
     </div>
 </nav>
 
-<div id="background-image"></div>
+<div id="bakgrunnsbildet"></div>
 
 <div id="page-wrap">
+    <div class="Headerbar"> <!--navnet på gruppen-->
+        <div class="list">
+            <div class="item">
+                <!--class er for hvilken gruppe de elementene tilhører. Vi kan sette flere elementer i en gruppe-->
+                <img style="display:none;" src="../Bilder/AI.jpeg"> <!--img er for bilde-->
+                <!-- Bildet skal være bakgrunnsbilde .. ? tenker jeg. Se begrunnelser i main.css for valg av bakrunnsbildet gjen backgroun-image i CSS heller enn img-tag i HTML-->
+                <div class="content">
+                    <div class="title"></div> <!--Hva jeg driver med. Dette er tittelen-->
+                    <div class="topic"></div> <!--Hva jeg viser nå. Derfor er fotografiene fremst-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
     <section id="section1-grid">
 
+
+    <div id="border-innehold1" class="border-around">
         <!-- bildeboks1-->
-        <div id="language-info" class="text">
-        <p> <i> Välkommen till andra sidan gränsen, det svenska landet, ingen återvändo. </i></p>
-        </div>
-
+        <div id="stor_overskrift1" class="stor_overskrift">
+            <h1>Personas</h1>
+            </div> 
+ 
         <div id="text1" class="text">
-            <h1>Systemutvecklings metodik</h1>
-            <p>Systemutvecklings Metodik är ett samlings begrep
-                över olika strategier processer som man använder
-                i systemutveckling det inkluderar processer i planering,
-                design, utveckling, testning och implementering av programvaran.</p>
+            <h2 id="text1-header">Kontakt</h2>
+            <ul  class="personas-list-items">
+                <li>Navn: Fredrikke</li>
+                <li>Alder: 20 år</li>
+                <li>Kjønn: kvinne</li> 
+                <li>Sivilstatus: Singel</li>
+                <li>Studie: Førsteårsstudent på universitetet</li>
+                <li>Bosted: Nettopp flyttet for seg selv</li>
+            </ul>
         </div>
 
-        <figure id="bilde1" class="bilde-bokser">
-            <img src="..\Bilder/SystemeutvecklingsMetodik_Bilder/theScope.png" alt="Bild av faktorerna som påverkar Systemutvecklings-metodik">
+        <figure id="bilde1" class="bilde-bokser_z3">
+            <img src="../Bilder\Fase1 bilder\personas_300x300.jpg"alt="bilde av personas">
         </figure>
+
+    </div>
 
         <div id="text-og-bilde1-bakgrunn" class="tekst-og-bildeboks"></div>
 
@@ -128,24 +152,25 @@
 
 
         <div id="text2" class="text">
-            <h2>Skillnaden mellan de två olika Systemutvecklings metodikerna</h2>
-            <p> När man pratar om Systemutvecklings Metodiker är det två viktigaste
-                Strukturerade metoder och Agile metoder. Den stora skillnaden mellan dessa är
-                att i strukturerade metoder måste man i förväg veta vart man ska och man jobbar
-                med systemutvecklingen stegvis man blir först färdig med en sak före man går vidare
-                med nästa. Vattenfallsmetoden är beroende av att teamet tillsammans prövar att gissa hur mycket tid och
-                pengar det krävs för att utveckla en slutprodukt med ett fast antal krav.
-                Medan om man jobbar med en agile systemutvecklings metod så prövar man inte att gissa exakt vilka delar slutprodukten
-                kommer att ha istället jobbar man konsekvent med det som användaren och produkt ägaren bestämmer är viktigast, Vilka är det viktigaste
-                "användare behoven" att utveckla först och så fortsätter man på det sättet med något nytt och går tillbaka till det man gjort tidigare
-                för att förbättra det flera gånger, iterativt (ynch., 2016, s. 73)
+            <h2>Digital kompetanse:</h2>
+            <p>Fredrikke er vant til å bruke digitale verktøy på mobil og pc, er godt kjent med sosiale medier
+            og mestrer akademiske verktøy som skrivebordsprogrammer. Hun er flink til å finne frem til informasjon
+            på nettet og er godt kjent med de vanlige konvensjonene for webdesign.
+            Fredrikke vurderer å velge en studieretning innenfor webdesign.</p>
+            <h2>Livsstil og holdinger:</h2>
+            <p>Fredrikke liker å utforske nye hobbyer og aktiviteter. Hun er nyskjerrig og eventyrlysten.
+                Hun liker å være i fysisk aktivitet, og driver med terrengsykkel da dette gir henne en følelse av frihet og glede.
+                Fredrikke søker aktiviteter som gjør at hun kan fortsette med hobbyene sine. Hun ønsker å oppnå en balanse mellom
+                å være sosial, studere og delta i egne aktiviteter. 
             </p>
+    
         </div>
 
 
         <figure id="bilde2" class="bilde-bokser"><img
                 src="" alt="">
         </figure>
+
         <div id="text-og-bilde2-bakgrunn" class="tekst-og-bildeboks"></div>
 
 
@@ -153,39 +178,66 @@
 
 
         <div id="text3" class="text">
-            <h2>Traditionella metoder kort sammanfattat</h2>
-            <p id="waterfallmethodsummery_text">I vattenfallsmodellen så utför man stegvis utveckling där varje steg endast kan fortsätta att utvecklas
-                efter att det tidigare steget har blivit helt fullfört, det vill säga att man inte börjar på designen före man har gjort
-                färdig kravanalysen och inte börjar med programmeringen före man är färdig med all design (ynch., 2016, s. 74)  </p>
-            <a id="link1" href="Tradisjonelle_Metoder.html"> Läs mer om traditionella metoder här </a>
+            <h2 id="text3_h2">Informasjon i en personas:</h2>
+            <ul class="personas-list-items">
+                <li>Navn</li>
+                <li>Alder</li>
+                <li>Kjønn</li>
+                <li>Sivilstatus</li>
+                <li>Utdannelse</li>
+                <li>Yrke</li>
+                <li>Digital kompetanse</li>
+                <li>Interesser</li>
+                <li>Livsstil</li>
+                <li>Ufordringer</li>
+                <li>Problemer</li>
+            </ul>
+        </div>
+              
+
+        <div id="text-og-bilde3-bakgrunn" class="tekst-og-bildeboks">
+            <p> 
+        <a href="https://www.interaction-design.org/literature/article/personas-why-and-how-you-should-use-them?srsltid=AfmBOoo7ASudIFmf3ciny6rUsACV30Fc3lSh4qS5mOBpIjG2Zx4exgfH">
+            Her kan du lese videre om personas</a>
+         </p>
         </div>
 
-
-        <figure id="bilde3" class="bilde-bokser"><img
-                src="../Bilder/SystemeutvecklingsMetodik_Bilder/Agile-vs-Waterfall-Blogpost_featured.png" alt="Bilde av Traditionella vs agila metoder">
-        </figure>
-
-        <div id="text-og-bilde3-bakgrunn" class="tekst-og-bildeboks"></div>
-
         <!-- bildeboks4-->
-
-
         <div id="text4" class="text">
-            <h2 id="agile-metoder">Agila metoder kort sammanfattat</h2>
-            <p>Den Iterativa metoden (Agile metoder) utvecklades för att lösa två huvudsakliga svårigheter med Strukturerade metoder,
-                1. Att tillåta nya och ändrade krav under utvecklingsfasen. 2. Men som fortfarande har en strikt hierarki för att fortsätta
-                att hålla sig till planen och inte komma bort för långt från det huvudsakliga målet för systemutvecklingen från början (ynch., 2016, s. 77).
-                Det liknar väldigt mycket på vattenfallsmetoden men den är något mer flexibel, i stället för att projektet går från start till slut så jobbar
-                man genom så kallade sprints, små projektutvecklings faser som man delar upp projektet i där man bestämmer nya delmål genom till exempel scrum möten.  </p>
-               <a id="link2" href="Agile_Metoder.html"> Läs mer om agila metoder här </a>
+            <h2>Funksjoner på et nettsted som kan tilfredstille hennes behov:</h2>
+            <p>En strukturert informasjonsbase der Fredrikke kan navigere seg rundt
+                og finne informasjon om de forskjellige aspektene web-designere forholder seg til
+                når de utarbeider nettsteder.
+                Fredrikke er opptatt av å forstå de store sammenhengene mellom de ulike delene av webutvikling
+                og webdesign. Hun har lyst til å lære seg alt hun trenger for å kunne lage sine egne nettsteder.
+                Fredrikke liker ikke store samlinger med tekst og foretrekker å lese på sin datamaskin.
+                Hun trenger også funksjoner som gjør det mulig å se på en avgrenset mengde data
+                så hun kan lese litt, legge det bort, og lese litt mer når det passer. </p>
         </div>
 
         <div id="text-og-bilde4-bakgrunn" class="tekst-og-bildeboks"></div>
 
+        <div id="text-og-bilde5-bakgrunn" class="tekst-og-bildeboks"></div>
+
+        <div id="text5" class="text">
+
+        <h2>Personas</h2>
+        <p>Personas blir brukt til å kunne presentere forskjellige ideelle brukere med ulike interesser og bakgrunner.
+        Personas kan både være ekte og fiktive personer som kan hjelpe utviklingsteamet på vei mot å lage et sluttprodukt.
+        Personas gir muligheten til å kunne forstå behovet til målgruppen utviklingsteamet jobber mot.
+        Denne metoden gir også muligheten til å kunne analysere ulike utfordringer,
+        atferd og brukeropplevelser en tiltenkt målgruppe av brukere kan oppleve.
+        Dessuten kan dette gi et helhetlig bilde av hva designet mangler.
+        Personas er med på å hjelpe utviklingsteamet med å lage et produkt som er tilpasset for målgruppen.
+        Ved å lage profiler til de tiltenkte personas, kan det bli laget analyser basert på ulike brukeropplevelser.
+        </p>
+        </div>
     </section>
 </div>
 
-<footer id="main-footer">
+
+
+    <footer id="main-footer">
         <div class="footer-content">
             <div class="home">
 
@@ -242,7 +294,7 @@
             </div>
 
             <div class="footer-section links">
-                <h2>Grunnlag</h2>
+                <h2>Kilder</h2>
                 <ul>
                     <li><a href="../Undersider_Kilder/Kilder.html"> kilder</a></li>
                     <li class="dropdown-items"><a href="../Undersider_Grunnlag/begrunnelser.html"> Begrunnelser </a> </li>
@@ -253,5 +305,6 @@
             </div>
         </div>
 </footer>
+
 </body>
 </html>

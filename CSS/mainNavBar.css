@@ -182,12 +182,17 @@ button:focus{
     border: none;
 }
 
-.dropdown-button, #home-link, .dropdown-items>a {
+.dropdown-button, #home-link, .dropdown-items>a,
+.dropdown-items>p,.dropdown-items>ul a {
     margin-bottom: 10px;
     color: white;
-    font-size: 28px;
+    font-size: 1rem;
     font-family: Georgia, serif;
     text-decoration: none;
 }
+.dropdown-items>ul a {
+    font-size: .7rem;
 
+
+}
 
