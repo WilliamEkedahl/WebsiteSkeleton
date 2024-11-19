@@ -4,7 +4,7 @@ body {
 }
 a {
     text-decoration: none;  /*Dette er for at det ikke skal være linjer under lenkene*/
-
+}
 /*carousel*/
 .carousel{
     width: 100vw;

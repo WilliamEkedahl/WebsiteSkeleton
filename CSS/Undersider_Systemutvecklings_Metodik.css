@@ -1,5 +1,5 @@
 :root{
-    --background-color-text-og-bilde1-bakgrund: #496ea4;
+    --background-color-text-og-bilde1-bakgrund: #bdbdbd;
 }
 /* Turn the white text color to black when the screen
 goes smaller then 1000px, which is the breakpoint where the css styling stops*/
@@ -61,8 +61,6 @@ section#section1-grid{
 
 #tidligere-a{
     box-sizing: border-box;
-    border: 5px solid orange;
-    background-color:rgb(18, 219, 48);
     border-radius: 10px;
 }
 #section1-grid>h1{
@@ -122,6 +120,7 @@ img {
     grid-row: 1/-10;
     grid-column: 1/16;
     grid-area: 1/1/6/16;
+    box-shadow: 1px 1px 1px black;
 }
 #language-info{
     margin-left: 15px;
@@ -141,6 +140,7 @@ img {
 #text-og-bilde2-bakgrunn{
     background-color: var(--background-color-text-og-bilde1-bakgrund);
     grid-area: 9/1/18/16;
+    box-shadow: 1px 1px 1px black;
 }
 #text2{
     align-self: center;
@@ -160,6 +160,7 @@ img {
     grid-area: 5/1/10/16;
     background-color: var(--background-color-text-og-bilde1-bakgrund);
     z-index: 1;
+    box-shadow: 1px 1px 1px black;
 }
 #text3{
     grid-area: 9/7/12/15;
@@ -186,4 +187,5 @@ img {
     background-color: white;
     border-radius: 10px;
     padding: 5px;
+    box-shadow: 1px 1px 1px black;
 }

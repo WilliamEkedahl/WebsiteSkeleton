@@ -87,9 +87,9 @@
   
   
   
-  #link-box>ul>li:nth-of-type(1)>a:after{content:"HTML 1 Tagger";}
-  #link-box>ul>li:nth-of-type(2)>a:after{content:"HTML 2 Bilder";}
-  #link-box>ul>li:nth-of-type(3)>a:after{content:"HTML 3 prosessen";}
+  #link-box>ul>li:nth-of-type(1)>a:after{content:"WCAG Kriteriene";}
+  #link-box>ul>li:nth-of-type(2)>a:after{content:"Design: Nettside";}
+  #link-box>ul>li:nth-of-type(3)>a:after{content:"Personas";}
   #link-box>ul>li:nth-of-type(4)>a:after{content:"CSS1";}
   #link-box>ul>li:nth-of-type(5)>a:after{content:"CSS2";}
   
