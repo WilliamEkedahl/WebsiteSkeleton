@@ -1,184 +1,3 @@
-
-/************************************************\
- *   Page-wrapper holder innholdet på siden     *
- *   sentrert og med max width                  *
-\************************************************/
-
-
-  @media (min-width: 950px) {
-    #page-wrap{ 
-       max-width: 1440px;
-       margin: auto;
-       position: relative;
-       left: 0;
-       right: 0;
-       
-       
-    }
-  }
-
-/*
-The background property is a shorthand property for:
-
-background-color
-background-image
-background-position
-background-size
-background-repeat
-background-origin
-background-clip
-background-attachment
-
-https://www.w3schools.com/cssref/css3_pr_background.php
-
-background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
-https://developer.mozilla.org/en-US/docs/Web/CSS/background
-*/
-
-
-/*
-Vi er enige om:
-  Helvetica 20px for paragrafer
-  35px for overskrifter
-
-  Dette ble basert på begrunnelser fra best-pratice
-  William kan kanskje finne begrunnelsen igjen??
-https://www.learnui.design/blog/mobile-desktop-website-font-size-guidelines.html
-jada :)
-  */
-
-  /* Root setter størelsen for rem - enhetene */
-
-:root{ 
-  font-size: 20px;
-}
-
-body{
-margin: 0px;
-font-family: verdana, sans-serif;
-font-size: 1rem;
-}
-body h1{
-  font-family: Georgia, Serif;
-font-size: 35px;
-}
-
-
-@media (min-width: 1440px) {
-  
-  body{background-size: 100%;}
-  
-}
-
-/* Root setter font-size for rem  */
-
-
-/*
-Til begrunnelser:
-
-In our day to day life, when we are building a UI component or a HTML template, we must have come across this scenario to choose between HTML <img /> tag vs CSS background-image property.
-
-I also faced this situation and did some research on that. Here are some important points to consider before choosing one.
-
-Accessibility — In case of background-image Screen readers will not announce its presence and therefore convey nothing to its users but they can read the html image alt attribute.
-Performance — I have tried both the ways using different size of images. Performance is pretty much same using both.
-Printing HTML Page — Browsers aren’t always set to print background images by default. If you want an image to print (cmd/ctrl + p) by default use <img /> otherwise you can choose background-image
-SEO — Search engines cannot see the images, they can only search for alt attribute on images. So image tag with alt attribute helps us for SEO.
-Image Manipulation — If you have image sprite or image layers and want to display on mouse hover or if you want some text on top of the image easily or if you want show only some part of the image or if you want to apply some cool background-attachment properties.. background-image is the option.
-Basic Image protection — If you want to protect your image from people who don’t know the inspect element option, you can opt background-image
-Call To Action — If you want your image to be clickable HTML image tag should be the option.
-
-*/
-  @media (min-width: 900px) {
-  /*******************************************\
-   *     Seksjonene - innholdet på siden     *
-  \*******************************************/
-  
-  .section-wrap{
-   /*
-        section wrap er med 
-        på å plassere sidestolpen
-                                     */
-    width:66%;
-    margin-left: 3%;
-    float:left;
-}
-section{
-   
-    min-width: 500px;
-}
-
-} /*Media query ferdig*/
-
-/*******************\
- *     Footer      *
-\*******************/
-#main-footer {
-    background-color: #4A6FA5;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    /*
-    Denne marginen lager mellomrom mellom footer
-    og grid
-
-    */
-    margin-top: 5rem;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between; /* Fordeler seksjonene jevnt */
-    align-items: flex-start;
-    text-align: center;
-}
-
-.footer-section {
-    margin-bottom: 20px;
-}
-.links{ /* Treffer overskiften til linkene */
-    color: orange;
-}
-
-.footer-section ul { /* Markerer stilen på listen til UL */
-    list-style: none;
-    padding: 0;
-}
-
-.footer-section ul li {
-    margin: 0 10px;
-}
-
-.footer-section ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 0.9em;
-    font-weight: 600;
-    transition: color 0.3s ease; /* Overgangseffekt for mykere fargeskifte */
-}
-
-.footer-section ul li a:hover {
-    color: rgba(255, 255, 255, 0.46); /* Skifter farge ved hover */
-    text-decoration: underline; /* Fjerner streken under ordet */
-}
-
-.footer-section-slutt {
-    color: #fff;
-
-}
-.home a{
-    color: orange;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-.home a:hover{
-    color: #ffffff;
-    text-decoration: underline;
-}
-
-
 /**********************************\
     #Nav-bar
 \**********************************/
@@ -372,7 +191,185 @@ button:focus{
 }
 .dropdown-items>ul a {
     font-size: .7rem;
+}
 
+/************************************************\
+ *   Page-wrapper holder innholdet på siden     *
+ *   sentrert og med max width                  *
+\************************************************/
+
+
+  @media (min-width: 950px) {
+    #page-wrap{ 
+       max-width: 1440px;
+       margin: auto;
+       position: relative;
+       left: 0;
+       right: 0;
+       
+       
+    }
+  }
+
+/*
+The background property is a shorthand property for:
+
+background-color
+background-image
+background-position
+background-size
+background-repeat
+background-origin
+background-clip
+background-attachment
+
+https://www.w3schools.com/cssref/css3_pr_background.php
+
+background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
+https://developer.mozilla.org/en-US/docs/Web/CSS/background
+*/
+
+
+/*
+Vi er enige om:
+  Helvetica 20px for paragrafer
+  35px for overskrifter
+
+  Dette ble basert på begrunnelser fra best-pratice
+  William kan kanskje finne begrunnelsen igjen??
+https://www.learnui.design/blog/mobile-desktop-website-font-size-guidelines.html
+jada :)
+  */
+
+  /* Root setter størelsen for rem - enhetene */
+
+:root{ 
+  font-size: 20px;
+}
+
+body{
+margin: 0px;
+font-family: verdana, sans-serif;
+font-size: 1rem;
+}
+body h1{
+  font-family: Georgia, Serif;
+font-size: 35px;
+}
+
+
+@media (min-width: 1440px) {
+  
+  body{background-size: 100%;}
+  
+}
+
+/* Root setter font-size for rem  */
+
+
+/*
+Til begrunnelser:
+
+In our day to day life, when we are building a UI component or a HTML template, we must have come across this scenario to choose between HTML <img /> tag vs CSS background-image property.
+
+I also faced this situation and did some research on that. Here are some important points to consider before choosing one.
+
+Accessibility — In case of background-image Screen readers will not announce its presence and therefore convey nothing to its users but they can read the html image alt attribute.
+Performance — I have tried both the ways using different size of images. Performance is pretty much same using both.
+Printing HTML Page — Browsers aren’t always set to print background images by default. If you want an image to print (cmd/ctrl + p) by default use <img /> otherwise you can choose background-image
+SEO — Search engines cannot see the images, they can only search for alt attribute on images. So image tag with alt attribute helps us for SEO.
+Image Manipulation — If you have image sprite or image layers and want to display on mouse hover or if you want some text on top of the image easily or if you want show only some part of the image or if you want to apply some cool background-attachment properties.. background-image is the option.
+Basic Image protection — If you want to protect your image from people who don’t know the inspect element option, you can opt background-image
+Call To Action — If you want your image to be clickable HTML image tag should be the option.
+
+*/
+  @media (min-width: 900px) {
+  /*******************************************\
+   *     Seksjonene - innholdet på siden     *
+  \*******************************************/
+  
+  .section-wrap{
+   /*
+        section wrap er med 
+        på å plassere sidestolpen
+                                     */
+    width:66%;
+    margin-left: 3%;
+    float:left;
+}
+section{
+   
+    min-width: 500px;
+}
+
+} /*Media query ferdig*/
+
+/*******************\
+ *     Footer      *
+\*******************/
+#main-footer {
+    background-color: #4A6FA5;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    /*
+    Denne marginen lager mellomrom mellom footer
+    og grid
+
+    */
+    margin-top: 5rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Fordeler seksjonene jevnt */
+    align-items: flex-start;
+    text-align: center;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+.links{ /* Treffer overskiften til linkene */
+    color: orange;
+}
+
+.footer-section ul { /* Markerer stilen på listen til UL */
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 0 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 600;
+    transition: color 0.3s ease; /* Overgangseffekt for mykere fargeskifte */
+}
+
+.footer-section ul li a:hover {
+    color: rgba(255, 255, 255, 0.46); /* Skifter farge ved hover */
+    text-decoration: underline; /* Fjerner streken under ordet */
+}
+
+.footer-section-slutt {
+    color: #fff;
 
 }
+.home a{
+    color: orange;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.home a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
 
