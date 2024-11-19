@@ -115,7 +115,6 @@ den plasseres øverst.
   background-color: rgb(243, 243, 243);
   display: flex;
   justify-content: space-between;
-  justify-content: center;
   /*Bakgrunnen på tekst og bilde*/
   padding: 50px;
   /*
@@ -333,27 +332,29 @@ den plasseres øverst.
 
 /* Bilde og tekst */
 
-@media (min-width: 1920px) {
-
   /****************************\
  *     Grid                 *
 \****************************/
+  section#section2-grid{
+    margin-top:5rem;
+    display: grid;
+    grid-template-rows: repeat(5,1fr) ;
+    /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
+    grid-template-columns: repeat(7,minmax(50px,1fr));
+    border: 2px solid red;
+    column-gap: 50px;
+    row-gap: 25px;
+
+  }
+
+
+
   #text1-bilde,
   /* #text2-bilde, */
   /* #text3-bilde, */
   #text4-bilde,
   #text5-bilde {
     width: 100%;
-  }
-
-  #section2 {
-
-    display: grid;
-
-    grid-template-rows: repeat(15, minmax(100px, 1fr));
-    /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
-    grid-template-columns: repeat(5, minmax(50px, 1fr));
-
   }
 
   #bilde-med-tekst1 {
