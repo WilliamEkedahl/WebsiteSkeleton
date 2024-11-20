@@ -52,7 +52,6 @@ section#section1-grid{
 z-index:2;}
 
   .tekst-og-bildeboks{
-    background-color: aqua;
     background-color: var( --bakgrunnsfarge-text-bilde-bakgrunn);
     
     
