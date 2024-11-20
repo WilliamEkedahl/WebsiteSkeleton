@@ -1,0 +1,193 @@
+/**********************\
+ *     Hele siden     *
+\**********************/
+
+
+body {
+    margin: 0;
+    overflow-x: scroll;
+  }
+  
+  a {
+    text-decoration: none;
+    /*Dette er for at det ikke skal være linjer under lenkene*/
+  
+  }
+
+
+  /**************************\
+   *     Bakgrunnsbilde     *
+  \**************************/
+  /* hovedbilde_design som er på toppen */
+  .hovedbilde_design {
+    position: relative;
+  }
+  
+  .hovedbilde_design .item img {
+    /*Størrelsen på hovedbilde_design som er på toppen. Tar hele skjermen*/
+    width: 100%;
+    height: 100%;
+  }
+  
+  .hovedbilde_design .content {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    /* transform: translateX(-50%); */
+    width: 80%;
+    max-width: 1140px;
+    color: white;
+    text-shadow: 0 5px 10px #0004;
+    z-index: 1;
+    text-align: left;
+  }
+  
+  .hovedbilde_design .list .item .content .title,
+  .hovedbilde_design .list .item .content .topic {
+    font-weight: bold;
+    /*Størrelsen på teksten som er på hovedbilde_designt*/
+    font-size: 2em;
+  }
+  
+  .hovedbilde_design .list .item .content .topic {
+    color: rgb(241, 136, 0);
+    /*Fargen på ordet "Design". Det er teksten i hovedbilde_design*/
+  }
+
+  /* felles endringer klass */
+
+.text{
+  z-index: 2;
+}
+.bilde-bokser img{
+  background-color: green;
+  z-index: 2;
+}
+.backgrundFarge{
+  background-color: #5f94aa;
+  z-index: 1;
+  box-shadow: 2px 2px 2px black;
+}
+@media (max-width: 800px) {
+  section#section2-grid {
+    grid-template-columns: 1fr;
+  }
+  .grid-item {
+    padding: 1rem;
+  }
+}
+
+
+.text p {
+  margin-left: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+}
+
+/* Image styling */
+.bilde-bokser img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/****************************\
+ *     Grid                 *
+ \***************************/
+  section#section2-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: start;
+    margin: 2rem auto;
+    max-width: 3000px;
+  }
+
+  .grid-item {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 1rem;
+    background-color: #ac7777;
+  }
+
+  #backgrundFarge1 {
+
+  }
+
+  .text h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .text p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .bilde-bokser img {
+    width: 100%;
+  }
+
+  .text{
+    background-color: #e8e0e0;
+  }
+
+  .bilde-bokser{
+    background-color: #5f94aa;
+  }
+  .backgrundFarg{
+    background-color: #ef4735;
+  }
+
+/* Analysere*/
+
+#text-analysere{
+
+}
+
+#bilde-analysere{
+}
+
+#BackgrundFarge1{
+}
+
+/*Design */
+
+#text-design{}
+#bilde-design{
+
+}
+#backgrundFarge2{}
+
+/*Virkeligjøre */
+
+#text-virkeligjøre{}
+#bilde-virkeligjøre{
+
+}
+#backgrundFarge3{}
+
+/*systemutvecklingsMetodik */
+#text-systemutvikligsMetodik{
+
+}
+#bilde-SystemutvecklingsMetodik{
+
+}
+#backgrundFarge4{}
+
+/*Grunnlag */
+
+#text-Grunnlag{}
+#backgrundFarge5{
+}
+
+#grid-item-grunnlag{
+}
+
+
