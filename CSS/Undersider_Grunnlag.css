@@ -47,7 +47,7 @@ body {
   
   .hovedbilde_design .content {
     position: absolute;
-    top: 10%;
+    top: 30%;
     left: 10%;
     /* transform: translateX(-50%); */
     width: 80%;
@@ -60,13 +60,14 @@ body {
   
   .hovedbilde_design .list .item .content .title,
   .hovedbilde_design .list .item .content .topic {
+    font-family: Georgia, sans-serif;
     font-weight: bold;
     /*Størrelsen på teksten som er på hovedbilde_designt*/
-    font-size: 2em;
+    font-size: 2.5em;
   }
   
   .hovedbilde_design .list .item .content .topic {
-    color: rgb(249, 241, 73);
+    color: rgb(230, 150, 22);
     /*Fargen på ordet "Design". Det er teksten i hovedbilde_design*/
   }
   
@@ -115,7 +116,6 @@ body {
     background-color: rgb(243, 243, 243);
     display: flex;
     justify-content: space-between;
-    justify-content: center;
     /*Bakgrunnen på tekst og bilde*/
     padding: 50px;
     /*
@@ -127,15 +127,6 @@ body {
     */
   }
 
-  #kollone1{
-    width: 100%;
-  }
-#kollone2{
-  width: 100%;
-}
-#kollone3{
-  width: 100%;
-}
   .Meg img {
     width: 300px;
   
