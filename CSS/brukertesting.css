@@ -27,7 +27,7 @@
   section#section1-grid{
       display: grid;
       
-      grid-template-rows:repeat(6, 1fr) .1fr 250px 10px;
+      grid-template-rows:repeat(2, 1fr) .1fr;
       
   
       /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
@@ -249,11 +249,12 @@
     \******************************/
     section#section2-grid{
       display: grid;
-      grid-template-rows: .2fr 1fr .2fr repeat(6,1fr) ;
+      grid-template-rows: repeat(2,1fr) ;
       /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
       grid-template-columns: repeat(8,minmax(50px,1fr));
       
       column-gap: 50px;
+      row-gap: 5px;
       
       
     }
@@ -304,9 +305,74 @@
       grid-area: 7/1/9/4;
       
     }
-    /*Linkboks for fire linker */
-    #link-box{
+    
+
+    /******************************\
+       Linkboks for linker
+  \******************************/
+  #link-box{
       grid-area:  7/4/9/7;
       
       z-index: 2;
     }
+
+  #link-box>ul{
+  
+    box-sizing: border-box;
+    margin:0; padding:0;
+
+    display: flex;
+
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    height:100%;
+    list-style: none;
+
+
+}
+#link-box>ul>li>a{
+
+    background-color:var(--skygge-svart-farge);
+
+    cursor:pointer;
+    z-index: 1;
+    transition: all 200ms ease;
+}
+#link-box>ul>li>a:hover{
+    transform:translateY(2px) translateX(-2px);
+}
+
+#link-box>ul>li>a::after{
+    box-sizing: border-box;
+    content: "_";
+    display:block;
+    background-color: var(--bakgrunnsfarge-text-bilde-bakgrunn) ;
+
+
+
+    transition: all 200ms ease;
+
+}
+
+
+
+#link-box>ul>li:nth-of-type(1)>a:after{content:"Universell Utforming";}
+#link-box>ul>li:nth-of-type(2)>a:after{content:"Personas";}
+
+
+#link-box>ul>li>a:hover::after{
+    transform:translateY(-4px) translateX(4px);
+
+    color:blue;
+}
+
+#link-box a{
+    font-size: 1.5rem;
+    line-height: 4rem;
+    display: block;
+
+}
+
+#link-box a:hover{
+}

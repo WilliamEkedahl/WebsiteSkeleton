@@ -1,3 +1,4 @@
+
 /**********************\
  *     Hele siden     *
 \**********************/
@@ -66,7 +67,7 @@ header {
 }
 
 .hovedbilde_design .list .item .content .topic {
-  color: rgb(57, 199, 251);
+  color: rgb(249, 241, 73);
   /*Fargen på ordet "Design". Det er teksten i hovedbilde_design*/
 }
 
@@ -115,6 +116,7 @@ den plasseres øverst.
   background-color: rgb(243, 243, 243);
   display: flex;
   justify-content: space-between;
+  justify-content: center;
   /*Bakgrunnen på tekst og bilde*/
   padding: 50px;
   /*
@@ -148,7 +150,7 @@ den plasseres øverst.
 
 /* Bilder med tekst */
 .Bilder {
-  background-color: hsl(228 27% 25%);
+  background-color: hsl(271, 51%, 31%);
   /* display: flex; */
   justify-content: space-between;
   /*Bakgrunnsfarge på bilde og tekst. */
@@ -194,7 +196,7 @@ den plasseres øverst.
 }
 
 .Bilder2 {
-  background-color: hsl(228 27% 25%);
+  background-color: hsl(296, 76%, 21%);
   display: flex;
   justify-content: space-between;
   padding: 80px;
@@ -332,28 +334,27 @@ den plasseres øverst.
 
 /* Bilde og tekst */
 
+@media (min-width: 1920px) {
+
   /****************************\
  *     Grid                 *
 \****************************/
-  section#section2-grid{
-    margin-top:5rem;
-    display: grid;
-    grid-template-rows: repeat(5,1fr) ;
-    /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
-    grid-template-columns: repeat(7,minmax(50px,1fr));
-    column-gap: 50px;
-    row-gap: 25px;
-
-  }
-
-
-
   #text1-bilde,
   /* #text2-bilde, */
   /* #text3-bilde, */
   #text4-bilde,
   #text5-bilde {
     width: 100%;
+  }
+
+  #section2 {
+
+    display: grid;
+
+    grid-template-rows: repeat(15, minmax(100px, 1fr));
+    /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
+    grid-template-columns: repeat(5, minmax(50px, 1fr));
+
   }
 
   #bilde-med-tekst1 {
@@ -400,15 +401,14 @@ den plasseres øverst.
 
   #text2-bilde img {
     width: 200px;
-  }
-
+  }  
   .Bilder3,
   .Bilder4,
   .Kilder {
 
     flex-wrap: wrap;
   }
-}
+
   
 
 .hovedbilde_design .list .item .content .title,
