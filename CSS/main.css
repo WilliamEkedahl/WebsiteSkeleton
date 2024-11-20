@@ -8,10 +8,8 @@ nav{
     background-color: #4A6FA5;
     gap: 1rem;
     z-index: 10;
-    margin: 1rem;
     flex-wrap: wrap;
-    margin:0;
-    box-shadow: -10px 0px 10px 0px rgba(0,0,0,0.2);
+    box-shadow: -10px 0px 10px 0px rgba(0, 0, 0, 0.2);
     align-items: flex-start;
     justify-content: flex-start;
     display: flex;
@@ -150,13 +148,12 @@ div.dropdown-menu>li>a{
 
 .dropdown.active .dropdown-menu{
     align-content: center;
-    display : block;
+    display: grid;
     opacity: 1;
     /*new styling */
     transform: translateY(0);
     pointer-events: auto;
     /* code copied from .information grid*/
-    display: grid;
     grid-template-columns: repeat(2, max-content);
     gap:2rem;
 }
@@ -255,12 +252,12 @@ jada :)
 }
 
 body{
-margin: 0px;
+margin: 0;
 font-family: verdana, sans-serif;
 font-size: 1rem;
 }
 body h1{
-  font-family: Georgia, Serif;
+    font-family: Georgia, serif;
 font-size: 35px;
 }
 
