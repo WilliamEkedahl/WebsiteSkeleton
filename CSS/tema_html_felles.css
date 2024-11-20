@@ -82,8 +82,8 @@ max-width: 1300px;;
 #link-box>ul>li:nth-of-type(1)>a:after{content:"HTML 1 Tagger";}
 #link-box>ul>li:nth-of-type(2)>a:after{content:"HTML 2 Bilder";}
 #link-box>ul>li:nth-of-type(3)>a:after{content:"HTML 3 prosessen";}
-#link-box>ul>li:nth-of-type(4)>a:after{content:"CSS1";}
-#link-box>ul>li:nth-of-type(5)>a:after{content:"CSS2";}
+#link-box>ul>li:nth-of-type(4)>a:after{content:"CSS 1 Bruk farger";}
+#link-box>ul>li:nth-of-type(5)>a:after{content:"CSS 2 Endre plasseringer";}
 
 #link-box>ul>li>a:hover::after{
 transform:translateY(-4px) translateX(4px);
