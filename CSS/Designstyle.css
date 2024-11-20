@@ -144,7 +144,6 @@ den plasseres øverst.
   color: black;
   margin-right: 60px;
   /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden*/
-  font-size: 25px;
   /*Størrelsen på tekst*/
 }
 
@@ -172,7 +171,6 @@ den plasseres øverst.
   color: white;
   margin-right: 70px;
   /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden*/
-  font-size: 25px;
   /*Størrelsen på tekst*/
 
 }
@@ -188,7 +186,6 @@ den plasseres øverst.
 }
 
 #bilde-med-tekst2 p{
-  font-size: 20px;
 }
 
 #bilde-med-tekst2 img {
@@ -221,7 +218,6 @@ den plasseres øverst.
   /*
   margin-right: 80px; /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden
   */
-  font-size: 25px;
   /*Størrelsen på tekst*/
 
 }
@@ -256,7 +252,6 @@ den plasseres øverst.
   color: black;
   margin-right: 60px;
   /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden*/
-  font-size: 25px;
   /*Størrelsen på tekst*/
 }
 
