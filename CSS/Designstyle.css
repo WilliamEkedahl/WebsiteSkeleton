@@ -1,8 +1,8 @@
 
+
 /**********************\
  *     Hele siden     *
 \**********************/
-
 
 body {
   margin: 0;
@@ -144,7 +144,6 @@ den plasseres øverst.
   color: black;
   margin-right: 60px;
   /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden*/
-  font-size: 25px;
   /*Størrelsen på tekst*/
 }
 
@@ -172,7 +171,6 @@ den plasseres øverst.
   color: white;
   margin-right: 70px;
   /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden*/
-  font-size: 25px;
   /*Størrelsen på tekst*/
 
 }
@@ -188,7 +186,6 @@ den plasseres øverst.
 }
 
 #bilde-med-tekst2 p{
-  font-size: 20px;
 }
 
 #bilde-med-tekst2 img {
@@ -221,7 +218,6 @@ den plasseres øverst.
   /*
   margin-right: 80px; /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden
   */
-  font-size: 25px;
   /*Størrelsen på tekst*/
 
 }
@@ -256,7 +252,6 @@ den plasseres øverst.
   color: black;
   margin-right: 60px;
   /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden*/
-  font-size: 25px;
   /*Størrelsen på tekst*/
 }
 
@@ -334,7 +329,9 @@ den plasseres øverst.
 
 /* Bilde og tekst */
 
-/****************************\
+@media (min-width: 5920px) {
+
+  /****************************\
  *     Grid                 *
 \****************************/
   #text1-bilde,
@@ -345,16 +342,15 @@ den plasseres øverst.
     width: 100%;
   }
 
-section#section2-grid{
-  margin-top:5rem;
-  display: grid;
-  grid-template-rows: repeat(5,1fr) ;
-  /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
-  grid-template-columns: repeat(7,minmax(50px,1fr));
-  column-gap: 50px;
-  row-gap: 25px;
+  #section2 {
 
-}
+    display: grid;
+
+    grid-template-rows: repeat(15, minmax(100px, 1fr));
+    /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
+    grid-template-columns: repeat(5, minmax(50px, 1fr));
+
+  }
 
   #bilde-med-tekst1 {
 
@@ -388,6 +384,7 @@ section#section2-grid{
     align-self: center;
   }
 
+}
 
 /*Media query ferdig*/
 @media (max-width: 600px) {
@@ -399,15 +396,15 @@ section#section2-grid{
 
   #text2-bilde img {
     width: 200px;
-  }
-
+  }  
   .Bilder3,
   .Bilder4,
   .Kilder {
 
     flex-wrap: wrap;
   }
-}
+
+  
 
 .hovedbilde_design .list .item .content .title,
 .hovedbilde_design .list .item .content .topic {
@@ -438,8 +435,10 @@ section#section2-grid{
   font-size: 15px;
   /*Størrelsen på tekst*/
   width: 80%;
-}
+} 
 
 #bilde-med-tekst3 img{
   width: 100%;
+}
+
 }

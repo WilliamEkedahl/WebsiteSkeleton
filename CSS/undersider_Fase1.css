@@ -2,7 +2,7 @@
 
 body{
   font-size: 20px;
-  font-family: verdana, sans-serif; 
+  font-family: verdana, sans-serif;
 }
 h1{
   font-family: Georgia, serif;
@@ -65,7 +65,7 @@ section#section1-grid{
   z-index:2;
 }
   .tekst-og-bildeboks{
-    background-color: rgba(216, 216, 216, 0.84);
+    background-color: rgb(190, 202, 207);
     z-index: 1;
     box-shadow: 2px 2px 2px black;
   }
@@ -105,6 +105,7 @@ section#section1-grid{
   }
   
   #bilde1{
+    padding-left: 20px;
     width: 300px;
     height: 100%;
     grid-area: 6/2/10/5;
@@ -283,13 +284,14 @@ section#section1-grid-IA{
 
 .hovedbilde .list .header_text .content .title,
 .hovedbilde .list .header_text .content .topic {
+  font-family: Georgia, sans-serif;
   font-weight: bold;
   /*Størrelsen på teksten som er på hovedbilde_designt*/
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 .hovedbilde .list .header_text .content .topic {
-  color: rgb(250, 132, 36);
+  color: rgb(244, 112, 66);
   /*Fargen på ordet "Design". Det er teksten i hovedbilde_design*/
 }
 
