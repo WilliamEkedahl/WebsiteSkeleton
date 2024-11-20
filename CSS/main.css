@@ -314,7 +314,7 @@ section{
 footer{
     background-color: #4A6FA5;
     color: #fff;
-    text-align: center;
+    
     position: relative;
     bottom: 0;
     width: 100%;
@@ -328,7 +328,7 @@ footer{
     flex-wrap: wrap;
     
     align-items: flex-start;
-    text-align: center;
+    
 }
 @media (min-width:1400px){
     footer{
