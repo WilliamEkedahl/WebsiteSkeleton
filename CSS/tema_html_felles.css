@@ -70,7 +70,7 @@ max-width: 1300px;;
   content: "_";
   display:block;
   background-color: var(--bakgrunnsfarge-text-bilde-bakgrunn) ;
-  
+  padding-left:2rem;
   
   
   transition: all 200ms ease;
