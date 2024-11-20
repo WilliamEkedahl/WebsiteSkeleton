@@ -1,437 +1,382 @@
 <!DOCTYPE html>
 <html lang="no">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Citing Sources</title>
     <link rel="stylesheet" href="../CSS/main.css">
-    <!-- -->
-    <link rel="stylesheet" href="../CSS/Undersider_Grunnlag.css">
-    <!-- -->
-
-    <title>Kilder</title>
+    <link rel="stylesheet" href="../CSS/kilder.css">
 </head>
-
 <body>
-    <script src="../JS/dropMenu.js" defer></script>
+<script src="../JS/dropMenu.js" defer></script>
 
-    <nav>
-        <div id="nav-home-links">
-            <!-- Back to the start page -->
-            <a class="logo" href="../index.html"><img id="logo" src="../Bilder/Runars bildekilde/SuperLogo.svg" alt="logo"> </a>
+<nav>
+    <div id="nav-home-links">
+        <!-- Back to the start page -->
+        <a class="logo" href="../index.html"><img id="logo" src="../Bilder/Runars bildekilde/SuperLogo.svg" alt="logo"> </a>
 
-            <!-- Home link -->
-            <a id="home-link" href="../index.html"><img src="../Bilder/imagesforWebsite.png"> Home</a></li>
-        </div>
-        <div id="nav-wrapper">
-            <!-- Fase 1 Dropdown -->
-            <div class="dropdown" data-dropDown>
-                <button class="dropdown-button" data-dropDown-button> Analysere </button>
-                <div class="dropdown-menu" dropdown-menu>
-                    <ul>
-                        <li class="dropdown-items"><a href="../Undersider_Fase1/Personas.html">Personas</a></li>
-                        <li class="dropdown-items"><a href="../Undersider_Fase1/IA.html">IA</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Fase 2 Dropdown -->
-            <div class="dropdown" data-dropDown>
-                <button class="dropdown-button" data-dropDown-button> Design </button>
-                <div class="dropdown-menu" dropdown-menu>
-                    <ul>
-                        <li class="dropdown-items"><a href="../Undersider_Fase2/WireFrames.html">WireFrames</a></li>
-                        <li class="dropdown-items"><a href="../Undersider_Fase2/Design.html">Design</a></li>
-                        <li class="dropdown-items"><a href="../Undersider_Fase2/UX.html">UX</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Fase 3 Dropdown -->
-            <div class="dropdown" data-dropDown>
-                <button class="dropdown-button" data-dropDown-button> Virkeligjøre </button>
-                <div class="dropdown-menu" dropdown-menu>
-                    <ul>
-                        <li class="dropdown-items"><a href="../Undersider_Fase3/WCAG_kriteriene.html">WCAG Kriteriene</a></li>
-                        <li class="dropdown-items">
-                            <p style = "margin:0;">HTML</p>
-                            <ul>
-                                <li><a href="../Undersider_Fase3/tema_html_1.html">Tagger</a></li>
-                                <li><a href="../Undersider_Fase3/tema_html_2.html">Sett inn bilder</a></li>
-                                <li><a href="../Undersider_Fase3/tema_html_3.html">Struktur i tekst</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown-items">
-                            <p style = "margin:0;">CSS</p>
-                            <ul>
-                                <li><a href="../Undersider_Fase3/tema_css_1.html">Bruk farger</a></li>
-                                <li><a href="../Undersider_Fase3/tema_css_2.html">Endre plasseringer</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown-items"><a href="../Undersider_Fase3/universell_utforming.html">Universell Utforming</a></li>
-                        <li class="dropdown-items"><a href="../Undersider_Fase3/Brukertesting.html">Brukertesting</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Systemutvecklings Metodik Dropdown -->
-            <div class="dropdown" data-dropDown>
-                <button class="dropdown-button" data-dropDown-button> Systemutvecklings Metodik </button>
-                <div class="dropdown-menu" dropdown-menu>
-                    <ul>
-                        <li class="dropdown-items"><a
-                                href="../Undersider_Systemutvecklings_Metodik/Systemutvecklings_Metodik.html">Systemutvecklings
-                            Metodik</a></li>
-                        <li class="dropdown-items"><a
-                                href="../Undersider_Systemutvecklings_Metodik/Agile_Metoder.html">Agile Metoder</a></li>
-                        <li class="dropdown-items"><a
-                                href="../Undersider_Systemutvecklings_Metodik/Tradisjonelle_Metoder.html">Tradisjonelle
-                            Metoder</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Grunnlag Dropdown -->
-            <div class="dropdown" id="grunnlag" data-dropDown>
-                <button class="dropdown-button" data-dropDown-button> Grunnlag </button>
-                <div id="grunnlag-dropdown" class="dropdown-menu" dropdown-menu>
-                    <ul>
-                        <li class="dropdown-items"><a href="Kilder.html">Kilder</a></li>
-                        <li class="dropdown-items"><a href="begrunnelser.html"> Begrunnelser </a> </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <div id="page-wrap">
-        <div class="hovedbilde_design">
-            <div class="list">
-                <div class="item">
-                    <img src="../Bilder/Grunnlag bilder/Person_view.png" alt="bild av tema header før Grunnlag">
-                    <div class="content">
-
-                        <div class="topic">Kilder</div>
-                    </div>
-                </div>
+        <!-- Home link -->
+        <a id="home-link" href="../index.html"><img src="../Bilder/imagesforWebsite.png" alt="hjem knapp" > hjem </a>
+    </div>
+    <div id="nav-wrapper">
+        <!-- Fase 1 Dropdown -->
+        <div class="dropdown" data-dropDown>
+            <button class="dropdown-button" data-dropDown-button> Analysere </button>
+            <div class="dropdown-menu" dropdown-menu>
+                <ul>
+                    <li class="dropdown-items"><a href="../Undersider_Fase1/Personas.html">Personas</a></li>
+                    <li class="dropdown-items"><a href="../Undersider_Fase1/IA.html">IA</a></li>
+                </ul>
             </div>
         </div>
 
-
-
-        <!-- ********* ********* *********** ********** ********** ********** -->
-        <!--#            Hoved innhold section 2                      #-->
-        <!--#            Bilder med tekst                             #-->
-        <!-- ********* ********* *********** ********** ********** ********** -->
-        <section id="section2-grid">
-            <!-- Lag til id for grid -->
-            <div id="bilde-med-tekst1" class="text">
-                <div class="text">
-                    <h1>Analysere: Tekst og bilde</h1>
-                    <h2> Bilde</h2>
-                    <p> CapitalVia Global Research. (n.d.). What is fundamental, technical, and quantitative analysis? </p> <a href="https://www.capitalvia.com/blog/what-is-fundamental-technical-quantitative-analysis"> https://www.capitalvia.com/blog/what-is-fundamental-technical-quantitative-analysis </a>
-                    <p>
-                        Dam, R. F., & Siang. (u.å). Personas – A simple Introduction. Interaction Design
-                        Fundation. Personas – A Simple Introduction | IxDF.<a
-                            href="https://www.interaction-design.org/literature/article/personas-why-and-how-you-should-use-them?srsltid=AfmBOoo7ASudIFmf3ciny6rUsACV30Fc3lSh4qS5mOBpIjG2Zx4exgfH"
-                            style="color: rgb(9, 203, 237)">https://www.interaction-design.org/literature/article/personas-why-and-how-you-should-use-them?srsltid=AfmBOoo7ASudIFmf3ciny6rUsACV30Fc3lSh4qS5mOBpIjG2Zx4exgfH</a>
-                        Hentet 19.11.2024.
-                        <br><br>
-                        FlowMapp. (u.å.). User flow vs. Information Architecture: Best Practices for Web development.
-                        FlowMapp. User Flow vs. Information Architecture. <a
-                            href="https://www.flowmapp.com/features/user-flow-vs-information-architecture"
-                            style="color: rgb(9, 203, 237)">https://www.flowmapp.com/features/user-flow-vs-information-architecture</a>
-                        Hentet 19.11.2024.
-                        <br><br>
-                        Lynch, P. J., Horton, S., & Marcotte, E. (2016). Web style guide: Foundations of User Experience
-                        Design. Yale University Press.
-                        <br><br>
-                        ​Sandnes, E. F. (2022). Universell utforming av IKT-systemer: Brukergrensesnitt for alle (3.
-                        utg.).
-                        Universitetsforlaget, Oslo
-                        <br><br>
-                        Flowmapp (u.å.). what is a sitemap and how to create it?. <a href="https://www.flowmapp.com/features/user-flow-vs-information-architecture"
-                        style="color: rgb(9, 203, 237)">https://www.flowmapp.com/blog/qa/what-is-a-sitemap-and-how-to-create-it Hentet 19.11.2024.</a>
-                    </p>
-                </div>
+        <!-- Fase 2 Dropdown -->
+        <div class="dropdown" data-dropDown>
+            <button class="dropdown-button" data-dropDown-button> Design </button>
+            <div class="dropdown-menu" dropdown-menu>
+                <ul>
+                    <li class="dropdown-items"><a href="../Undersider_Fase2/WireFrames.html">WireFrames</a></li>
+                    <li class="dropdown-items"><a href="../Undersider_Fase2/Design.html">Design</a></li>
+                    <li class="dropdown-items"><a href="../Undersider_Fase2/UX.html">UX</a></li>
+                </ul>
             </div>
+        </div>
 
-            <div id="bilde-med-tekst4" class="Bilder"> <!--Navnet på hovedgruppen gruppen-->
-                <div class="text"> <!--Navnet på den mindre gruppen som er inne i hovedgruppen-->
-                    <h1>Design, begrunnelse og kilder: Bilder</h1>
-                    <p>WallpaperAccess. (n.d.). Engineering blueprint wallpapers. Retrieved November 20, 2024,</p> <a href="https://wallpaperaccess.com/engineering-blueprint">https://wallpaperaccess.com/engineering-blueprint </a>
-                    <!--h1 er størrelsen på teksten, men kan forandre den i css-->
-                    <p> PicLumen. (2024). child on modern computer. See through, flat screen [Generert bilde].
-                        <a href=" https://piclumen.com/app/image-generator/create "
-                            style="color: rgb(9, 203, 237)">https://piclumen.com/app/image-generator/create </a>
-                        Hentet 12.11.2024
-                        <br><br>
-                        PicLumen. (2024). Person testing out webpage. Realistic with blue lights [Generert bilde].
-                        <a href=" https://piclumen.com/app/image-generator/create "
-                            style="color: rgb(9, 203, 237)">https://piclumen.com/app/image-generator/create</a>
-                        Hentet 12.11.2024
-                        <br><br>
-                        PicLumen. (2024). Designing a website figma. Futuristic. Realistic [Generert bilde].
-                        <a href=" https://piclumen.com/app/image-generator/create " style="color: rgb(9, 203, 237)">
-                            https://piclumen.com/app/image-generator/create</a>
-                        Hentet 8.11.2024
-                        <br><br>
-                        PicLumen. (2024). Designing a website Wireframe. Futuristic. Realistic [Generert bilde].
-                        <a href=" https://piclumen.com/app/image-generator/create" style="color: rgb(9, 203, 237)">
-                            https://piclumen.com/app/image-generator/create</a>
-                        Hentet 8.11.2024
-                        <br><br>
-                        PicLumen. (2024). Futuristic see through flat screen computer with programming codes. Realistic.
-                        With colores that reflect, blue, red, orange and puruple. Next to a rainy window on a glass
-                        table. With plants on the side of the table. Everything around the computer is made of huge
-                        glass. The view is of tall building, all the windows are made of glass. Sunset [Generert bilde].
-                        <a href=" https://piclumen.com/app/image-generator/create"
-                            style="color: rgb(9, 203, 237)">https://piclumen.com/app/image-generator/create</a>
-                        Hentet 8.11.2024
-                        <br><br>
-                        PicLumen. (2024). Cyberpunk style. Futuristic computer with programming codes on a glass desk,
-                        next to huge window with a view of a tall futuristic building with rain outside. Some of the
-                        colors that can be used is the blue reflection from the screen, the orange lights outside, and
-                        some good contrast. [Generert bilde].<a href=" https://piclumen.com/app/image-generator/create"
-                            style="color: rgb(9, 203, 237)">
-                            https://piclumen.com/app/image-generator/create</a> Hentet
-                        4.11.2024
-                        <br><br>
-                        PicLumen. (2024). Give me programming codes. Close up screen. Modern flat screen, with red, blue
-                        and green colors.[Generert bilde].
-                        <a href=" https://piclumen.com/app/image-generator/create"
-                            style="color: rgb(9, 203, 237)">https://piclumen.com/app/image-generator/create </a>
-                        Hentet:
-                        15.11.2024
-                        <br><br>
-                        PicLumen. (2024). Person on a computer. Night. With a view of tall buildings. We see the back of
-                        the person. [Generert bilde]. <a href="#"
-                            style="color: rgb(9, 203, 237)">https://piclumen.com/app/image-generator/create</a>. Hentet:
-                        15.11.2024
-                        <br><br>
-                        PicLumen. (2024). designs of a website. Futuristic. Realistic. [Generert bilde].
-                        <a href=" https://piclumen.com/app/image-generator/create"
-                            style="color: rgb(9, 203, 237)">https://piclumen.com/app/image-generator/create</a>.
-                        Hentet: 15.11.2024
-                        <br><br>
-                        PicLumen. (2024). computer codes. [Generert bilde].
-                        <a href=" https://piclumen.com/app/image-generator/create"
-                            style="color: rgb(9, 203, 237)">https://piclumen.com/app/image-generator/create</a>.
-                        Hentet: 15.11.2024
-                        <br><br>
-                        PicLumen. (2024). many ideas on a wall. [Generert bilde].
-                        <a href=" https://piclumen.com/app/image-generator/create"
-                            style="color: rgb(9, 203, 237)">https://piclumen.com/app/image-generator/create
-                        </a>. Hentet 15.11.2024
-                        <br><br>
-                        PicLumen. (2024). ux and ui design. [Generert bilde]. <a
-                            href=" https://piclumen.com/app/image-generator/create"
-                            style="color: rgb(9, 203, 237)">https://piclumen.com/app/image-generator/create
-                        </a>. Hentet 17.11.2024
-                        <br><br>
-                        PicLumen. (2024). beautifule modern website. [Generert bilde]. <a
-                            href=" https://piclumen.com/app/image-generator/create"
-                            style="color: rgb(9, 203, 237)">https://piclumen.com/app/image-generator/create</a>
-                        <br><br>
-                        PicLumen. (2024). programming. Modern. Futuristic. Colors, blue, red, orange and puruple.
-                        [Generert bilde].<a href=" https://piclumen.com/app/image-generator/create"
-                            style="color: rgb(9, 203, 237)">https://piclumen.com/app/image-generator/create</a>
-                        <br><br>
-                        PicLumen. (2024). Modern website. Modern. Futuristic. Colors, blue, red, orange and
-                        puruple.[Generert bilde].<a href=" https://piclumen.com/app/image-generator/create"
-                            style="color: rgb(9, 203, 237)">https://piclumen.com/app/image-generator/create</a>
-                        <br><br>
-                        PicLumen. (2024). flat screen computer with codes. Night. Modern. Futuristic. [Generert bilde].
-                        <a href=" https://piclumen.com/app/image-generator/create"
-                            style="color: rgb(9, 203, 237)">https://piclumen.com/app/image-generator/create</a>
-                        <br><br>
-                        [Sophie makes art].(n.d). Coding [Koder]. Pinterest.<a
-                            href=" https://no.pinterest.com/pin/770819292505484644/"
-                            style="color: rgb(9, 203, 237)">https://no.pinterest.com/pin/770819292505484644/</a>
-                        <br><br>
-                        [MANIFEST MILLION]. (u.å).Comment l'Intelligence Artificielle Améliore le Codage des Robots de
-                        Trading. [Koding]. Pinterest <a href=" https://no.pinterest.com/pin/770819292505409881/"
-                            style="color: rgb(9, 203, 237)">https://no.pinterest.com/pin/770819292505409881/</a>
-
-                    </p>
-                </div>
+        <!-- Fase 3 Dropdown -->
+        <div class="dropdown" data-dropDown>
+            <button class="dropdown-button" data-dropDown-button> Virkeligjøre </button>
+            <div class="dropdown-menu" dropdown-menu>
+                <ul>
+                    <li class="dropdown-items"><a href="../Undersider_Fase3/WCAG_kriteriene.html">WCAG Kriteriene</a></li>
+                    <li class="dropdown-items">
+                        <p style = "margin:0;">HTML</p>
+                        <ul>
+                            <li><a href="../Undersider_Fase3/tema_html_1.html">Tagger</a></li>
+                            <li><a href="../Undersider_Fase3/tema_html_2.html">Sett inn bilder</a></li>
+                            <li><a href="../Undersider_Fase3/tema_html_3.html">Struktur i tekst</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-items">
+                        <p style = "margin:0;">CSS</p>
+                        <ul>
+                            <li><a href="../Undersider_Fase3/tema_css_1.html">Bruk farger</a></li>
+                            <li><a href="../Undersider_Fase3/tema_css_2.html">Endre plasseringer</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-items"><a href="../Undersider_Fase3/universell_utforming.html">Universell Utforming</a></li>
+                    <li class="dropdown-items"><a href="../Undersider_Fase3/Brukertesting.html">Brukertesting</a></li>
+                </ul>
             </div>
+        </div>
 
-            <div id="bilde-med-tekst3" class="Bilder3"> <!--Navnet på hovedgruppen gruppen-->
-                <div class="text"> <!--Navnet på den mindre gruppen som er inne i hovedgruppen-->
-                    <h1>Design: Tekst</h1> <!--h1 er størrelsen på teksten, men kan forandre den i css-->
-                    <p> Aaberge, A. (2017, april 3). Struktur på nettsider. NDLA:
-                        <a href=" https://ndla.no/nb/subject:a6b56b7e-2149-4216-92b6-3095feb870f3/topic:ed3a465c-4ced-4c80-9f16-0f9b76d22248/resource:1:160298"
-                            style="color: rgb(227, 9, 198)">
-                            https://ndla.no/nb/subject:a6b56b7e-2149-4216-92b6-3095feb870f3/topic:ed3a465c-4ced-4c80-9f16-0f9b76d22248/resource:1:160298</a>
-                        Hentet 15.11.2024
-                        <br><br>
-                        Aaberge, A. (2021, mars 17). Brukeropplevelse og brukergrensesnitt. NDLA.
-                        <a href=" https://ndla.no/nb/subject:a453ed64-da44-4d85-93a1-2962e597ff6a/topic:4f0354d5-76d8-4aa6-9266-9837d42b0e7c/resource:1:160302"
-                            style="color: rgb(227, 9, 198)">https://ndla.no/nb/subject:a453ed64-da44-4d85-93a1-2962e597ff6a/topic:4f0354d5-76d8-4aa6-9266-9837d42b0e7c/resource:1:160302</a>.
-                        Hentet: 17.11.2024
-                        <br><br>
-                        Coelho, B. J. T. (2021, desember 15). Brukeropplevelse (UX) – design og utvikling. NDLA.
-                        <a href=" https://ndla.no/nb/subject:1:1352b19e-e706-4480-a728-c6b0a57ba8ae/topic:9b328b18-c4d4-446c-a3a4-b69dccecda45/resource:a5acc51a-b885-4603-87e1-77e1beb468e0"
-                            style="color: rgb(227, 9, 198)">https://ndla.no/nb/subject:1:1352b19e-e706-4480-a728-c6b0a57ba8ae/topic:9b328b18-c4d4-446c-a3a4-b69dccecda45/resource:a5acc51a-b885-4603-87e1-77e1beb468e0</a>
-                        Hentet 13.11.2024
-                        <br> <br>
-                        ​​Dyrhaug, E. (2022, april 11). Design. Store Norske Leksikon:<a href=" https://snl.no/design"
-                            style="color: rgb(227, 9, 198)">https://snl.no/design</a>. Hentet
-                        28.10.2024
-                        <br><br>
-                        ​Grolid, S. Å. (2022, mars 18). Brukertesting. NDLA:
-                        <a href=" https://ndla.no/nb/subject:5e53694a-c8eb-4871-8558-71523941c28e/topic:102904dc-064c-430b-99f0-bd200666d302/resource:31ff339c-e9fe-4216-9f5b-c0a8e4473d28"
-                            style="color: rgb(227, 9, 198)">https://ndla.no/nb/subject:5e53694a-c8eb-4871-8558-71523941c28e/topic:102904dc-064c-430b-99f0-bd200666d302/resource:31ff339c-e9fe-4216-9f5b-c0a8e4473d28.</a>
-                        Hentet 28.10.2024
-                        <br><br>
-                        Røyert, H., & Hanselmann, E. (2022, februar 22). Farger som virkemiddel i bildet. NDLA:
-                        <a href=" https://ndla.no/nb/subject:a6b56b7e-2149-4216-92b6-3095feb870f3/topic:f740668e-def8-4a94-b1c7-de94f550678f/resource:1:112508"
-                            style="color: rgb(227, 9, 198)">https://ndla.no/nb/subject:a6b56b7e-2149-4216-92b6-3095feb870f3/topic:f740668e-def8-4a94-b1c7-de94f550678f/resource:1:112508</a>
-                        Hentet 15.11.2024
-                        <br><br>
-                        ​Sandnes, E. F.(2022). Universell utforming av IKT-systemer: Brukergrensesnitt for alle (3.
-                        utg.).
-                        Universitetsforlaget, Oslo
-                    </p>
-                </div>
+        <!-- Systemutvecklings Metodik Dropdown -->
+        <div class="dropdown" data-dropDown>
+            <button class="dropdown-button" data-dropDown-button> Systemutvecklings Metodik </button>
+            <div class="dropdown-menu" dropdown-menu>
+                <ul>
+                    <li class="dropdown-items"><a
+                            href="../Undersider_Systemutvecklings_Metodik/Systemutvecklings_Metodik.html">Systemutvecklings
+                        Metodik</a></li>
+                    <li class="dropdown-items"><a
+                            href="../Undersider_Systemutvecklings_Metodik/Agile_Metoder.html">Agile Metoder</a></li>
+                    <li class="dropdown-items"><a
+                            href="../Undersider_Systemutvecklings_Metodik/Tradisjonelle_Metoder.html">Tradisjonelle
+                        Metoder</a></li>
+                </ul>
             </div>
+        </div>
 
-            <div id="bilde-med-tekst10" class="Bilder"> <!--Navnet på hovedgruppen gruppen-->
-
-                <div class="text"> <!--Navnet på den mindre gruppen som er inne i hovedgruppen-->
-                    <h1>Systemutviklingsmetodikk: Tekst og bilde</h1>
-                    <!--h1 er størrelsen på teksten, men kan forandre den i css-->
-                    <h2>Text</h2>
-                    <p> Lynch, P. J., Horton, S., & Marcotte, E. (2016). Web style guide: Foundations of User Experience
-                        Design. Yale University Press.
-                    </p>
-                </div>
+        <!-- Grunnlag Dropdown -->
+        <div class="dropdown" id="grunnlag" data-dropDown>
+            <button class="dropdown-button" data-dropDown-button> Grunnlag </button>
+            <div id="grunnlag-dropdown" class="dropdown-menu" dropdown-menu>
+                <ul>
+                    <li class="dropdown-items"><a href="kilder.html">Kilder</a></li>
+                    <li class="dropdown-items"><a href="begrunnelser.html"> Begrunnelser </a> </li>
+                </ul>
             </div>
+        </div>
+    </div>
+</nav>
 
+<header>
+    <h1>Analysere Kilder: </h1>
+</header>
 
-            <div id="bilde-med-tekst7" class="Bilder3"> <!--Navnet på hovedgruppen gruppen-->
-                <div class="text"> <!--Navnet på den mindre gruppen som er inne i hovedgruppen-->
-                    <h1>Virkeligjøre: Tekst og bilde</h1> <!--h1 er størrelsen på teksten, men kan forandre den i css-->
-                    <p>
-                        Grolid, Å. S. (2022, april 6). Universell utforming av bilder og grafikk. NDLA.
-                        <a href=" https://ndla.no/nb/subject:1:20bc82bc-62e3-4276-8629-84a65b8a6ad2/topic:74c04df0-1a6f-46d2-a3ea-37661b8b8c5e/topic:362a51f7-fc54-4678-b3ea-77eb1b93333d/resource:ac0ac3ec-ec54-4aef-b0de-584ffc7378aa"
-                            style="color: rgb(9, 203, 237)">https://ndla.no/nb/subject:1:20bc82bc-62e3-4276-8629-84a65b8a6ad2/topic:74c04df0-1a6f-46d2-a3ea-37661b8b8c5e/topic:362a51f7-fc54-4678-b3ea-77eb1b93333d/resource:ac0ac3ec-ec54-4aef-b0de-584ffc7378aa</a>
-                        Hentet 15.11.2024
-                        <br><br>
-                        Lid, I. M. (2024, september 25). universell utforming. Hentet fra snl:
-                        <a href=" https://snl.no/universell_utforming "
-                            style="color: rgb(9, 203, 237)">https://snl.no/universell_utforming </a>
-                        Hentet 12.11.2024
-                        <br><br>
-                        Nettrakett. (2023, Februar 21). Hva er universell utforming på nett? Hentet fra Nettrakett.no:
-                        <a href=" https://nettrakett.no/hva-er-universell-utforming-pa-nett/ "
-                            style="color: rgb(9, 203, 237)">https://nettrakett.no/hva-er-universell-utforming-pa-nett/
-                        </a>
-                        Hentet 12.11.2024
-                        <br><br>
-                        PicLumen. (2024) Designing universall development on computer. [Generert bilde]
-                        <a href=" https://piclumen.com/app/image-generator/create "
-                            style="color: rgb(9, 203, 237)">https://piclumen.com/app/image-generator/create </a>
-                        Hentet 12.11.2024
-                        <br><br>
-                        PicLumen. (2024). Designing universall development on computer. Web og System development.
-                        [Generert bilde].
-                        <a href=" https://piclumen.com/app/image-generator/create "
-                            style="color: rgb(9, 203, 237)">https://piclumen.com/app/image-generator/create </a>
-                        Hentet 12.11.2024
-                        <br><br>
-                        PicLumen. (2024). User testing on computer. Web [Generert bilde].
-                        <a href=" https://piclumen.com/app/image-generator/create "
-                            style="color: rgb(9, 203, 237)">https://piclumen.com/app/image-generator/create </a>
-                        Hentet 21.11.2024
-                        <br><br>
-                        PicLumen. (2024). User testing on paper. Web [Generert bilde].
-                        <a href=" https://piclumen.com/app/image-generator/create "
-                            style="color: rgb(9, 203, 237)">https://piclumen.com/app/image-generator/create </a>
-                        Hentet 21.11.2024
-                        PicLumen. (2024). WCAG level [Generert bilde].
-                        <a href=" https://piclumen.com/app/image-generator/create "
-                            style="color: rgb(9, 203, 237)">https://piclumen.com/app/image-generator/create </a>
-                        Hentet 21.11.2024
-                        <br><br>
-                        UIB. (I.Å) UiB Universell. Hentet fra uib.no:
-                        <a href=" https://www.uib.no/universell"
-                            style="color: rgb(9, 203, 237)">https://www.uib.no/universell </a>
-                        <br><br>
-                        uutilsynet. (I.Å) WCAG-standaren. Hentet fra uutilsynet.no.
-                        <a href=" https://piclumen.com/app/image-generator/create "
-                            style="color: rgb(9, 203, 237)">https://www.uutilsynet.no/wcag-standarden/wcag-standarden/86
-                        </a>
-                        <br><br>
-                        ​Sandnes, E. F.(2022). Universell utforming av IKT-systemer: Brukergrensesnitt for alle (3.
-                        utg.).
-                        Universitetsforlaget, Oslo
-
-                    </p>
-                </div>
-            </div>
-        </section>
+<section class="grid-container">
+    <div class="section">
+       <p>CapitalVia Global Research. (u.å.). What is fundamental, technical, and quantitative analysis? </p>
     </div>
 
-    <footer>
-    
-        
-        <ul>
-            <h2>Analysere</h2>
-            <li><a href="../Undersider_Fase1/IA.html">IA</a></li>
-            <li><a href="../Undersider_Fase1/Personas.html">Personas</a></li>
-        </ul>
-        <ul>
-            <h2>Virkeligjøre</h2>
-            <li><a href="../Undersider_Fase3/WCAG_kriteriene.html">WCAG Kriteriene</a></li>
-            <li class="dropdown-items">
-                <p>HTML</p>
-                <ul>
-                    <li><a href="../Undersider_Fase3/tema_html_1.html">Tagger</a></li>
-                    <li><a href="../Undersider_Fase3/tema_html_2.html">Sett inn bilder</a></li>
-                    <li><a href="../Undersider_Fase3/tema_html_3.html">Struktur i tekst</a></li>
-                </ul>
-            </li>
-            <li class="dropdown-items">
-                <p>CSS</p>
-                <ul>
-                    <li><a href="../Undersider_Fase3/tema_css_1.html">Bruk farger</a></li>
-                    <li><a href="../Undersider_Fase3/tema_css_2.html">Endre plasseringer</a></li>
-                </ul>
-            </li>
-            <li><a href="../Undersider_Fase3/universell_utforming.html">Universell
-                    Utforming</a></br></li>
-            <li><a href="../Undersider_Fase3/Brukertesting.html">Brukertesting</a></li>
-        </ul>
-        <ul>
-            <h2>Design</h2>
-            <li><a href="../Undersider_Fase2/Design.html">Design</a></li>
-            <li><a href="../Undersider_Fase2/UX.html">UX</a></li>
-            <li><a href="../Undersider_Fase2/WireFrames.html">WireFrames</a></li>
-        </ul>
-        <ul>
-            <h2>Virkeligjøre</h2>
-            <li><a href="../Undersider_Fase3/WCAG_kriteriene.html">WCAG Kriteriene</a></li>
-            <li><a href="../Undersider_Fase3/css.html">CSS</a></li>
-            <li><a href="../Undersider_Fase3/tema_html_1.html">HTML</a></li>
-            <li><a href="../Undersider_Fase3/universell_utforming.html">Universell Utforming</a></br></li>
-            <li><a href="../Undersider_Fase3/Brukertesting.html">Brukertesting</a></li>
-        </ul>
-        <ul>
-            <h2>Systemsutviklings Metodikk</h2>
-            <li><a href="../Undersider_Systemutvecklings_Metodik/Systemutvecklings_Metodik.html">Systemutvecklings Metodik</a></li>
-            <li><a href="../Undersider_Systemutvecklings_Metodik/Agile_Metoder.html">Agile Metoder</a></li>
-            <li><a href="../Undersider_Systemutvecklings_Metodik/Tradisjonelle_Metoder.html">Tradisjonelle Metoder</a></li>
-        </ul>
-        <ul>
-            <h2>Grunnlag</h2>
-            <li><a href="Undersider_Grunnlag\Kilder.html">kilder</a></li>
-            <li class="dropdown-items"><a href="Undersider_Grunnlag\begrunnelser.html">Begrunnelser</a></li>
-        </ul>
+    <div class="section">
+
+        <p> Dam, R. F., & Siang. (u.å). Personas – A simple Introduction. Interaction Design Foundation.</p>
+    </div>
+
+    <div class="section">
+        <p>FlowMapp. (u.å.). User flow vs. Information Architecture: Best Practices for Web Development. FlowMapp.</p>
+    </div>
+
+    <div class="section">
+       <p>FlowMapp. (u.å.). What is a sitemap and how to create it?</p>
+    </div>
+
+    <div class="section">
+       <p>Lynch, P. J., Horton, S., & Marcotte, E. (2016). Web style guide: Foundations of user experience design. Yale University Press.</p>
+    </div>
+
+    <div class="section">
+        <p> Sandnes, E. F. (2022). Universell utforming av IKT-systemer: Brukergrensesnitt for alle (3. utg.). Universitetsforlaget, Oslo.</p>
+    </div>
+
+    <div class="section">
+        <p> PicLumen. (2024). Child on modern computer. See-through, flat screen [Generated image]. </p>
+    </div>
+
+    <div class="section">
+        <p>PicLumen. (2024). Person testing out webpage. Realistic with blue lights [Generated image].</p>
+    </div>
+
+    <div class="section">
+        <p>PicLumen. (2024). Designing a website Figma. Futuristic. Realistic [Generated image].</p>
+    </div>
+
+    <div class="section">
+        <p>PicLumen. (2024). Designing a website Wireframe. Futuristic. Realistic [Generated image].</p>
+    </div>
+
+    <div class="section">
+        <p>PicLumen. (2024). Futuristic see-through flat screen computer with programming codes.</p>
+    </div>
+
+    <div class="section">
+        <p>[Sophie makes art]. (n.d). Coding [Koder]. Pinterest..</p>
+    </div>
+
+    <div class="section">
+        <p> Aaberge, A. (2017, April 3). Struktur på nettsider.</p>
+    </div>
+
+    <div class="section">
+        <p>PicLumen. (2024). Give me programming codes. Close up screen. Modern flat screen, with red, blue, and green colors [Generated image].</p>
+    </div>
+
+    <div class="section">
+        <p>Kilde</p>
+
+    </div>
+
+</section>
+
+<header>
+    <h1>Design Kilder:</h1>
+</header>
+
+<section class="grid-container">
+    <div class="section">
+        <p>Aaberge, A. (2017, april 3). Struktur på nettsider. NDLA. Hentet 15.11.2024</p>
+    </div>
+
+    <div class="section">
+        <p>Aaberge, A. (2021, mars 17). Brukeropplevelse og brukergrensesnitt. NDLA. Hentet: 17.11.2024</p>
+    </div>
+
+    <div class="section">
+        <p>Coelho, B. J. T. (2021, desember 15). Brukeropplevelse (UX) – design og utvikling. NDLA. Hentet 13.11.2024</p>
+    </div>
+
+    <div class="section">
+        <p>Dyrhaug, E. (2022, april 11). Design. Store Norske Leksikon. Hentet 28.10.2024</p>
+    </div>
+
+    <div class="section">
+        <p>Grolid, S. Å. (2022, mars 18). Brukertesting. NDLA. Hentet 28.10.2024</p>
+
+    </div>
+
+    <div class="section">
+        <p>Røyert, H., & Hanselmann, E. (2022, februar 22). Farger som virkemiddel i bildet. NDLA. Hentet 15.11.2024</p>
+    </div>
+
+    <div class="section">
+        <p>Sandnes, E. F.(2022). Universell utforming av IKT-systemer: Brukergrensesnitt for alle (3. utg.). Universitetsforlaget, Oslo</p>
+    </div>
+    <div class="section">
+        <p>Dyrhaug, E. (2022, april 11). Design. Store Norske Leksikon. Hentet 28.10.2024</p>
+    </div>
+
+</section>
+
+<div class="section">
+    <p>Grolid, S. Å. (2022, mars 18). Brukertesting. NDLA. Hentet 28.10.2024</p>
+
+</div>
+
+<div class="section">
+    <p>Grolid, S. Å. (2022, mars 18). Brukertesting. NDLA. Hentet 28.10.2024</p>
+</div>
+
+<header>
+    <h1>Virkeligjøre kilder:</h1>
+</header>
+
+<section class="grid-container">
+    <div class="section">
+        <p>UIB. (I.Å) UiB Universell. Hentet fra uib.no. Hentet 12.11.2024</p>
+    </div>
+
+    <div class="section">
+        <p>Grolid, Å. S. (2022, april 6). Universell utforming av bilder og grafikk. NDLA. Hentet 15.11.2024</p>
+    </div>
+
+    <div class="section">
+        <p>Lid, I. M. (2024, september 25). Universell utforming. Hentet fra snl. Hentet 12.11.2024</p>
+    </div>
+
+    <div class="section">
+        <p>Nettrakett. (2023, Februar 21). Hva er universell utforming på nett? Hentet fra Nettrakett.no. Hentet 12.11.2024</p>
+    </div>
+
+    <div class="section">
+        <p>PicLumen. (2024). Designing universal development on computer. [Generert bilde]. Hentet 12.11.2024</p>
+    </div>
+
+    <div class="section">
+        <p>PicLumen. (2024). User testing on computer. Web [Generert bilde]. Hentet 21.11.2024</p>
+    </div>
+
+    <div class="section">
+        <p>PicLumen. (2024). User testing on paper. Web [Generert bilde]. Hentet 21.11.2024</p>
+    </div>
+
+    <div class="section">
+        <p>PicLumen. (2024). WCAG level [Generert bilde]. Hentet 21.11.2024</p>
+    </div>
+
+    <div class="section">
+        <p>UIB. (I.Å) UiB Universell. Hentet fra uib.no. Hentet 12.11.2024</p>
+    </div>
+
+    <div class="section">
+        <p>uutilsynet. (I.Å) WCAG-standaren. Hentet fra uutilsynet.no. Hentet 12.11.2024</p>
+    </div>
+
+    <div class="section">
+        <p>Sandnes, E. F. (2022). Universell utforming av IKT-systemer: Brukergrensesnitt for alle (3. utg.). Universitetsforlaget, Oslo</p>
+    </div>
+</section>
+
+<header>
+    <h1>Systemutvecklings metodik kilder:</h1>
+</header>
+
+<section class="grid-container">
+    <div class="section">
+        <p> Lynch, P. J., Horton, S., & Marcotte, E. (2016). Web style guide: Foundations of User Experience Design. Yale University Press.</p>
+    </div>
+
+    <div class="section">
+
+    </div>
+
+    <div class="section">
+
+    </div>
+
+    <div class="section">
+
+    </div>
+
+    <div class="section">
+
+    </div>
+
+</section>
+
+<header>
+    <h1>Begrunnelser Kilder:</h1>
+</header>
+
+<section class="grid-container">
+    <div class="section">
+
+    </div>
+
+    <div class="section">
+
+    </div>
+
+    <div class="section">
+
+    </div>
+
+    <div class="section">
+
+    </div>
+
+    <div class="section">
+
+    </div>
+</section>
+
+
+
+<footer>
+    <ul>
+        <h2>Analysere</h2>
+        <li><a href="../Undersider_Fase1/IA.html">IA</a></li>
+        <li><a href="../Undersider_Fase1/Personas.html">Personas</a></li>
+    </ul>
+    <ul>
+        <h2>Virkeligjøre</h2>
+        <li><a href="../Undersider_Fase3/WCAG_kriteriene.html">WCAG Kriteriene</a></li>
+        <li class="dropdown-items">
+            <p>HTML</p>
+            <ul>
+                <li><a href="../Undersider_Fase3/tema_html_1.html">Tagger</a></li>
+                <li><a href="../Undersider_Fase3/tema_html_2.html">Sett inn bilder</a></li>
+                <li><a href="../Undersider_Fase3/tema_html_3.html">Struktur i tekst</a></li>
+            </ul>
+        </li>
+        <li class="dropdown-items">
+            <p>CSS</p>
+            <ul>
+                <li><a href="../Undersider_Fase3/tema_css_1.html">Bruk farger</a></li>
+                <li><a href="../Undersider_Fase3/tema_css_2.html">Endre plasseringer</a></li>
+            </ul>
+        </li>
+        <li><a href="../Undersider_Fase3/universell_utforming.html">Universell
+            Utforming</a></br></li>
+        <li><a href="../Undersider_Fase3/Brukertesting.html">Brukertesting</a></li>
+    </ul>
+    <ul>
+        <h2>Design</h2>
+        <li><a href="../Undersider_Fase2/Design.html">Design</a></li>
+        <li><a href="../Undersider_Fase2/UX.html">UX</a></li>
+        <li><a href="../Undersider_Fase2/WireFrames.html">WireFrames</a></li>
+    </ul>
+    <ul>
+        <h2>Virkeligjøre</h2>
+        <li><a href="../Undersider_Fase3/WCAG_kriteriene.html">WCAG Kriteriene</a></li>
+        <li><a href="../Undersider_Fase3/css.html">CSS</a></li>
+        <li><a href="../Undersider_Fase3/tema_html_1.html">HTML</a></li>
+        <li><a href="../Undersider_Fase3/universell_utforming.html">Universell Utforming</a></br></li>
+        <li><a href="../Undersider_Fase3/Brukertesting.html">Brukertesting</a></li>
+    </ul>
+    <ul>
+        <h2>Systemsutviklings Metodikk</h2>
+        <li><a href="../Undersider_Systemutvecklings_Metodik/Systemutvecklings_Metodik.html">Systemutvecklings Metodik</a></li>
+        <li><a href="../Undersider_Systemutvecklings_Metodik/Agile_Metoder.html">Agile Metoder</a></li>
+        <li><a href="../Undersider_Systemutvecklings_Metodik/Tradisjonelle_Metoder.html">Tradisjonelle Metoder</a></li>
+    </ul>
+    <ul>
+        <h2>Grunnlag</h2>
+        <li><a href="Undersider_Grunnlag\Kilder.html">kilder</a></li>
+        <li class="dropdown-items"><a href="Undersider_Grunnlag\begrunnelser.html">Begrunnelser</a></li>
+    </ul>
     <div class="footer-section-slutt">
     </div>
-    </footer>
+</footer>
 </body>
 </html>
