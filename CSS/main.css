@@ -95,7 +95,9 @@ nav{
     padding: 0;
 }
 
-
+.nav-active {
+    text-decoration: underline;
+}
 
 
 /*****************************************************
@@ -168,6 +170,9 @@ div.dropdown-menu>li>a{
     pointer-events: auto;
 }
 
+.active{
+    text-decoration: underline;
+}
 
 button{
     background: transparent;
