@@ -311,7 +311,7 @@ section{
 /*******************\
  *     Footer      *
 \*******************/
-#main-footer {
+footer{
     background-color: #4A6FA5;
     color: #fff;
     text-align: center;
@@ -324,43 +324,42 @@ section{
 
     */
     margin-top: 5rem;
-}
-
-.footer-content {
     display: flex;
-    justify-content: space-between; /* Fordeler seksjonene jevnt */
+    flex-wrap: wrap;
+    
     align-items: flex-start;
     text-align: center;
 }
+@media (min-width:1400px){
+    footer{
+    justify-content: space-between; /* Fordeler seksjonene jevnt */
+    }
+}
 
-.footer-section {
+footer>ul{
     margin-bottom: 20px;
-}
-.links{ /* Treffer overskiften til linkene */
-    color: orange;
-}
-
-.footer-section ul { /* Markerer stilen på listen til UL */
+    
     list-style: none;
     padding: 0;
-}
 
-.footer-section ul li {
-    margin: 0 10px;
 }
-
-.footer-section ul li a {
+footer>ul>h2{color: orange;}
+footer>ul>li{margin: 0 10px;}
+footer p{}
+footer>ul>li>a{
     color: #fff;
     text-decoration: none;
     font-size: 0.9em;
     font-weight: 600;
     transition: color 0.3s ease; /* Overgangseffekt for mykere fargeskifte */
-}
 
-.footer-section ul li a:hover {
+    
+}
+footer>ul>li>a:hover{    
     color: rgba(255, 255, 255, 0.46); /* Skifter farge ved hover */
     text-decoration: underline; /* Fjerner streken under ordet */
 }
+
 
 .footer-section-slutt {
     color: #fff;
