@@ -93,12 +93,12 @@
     /* Første bilde tekst bildeboks kombo*/
   
     #text-og-bilde1-bakgrunn{
-      grid-area: 1/1/4/-1;
+      grid-area: 1/1/2/-1;
   
     }
   
     #text1{
-      grid-area: 1/1/4/4;
+      grid-area: 1/1/2/4;
       display:flex;
       flex-direction: column;
       justify-content: space-around;
@@ -113,7 +113,7 @@
    
   
     #bilde1{
-      grid-area: 1/4/4/5;
+      grid-area: 1/4/2/5;
       display:flex;
      
     }
@@ -126,10 +126,10 @@
       /* Andre bilde tekst bildeboks kombo*/
     #text-og-bilde2-bakgrunn{
       
-      grid-area: 4/1/7/-1;
+      grid-area: 2/1/4/-1;
     }
     #text2{
-      grid-area: 4/3/7/5;
+      grid-area: 2/3/4/5;
     }
     #text2 .kode-i-tekst{
       background-color: #ddd;
@@ -137,7 +137,7 @@
     #bilde2{
       text-align: center;
       
-      grid-area: 4/1/7/3;
+      grid-area: 2/1/4/3;
       display: flex;
       
   
