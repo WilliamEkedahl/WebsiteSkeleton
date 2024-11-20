@@ -101,4 +101,17 @@ color:blue;
   #link-box a:hover{
   }
   
-  
+   
+/****************************\
+  Små skjermer
+\******************************/
+@media(max-width:1400px){
+
+  section:nth-child(odd){
+    
+    background-color:#E6B3AB;
+  }
+  section:nth-child(even){
+    background-color: #ABDEE6;
+  }
+}
