@@ -126,7 +126,16 @@ body {
     margin: 10rem auto 0 auto;
     */
   }
-  
+
+  #kollone1{
+    width: 100%;
+  }
+#kollone2{
+  width: 100%;
+}
+#kollone3{
+  width: 100%;
+}
   .Meg img {
     width: 300px;
   
