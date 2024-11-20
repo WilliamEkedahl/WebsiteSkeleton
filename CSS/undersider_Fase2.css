@@ -112,7 +112,7 @@ den plasseres øverst.
 \****************************/
 
 /*Første bilde med tekst container*/
-.Meg {
+.text {
   background-color: rgb(243, 243, 243);
   display: flex;
   justify-content: space-between;
@@ -128,19 +128,19 @@ den plasseres øverst.
   */
 }
 
-.Meg img {
+.text img {
   width: 300px;
 
 }
 
-.Meg h1 {
+.text h1 {
   margin: 0;
   color: black;
   /*Farge på tekst og størrelse*/
   font-size: 50px;
 }
 
-.Meg p {
+.text p {
   color: black;
   margin-right: 60px;
   /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden*/
@@ -416,23 +416,23 @@ section#section2-grid{
   font-size: 2.1em;
 }
 
-.Meg {
+.text {
   display: flex;
   flex-direction: column;
 }
 
-.Meg img {
+.text img {
   width: 200px;
 }
 
-.Meg h1 {
+.text h1 {
   margin: 0;
   color: black;
   /*Farge på tekst og størrelse*/
   font-size: 40px;
 }
 
-.Meg p {
+.text p {
   color: black;
   /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden*/
   font-size: 15px;
