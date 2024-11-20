@@ -172,7 +172,6 @@ body {
     color: white;
     margin-right: 70px;
     /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden*/
-    font-size: 25px;
     /*Størrelsen på tekst*/
   
   }
@@ -218,9 +217,7 @@ body {
   
   .Bilder2 p {
     color: rgb(255, 254, 254);
-    /*
-    margin-right: 80px; /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden
-    */
+    margin-right: 80px;
     font-size: 25px;
     /*Størrelsen på tekst*/
   
@@ -255,9 +252,6 @@ body {
   .Bilder3 p {
     color: black;
     margin-right: 60px;
-    /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden*/
-    font-size: 25px;
-    /*Størrelsen på tekst*/
   }
   
   /* Bilder4 */
@@ -266,11 +260,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 80px;
-    /*
-    width: 100vw;
-    
-    margin: 10rem auto 0 auto;
-    */
+
   }
   
   .Bilder4 img {

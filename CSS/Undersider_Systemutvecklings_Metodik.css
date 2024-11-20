@@ -1,5 +1,5 @@
 :root{
-    --background-color-text-og-bilde1-bakgrund: #1b8aac;
+    --background-color-text-og-bilde1-bakgrund: #185085;
 }
 /* Turn the white text color to black when the screen
 goes smaller then 1000px, which is the breakpoint where the css styling stops*/
