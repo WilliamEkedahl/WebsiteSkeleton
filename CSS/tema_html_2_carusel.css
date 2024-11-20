@@ -10,6 +10,7 @@
         --bilde-wrap-høyde: 400px;
         --passe-svart:rgba(0, 0, 0, .8);
     }
+
     #carusel-wrap-inner figure>img{
         width:100%;
         

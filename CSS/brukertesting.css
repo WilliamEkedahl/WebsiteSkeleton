@@ -4,8 +4,7 @@
 \******************************/
 
 :root{ 
-  
- 
+
     --bakgrunnsfarge-text-bilde-bakgrunn: #ABDEE6;
     --bakgrunnsfarge-text-bilde-bakgrunn2: #E6B3AB;
     --textfarge-til-bakgrunnsfargen:black;
@@ -15,8 +14,7 @@
     Helvetica 20px for paragrafer
     35px for overskrifter
     */
-    
-   
+
   }
   section, #temamarkør{
     max-width: 1440px;
