@@ -13,17 +13,14 @@ document.addEventListener('click', e=> {console.info(e.target);
       
        /*  currentDropdown = document.getElementById('runar'); */
 
-       
           currentDropdown = e.target.closest('[data-dropDown]');
 
         currentDropdown.classList.toggle('active');
 
     }
-
     document.querySelectorAll('[data-dropDown].active').forEach(dropdown => { 
         if (dropdown === currentDropdown) { return }
         dropdown.classList.remove('active');
 
-    }) 
-    console.log('kom til enden');
+    })
 })
