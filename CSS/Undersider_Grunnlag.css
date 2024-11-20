@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 /**********************\
  *     Hele siden     *
 \**********************/
@@ -137,14 +136,13 @@ den plasseres øverst.
   margin: 0;
   color: black;
   /*Farge på tekst og størrelse*/
-  font-size: 50px;
+  font-size: 2.5 rem;
 }
 
 .Meg p {
   color: black;
   margin-right: 60px;
   /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden*/
-  font-size: 25px;
   /*Størrelsen på tekst*/
 }
 
@@ -165,7 +163,7 @@ den plasseres øverst.
 .Bilder h1 {
   margin: 0;
   color: white;
-  font-size: 50px;
+  font-size: 2.5 rem;
 }
 
 .Bilder p {
@@ -188,7 +186,6 @@ den plasseres øverst.
 }
 
 #bilde-med-tekst2 p{
-  font-size: 20px;
 }
 
 #bilde-med-tekst2 img {
@@ -213,7 +210,7 @@ den plasseres øverst.
 .Bilder2 h1 {
   margin: 0;
   color: rgb(255, 254, 254);
-  font-size: 50px;
+  font-size: 2.5 rem;
 }
 
 .Bilder2 p {
@@ -437,7 +434,6 @@ den plasseres øverst.
   .Meg p {
     color: black;
     /*Avstanden fra tekst og bilde. Jo høyere px, desto større blir avstanden*/
-    font-size: 15px;
     /*Størrelsen på tekst*/
     width: 80%;
   }
@@ -447,4 +443,3 @@ den plasseres øverst.
   }
 
 }
->>>>>>> 844dee9007becdb3d8246795e3726e4ce4de9f80
