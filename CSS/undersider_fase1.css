@@ -71,8 +71,9 @@ bilde-bokser_z3{
   z-index:2;
 }
   .tekst-og-bildeboks{
-    background-color: rgba(73, 152, 196, 0.84);
+    background-color: rgba(216, 216, 216, 0.84);
     z-index: 1;
+    box-shadow: 1px 1px 1px black;
   }
   .text{
     z-index: 2;
@@ -229,7 +230,6 @@ bilde-bokser_z3{
     grid-template-rows: repeat(5,1fr) ;
     /*grid-template-columns: repeat(auto-fit,minmax(200px,1fr));*/
     grid-template-columns: repeat(4,minmax(100px,1fr));
-    border: 2px solid red;
     column-gap: 50px;
     row-gap: 25px;
     
